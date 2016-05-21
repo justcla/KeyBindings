@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='windows-1252'?>
+<Wix xmlns='http://schemas.microsoft.com/wix/2006/wi'>
+	<Product Name='SlashComments Key Bindings 1.0' Id='bd2814fc-f932-464e-ae9a-7f3d3be2a70c' UpgradeCode='fb267085-091d-4fea-b7b1-c4c6b3e0238c'
+    Language='1033' Codepage='1252' Version='1.0.0' Manufacturer='Justin Clareburt'>
+
+		<Package Id='*' Keywords='Installer' Description="Justin's SlashComments Installer"
+      Comments='Installs a new keyboard mapping scheme (VSK) for Visual Studio 2015' Manufacturer='Justin Clareburt'
+      InstallerVersion='100' Languages='1033' Compressed='yes' SummaryCodepage='1252' />
+
+		<Media Id='1' Cabinet='Sample.cab' EmbedCab='yes' DiskPrompt="CD-ROM #1" />
+		<Property Id='DiskPrompt' Value="Acme's Foobar 1.0 Installation [1]" />
+
+		<Directory Id='TARGETDIR' Name='SourceDir'>
+			<Directory Id='ProgramFilesFolder' Name='PFiles'>
+				<Directory Id='VisualStudio2015' Name='Microsoft Visual Studio 14.0'>
+					<Directory Id='Common7' Name='Common7'>
+						<Directory Id='INSTALLDIR' Name='IDE'>
+
+							<Component Id='SlashCommentsVSK' Guid='1c1cbd10-92a4-43ab-b9b1-20cba49e9f97'>
+								<File Id='SlashCommentsVSKFile' Name='Slash Comments.vsk' Source='Slash Comments.vsk' KeyPath='yes'/>
+							</Component>
+
+						</Directory>
+					</Directory>
+				</Directory>
+			</Directory>
+		</Directory>
+
+		<Feature Id='Complete' Title='SlashComments Key Bindings' Description='The complete package.' Display='expand' Level='1' ConfigurableDirectory='INSTALLDIR'>
+			<ComponentRef Id='SlashCommentsVSK' />
+		</Feature>
+		
+		<UIRef Id="WixUI_Minimal" />
+		<WixVariable Id="WixUILicenseRtf" Value="License.rtf" />
+		<Property Id="WIXUI_INSTALLDIR" Value="INSTALLDIR" />
+
+	</Product>
+</Wix>

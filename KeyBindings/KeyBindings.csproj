@@ -32,10 +32,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="..\.gitignore">
-      <Link>.gitignore</Link>
-    </Content>
+    <Content Include="BuildMSI.bat" />
+    <Content Include="License.rtf" />
+    <Content Include="Slash Comments.vsk" />
     <Content Include="SlashComment.vssettings" />
+    <Content Include="SlashCommentKeyBindings.wxs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
