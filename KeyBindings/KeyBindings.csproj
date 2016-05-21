@@ -32,7 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="BuildMSI.bat" />
+    <Content Include="BuildSlashCommentsMSI.bat" />
     <Content Include="License.rtf" />
     <Content Include="Slash Comments.vsk" />
     <Content Include="SlashComment.vssettings" />
