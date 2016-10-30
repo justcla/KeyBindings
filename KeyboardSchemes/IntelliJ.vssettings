@@ -136,8 +136,67 @@
           <Shortcut Command="Show.TypeHierarchy" Scope="Global">Ctrl+H</Shortcut>  <!-- NYI -->
           <Shortcut Command="Show.MethodHierarchy" Scope="Global">Ctrl+Shift+H</Shortcut>  <!-- NYI -->
           <Shortcut Command="Show.CallHierarchy" Scope="Global">Ctrl+Alt+H</Shortcut>  <!-- NYI -->
-          <Shortcut Command="View.NextError" Scope="Text Editor">F2</Shortcut>
-          <Shortcut Command="View.PreviousError" Scope="Text Editor">Shift+F2</Shortcut>
+          <Shortcut Command="View.NextError" Scope="Text Editor">F2</Shortcut>  <!-- Golbal ? -->
+          <Shortcut Command="View.PreviousError" Scope="Text Editor">Shift+F2</Shortcut>  <!-- Global ? -->
+          <Shortcut Command="EditSourse" Scope="Global">F4</Shortcut>   <!-- NYI(?) -->
+          <Shortcut Command="ViewSource" Scope="Global">Ctrl+Enter</Shortcut>   <!-- NYI(?) -->
+          <Shortcut Command="ShowNavigationBar" Scope="Global">Alt+Home</Shortcut>   <!-- NYI(?) -->
+          <Shortcut Command="ToggleBookmark" Scope="Text Editor">F11</Shortcut>   <!-- NYI(?) -->
+          <Shortcut Command="ToggleBookmarkWithMnemonic" Scope="Text Editor">Ctrl+F11</Shortcut>   <!-- NYI(?) -->
+          <Shortcut Command="GoToNumberedBookmark.0" Scope="Global">Ctrl+0</Shortcut>   <!-- NYI(?) -->
+          <Shortcut Command="GoToNumberedBookmark.1" Scope="Global">Ctrl+1</Shortcut>   <!-- NYI(?) -->
+          <Shortcut Command="GoToNumberedBookmark.2" Scope="Global">Ctrl+2</Shortcut>   <!-- NYI(?) -->
+          <Shortcut Command="GoToNumberedBookmark.3" Scope="Global">Ctrl+3</Shortcut>   <!-- NYI(?) -->
+          <Shortcut Command="GoToNumberedBookmark.4" Scope="Global">Ctrl+4</Shortcut>   <!-- NYI(?) -->
+          <Shortcut Command="GoToNumberedBookmark.5" Scope="Global">Ctrl+5</Shortcut>   <!-- NYI(?) -->
+          <Shortcut Command="GoToNumberedBookmark.6" Scope="Global">Ctrl+6</Shortcut>   <!-- NYI(?) -->
+          <Shortcut Command="GoToNumberedBookmark.7" Scope="Global">Ctrl+7</Shortcut>   <!-- NYI(?) -->
+          <Shortcut Command="GoToNumberedBookmark.8" Scope="Global">Ctrl+8</Shortcut>   <!-- NYI(?) -->
+          <Shortcut Command="GoToNumberedBookmark.9" Scope="Global">Ctrl+9</Shortcut>   <!-- NYI(?) -->
+          <Shortcut Command="ShowBookmarks" Scope="Global">Shift+F11</Shortcut>   <!-- NYI(?) -->
+          <!-- Refactoring -->
+          <Shortcut Command="FileRefactoring.Copy" Scope="Global">F5</Shortcut>   <!-- NYI(?) -->  <!-- Solution Explorer only ? -->
+          <Shortcut Command="FileRefactoring.Move" Scope="Global">F6</Shortcut>   <!-- NYI(?) -->  <!-- Solution Explorer only ? -->
+          <Shortcut Command="FileRefactoring.SafeDelete" Scope="Global">Alt+Del</Shortcut>   <!-- NYI(?) -->  <!-- Solution Explorer only ? -->
+          <Shortcut Command="FileRefactoring.Rename" Scope="Global">Shift+F6</Shortcut>   <!-- NYI(?) -->  <!-- Could be TextEditor or SolnExp (ie. rename var or rename file) -->
+          <Shortcut Command="Refactoring.Rename" Scope="TextEditor">Shift+F6</Shortcut>   <!-- NYI(?) -->  <!-- Could be TextEditor or SolnExp (ie. rename var or rename file) -->
+          <Shortcut Command="Refactoring.ChangeSignature" Scope="Text Editor">Ctrl+F6</Shortcut>   <!-- NYI(?) -->
+          <Shortcut Command="Refactoring.InlineVariable" Scope="Text Editor">Ctrl+Alt+N</Shortcut>   <!-- NYI(?) -->  <!-- Inline method or variable -->
+          <Shortcut Command="Refactoring.ExtractMethod" Scope="Text Editor">Ctrl+Alt+M</Shortcut>   <!-- NYI(?) -->
+          <Shortcut Command="Refactoring.ExtractVariable" Scope="Text Editor">Ctrl+Alt+V</Shortcut>   <!-- NYI(?) -->
+          <Shortcut Command="Refactoring.ExtractField" Scope="Text Editor">Ctrl+Alt+F</Shortcut>   <!-- NYI(?) -->
+          <Shortcut Command="Refactoring.ExtractConstant" Scope="Text Editor">Ctrl+Alt+C</Shortcut>   <!-- NYI(?) -->
+          <Shortcut Command="Refactoring.ExtractParameter" Scope="Text Editor">Ctrl+Alt+P</Shortcut>   <!-- NYI(?) -->
+          <!-- Source Control / Local History -->
+          <Shortcut Command="SourceControl.PushDialog" Scope="Global">Ctrl+K</Shortcut>   <!-- NYI(?) -->
+          <Shortcut Command="SourceControl.PullDialog" Scope="Text Editor">Ctrl+T</Shortcut>   <!-- NYI(?) -->
+          <Shortcut Command="LocalHistory.ViewRecentChanges" Scope="Text Editor">Alt+Shift+C</Shortcut>   <!-- NYI(?) -->
+          <Shortcut Command="SourceControl.QuickPopup" Scope="Text Editor">Alt+`</Shortcut>   <!-- NYI(?) -->
+          <!-- Live Templates -->
+          <Shortcut Command="SurroundWithLiveTemplate" Scope="Text Editor">Ctrl+Alt+J</Shortcut>   <!-- NYI(?) -->
+          <Shortcut Command="InsertLiveTemplate" Scope="Text Editor">Ctrl+J</Shortcut>   <!-- NYI(?) -->
+          <!-- Note: Several live templates are defined. eg. iter, inst, itco, itit, itli, psf, thr -->
+          <!-- General -->
+          <Shortcut Command="OpenToolWindow.0" Scope="Global">Alt+0</Shortcut>   <!-- NYI(?) -->
+          <Shortcut Command="OpenToolWindow.SolutionExplorer" Scope="Global">Alt+1</Shortcut>   <!-- NYI(?) -->
+          <Shortcut Command="OpenToolWindow.2" Scope="Global">Alt+2</Shortcut>   <!-- NYI(?) -->
+          <Shortcut Command="OpenToolWindow.FindResults" Scope="Global">Alt+3</Shortcut>   <!-- NYI(?) -->
+          <Shortcut Command="OpenToolWindow.Run" Scope="Global">Alt+4</Shortcut>   <!-- NYI(?) -->
+          <Shortcut Command="OpenToolWindow.Debug" Scope="Global">Alt+5</Shortcut>   <!-- NYI(?) -->
+          <Shortcut Command="OpenToolWindow.TODO" Scope="Global">Alt+6</Shortcut>   <!-- NYI(?) -->
+          <Shortcut Command="OpenToolWindow.Structure" Scope="Global">Alt+7</Shortcut>   <!-- NYI(?) -->
+          <Shortcut Command="OpenToolWindow.8" Scope="Global">Alt+8</Shortcut>   <!-- NYI(?) -->
+          <Shortcut Command="OpenToolWindow.TeamExplorer" Scope="Global">Alt+9</Shortcut>   <!-- NYI(?) -->
+          <Shortcut Command="SaveAll" Scope="Global">Ctrl+S</Shortcut>   <!-- NYI(?) -->
+          <Shortcut Command="Synchronize" Scope="Global">Ctrl+Alt+Y</Shortcut>   <!-- NYI(?) -->
+          <Shortcut Command="ToggleMaximizingEditor" Scope="Global">Ctrl+Shift+F12</Shortcut>   <!-- NYI(?) -->
+          <Shortcut Command="AddToFavorites" Scope="Global">Alt+Shift+F</Shortcut>   <!-- NYI(?) -->
+          <Shortcut Command="InspectCurrentFileWithCurrentProfile" Scope="Global">Alt+Shift+I</Shortcut>   <!-- NYI(?) -->
+          <Shortcut Command="QuickSwitchCurrentScheme" Scope="Global">Ctrl+`</Shortcut>   <!-- NYI(?) -->
+          <Shortcut Command="OpenSettingsDialog" Scope="Global">Ctrl+Alt+S</Shortcut>   <!-- NYI(?) -->
+          <Shortcut Command="OpenProjectStructureDialog" Scope="Global">Ctrl+Alt+Shift+S</Shortcut>   <!-- NYI(?) -->
+          <Shortcut Command="FindAction" Scope="Global">Ctrl+Shift+A</Shortcut>   <!-- NYI(?) -->
+          <Shortcut Command="SwitchBetweenTabsAndToolWindow" Scope="Global">Ctrl+Tab</Shortcut>   <!-- NYI(?) --><!-- SwitchBetweenTabsAndToolWindow: Implement as two features: Global and TextEditor ? -->
           <!-- Extras -->
           <Shortcut Command="Window.NextTab" Scope="Text Editor">Ctrl+PgDn</Shortcut>   <!-- Restore Global control for Ctrl+PgDn -->
           <Shortcut Command="Window.PreviousTab" Scope="Text Editor">Ctrl+PgUp</Shortcut> <!-- Restore Global control for Ctrl+PgUp -->
