@@ -13,6 +13,7 @@
         <!-- Move the VSK file (with same 'Name') from the AppData\Roaming directory to the Common7\IDE directory -->
         <!-- to have the shortcuts available on the Tools->Options->Keyboard, Keyboard mapping scheme dropdown. -->
     <!-- Note: NYI = Not yet implemented -->
+    <!-- Note: IWC = Implemented without a command name -->
         <ShortcutsSchemeDef Name="IntelliJ">
           <!-- Editing Key bindings -->
           <Shortcut Command="Edit.CompleteWord" Scope="Text Editor">Ctrl+Space</Shortcut>
@@ -136,12 +137,12 @@
           <Shortcut Command="Show.TypeHierarchy" Scope="Global">Ctrl+H</Shortcut>  <!-- NYI -->
           <Shortcut Command="Show.MethodHierarchy" Scope="Global">Ctrl+Shift+H</Shortcut>  <!-- NYI -->
           <Shortcut Command="Show.CallHierarchy" Scope="Global">Ctrl+Alt+H</Shortcut>  <!-- NYI -->
-          <Shortcut Command="View.NextError" Scope="Text Editor">F2</Shortcut>  <!-- Golbal ? -->
-          <Shortcut Command="View.PreviousError" Scope="Text Editor">Shift+F2</Shortcut>  <!-- Global ? -->
-          <Shortcut Command="EditSourse" Scope="Global">F4</Shortcut>   <!-- NYI(?) -->
-          <Shortcut Command="ViewSource" Scope="Global">Ctrl+Enter</Shortcut>   <!-- NYI(?) -->
-          <Shortcut Command="ShowNavigationBar" Scope="Global">Alt+Home</Shortcut>   <!-- NYI(?) -->
-          <Shortcut Command="ToggleBookmark" Scope="Text Editor">F11</Shortcut>   <!-- NYI(?) -->
+          <Shortcut Command="View.NextError" Scope="Global">F2</Shortcut>
+          <Shortcut Command="View.PreviousError" Scope="Global">Shift+F2</Shortcut>
+          <Shortcut Command="View.ViewCode" Scope="Global">F4</Shortcut>   <!-- EditSource/ViewSource. Note: On Project file should open Properties -->
+          <Shortcut Command="View.ViewCode" Scope="Global">Ctrl+Enter</Shortcut>
+          <Shortcut Command="Window.MoveToNavigationBar" Scope="Text Editor">Alt+Home</Shortcut>   <!-- Near Match (?) -->  <!-- Should be Global.ShowNavigationBar -->
+          <Shortcut Command="Edit.ToggleBookmark" Scope="Text Editor">F11</Shortcut>
           <Shortcut Command="ToggleBookmarkWithMnemonic" Scope="Text Editor">Ctrl+F11</Shortcut>   <!-- NYI(?) -->
           <Shortcut Command="GoToNumberedBookmark.0" Scope="Global">Ctrl+0</Shortcut>   <!-- NYI(?) -->
           <Shortcut Command="GoToNumberedBookmark.1" Scope="Global">Ctrl+1</Shortcut>   <!-- NYI(?) -->
@@ -153,17 +154,18 @@
           <Shortcut Command="GoToNumberedBookmark.7" Scope="Global">Ctrl+7</Shortcut>   <!-- NYI(?) -->
           <Shortcut Command="GoToNumberedBookmark.8" Scope="Global">Ctrl+8</Shortcut>   <!-- NYI(?) -->
           <Shortcut Command="GoToNumberedBookmark.9" Scope="Global">Ctrl+9</Shortcut>   <!-- NYI(?) -->
-          <Shortcut Command="ShowBookmarks" Scope="Global">Shift+F11</Shortcut>   <!-- NYI(?) -->
+          <Shortcut Command="View.BookmarkWindow" Scope="Global">Shift+F11</Shortcut>
           <!-- Refactoring -->
-          <Shortcut Command="FileRefactoring.Copy" Scope="Global">F5</Shortcut>   <!-- NYI(?) -->  <!-- Solution Explorer only ? -->
-          <Shortcut Command="FileRefactoring.Move" Scope="Global">F6</Shortcut>   <!-- NYI(?) -->  <!-- Solution Explorer only ? -->
-          <Shortcut Command="FileRefactoring.SafeDelete" Scope="Global">Alt+Del</Shortcut>   <!-- NYI(?) -->  <!-- Solution Explorer only ? -->
-          <Shortcut Command="FileRefactoring.Rename" Scope="Global">Shift+F6</Shortcut>   <!-- NYI(?) -->  <!-- Could be TextEditor or SolnExp (ie. rename var or rename file) -->
-          <Shortcut Command="Refactoring.Rename" Scope="TextEditor">Shift+F6</Shortcut>   <!-- NYI(?) -->  <!-- Could be TextEditor or SolnExp (ie. rename var or rename file) -->
-          <Shortcut Command="Refactoring.ChangeSignature" Scope="Text Editor">Ctrl+F6</Shortcut>   <!-- NYI(?) -->
-          <Shortcut Command="Refactoring.InlineVariable" Scope="Text Editor">Ctrl+Alt+N</Shortcut>   <!-- NYI(?) -->  <!-- Inline method or variable -->
-          <Shortcut Command="Refactoring.ExtractMethod" Scope="Text Editor">Ctrl+Alt+M</Shortcut>   <!-- NYI(?) -->
-          <Shortcut Command="Refactoring.ExtractVariable" Scope="Text Editor">Ctrl+Alt+V</Shortcut>   <!-- NYI(?) -->
+          <Shortcut Command="File.Copy" Scope="Solution Explorer">F5</Shortcut>   <!-- NYI(?) -->
+          <Shortcut Command="File.Move" Scope="Solution Explorer">F6</Shortcut>   <!-- NYI(?) -->
+          <Shortcut Command="Refactoring.Move" Scope="Text Editor">F6</Shortcut>   <!-- NYI(?) -->
+          <Shortcut Command="Refactoring.SafeDelete" Scope="Solution Explorer">Alt+Del</Shortcut>   <!-- NYI(?) -->  <!-- Solution Explorer only ? -->
+          <Shortcut Command="File.Rename" Scope="Solution Explorer">Shift+F6</Shortcut>
+          <Shortcut Command="Refactor.Rename" Scope="Text Editor">Shift+F6</Shortcut>
+          <Shortcut Command="Refactor.ReorderParameters" Scope="Text Editor">Ctrl+F6</Shortcut>         <!-- Opens Change Signature Dialog -->
+          <Shortcut Command="View.QuickActions" Scope="Text Editor">Ctrl+Alt+N</Shortcut>   <!-- IWC / Partial-Impl -->  <!-- Refactoring.Inline - Analyzers exist: Inline temporary variable. Could not find Inline Method. -->
+          <Shortcut Command="Refactor.ExtractMethod" Scope="Text Editor">Ctrl+Alt+M</Shortcut>
+          <Shortcut Command="View.QuickActions" Scope="Text Editor">Ctrl+Alt+V</Shortcut>   <!-- IWC -->  <!-- Refactoring.ExtractVariable - Analyzers exist: Introduce local (for one, or all) -->
           <Shortcut Command="Refactoring.ExtractField" Scope="Text Editor">Ctrl+Alt+F</Shortcut>   <!-- NYI(?) -->
           <Shortcut Command="Refactoring.ExtractConstant" Scope="Text Editor">Ctrl+Alt+C</Shortcut>   <!-- NYI(?) -->
           <Shortcut Command="Refactoring.ExtractParameter" Scope="Text Editor">Ctrl+Alt+P</Shortcut>   <!-- NYI(?) -->
