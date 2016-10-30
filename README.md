@@ -8,3 +8,7 @@ C:\Users\[user]\AppData\Roaming\Microsoft\VisualStudio\14.0
 
 Default location for exporting settings (.vssettings XML file)
 c:\users\[user]\documents\visual studio 2015\settings
+
+OOB Keyboard Mapping Files:
+VS/src/VSCommonContent/profiles/keyboardSchemes
+eg. Visual CSharp 2005.vssettings
