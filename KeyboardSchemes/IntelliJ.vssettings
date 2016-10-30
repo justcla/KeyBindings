@@ -170,9 +170,16 @@
           <Shortcut Command="Refactoring.ExtractConstant" Scope="Text Editor">Ctrl+Alt+C</Shortcut>   <!-- NYI(?) -->
           <Shortcut Command="Refactoring.ExtractParameter" Scope="Text Editor">Ctrl+Alt+P</Shortcut>   <!-- NYI(?) -->
           <!-- Source Control / Local History -->
-          <Shortcut Command="SourceControl.PushDialog" Scope="Global">Ctrl+K</Shortcut>   <!-- NYI(?) -->
-          <Shortcut Command="SourceControl.PullDialog" Scope="Text Editor">Ctrl+T</Shortcut>   <!-- NYI(?) -->
-          <Shortcut Command="LocalHistory.ViewRecentChanges" Scope="Text Editor">Alt+Shift+C</Shortcut>   <!-- NYI(?) -->
+          <Shortcut Command="View.TfsTeamExplorer" Scope="Global">Ctrl+K</Shortcut>   <!-- Near-match -->  <!-- SourceControl.PushDialog -->
+          <Shortcut Command="View.TfsTeamExplorer" Scope="Text Editor">Ctrl+K</Shortcut>   <!-- Force override --> <!-- SourceControl.PushDialog -->
+          <Shortcut Command="View.TfsTeamExplorer" Scope="Workflow Designer">Ctrl+K</Shortcut>   <!-- Force override --> <!-- SourceControl.PushDialog -->
+          <Shortcut Command="View.TfsTeamExplorer" Scope="Global">Ctrl+T</Shortcut>   <!-- Near-match -->  <!-- SourceControl.PullDialog -->
+          <Shortcut Command="View.TfsTeamExplorer" Scope="Text Editor">Ctrl+T</Shortcut>   <!-- Force override --> <!-- SourceControl.PullDialog -->
+          <Shortcut Command="View.TfsTeamExplorer" Scope="View Designer">Ctrl+T</Shortcut>   <!-- Force override --> <!-- SourceControl.PullDialog -->
+          <Shortcut Command="View.TfsTeamExplorer" Scope="Query Designer">Ctrl+T</Shortcut>   <!-- Force override -->  <!-- SourceControl.PullDialog -->
+          <Shortcut Command="Team.Git.ViewHistory" Scope="Text Editor">Alt+Shift+C</Shortcut>   <!-- Near-match (Git History instead of Local History) -->  <!-- LocalHistory.ViewRecentChanges -->
+          <Shortcut Command="Team.Git.ViewHistory" Scope="Solution Explorer">Alt+Shift+C</Shortcut>  <!-- Additional placement -->
+          <Shortcut Command="Team.Git.ViewHistory" Scope="Team Explorer">Alt+Shift+C</Shortcut>   <!-- Additional placement -->
           <Shortcut Command="SourceControl.QuickPopup" Scope="Text Editor">Alt+`</Shortcut>   <!-- NYI(?) -->
           <!-- Live Templates -->
           <Shortcut Command="SurroundWithLiveTemplate" Scope="Text Editor">Ctrl+Alt+J</Shortcut>   <!-- NYI(?) -->
