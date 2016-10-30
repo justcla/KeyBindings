@@ -27,13 +27,13 @@
           <Shortcut Command="Edit.OverrideMethods" Scope="Text Editor">Ctrl+O</Shortcut>  <!-- NYI -->
           <Shortcut Command="Edit.ImplementMethods" Scope="Text Editor">Ctrl+I</Shortcut>  <!-- NYI -->
           <Shortcut Command="Edit.SurroundWith" Scope="Text Editor">Ctrl+Alt+T</Shortcut>
-          <Shortcut Command="HotCommands.ToggleLineComment" Scope="Text Editor">Ctrl+/</Shortcut>  <!-- NYI -->
-          <Shortcut Command="HotCommands.ToggleBlockComment" Scope="Text Editor">Ctrl+Shift+/</Shortcut>  <!-- NYI -->
-          <Shortcut Command="HotCommands.ExpandSelection" Scope="Text Editor">Ctrl+W</Shortcut>  <!-- NYI -->
-          <Shortcut Command="HotCommands.ShrinkSelection" Scope="Text Editor">Ctrl+Shift+W</Shortcut>  <!-- NYI -->
+          <Shortcut Command="Edit.ToggleComment" Scope="Text Editor">Ctrl+/</Shortcut>  <!-- NYI HotCommands.ToggleLineComment. Near-match. Should be ToggleLineComment -->
+          <Shortcut Command="Edit.ToggleBlockComment" Scope="Text Editor">Ctrl+Shift+/</Shortcut>  <!-- NYI -->
+          <Shortcut Command="Edit.IncreaseSelection" Scope="Text Editor">Ctrl+W</Shortcut>  <!-- NYI. HotCommands.ExpandSelection-->
+          <Shortcut Command="Edit.DecreaseSelection" Scope="Text Editor">Ctrl+Shift+W</Shortcut>  <!-- NYI HotCommands.ShrinkSelection-->
           <Shortcut Command="Edit.ShowContextInfo" Scope="Text Editor">Alt+Q</Shortcut>  <!-- NYI -->
           <Shortcut Command="View.QuickActions" Scope="Text Editor">Alt+Enter</Shortcut>
-          <Shortcut Command="HotCommands.FormatCode" Scope="Text Editor">Ctrl+Alt+L</Shortcut>  <!-- IntelliJ: Reformat Code. Offers choice of selection/document where appropriate -->
+          <!--Shortcut Command="Edit.FormatCode" Scope="Text Editor">Ctrl+Alt+L</Shortcut-->  <!-- HotCommands.FormatCode  IntelliJ: Reformat Code. Offers choice of selection/document where appropriate. -->
           <Shortcut Command="Edit.FormatDocument" Scope="Text Editor">Ctrl+Alt+L</Shortcut>  <!-- Near-match -->
           <Shortcut Command="Edit.FormatSelection" Scope="Text Editor">Ctrl+Shift+Alt+L</Shortcut>  <!-- Introduced shortcut! for Near-match -->
           <Shortcut Command="EditorContextMenus.CodeWindow.OrganizeUsings.RemoveAndSort" Scope="Text Editor">Ctrl+Alt+O</Shortcut>  <!-- "OptimizeImports" -->
@@ -47,7 +47,7 @@
           <Shortcut Command="Edit.Paste" Scope="Text Editor">Ctrl+V</Shortcut>
           <Shortcut Command="Edit.Paste" Scope="Text Editor">Shift+Ins</Shortcut>
           <Shortcut Command="Edit.CycleClipboardRing" Scope="Text Editor">Ctrl+Shift+V</Shortcut>
-          <Shortcut Command="HotCommands.DuplicateCode" Scope="Text Editor">Ctrl+D</Shortcut>  <!-- NYI [Duplicate current line or selected block(s)] -->
+          <Shortcut Command="Edit.DuplicateSelection" Scope="Text Editor">Ctrl+D</Shortcut>  <!-- NYI [Duplicate current line or selected block(s)] HotCommands.DuplicateCode -->
           <Shortcut Command="Edit.LineDelete" Scope="Text Editor">Ctrl+Y</Shortcut>
           <Shortcut Command="Edit.SmartJoinLines" Scope="Text Editor">Ctrl+Shift+J</Shortcut>  <!-- NYI -->
           <Shortcut Command="Edit.SmartBreakLine" Scope="Text Editor">Ctrl+Enter</Shortcut>  <!-- [Smart line split] C# behaviour is a near-match. Actually just does LineOpenBelow. -->
@@ -112,17 +112,17 @@
           <Shortcut Command="Window.PreviousTab" Scope="Global">Alt+Left Arrow</Shortcut>
           <Shortcut Command="Window.PreviousTab" Scope="Text Editor">Alt+Left Arrow</Shortcut>  <!-- Override to remove existing shortcut -->
           <Shortcut Command="Window.PreviousTab" Scope="Workflow Designer">Alt+Left Arrow</Shortcut>  <!-- Override to remove existing shortcut -->
-          <Shortcut Command="Window.MostRecentlyActiveToolWindow" Scope="Global">F12</Shortcut>   <!-- NYI - [GoTo Most Previous (Recently Active) Tool Window] -->
+          <Shortcut Command="Window.GoToMostRecentlyActiveToolWindow" Scope="Global">F12</Shortcut>   <!-- NYI - [GoTo Most Previous (Recently Active) Tool Window] -->
           <Shortcut Command="Window.ActivateDocumentWindow" Scope="Global">Esc</Shortcut>
-          <Shortcut Command="Window.HideLastActiveWindow" Scope="Global">Shift+Esc</Shortcut>  <!-- NYI -->
-          <Shortcut Command="Window.CloseMostRecentToolWindow" Scope="Global">Ctrl+Shift+F4</Shortcut>  <!-- NYI -->
+          <Shortcut Command="Window.CloseToolWindow" Scope="Global">Shift+Esc</Shortcut>  <!-- Near-match for Window.HideLastActiveWindow -->
+          <Shortcut Command="Window.CloseToolWindow" Scope="Global">Ctrl+Shift+F4</Shortcut>  <!-- Near-match -->  <!-- Should close most recent tool window -->
           <Shortcut Command="Edit.GoTo" Scope="Global">Ctrl+G</Shortcut>  <!-- [GoTo Line] -->
           <Shortcut Command="Window.RecentFilesPopup" Scope="Global">Ctrl+E</Shortcut>  <!-- NYI (Try to find in VS) -->
           <Shortcut Command="View.NavigateBackward" Scope="Global">Ctrl+Alt+Left Arrow</Shortcut>
           <Shortcut Command="View.NavigateBackward" Scope="HTML Editor Design View">Ctrl+Alt+Left Arrow</Shortcut>  <!-- Override to remove existing shortcut -->
           <Shortcut Command="View.NavigateForward" Scope="Global">Ctrl+Alt+Right Arrow</Shortcut>
           <Shortcut Command="View.NavigateForward" Scope="HTML Editor Design View">Ctrl+Alt+Right Arrow</Shortcut>  <!-- Override to remove existing shortcut -->
-          <Shortcut Command="HotCommands.GoToLastEditLocation" Scope="Global">Ctrl+Shift+Bkspce</Shortcut>  <!-- NYI -->
+          <Shortcut Command="Navigate.GoToLastEditLocation" Scope="Global">Ctrl+Shift+Bkspce</Shortcut>  <!-- NYI -->
           <Shortcut Command="View.SelectCurrentFileOrSymbolInAnyView" Scope="Global">Alt+F1</Shortcut>  <!-- NYI - [Select current file or symbol in any view] -->
           <Shortcut Command="Edit.GoToDefinition" Scope="Text Editor">Ctrl+B</Shortcut>  <!-- [GoTo Declaration] -->
           <Shortcut Command="Edit.GoToImplementation" Scope="Text Editor">Ctrl+Alt+B</Shortcut>
@@ -134,9 +134,9 @@
           <Shortcut Command="Edit.MoveToCodeBlockStart" Scope="Text Editor">Ctrl+[</Shortcut>  <!-- NYI -->
           <Shortcut Command="Edit.MoveToCodeBlockEnd" Scope="Text Editor">Ctrl+]</Shortcut>  <!-- NYI -->
           <Shortcut Command="FileStructurePopup" Scope="Global">Ctrl+F12</Shortcut>  <!-- NYI -->
-          <Shortcut Command="Show.TypeHierarchy" Scope="Global">Ctrl+H</Shortcut>  <!-- NYI -->
-          <Shortcut Command="Show.MethodHierarchy" Scope="Global">Ctrl+Shift+H</Shortcut>  <!-- NYI -->
-          <Shortcut Command="Show.CallHierarchy" Scope="Global">Ctrl+Alt+H</Shortcut>  <!-- NYI -->
+          <Shortcut Command="View.CallHierarchy" Scope="Global">Ctrl+H</Shortcut>  <!-- Near-match (?) Show.TypeHierarchy -->
+          <Shortcut Command="View.CallHierarchy" Scope="Global">Ctrl+Shift+H</Shortcut>  <!-- Near-match (?) Show.MethodHierarchy -->
+          <Shortcut Command="View.CallHierarchy" Scope="Global">Ctrl+Alt+H</Shortcut>  <!-- Near-match (?) Not context aware. Only opens Tool window. -->
           <Shortcut Command="View.NextError" Scope="Global">F2</Shortcut>
           <Shortcut Command="View.PreviousError" Scope="Global">Shift+F2</Shortcut>
           <Shortcut Command="View.ViewCode" Scope="Global">F4</Shortcut>   <!-- EditSource/ViewSource. Note: On Project file should open Properties -->
@@ -186,31 +186,54 @@
           <Shortcut Command="InsertLiveTemplate" Scope="Text Editor">Ctrl+J</Shortcut>   <!-- NYI(?) -->
           <!-- Note: Several live templates are defined. eg. iter, inst, itco, itit, itli, psf, thr -->
           <!-- General -->
-          <Shortcut Command="OpenToolWindow.0" Scope="Global">Alt+0</Shortcut>   <!-- NYI(?) -->
-          <Shortcut Command="OpenToolWindow.SolutionExplorer" Scope="Global">Alt+1</Shortcut>   <!-- NYI(?) -->
-          <Shortcut Command="OpenToolWindow.2" Scope="Global">Alt+2</Shortcut>   <!-- NYI(?) -->
-          <Shortcut Command="OpenToolWindow.FindResults" Scope="Global">Alt+3</Shortcut>   <!-- NYI(?) -->
-          <Shortcut Command="OpenToolWindow.Run" Scope="Global">Alt+4</Shortcut>   <!-- NYI(?) -->
-          <Shortcut Command="OpenToolWindow.Debug" Scope="Global">Alt+5</Shortcut>   <!-- NYI(?) -->
-          <Shortcut Command="OpenToolWindow.TODO" Scope="Global">Alt+6</Shortcut>   <!-- NYI(?) -->
-          <Shortcut Command="OpenToolWindow.Structure" Scope="Global">Alt+7</Shortcut>   <!-- NYI(?) -->
-          <Shortcut Command="OpenToolWindow.8" Scope="Global">Alt+8</Shortcut>   <!-- NYI(?) -->
-          <Shortcut Command="OpenToolWindow.TeamExplorer" Scope="Global">Alt+9</Shortcut>   <!-- NYI(?) -->
-          <Shortcut Command="SaveAll" Scope="Global">Ctrl+S</Shortcut>   <!-- NYI(?) -->
-          <Shortcut Command="Synchronize" Scope="Global">Ctrl+Alt+Y</Shortcut>   <!-- NYI(?) -->
-          <Shortcut Command="ToggleMaximizingEditor" Scope="Global">Ctrl+Shift+F12</Shortcut>   <!-- NYI(?) -->
+          <Shortcut Command="View.Output" Scope="Global">Alt+0</Shortcut>   <!-- Near-match (?) Messages -->
+          <Shortcut Command="View.Output" Scope="Team Explorer">Alt+0</Shortcut>   <!--Force override -->
+          <Shortcut Command="View.Output" Scope="Text Editor">Alt+0</Shortcut>   <!--Future-proof override -->
+          <Shortcut Command="View.SolutionExplorer" Scope="Global">Alt+1</Shortcut>
+          <Shortcut Command="View.SolutionExplorer" Scope="Team Explorer">Alt+1</Shortcut>   <!-- Force override -->
+          <Shortcut Command="View.SolutionExplorer" Scope="JSON Editor">Alt+1</Shortcut>   <!-- Force override -->
+          <Shortcut Command="View.SolutionExplorer" Scope="Merge Editor Window">Alt+1</Shortcut>   <!-- Force override -->
+          <Shortcut Command="View.SolutionExplorer" Scope="Text Editor">Alt+1</Shortcut>   <!-- Future-proof override -->
+          <Shortcut Command="Window.CloseToolWindow" Scope="Solution Explorer">Alt+1</Shortcut>   <!-- Tricky toggle feature. Could use Window.ActivateDocumentWindow -->
+          <Shortcut Command="OpenToolWindow.Favorites" Scope="Global">Alt+2</Shortcut>   <!-- NYI(?) -->
+          <Shortcut Command="View.FindSymbolResults" Scope="Global">Alt+3</Shortcut>   <!-- Could also map to View.FindResults1 or View.FindResults2 -->
+          <Shortcut Command="View.FindSymbolResults" Scope="Team Explorer">Alt+3</Shortcut>   <!-- Force override -->
+          <Shortcut Command="View.FindSymbolResults" Scope="Merge Editor Window">Alt+3</Shortcut>   <!-- Force override -->
+          <Shortcut Command="View.FindSymbolResults" Scope="Text Editor">Alt+3</Shortcut>   <!-- Future-proof override -->
+          <Shortcut Command="View.Output" Scope="Global">Alt+4</Shortcut>   <!-- Near-match -->  <!-- OpenToolWindow.Run -->
+          <Shortcut Command="View.Output" Scope="Team Explorer">Alt+4</Shortcut>   <!-- Force override -->
+          <Shortcut Command="View.Output" Scope="Text Editor">Alt+4</Shortcut>   <!-- Future-proof override -->
+          <Shortcut Command="View.Output" Scope="Global">Alt+5</Shortcut>   <!-- Near-match -->  <!-- OpenToolWindow.Debug -->
+          <Shortcut Command="View.Output" Scope="Team Explorer">Alt+5</Shortcut>   <!-- Force override -->
+          <Shortcut Command="View.Output" Scope="Text Editor">Alt+5</Shortcut>   <!-- Future-proof overrider -->
+          <Shortcut Command="View.TaskList" Scope="Global">Alt+6</Shortcut>
+          <Shortcut Command="View.TaskList" Scope="Team Explorer">Alt+6</Shortcut>   <!-- Force override -->
+          <Shortcut Command="View.TaskList" Scope="Text Editor">Alt+6</Shortcut>   <!-- Future-proof override -->
+          <Shortcut Command="View.DocumentOutline" Scope="Global">Alt+7</Shortcut>   <!-- Near-match/Same-match? OpenToolWindow.Structure  or View.ClassView -->
+          <Shortcut Command="View.DocumentOutline" Scope="Team Explorer">Alt+7</Shortcut>   <!-- Force override -->
+          <Shortcut Command="View.DocumentOutline" Scope="Text Editor">Alt+7</Shortcut>   <!-- Future-proof override -->
+          <Shortcut Command="OpenToolWindow.Hierarchy" Scope="Global">Alt+8</Shortcut>   <!-- NYI(?) -->
+          <Shortcut Command="View.TfsTeamExplorer" Scope="Global">Alt+9</Shortcut>
+          <Shortcut Command="View.TfsTeamExplorer" Scope="Text Editor">Alt+9</Shortcut>    <!-- Future-proof override -->
+          <Shortcut Command="Window.CloseToolWindow" Scope="Team Explorer">Alt+9</Shortcut>   <!-- Getting tricky here for a toggle option. Could use Window.ActivateDocumentWindow -->
+          <Shortcut Command="File.SaveAll" Scope="Global">Ctrl+S</Shortcut>   <!-- NYI(?) -->
+          <Shortcut Command="Project.SynchronizeAllFolders" Scope="Global">Ctrl+Alt+Y</Shortcut>   <!-- NYI(?) -->
+          <Shortcut Command="View.FullScreen" Scope="Global">Ctrl+Shift+F12</Shortcut>   <!-- NYI(?) -->  <!-- ToggleMaximizingEditor. Near-match: View.FullScreen -->
           <Shortcut Command="AddToFavorites" Scope="Global">Alt+Shift+F</Shortcut>   <!-- NYI(?) -->
           <Shortcut Command="InspectCurrentFileWithCurrentProfile" Scope="Global">Alt+Shift+I</Shortcut>   <!-- NYI(?) -->
           <Shortcut Command="QuickSwitchCurrentScheme" Scope="Global">Ctrl+`</Shortcut>   <!-- NYI(?) -->
-          <Shortcut Command="OpenSettingsDialog" Scope="Global">Ctrl+Alt+S</Shortcut>   <!-- NYI(?) -->
-          <Shortcut Command="OpenProjectStructureDialog" Scope="Global">Ctrl+Alt+Shift+S</Shortcut>   <!-- NYI(?) -->
-          <Shortcut Command="FindAction" Scope="Global">Ctrl+Shift+A</Shortcut>   <!-- NYI(?) -->
-          <Shortcut Command="SwitchBetweenTabsAndToolWindow" Scope="Global">Ctrl+Tab</Shortcut>   <!-- NYI(?) --><!-- SwitchBetweenTabsAndToolWindow: Implement as two features: Global and TextEditor ? -->
+          <Shortcut Command="Tools.Options" Scope="Global">Ctrl+Alt+S</Shortcut>   <!-- Near-match(?) OpenSettingsDialog -->
+          <Shortcut Command="ClassViewContextMenus.ClassViewMultiselectProjectreferencesItems.Properties" Scope="Global">Ctrl+Alt+Shift+S</Shortcut>   <!-- Near-match(?) OpenProjectStructureDialog -->
+          <Shortcut Command="Window.QuickLaunch" Scope="Global">Ctrl+Shift+A</Shortcut>   <!-- Near-match: FindAction -->
+          <Shortcut Command="Window.NextDocumentWindowNav" Scope="Global">Ctrl+Tab</Shortcut>   <!-- NYI(?) --><!-- SwitchBetweenTabsAndToolWindow: Implement as two features: Global and TextEditor ? -->
           <!-- Extras -->
           <Shortcut Command="Window.NextTab" Scope="Text Editor">Ctrl+PgDn</Shortcut>   <!-- Restore Global control for Ctrl+PgDn -->
           <Shortcut Command="Window.PreviousTab" Scope="Text Editor">Ctrl+PgUp</Shortcut> <!-- Restore Global control for Ctrl+PgUp -->
           <Shortcut Command="Edit.MoveSelectedLinesUp" Scope="Text Editor">Ctrl+Shift+Up Arrow</Shortcut>
           <Shortcut Command="Edit.MoveSelectedLinesDown" Scope="Text Editor">Ctrl+Shift+Down Arrow</Shortcut>
+          <Shortcut Command="Window.CloseDocumentWindow" Scope="Difference Viewer">Esc</Shortcut>
+          <Shortcut Command="File.TfsCompare" Scope="Team Explorer">Ctrl+D</Shortcut>   <!-- IWC (?)  Team.OpenDiffView -->
+          <!--Shortcut Command="Edit.QuickInfo" Scope="Global">Ctrl+Q</Shortcut-->  <!-- Force override of Global Quick Info shortcut -->  <!-- Bug: Unable to override text inside Quick Launch search box -->
         </ShortcutsSchemeDef>
         <!-- Note: Whatever appears in the UserShortcuts will be applied to the current settings when imported -->
         <!-- These will be appended to any other user-applied shortcuts and the AppData\Roaming User.vsk will be updated -->
