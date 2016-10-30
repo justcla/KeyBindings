@@ -1,0 +1,62 @@
+﻿<UserSettings>
+    <ApplicationIdentity version="8.0.40218.0" name="Microsoft Development Environment"/>
+    <Category name="Environment_Group" RegisteredName="Environment_Group">
+        <Category name="Environment_KeyBindings" Category="{F09035F1-80D2-4312-8EC4-4D354A4BCB4C}" Package="{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}" RegisteredName="Environment_KeyBindings">
+            <KeyboardShortcuts Version="8.0">
+                <ScopeDefinitions>
+                    <Scope Name="Text Editor" ID="{8B382828-6202-11D1-8870-0000F87579D2}"/>
+                    <Scope Name="Global" ID="{5EFC7975-14BC-11CF-9B2B-00AA00573819}"/>
+                </ScopeDefinitions>
+                <ShortcutsSchemeDef Name="Visual C++ 6">
+                    <RemoveShortcut Command="Window.PreviousToolWindowNav" Scope="Global">SHIFT+ALT+F7</RemoveShortcut>
+                    <Shortcut Command="Build.BuildSolution" Scope="Global">F7</Shortcut>
+                    <Shortcut Command="Build.RebuildSolution" Scope="Global">CTRL+ALT+F7</Shortcut>
+                    <Shortcut Command="Debug.Breakpoints" Scope="Global">ALT+F9</Shortcut>
+                    <Shortcut Command="Debug.CallStack" Scope="Global">ALT+7</Shortcut>
+                    <Shortcut Command="Debug.Disassembly" Scope="Global">ALT+8</Shortcut>
+                    <Shortcut Command="Debug.Locals" Scope="Global">ALT+4</Shortcut>
+                    <Shortcut Command="Debug.Memory1" Scope="Global">ALT+6</Shortcut>
+                    <Shortcut Command="Debug.Processes" Scope="Global">CTRL+SHIFT+ALT+P</Shortcut>
+                    <Shortcut Command="Debug.Registers" Scope="Global">ALT+5</Shortcut>
+                    <Shortcut Command="Debug.Watch" Scope="Global">ALT+3</Shortcut>
+                    <Shortcut Command="Edit.BriefBrowse" Scope="Global">ALT+G</Shortcut>
+                    <Shortcut Command="Edit.ClearBookmarks" Scope="Global">CTRL+SHIFT+F2</Shortcut>
+                    <Shortcut Command="Edit.FindSymbol" Scope="Global">CTRL+SHIFT+Y</Shortcut>
+                    <Shortcut Command="Edit.FormatSelection" Scope="Global">ALT+F8</Shortcut>
+                    <Shortcut Command="Edit.GoTo" Scope="Global">CTRL+G</Shortcut>
+                    <Shortcut Command="Edit.GoToDeclaration" Scope="Global">CTRL+ALT+F12</Shortcut>
+                    <Shortcut Command="Edit.GoToNextLocation" Scope="Global">F4</Shortcut>
+                    <Shortcut Command="Edit.GoToPrevLocation" Scope="Global">SHIFT+F4</Shortcut>
+                    <Shortcut Command="Edit.GoToReference" Scope="Global">SHIFT+F12</Shortcut>
+                    <Shortcut Command="Edit.IncrementalSearch" Scope="Text Editor">CTRL+I</Shortcut>
+                    <Shortcut Command="Edit.LineCut" Scope="Global">SHIFT+ALT+L</Shortcut>
+                    <Shortcut Command="Edit.ListMembers" Scope="Global">CTRL+ALT+T</Shortcut>
+                    <Shortcut Command="Edit.NextBookmark" Scope="Text Editor">F2</Shortcut>
+                    <Shortcut Command="Edit.PreviousBookmark" Scope="Global">SHIFT+F2</Shortcut>
+                    <Shortcut Command="Edit.ReverseIncrementalSearch" Scope="Text Editor">CTRL+SHIFT+I</Shortcut>
+                    <Shortcut Command="Edit.ToggleBookmark" Scope="Global">CTRL+F2</Shortcut>
+                    <Shortcut Command="Edit.ViewWhiteSpace" Scope="Global">CTRL+SHIFT+8</Shortcut>
+                    <Shortcut Command="File.Rename" Scope="Global">F2</Shortcut>
+                    <Shortcut Command="Project.Properties" Scope="Global">ALT+F7</Shortcut>
+                    <Shortcut Command="View.BrowseNext" Scope="Global">CTRL+NUM +</Shortcut>
+                    <Shortcut Command="View.BrowsePrevious" Scope="Global">CTRL+NUM -</Shortcut>
+                    <Shortcut Command="View.CodeDefinitionWindow" Scope="Global">CTRL+SHIFT+V</Shortcut>
+                    <Shortcut Command="View.DocumentOutline" Scope="Global">CTRL+ALT+D</Shortcut>
+                    <Shortcut Command="View.FindSymbolResults" Scope="Global">CTRL+ALT+Y</Shortcut>
+                    <Shortcut Command="View.Output" Scope="Global">ALT+2</Shortcut>
+                    <Shortcut Command="View.PopBrowseContext" Scope="Global">CTRL+NUM *</Shortcut>
+                    <Shortcut Command="View.PropertiesWindow" Scope="Global">ALT+ENTER</Shortcut>
+                    <Shortcut Command="View.ViewCode" Scope="Global">CTRL+ALT+0</Shortcut>
+                    <Shortcut Command="View.ViewDesigner" Scope="Global">SHIFT+F7</Shortcut>
+                    <Shortcut Command="Window.ActivateDocumentWindow" Scope="Global">ALT+0</Shortcut>
+                    <Shortcut Command="Window.MovetoNavigationBar" Scope="Global">CTRL+F8</Shortcut>
+					<Shortcut Command="Debug.ParallelStacks" Scope="Global">CTRL+SHIFT+D,S</Shortcut>
+					<Shortcut Command="Debug.ParallelStacks" Scope="Global">CTRL+SHIFT+D,CTRL+SHIFT+S</Shortcut>
+					<Shortcut Command="Debug.ParallelTasks" Scope="Global">CTRL+SHIFT+D,K</Shortcut>
+					<Shortcut Command="Debug.ParallelTasks" Scope="Global">CTRL+SHIFT+D,CTRL+SHIFT+K</Shortcut>
+                    <Shortcut Command="View.QuickActions" Scope="Text Editor">Alt+Enter</Shortcut>
+                </ShortcutsSchemeDef>
+            </KeyboardShortcuts>
+        </Category>
+    </Category>
+</UserSettings>

@@ -1,16 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>AAA24CE2-80BF-4F19-8BDC-4C2CAA6FBC2B</ProjectGuid>
+    <ProjectGuid>{1D623713-09DB-4C72-AFFE-CBC59BF14DA1}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>KeyBindings</RootNamespace>
-    <AssemblyName>KeyBindings</AssemblyName>
+    <RootNamespace>KeyboardSchemes</RootNamespace>
+    <AssemblyName>KeyboardSchemes</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -31,14 +32,25 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Content Include="BuildSlashCommentsMSI.bat" />
-    <Content Include="License.rtf" />
-    <Content Include="Slash Comments.vsk" />
-    <Content Include="SlashComment.vssettings" />
-    <Content Include="SlashCommentKeyBindings.wxs" />
+    <Content Include="Brief.vssettings" />
+    <Content Include="Emacs.vssettings" />
+    <Content Include="IntelliJ.vssettings" />
+    <Content Include="ReSharperFor2015.vssettings" />
+    <Content Include="Visual Basic 6.vssettings" />
+    <Content Include="Visual C++ 2.vssettings" />
+    <Content Include="Visual C++ 6.vssettings" />
+    <Content Include="Visual CSharp 2005.vssettings" />
+    <Content Include="Visual Studio 6.vssettings" />
   </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <None Include="VSKs\IntelliJ.vsk" />
+    <None Include="KeymapRefs\IntelliJIDEA_ReferenceCard.pdf" />
+    <None Include="KeymapRefs\ReSharperCppDefaultKeymap_VSscheme.pdf" />
+    <None Include="KeymapRefs\ReSharper_DefaultKeymap_IDEAscheme.pdf" />
+    <None Include="KeymapRefs\ReSharper_DefaultKeymap_VSscheme.pdf" />
+  </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
