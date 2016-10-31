@@ -361,7 +361,7 @@
           <!--<Shortcut Command="Refactor.Rename" Scope="Text Editor">F2</Shortcut>-->
           <!-- Editting shortcuts -->
           <Shortcut Command="Edit.SelectCurrentWord" Scope="Global">Ctrl+Shift+W</Shortcut>   <!-- Will be applied if HotCommands not available -->
-          <!--<Shortcut Command="Edit.GoToFindCombo" Scope="Global">Ctrl+/</Shortcut>-->
+          <Shortcut Command="Edit.GoToFindCombo" Scope="Global">Ctrl+/</Shortcut>   <!-- Fallback at Text Editor scope if HotCommands not enabled -->
           <Shortcut Command="Edit.SurroundWith" Scope="Global">Ctrl+K, S</Shortcut>
           <Shortcut Command="Edit.SurroundWith" Scope="Global">Ctrl+K, Ctrl+S</Shortcut>
           <Shortcut Command="Edit.InsertSnippet" Scope="Global">Ctrl+K, X</Shortcut>

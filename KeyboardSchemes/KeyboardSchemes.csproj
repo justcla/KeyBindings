@@ -32,7 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="VSKs" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="Brief.vssettings" />
     <Content Include="Emacs.vssettings" />
@@ -43,9 +45,11 @@
     <Content Include="Visual C++ 6.vssettings" />
     <Content Include="Visual CSharp 2005.vssettings" />
     <Content Include="Visual Studio 6.vssettings" />
+    <Content Include="VSKs\IntelliJ for C#.vsk" />
+    <Content Include="VSKs\KeyboardImportErrors-WithHotCommands.txt" />
+    <Content Include="VSKs\KeyboardImportErrors.txt" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="VSKs\IntelliJ.vsk" />
     <None Include="KeymapRefs\IntelliJIDEA_ReferenceCard.pdf" />
     <None Include="KeymapRefs\ReSharperCppDefaultKeymap_VSscheme.pdf" />
     <None Include="KeymapRefs\ReSharper_DefaultKeymap_IDEAscheme.pdf" />
