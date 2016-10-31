@@ -33,22 +33,22 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="Brief.vssettings" />
-    <Content Include="Emacs.vssettings" />
-    <Content Include="IntelliJ.vssettings" />
-    <Content Include="ReSharper for IDEA.vssettings" />
-    <Content Include="ReSharper for VS C#.vssettings" />
-    <Content Include="ReSharperFor2015.vssettings" />
-    <Content Include="Visual Basic 6.vssettings" />
-    <Content Include="Visual C++ 2.vssettings" />
-    <Content Include="Visual C++ 6.vssettings" />
-    <Content Include="Visual CSharp 2005.vssettings" />
-    <Content Include="Visual Studio 6.vssettings" />
     <Content Include="VSKs\IntelliJ for C#.vsk" />
     <Content Include="VSKs\IntelliJ-ImportLog.txt" />
     <Content Include="VSKs\ReSharper for IDEA.vsk" />
     <Content Include="VSKs\ReSharperForIDEA-ImportLog.txt" />
     <Content Include="VSKs\ReSharperForVSC#-ImportLogs.txt" />
+    <Content Include="VSSettings\Brief.vssettings" />
+    <Content Include="VSSettings\Emacs.vssettings" />
+    <Content Include="VSSettings\IntelliJ.vssettings" />
+    <Content Include="VSSettings\ReSharper for IDEA.vssettings" />
+    <Content Include="VSSettings\ReSharper for VS C#.vssettings" />
+    <Content Include="VSSettings\ReSharperFor2015.vssettings" />
+    <Content Include="VSSettings\Visual Basic 6.vssettings" />
+    <Content Include="VSSettings\Visual C++ 2.vssettings" />
+    <Content Include="VSSettings\Visual C++ 6.vssettings" />
+    <Content Include="VSSettings\Visual CSharp 2005.vssettings" />
+    <Content Include="VSSettings\Visual Studio 6.vssettings" />
   </ItemGroup>
   <ItemGroup>
     <None Include="KeymapRefs\IntelliJIDEA_ReferenceCard.pdf" />
