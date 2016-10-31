@@ -45,8 +45,8 @@
     <Content Include="Visual CSharp 2005.vssettings" />
     <Content Include="Visual Studio 6.vssettings" />
     <Content Include="VSKs\IntelliJ for C#.vsk" />
-    <Content Include="VSKs\KeyboardImportErrors-WithHotCommands.txt" />
-    <Content Include="VSKs\KeyboardImportErrors.txt" />
+    <Content Include="VSKs\IntelliJ-ImportLog.txt" />
+    <Content Include="VSKs\ReSharper for IDEA.vsk" />
     <Content Include="VSKs\ReSharperForIDEA-ImportLog.txt" />
   </ItemGroup>
   <ItemGroup>
