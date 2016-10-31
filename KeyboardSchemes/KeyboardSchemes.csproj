@@ -33,9 +33,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Folder Include="VSKs" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Brief.vssettings" />
     <Content Include="Emacs.vssettings" />
     <Content Include="IntelliJ.vssettings" />
@@ -50,6 +47,7 @@
     <Content Include="VSKs\IntelliJ for C#.vsk" />
     <Content Include="VSKs\KeyboardImportErrors-WithHotCommands.txt" />
     <Content Include="VSKs\KeyboardImportErrors.txt" />
+    <Content Include="VSKs\ReSharperForIDEA-ImportLog.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="KeymapRefs\IntelliJIDEA_ReferenceCard.pdf" />
