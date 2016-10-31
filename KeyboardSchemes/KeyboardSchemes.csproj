@@ -36,6 +36,7 @@
     <Content Include="VSKs\IntelliJ for C#.vsk" />
     <Content Include="VSKs\IntelliJ-ImportLog.txt" />
     <Content Include="VSKs\ReSharper for IDEA.vsk" />
+    <Content Include="VSKs\ReSharper for VS C#.vsk" />
     <Content Include="VSKs\ReSharperForIDEA-ImportLog.txt" />
     <Content Include="VSKs\ReSharperForVSC#-ImportLogs.txt" />
     <Content Include="VSSettings\Brief.vssettings" />
