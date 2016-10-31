@@ -104,9 +104,50 @@
           <Shortcut Command="View.TaskList" Scope="Global">Ctrl+Alt+.</Shortcut>      <!-- To-do items window -->
           <Shortcut Command="View.StackTrace" Scope="Global">Ctrl+Alt+.</Shortcut>      <!-- NYI(?) Explore Stack Trace -->
           <Shortcut Command="LocateInSolutionExplorer" Scope="Global">Ctrl+Alt+.</Shortcut>      <!-- NYI(Must be somewhere!) Locate in Solution Explorer -->
+          <!-- Improve -->
+          <Shortcut Command="ShowQuickFixes" Scope="Global">Alt+Enter</Shortcut>
+          <Shortcut Command="InspectThis" Scope="Global">Ctrl+Shift+Alt+A</Shortcut>
+          <Shortcut Command="View.CallHierarchy" Scope="Global">Ctrl+E, H</Shortcut>  <!-- Near-match (?) ViewTypeHierarchy. Not context aware. Only opens Tool window. -->
+          <Shortcut Command="View.NextError" Scope="Global">F12</Shortcut>    <!-- NYI. Near-match. GoToNextHighlight -->
+          <Shortcut Command="View.PreviousError" Scope="Global">Shift+F12</Shortcut>   <!-- NYI. Near-match. GoToPreviousHighlight -->
+          <Shortcut Command="View.NextError" Scope="Global">Alt+F12</Shortcut>
+          <Shortcut Command="View.PreviousError" Scope="Global">Shift+Alt+F12</Shortcut>
+          <!-- Refactoring -->
+          <Shortcut Command="Refactor.This" Scope="Global">Ctrl+Shift+R</Shortcut>    <!-- Refactor this. Open Edit->Refactor menu ? -->
+          <Shortcut Command="Refactor.Rename" Scope="Text Editor">F2</Shortcut>
+          <Shortcut Command="Refactor.Rename" Scope="Text Editor">Shift+R</Shortcut>
+          <Shortcut Command="File.Rename" Scope="Solution Explorer">F2</Shortcut>
+          <Shortcut Command="File.Rename" Scope="Solution Explorer">Shift+R</Shortcut>
+          <!--<Shortcut Command="Refactor.Rename" Scope="Global">Ctrl+Shift+R</Shortcut>  &lt;!&ndash; Should we do Global shortcut? &ndash;&gt;-->
+          <Shortcut Command="File.Move" Scope="Solution Explorer">F6</Shortcut>   <!-- NYI(?) Move type or static member -->
+          <Shortcut Command="Refactoring.Move" Scope="Text Editor">F6</Shortcut>   <!-- NYI(?) Move type or static member -->
+          <Shortcut Command="Refactoring.SafeDelete" Scope="Solution Explorer">Alt+Del</Shortcut>   <!-- NYI(?) Safe Delete -->  <!-- Solution Explorer only ? -->
+          <Shortcut Command="Refactor.ExtractMethod" Scope="Text Editor">Ctrl+Alt+M</Shortcut>
+          <Shortcut Command="View.QuickActions" Scope="Text Editor">Ctrl+Alt+V</Shortcut>   <!-- IWC IntroduceVariable -->  <!-- Refactoring.IntroduceVariable - Analyzers exist: Introduce local (for one, or all) -->
+          <Shortcut Command="Refactoring.ExtractField" Scope="Text Editor">Ctrl+Alt+D</Shortcut>   <!-- NYI(?) Introduce field -->
+          <Shortcut Command="Refactoring.ExtractParameter" Scope="Text Editor">Ctrl+Alt+P</Shortcut>   <!-- NYI(?) Introduce parameter -->
+          <Shortcut Command="View.QuickActions" Scope="Text Editor">Ctrl+Alt+N</Shortcut>   <!-- IWC / Partial-Impl -->  <!-- Refactoring.Inline - Analyzers exist: Inline temporary variable. Could not find Inline Method. -->
+          <Shortcut Command="Refactor.ReorderParameters" Scope="Text Editor">Ctrl+F6</Shortcut>         <!-- Change Signature Dialog -->
+          <Shortcut Command="File.Copy" Scope="Solution Explorer">F5</Shortcut>   <!-- NYI(?) (Not in ReSharper map) -->
+          <Shortcut Command="Refactoring.ExtractConstant" Scope="Text Editor">Ctrl+Alt+C</Shortcut>   <!-- NYI(?) (Not in ReSharper map) -->
+          <!-- Code cleanup -->
+          <Shortcut Command="CodeCleanup" Scope="Text Editor">Ctrl+Alt+F</Shortcut>   <!-- NYI(?) Code cleanup -->
+          <Shortcut Command="ApplyCodeStyle" Scope="Text Editor">Ctrl+Alt+S</Shortcut>   <!-- NYI(?) Apply Code style -->
+          <!--Shortcut Command="Edit.FormatCode" Scope="Text Editor">Ctrl+Alt+L</Shortcut-->  <!-- HotCommands.FormatCode  IntelliJ: Reformat Code. Offers choice of selection/document where appropriate. -->
+          <Shortcut Command="Edit.FormatDocument" Scope="Text Editor">Ctrl+Alt+L</Shortcut>  <!-- Near-match -->
+          <Shortcut Command="Edit.FormatSelection" Scope="Text Editor">Ctrl+Shift+Alt+L</Shortcut>  <!-- Introduced shortcut! for Near-match -->
+          <!-- Run unit tests -->
+          <Shortcut Command="RunUnitTests" Scope="Global">Ctrl+T, R</Shortcut>  <!-- NYI(?) RunUnitTests -->
+          <Shortcut Command="DebugUnitTests" Scope="Global">Ctrl+T, R</Shortcut>  <!-- NYI(?) DebugUnitTests -->
+          <Shortcut Command="RunAllTestsFromSolution" Scope="Global">Ctrl+T, R</Shortcut>  <!-- NYI(?) RunAllTestsFromSolution -->
+          <Shortcut Command="RunCurrentSession" Scope="Global">Ctrl+T, R</Shortcut>  <!-- NYI(?) RunCurrentSession -->
+          <Shortcut Command="RepeatPreviousRun" Scope="Global">Ctrl+T, R</Shortcut>  <!-- NYI(?) RepeatPreviousRun -->
+          <Shortcut Command="UnitTestExplorer" Scope="Global">Ctrl+T, R</Shortcut>  <!-- NYI(?) UnitTestExplorer -->
+          <Shortcut Command="UnitTestSessions" Scope="Global">Ctrl+T, R</Shortcut>  <!-- NYI(?) UnitTestSessions -->
 
-
-
+      <!--==================-->
+      <!-- Other shortcuts -->
+      <!--==================-->
           <Shortcut Command="Edit.ShowDocumentation" Scope="Text Editor">Shift+F1</Shortcut>  <!-- NYI -->
           <Shortcut Command="Edit.ShowErrorInfo" Scope="Text Editor">Ctrl+F1</Shortcut>  <!-- NYI -->
           <Shortcut Command="Edit.OverrideMethods" Scope="Text Editor">Ctrl+O</Shortcut>  <!-- NYI -->
@@ -114,9 +155,6 @@
           <Shortcut Command="Edit.SurroundWith" Scope="Text Editor">Ctrl+Alt+T</Shortcut>
           <Shortcut Command="Edit.ShowContextInfo" Scope="Text Editor">Alt+Q</Shortcut>  <!-- NYI -->
           <Shortcut Command="View.QuickActions" Scope="Text Editor">Alt+Enter</Shortcut>
-          <!--Shortcut Command="Edit.FormatCode" Scope="Text Editor">Ctrl+Alt+L</Shortcut-->  <!-- HotCommands.FormatCode  IntelliJ: Reformat Code. Offers choice of selection/document where appropriate. -->
-          <Shortcut Command="Edit.FormatDocument" Scope="Text Editor">Ctrl+Alt+L</Shortcut>  <!-- Near-match -->
-          <Shortcut Command="Edit.FormatSelection" Scope="Text Editor">Ctrl+Shift+Alt+L</Shortcut>  <!-- Introduced shortcut! for Near-match -->
           <Shortcut Command="EditorContextMenus.CodeWindow.OrganizeUsings.RemoveAndSort" Scope="Text Editor">Ctrl+Alt+O</Shortcut>  <!-- "OptimizeImports" -->
           <Shortcut Command="Edit.FormatIndents" Scope="Text Editor">Ctrl+Alt+I</Shortcut>  <!-- NYI [Auto-indent line(s)]-->
           <!--<Shortcut Command="Edit.IncreaseLineIndent" Scope="Text Editor">Tab</Shortcut>-->  <!-- Near-match. Not near enough to replace existing key behaviour -->
@@ -206,25 +244,9 @@
           <Shortcut Command="View.CallHierarchy" Scope="Global">Ctrl+H</Shortcut>  <!-- Near-match (?) Show.TypeHierarchy -->
           <Shortcut Command="View.CallHierarchy" Scope="Global">Ctrl+Shift+H</Shortcut>  <!-- Near-match (?) Show.MethodHierarchy -->
           <Shortcut Command="View.CallHierarchy" Scope="Global">Ctrl+Alt+H</Shortcut>  <!-- Near-match (?) Not context aware. Only opens Tool window. -->
-          <Shortcut Command="View.NextError" Scope="Global">F2</Shortcut>
-          <Shortcut Command="View.PreviousError" Scope="Global">Shift+F2</Shortcut>
           <Shortcut Command="View.ViewCode" Scope="Global">F4</Shortcut>   <!-- EditSource/ViewSource. Note: On Project file should open Properties -->
           <Shortcut Command="View.ViewCode" Scope="Global">Ctrl+Enter</Shortcut>
           <Shortcut Command="Window.MoveToNavigationBar" Scope="Text Editor">Alt+Home</Shortcut>   <!-- Near Match (?) -->  <!-- Should be Global.ShowNavigationBar -->
-          <!-- Refactoring -->
-          <Shortcut Command="File.Copy" Scope="Solution Explorer">F5</Shortcut>   <!-- NYI(?) -->
-          <Shortcut Command="File.Move" Scope="Solution Explorer">F6</Shortcut>   <!-- NYI(?) -->
-          <Shortcut Command="Refactoring.Move" Scope="Text Editor">F6</Shortcut>   <!-- NYI(?) -->
-          <Shortcut Command="Refactoring.SafeDelete" Scope="Solution Explorer">Alt+Del</Shortcut>   <!-- NYI(?) -->  <!-- Solution Explorer only ? -->
-          <Shortcut Command="File.Rename" Scope="Solution Explorer">Shift+F6</Shortcut>
-          <Shortcut Command="Refactor.Rename" Scope="Text Editor">Shift+F6</Shortcut>
-          <Shortcut Command="Refactor.ReorderParameters" Scope="Text Editor">Ctrl+F6</Shortcut>         <!-- Opens Change Signature Dialog -->
-          <Shortcut Command="View.QuickActions" Scope="Text Editor">Ctrl+Alt+N</Shortcut>   <!-- IWC / Partial-Impl -->  <!-- Refactoring.Inline - Analyzers exist: Inline temporary variable. Could not find Inline Method. -->
-          <Shortcut Command="Refactor.ExtractMethod" Scope="Text Editor">Ctrl+Alt+M</Shortcut>
-          <Shortcut Command="View.QuickActions" Scope="Text Editor">Ctrl+Alt+V</Shortcut>   <!-- IWC -->  <!-- Refactoring.ExtractVariable - Analyzers exist: Introduce local (for one, or all) -->
-          <Shortcut Command="Refactoring.ExtractField" Scope="Text Editor">Ctrl+Alt+F</Shortcut>   <!-- NYI(?) -->
-          <Shortcut Command="Refactoring.ExtractConstant" Scope="Text Editor">Ctrl+Alt+C</Shortcut>   <!-- NYI(?) -->
-          <Shortcut Command="Refactoring.ExtractParameter" Scope="Text Editor">Ctrl+Alt+P</Shortcut>   <!-- NYI(?) -->
           <!-- Source Control / Local History -->
           <Shortcut Command="View.TfsTeamExplorer" Scope="Global">Alt+9</Shortcut>    <!-- Moved here for menu ordering purposes -->
           <Shortcut Command="View.TfsTeamExplorer" Scope="Text Editor">Alt+9</Shortcut>    <!-- Future-proof override -->  <!-- Moved here for menu ordering purposes -->
