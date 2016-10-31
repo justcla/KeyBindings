@@ -69,7 +69,23 @@
           <Shortcut Command="ToggleNumberedBookmark.9" Scope="Global">Ctrl+Shift+9</Shortcut>   <!-- NYI(?) -->
           <Shortcut Command="ToggleBookmarkWithMnemonic" Scope="Text Editor">Ctrl+F11</Shortcut>   <!-- NYI(?) Not in ReShaper map -->
           <Shortcut Command="Edit.ToggleBookmark" Scope="Text Editor">F11</Shortcut>   <!-- NYI(?) Not in ReShaper map -->
-
+          <!-- Explore -->
+          <Shortcut Command="Window.QuickLaunch" Scope="Global">Ctrl+N</Shortcut>  <!-- Near-match [GoTo everything] QuickLaunch or NavigateTo ?? -->
+          <Shortcut Command="Edit.NavigateTo" Scope="Global">Ctrl+N, Ctrl+N</Shortcut>  <!-- Near-match [GoTo Type] -->
+          <Shortcut Command="Edit.NavigateTo" Scope="Global">Ctrl+Shift+Alt+N</Shortcut>  <!-- Near-match [GoTo Symbol] -->
+          <Shortcut Command="Edit.NavigateTo" Scope="Global">Ctrl+Shift+N</Shortcut>  <!-- Near-match [GoTo File] -->
+          <Shortcut Command="Edit.NavigateTo" Scope="Global">Ctrl+F12</Shortcut>  <!-- Near-match [GoTo Member] -->
+          <!-- Find usages -->
+          <Shortcut Command="Edit.FindAllReferences" Scope="Global">Alt+F7</Shortcut>
+          <Shortcut Command="Edit.FindAllReferences" Scope="Global">Shift+Alt+F7</Shortcut>  <!-- NYI Find usages (advanced) -->
+          <Shortcut Command="View.FindSymbolResults" Scope="Global">Ctrl+Alt+U</Shortcut>   <!-- Could also map to View.FindResults1 or View.FindResults2 - Used for Alt+3 -->
+          <Shortcut Command="Edit.HighlightUsagesInFile" Scope="Global">Ctrl+Shift+F7</Shortcut>  <!-- NYI/Broken? Need to find VS command. This happens automatically with setting applied. -->
+          <Shortcut Command="Edit.PreviousHighlightedReference" Scope="Global">Ctrl+Alt+Up Arrow</Shortcut>  <!-- NYI GoToPreviousUsage Could be Edit.FindPrevious -->
+          <Shortcut Command="Edit.NextHighlightedReference" Scope="Global">Ctrl+Alt+Down Arrow</Shortcut>  <!-- NYI GoToNextUsage. Could be Edit.FindNext -->
+          <Shortcut Command="Edit.FindUsagesInFile" Scope="Global">Ctrl+F7</Shortcut>  <!-- NYI/Broken? Need to find VS command (Not in ReShaper map) -->
+          <Shortcut Command="Edit.ShowUsages" Scope="Global">Ctrl+Alt+F7</Shortcut>  <!-- NYI/Broken? Need to find VS command (Not in ReShaper map) -->
+          <Shortcut Command="View.AnalyzeReferences" Scope="Global">Ctrl+Alt+Y</Shortcut>  <!-- NYI (?) Analyze References window -->
+          <!-- Navigate to -->
 
 
           <Shortcut Command="Edit.ShowDocumentation" Scope="Text Editor">Shift+F1</Shortcut>  <!-- NYI -->
@@ -124,11 +140,6 @@
           <Shortcut Command="Edit.ReplaceinFiles" Scope="Global">Ctrl+Shift+R</Shortcut>
           <Shortcut Command="Edit.SearchStructurally" Scope="Global">Ctrl+Shift+S</Shortcut>  <!-- NYI - IntelliJ Ultimate Edition only -->
           <Shortcut Command="Edit.ReplaceStructurally" Scope="Global">Ctrl+Shift+M</Shortcut>  <!-- NYI - IntelliJ Ultimate Edition only -->
-          <!-- Usage Search -->
-          <Shortcut Command="Edit.FindAllReferences" Scope="Global">Alt+F7</Shortcut>
-          <Shortcut Command="Edit.FindUsagesInFile" Scope="Global">Ctrl+F7</Shortcut>  <!-- NYI/Broken? Need to find VS command -->
-          <Shortcut Command="Edit.HighlightUsagesInFile" Scope="Global">Ctrl+Shift+F7</Shortcut>  <!-- NYI/Broken? Need to find VS command. This happens automatically with setting applied. -->
-          <Shortcut Command="Edit.ShowUsages" Scope="Global">Ctrl+Alt+F7</Shortcut>  <!-- NYI/Broken? Need to find VS command -->
           <!-- Compile and Run-->
           <Shortcut Command="Build.BuildSolution" Scope="Global">Ctrl+F9</Shortcut>  <!-- Near-match: [Build project] Chosen as more sensible command since IntelliJ does not handle multi-project solutions whereas VS does. -->
           <!--<Shortcut Command="Build.BuildOnlyProject" Scope="Global">Ctrl+F9</Shortcut>-->  <!-- Alternative choice for build project, or compile (?) -->
@@ -150,9 +161,6 @@
           <Shortcut Command="Debug.ToggleBreakpoint" Scope="Global">Ctrl+F8</Shortcut>
           <Shortcut Command="Debug.Breakpoints" Scope="Global">Ctrl+Shift+F8</Shortcut>
           <!-- Navigation -->
-          <Shortcut Command="Edit.NavigateTo" Scope="Global">Ctrl+N</Shortcut>  <!-- Near-match [GoTo Class/Type] -->
-          <Shortcut Command="Edit.NavigateTo" Scope="Global">Ctrl+Shift+N</Shortcut>  <!-- Near-match [GoTo File] -->
-          <Shortcut Command="Edit.NavigateTo" Scope="Global">Ctrl+Shift+Alt+N</Shortcut>  <!-- Near-match [GoTo Symbol] -->
           <Shortcut Command="Window.NextTab" Scope="Global">Alt+Right Arrow</Shortcut>
           <Shortcut Command="Window.NextTab" Scope="Text Editor">Alt+Right Arrow</Shortcut>  <!-- Need to override any TextEditor bindings that could block this global call -->
           <Shortcut Command="Window.NextTab" Scope="Workflow Designer">Alt+Right Arrow</Shortcut>  <!-- Override to remove existing shortcut -->
