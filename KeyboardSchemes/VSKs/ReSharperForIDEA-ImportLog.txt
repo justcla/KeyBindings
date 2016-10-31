@@ -1,4 +1,4 @@
-Your settings were imported, but there were some errors.
+Your settings were imported, but there are some warnings.
 
 Warning 1:  Keyboard: The command 'Edit.SmartCompleteWord' does not exist. The keyboard shortcut bound to this command has been ignored.
 Warning 2:  Keyboard: The command 'InsertSymbolCompletion' does not exist. The keyboard shortcut bound to this command has been ignored.
@@ -109,11 +109,3 @@ Warning 106:  Keyboard: The command 'Debug.BreakAtFunction' does not exist. The 
 Warning 107:  Keyboard: The command 'Debug.BreakAtFunction' does not exist. The keyboard shortcut bound to this command has been ignored.
 Warning 108:  Keyboard: The command 'Edit.GenerateMethod' does not exist. The keyboard shortcut bound to this command has been ignored.
 Warning 109:  Keyboard: The command 'Edit.GenerateMethod' does not exist. The keyboard shortcut bound to this command has been ignored.
-Error 1:  Keyboard: The command 'Edit.NavigateTo' cannot be bound because the command 'Window.ActivateQuickLaunch' is already bound to the same keyboard shortcut, Ctrl+N, Ctrl+N, within the same scope, Global.
-Error 2:  Keyboard: The keyboard shortcut 'Shift+R' bound to the command 'Refactor.Rename' is not a valid shortcut and has been ignored.
-Error 3:  Keyboard: The keyboard shortcut 'Shift+R' bound to the command 'File.Rename' is not a valid shortcut and has been ignored.
-Error 4:  Keyboard: The command 'Edit.PreviousMethod' cannot be bound because the command 'Edit.PreviousMethod' is already bound to the same keyboard shortcut, Alt+Up Arrow, within the same scope, Text Editor.
-Error 5:  Keyboard: The command 'Edit.NextMethod' cannot be bound because the command 'Edit.NextMethod' is already bound to the same keyboard shortcut, Alt+Down Arrow, within the same scope, Text Editor.
-Error 6:  Keyboard: The command 'Edit.MoveSelectedLinesUp' cannot be bound because the command 'Edit.MoveSelectedLinesUp' is already bound to the same keyboard shortcut, Ctrl+Shift+Up Arrow, within the same scope, Text Editor.
-Error 7:  Keyboard: The command 'Edit.MoveSelectedLinesDown' cannot be bound because the command 'Edit.MoveSelectedLinesDown' is already bound to the same keyboard shortcut, Ctrl+Shift+Down Arrow, within the same scope, Text Editor.
-Error 8:  Keyboard: The command 'Edit.FindAllReferences' cannot be bound because the command 'View.PreviousError' is already bound to the same keyboard shortcut, Shift+F12, within the same scope, Global.
