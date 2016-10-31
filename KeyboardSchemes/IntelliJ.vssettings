@@ -12,9 +12,9 @@
         <!-- To be able to use the shortcuts defined in the ShortcutsSchemeDef, -->
         <!-- Move the VSK file (with same 'Name') from the AppData\Roaming directory to the Common7\IDE directory -->
         <!-- to have the shortcuts available on the Tools->Options->Keyboard, Keyboard mapping scheme dropdown. -->
-    <!-- Note: NYI = Not yet implemented -->
-    <!-- Note: IWC = Implemented without a command name -->
-        <ShortcutsSchemeDef Name="IntelliJ">
+        <!-- Note: NYI = Not yet implemented -->
+        <!-- Note: IWC = Implemented without a command name -->
+        <ShortcutsSchemeDef Name="IntelliJ for C#">
           <!-- Editing Key bindings -->
           <Shortcut Command="Edit.CompleteWord" Scope="Text Editor">Ctrl+Space</Shortcut>
           <Shortcut Command="Edit.SmartCompleteWord" Scope="Text Editor">Ctrl+Shift+Space</Shortcut>  <!-- NYI -->
