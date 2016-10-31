@@ -247,6 +247,8 @@
           <!-- Note: These won't work at Text Editor scope if Edit.IncreaseSelection is implemented and bound to Ctrl+W -->
           <Shortcut Command="View.ArchitectureExplorer" Scope="Global">Ctrl+W, N</Shortcut>   <!-- Invalid Command -->
           <Shortcut Command="View.ArchitectureExplorer" Scope="Global">Ctrl+W, Ctrl+N</Shortcut>   <!-- Invalid Command -->
+          <!--<Shortcut Command="View.Notifications" Scope="Global">Ctrl+W, N</Shortcut>-->   <!-- Default command (Here just for reference) -->
+          <!--<Shortcut Command="View.Notifications" Scope="Global">Ctrl+W, Ctrl+N</Shortcut>-->   <!-- Default command (Here just for reference) -->
           <Shortcut Command="View.CallHierarchy" Scope="Global">Ctrl+W, K</Shortcut>
           <Shortcut Command="View.CallHierarchy" Scope="Global">Ctrl+W, Ctrl+K</Shortcut>
           <Shortcut Command="View.TfsTeamExplorer" Scope="Global">Ctrl+W, M</Shortcut>   <!-- View.TeamExplorer is Invalid Command. Fixed to View.TfsTeamExplorer -->
@@ -331,10 +333,12 @@
           <Shortcut Command="Debug.BreakAtFunction" Scope="Global">Ctrl+D, N</Shortcut>   <!-- Invalid Command -->
           <Shortcut Command="Debug.BreakAtFunction" Scope="Global">Ctrl+D, Ctrl+N</Shortcut>   <!-- Invalid Command -->
           <!-- Help -->
-          <Shortcut Command="Help.ViewHelp" Scope="Global">Ctrl+F1, V</Shortcut>
-          <Shortcut Command="Help.ViewHelp" Scope="Global">Ctrl+F1, Ctrl+V</Shortcut>
-          <Shortcut Command="Help.ManageHelpSettings" Scope="Global">Ctrl+F1, M</Shortcut>   <!-- Invalid Command -->
-          <Shortcut Command="Help.ManageHelpSettings" Scope="Global">Ctrl+F1, Ctrl+M</Shortcut>   <!-- Invalid Command -->
+          <Shortcut Command="Help.ViewHelp" Scope="Global">Ctrl+F1, V</Shortcut>  <!-- Would override existing Ctrl+F1 shortcut for Help.ViewHelp -->
+          <Shortcut Command="Help.ViewHelp" Scope="Global">Ctrl+F1, Ctrl+V</Shortcut>    <!-- Would override existing Ctrl+F1 shortcut for Help.ViewHelp -->
+          <Shortcut Command="Help.AddandRemoveHelpContent" Scope="Global">Ctrl+F1, M</Shortcut>   <!-- This seems to be coming from Dev14 -->
+          <Shortcut Command="Help.AddandRemoveHelpContent" Scope="Global">Ctrl+F1, Ctrl+M</Shortcut>   <!-- This seems to be coming from Dev14 -->
+          <!--Shortcut Command="Help.ManageHelpSettings" Scope="Global">Ctrl+F1, M</Shortcut-->   <!-- Invalid Command - Actual command stored in source control -->
+          <!--Shortcut Command="Help.ManageHelpSettings" Scope="Global">Ctrl+F1, Ctrl+M</Shortcut-->   <!-- Invalid Command - Actual command stored in source control -->
           <!-- Bookmarks shortcuts -->
           <!--<Shortcut Command="Edit.EnableBookmark" Scope="Text Editor">Ctrl+B, E</Shortcut>-->
           <!--<Shortcut Command="Edit.EnableBookmark" Scope="Text Editor">Ctrl+B, Ctrl+E</Shortcut>-->
@@ -385,16 +389,21 @@
           <Shortcut Command="Edit.CommentSelection" Scope="Text Editor">Ctrl+E, Ctrl+C</Shortcut>
           <Shortcut Command="Edit.UncommentSelection" Scope="Text Editor">Ctrl+E, U</Shortcut>
           <Shortcut Command="Edit.UncommentSelection" Scope="Text Editor">Ctrl+E, Ctrl+U</Shortcut>
+          <!--<Shortcut Command="Edit.CommentSelection" Scope="Text Editor">Ctrl+K, C</Shortcut>-->   <!-- This seems missing from the C# mapping in source control -->
+          <!--<Shortcut Command="Edit.CommentSelection" Scope="Text Editor">Ctrl+K, Ctrl+C</Shortcut>-->   <!-- This seems missing from the C# mapping in source control -->
+          <!--<Shortcut Command="Edit.UncommentSelection" Scope="Text Editor">Ctrl+K, U</Shortcut>-->   <!-- This seems missing from the C# mapping in source control -->
+          <!--<Shortcut Command="Edit.UncommentSelection" Scope="Text Editor">Ctrl+K, Ctrl+U</Shortcut>-->   <!-- This seems missing from the C# mapping in source control -->
           <Shortcut Command="Edit.ToggleTaskListShortcut" Scope="Text Editor">Ctrl+E, T</Shortcut>
           <Shortcut Command="Edit.ToggleTaskListShortcut" Scope="Text Editor">Ctrl+E, Ctrl+T</Shortcut>
           <!--<Shortcut Command="Edit.QuickInfo" Scope="Text Editor">Ctrl+K, I</Shortcut>-->
-          <Shortcut Command="Edit.ToggleWordWrap" Scope="Text Editor">Ctrl+E, W</Shortcut>
-          <Shortcut Command="Edit.ToggleWordWrap" Scope="Text Editor">Ctrl+E, Ctrl+W</Shortcut>
+          <Shortcut Command="Edit.ToggleWordWrap" Scope="Text Editor">Ctrl+E, W</Shortcut>  <!-- Available in Default -->
+          <Shortcut Command="Edit.ToggleWordWrap" Scope="Text Editor">Ctrl+E, Ctrl+W</Shortcut>  <!-- Available in Default -->
           <!-- Outlining shortcuts -->
-          <Shortcut Command="Edit.ToggleOutliningExpansion" Scope="Text Editor">Ctrl+M, M</Shortcut>
-          <Shortcut Command="Edit.ToggleAllOutlining" Scope="Text Editor">Ctrl+M, L</Shortcut>
-          <Shortcut Command="Edit.StopOutlining" Scope="Text Editor">Ctrl+M, P</Shortcut>
-          <Shortcut Command="Edit.CollapsetoDefinitions" Scope="Text Editor">Ctrl+M, O</Shortcut>
+          <!-- These are already available in the Default scheme -->
+          <!--<Shortcut Command="Edit.ToggleOutliningExpansion" Scope="Text Editor">Ctrl+M, M</Shortcut>-->
+          <!--<Shortcut Command="Edit.ToggleAllOutlining" Scope="Text Editor">Ctrl+M, L</Shortcut>-->
+          <!--<Shortcut Command="Edit.StopOutlining" Scope="Text Editor">Ctrl+M, P</Shortcut>-->
+          <!--<Shortcut Command="Edit.CollapsetoDefinitions" Scope="Text Editor">Ctrl+M, O</Shortcut>-->
           <!-- Other -->
           <!--<Shortcut Command="Project.AddClass" Scope="Global">Shift+Alt+C</Shortcut>-->
           <!--<Shortcut Command="View.QuickActions" Scope="Text Editor">Alt+Enter</Shortcut>-->
