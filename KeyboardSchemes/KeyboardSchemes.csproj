@@ -39,6 +39,8 @@
     <Content Include="Brief.vssettings" />
     <Content Include="Emacs.vssettings" />
     <Content Include="IntelliJ.vssettings" />
+    <Content Include="ReSharper for IDEA.vssettings" />
+    <Content Include="ReSharper for VS C#.vssettings" />
     <Content Include="ReSharperFor2015.vssettings" />
     <Content Include="Visual Basic 6.vssettings" />
     <Content Include="Visual C++ 2.vssettings" />
