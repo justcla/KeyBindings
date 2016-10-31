@@ -86,6 +86,25 @@
           <Shortcut Command="Edit.ShowUsages" Scope="Global">Ctrl+Alt+F7</Shortcut>  <!-- NYI/Broken? Need to find VS command (Not in ReShaper map) -->
           <Shortcut Command="View.AnalyzeReferences" Scope="Global">Ctrl+Alt+Y</Shortcut>  <!-- NYI (?) Analyze References window -->
           <!-- Navigate to -->
+          <Shortcut Command="Edit.NavigateTo" Scope="Text Editor">Ctrl+Shift+G</Shortcut>  <!-- Navigate To -->
+          <Shortcut Command="Edit.GoToDefinition" Scope="Text Editor">Ctrl+B</Shortcut>  <!-- [GoTo Declaration] -->
+          <Shortcut Command="Edit.GoToTypeOfSymbol" Scope="Text Editor">Ctrl+Shift+T</Shortcut>  <!-- NYI(?) Go to type of symbol -->
+          <Shortcut Command="Edit.GoToTypeDeclaration" Scope="Text Editor">Ctrl+Shift+B</Shortcut>  <!-- NYI (Not on ReSharper map) -->
+          <Shortcut Command="Edit.GoToImplementation" Scope="Text Editor">Ctrl+Shift+Alt+B</Shortcut>
+          <Shortcut Command="Edit.GoToSuperMethod" Scope="Text Editor">Ctrl+U</Shortcut>    <!-- NYI - Go To base symboles -->
+          <Shortcut Command="Edit.GoToDerviedSymbole" Scope="Text Editor">Ctrl+Alt+B</Shortcut>    <!-- NYI - Go To dervied symboles -->
+          <Shortcut Command="Edit.GoToUsage" Scope="Text Editor">Ctrl+Alt+F7</Shortcut>    <!-- NYI - Go To usage (?? What is this ??) -->
+          <!-- File structure -->
+          <Shortcut Command="Edit.GoToUsage" Scope="Text Editor">Ctrl+F11</Shortcut>    <!-- NYI -->
+          <Shortcut Command="Edit.GoToUsage" Scope="Text Editor">Ctrl+F11</Shortcut>    <!-- NYI -->
+          <Shortcut Command="Edit.PreviousMethod" Scope="Text Editor">Alt+Up Arrow</Shortcut>   <!-- Go to previous member/tag -->
+          <Shortcut Command="Edit.NextMethod" Scope="Text Editor">Alt+Down Arrow</Shortcut>   <!-- Go to next member/tag -->
+          <Shortcut Command="Edit.MoveToCodeBlockStart" Scope="Text Editor">Ctrl+[</Shortcut>  <!-- NYI -->    <!-- Go to containing declaration -->
+          <Shortcut Command="Edit.MoveToCodeBlockEnd" Scope="Text Editor">Ctrl+]</Shortcut>  <!-- NYI (Not in ReSharper map) -->
+          <Shortcut Command="View.TaskList" Scope="Global">Ctrl+Alt+.</Shortcut>      <!-- To-do items window -->
+          <Shortcut Command="View.StackTrace" Scope="Global">Ctrl+Alt+.</Shortcut>      <!-- NYI(?) Explore Stack Trace -->
+          <Shortcut Command="LocateInSolutionExplorer" Scope="Global">Ctrl+Alt+.</Shortcut>      <!-- NYI(Must be somewhere!) Locate in Solution Explorer -->
+
 
 
           <Shortcut Command="Edit.ShowDocumentation" Scope="Text Editor">Shift+F1</Shortcut>  <!-- NYI -->
@@ -178,11 +197,7 @@
           <Shortcut Command="View.NavigateForward" Scope="Global">Ctrl+Alt+Right Arrow</Shortcut>
           <Shortcut Command="View.NavigateForward" Scope="HTML Editor Design View">Ctrl+Alt+Right Arrow</Shortcut>  <!-- Override to remove existing shortcut -->
           <Shortcut Command="View.SelectCurrentFileOrSymbolInAnyView" Scope="Global">Alt+F1</Shortcut>  <!-- NYI - [Select current file or symbol in any view] -->
-          <Shortcut Command="Edit.GoToDefinition" Scope="Text Editor">Ctrl+B</Shortcut>  <!-- [GoTo Declaration] -->
-          <Shortcut Command="Edit.GoToImplementation" Scope="Text Editor">Ctrl+Alt+B</Shortcut>
           <Shortcut Command="Edit.OpenQuickDefLookup" Scope="Text Editor">Ctrl+Shift+I</Shortcut>  <!-- NYI -->
-          <Shortcut Command="Edit.GoToTypeDeclaration" Scope="Text Editor">Ctrl+Shift+B</Shortcut>  <!-- NYI -->
-          <Shortcut Command="Edit.GoToSuperMethod" Scope="Text Editor">Ctrl+U</Shortcut>    <!-- NYI - Go To super-method/super-class -->
           <Shortcut Command="Edit.PreviousMethod" Scope="Text Editor">Alt+Up Arrow</Shortcut>
           <Shortcut Command="Edit.NextMethod" Scope="Text Editor">Alt+Down Arrow</Shortcut>
           <Shortcut Command="Edit.MoveToCodeBlockStart" Scope="Text Editor">Ctrl+[</Shortcut>  <!-- NYI -->
