@@ -48,6 +48,7 @@
     <Content Include="VSKs\IntelliJ-ImportLog.txt" />
     <Content Include="VSKs\ReSharper for IDEA.vsk" />
     <Content Include="VSKs\ReSharperForIDEA-ImportLog.txt" />
+    <Content Include="VSKs\ReSharperForVSC#-ImportLogs.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="KeymapRefs\IntelliJIDEA_ReferenceCard.pdf" />

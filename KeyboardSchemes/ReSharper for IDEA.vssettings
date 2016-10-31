@@ -92,13 +92,12 @@
           <Shortcut Command="Edit.GoToTypeDeclaration" Scope="Text Editor">Ctrl+Shift+B</Shortcut>  <!-- NYI (Not on ReSharper map) -->
           <Shortcut Command="Edit.GoToImplementation" Scope="Text Editor">Ctrl+Shift+Alt+B</Shortcut>
           <Shortcut Command="Edit.GoToSuperMethod" Scope="Text Editor">Ctrl+U</Shortcut>    <!-- NYI - Go To base symboles -->
-          <Shortcut Command="Edit.GoToDerviedSymbole" Scope="Text Editor">Ctrl+Alt+B</Shortcut>    <!-- NYI - Go To dervied symboles -->
+          <Shortcut Command="Edit.GoToDerivedSymbole" Scope="Text Editor">Ctrl+Alt+B</Shortcut>    <!-- NYI - Go To derived symbols -->
           <Shortcut Command="Edit.GoToUsage" Scope="Text Editor">Ctrl+Alt+F7</Shortcut>    <!-- NYI - Go To usage (?? What is this ??) -->
           <!-- File structure -->
-          <Shortcut Command="Edit.GoToUsage" Scope="Text Editor">Ctrl+F11</Shortcut>    <!-- NYI -->
-          <Shortcut Command="Edit.GoToUsage" Scope="Text Editor">Ctrl+F11</Shortcut>    <!-- NYI -->
-          <Shortcut Command="Edit.PreviousMethod" Scope="Text Editor">Alt+Up Arrow</Shortcut>   <!-- Go to previous member/tag -->
+          <Shortcut Command="View.DocumentOutline" Scope="Text Editor">Ctrl+F11</Shortcut>    <!-- NYI (Near-match) - File structure -->
           <Shortcut Command="Edit.NextMethod" Scope="Text Editor">Alt+Down Arrow</Shortcut>   <!-- Go to next member/tag -->
+          <Shortcut Command="Edit.PreviousMethod" Scope="Text Editor">Alt+Up Arrow</Shortcut>   <!-- Go to previous member/tag -->
           <Shortcut Command="Edit.MoveToCodeBlockStart" Scope="Text Editor">Ctrl+[</Shortcut>  <!-- NYI -->    <!-- Go to containing declaration -->
           <Shortcut Command="Edit.MoveToCodeBlockEnd" Scope="Text Editor">Ctrl+]</Shortcut>  <!-- NYI (Not in ReSharper map) -->
           <Shortcut Command="View.TaskList" Scope="Global">Ctrl+Alt+.</Shortcut>      <!-- To-do items window -->
