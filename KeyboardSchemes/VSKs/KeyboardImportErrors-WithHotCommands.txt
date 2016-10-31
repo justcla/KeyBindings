@@ -65,3 +65,5 @@ Warning 62:  Keyboard: The command 'Debug.Exceptions' does not exist. The keyboa
 Warning 63:  Keyboard: The command 'Debug.Exceptions' does not exist. The keyboard shortcut bound to this command has been ignored.
 Warning 64:  Keyboard: The command 'Debug.BreakAtFunction' does not exist. The keyboard shortcut bound to this command has been ignored.
 Warning 65:  Keyboard: The command 'Debug.BreakAtFunction' does not exist. The keyboard shortcut bound to this command has been ignored.
+Warning 66:  Keyboard: The command 'Edit.GenerateMethod' does not exist. The keyboard shortcut bound to this command has been ignored.
+Warning 67:  Keyboard: The command 'Edit.GenerateMethod' does not exist. The keyboard shortcut bound to this command has been ignored.
