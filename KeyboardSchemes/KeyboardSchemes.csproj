@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="Installer\BuildMSI.bat" />
+    <Content Include="Installer\License.rtf" />
+    <Content Include="Installer\VSKeyBindingPack.wxs" />
     <Content Include="VSKs\IntelliJ for C#.vsk" />
     <Content Include="VSKs\IntelliJ-ImportLog.txt" />
     <Content Include="VSKs\ReSharper for IDEA.vsk" />
