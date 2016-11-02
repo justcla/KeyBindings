@@ -3,3 +3,7 @@
 obj
 bin
 .vs
+
+#Wix files
+*.wixobj
+*.wixpdb

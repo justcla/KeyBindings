@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='windows-1252'?>
 <Wix xmlns='http://schemas.microsoft.com/wix/2006/wi'>
-	<Product Name='Visual Studio Key-Bindings Pack 1.0' Id='781829cf-4493-4336-949d-f2420d9d11e3' UpgradeCode='1cfe8d34-0a5a-4b21-a2ea-53c1d4f931c6'
+	<Product Name='Visual Studio Key-Bindings Pack' Id='781829cf-4493-4336-949d-f2420d9d11e3' UpgradeCode='1cfe8d34-0a5a-4b21-a2ea-53c1d4f931c6'
     Language='1033' Codepage='1252' Version='1.0.0' Manufacturer='Justin Clareburt'>
 
 		<Package Id='*' Keywords='Installer' Description="Visual Studio Key-Binding Pack Installer"
@@ -10,41 +10,41 @@
 		<Media Id='1' Cabinet='Sample.cab' EmbedCab='yes' DiskPrompt="CD-ROM #1" />
 		<Property Id='DiskPrompt' Value="Acme's Foobar 1.0 Installation [1]" />
 
+		<PropertyRef Id="VS2015_ROOT_FOLDER" />
+
 		<Directory Id='TARGETDIR' Name='SourceDir'>
-			<Directory Id='ProgramFilesFolder' Name='PFiles'>
-				<Directory Id='VisualStudio2015' Name='Microsoft Visual Studio 14.0'>
-					<Directory Id='Common7' Name='Common7'>
-						<Directory Id='INSTALLDIR' Name='IDE'>
+			<Directory Id='VS2015_ROOT_FOLDER'>
+				<Directory Id='Common7_IDE_Dir' Name='Common7'>
+					<Directory Id='INSTALLDIR' Name='IDE'>
 
-							<Component Id='IntelliJForCSharpVSK' Guid='b34a7d68-c5cd-4d0c-a23e-e142d47432d0'>
-								<File Id='IntelliJForCSharp_VSKFile' Name='IntelliJ (C# style).vsk' Source='../VSKs/IntelliJ for C#.vsk' KeyPath='yes'/>
-							</Component>
+					<Component Id='IntelliJForCSharpVSK' Guid='b34a7d68-c5cd-4d0c-a23e-e142d47432d0'>
+							<File Id='IntelliJForCSharp_VSKFile' Name='IntelliJ (C# style).vsk' Source='../VSKs/IntelliJ for C#.vsk' KeyPath='yes'/>
+						</Component>
 
-							<Component Id='ReSharperForIdeaVSK' Guid='c70e934d-3342-4db8-a0de-bace038d0842'>
-								<File Id='ReSharperForIDEA_VSKFile' Name='ReSharper (IDEA style).vsk' Source='../VSKs/ReSharper for IDEA.vsk' KeyPath='yes'/>
-							</Component>
+						<Component Id='ReSharperForIdeaVSK' Guid='c70e934d-3342-4db8-a0de-bace038d0842'>
+							<File Id='ReSharperForIDEA_VSKFile' Name='ReSharper (IDEA style).vsk' Source='../VSKs/ReSharper for IDEA.vsk' KeyPath='yes'/>
+						</Component>
 
-							<Component Id='ReSharperForVSCSharpVSK' Guid='1b8a1335-1fff-446a-9e65-02d376638211'>
-								<File Id='ReSharperForCSharp_VSKFile' Name='ReSharper (VS C# style).vsk' Source='../VSKs/ReSharper for VS C#.vsk' KeyPath='yes'/>
-							</Component>
+						<Component Id='ReSharperForVSCSharpVSK' Guid='1b8a1335-1fff-446a-9e65-02d376638211'>
+							<File Id='ReSharperForCSharp_VSKFile' Name='ReSharper (VS C# style).vsk' Source='../VSKs/ReSharper for VS C#.vsk' KeyPath='yes'/>
+						</Component>
 
-						</Directory>
 					</Directory>
 				</Directory>
 			</Directory>
 		</Directory>
 
 		<Feature Id='Complete' Title='Visual Studio Key-Bindings Pack'
-						 Description='Installs alternative keyboard mapping schemes to work with Visual Studio.' Display='expand'
-						 Level='1' ConfigurableDirectory='INSTALLDIR'>
+						 Description='Installs alternative keyboard mapping schemes to work with Visual Studio.'
+						 Display='expand' Level='1' ConfigurableDirectory='INSTALLDIR'>
 			<ComponentRef Id='IntelliJForCSharpVSK' />
 			<ComponentRef Id='ReSharperForIdeaVSK' />
 			<ComponentRef Id='ReSharperForVSCSharpVSK' />
 		</Feature>
 		
-		<UIRef Id="WixUI_Minimal" />
+		<UIRef Id="WixUI_InstallDir" />
 		<WixVariable Id="WixUILicenseRtf" Value="License.rtf" />
-		<Property Id="WIXUI_INSTALLDIR" Value="INSTALLDIR" />
+		<Property Id="WIXUI_INSTALLDIR" Value="VS2015_ROOT_FOLDER" />
 
 	</Product>
 </Wix>
