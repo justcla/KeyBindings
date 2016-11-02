@@ -1,3 +1,3 @@
-candle VSKeyBindingPack.wxs
-light -ext WixVSExtension -ext WixUIExtension VSKeyBindingPack.wixobj
+candle HotKeys.wxs
+light -ext WixVSExtension -ext WixUIExtension HotKeys.wixobj
 pause

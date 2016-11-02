@@ -1,0 +1,13 @@
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">
+  <Metadata>
+    <Identity Id="39de64aa-c460-490c-98f4-e6da8a7e1bd5" Version="1.0" Language="en-US" Publisher="Justin Clareburt" />
+    <DisplayName>Hot Keys - Keyboard Shortcuts</DisplayName>
+    <Description xml:space="preserve">Installs alternative keyboard mapping schemes to work with Visual Studio.</Description>
+  </Metadata>
+  <Installation AllUsers="true" InstalledByMsi="true">
+    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[14.0,16.0)" />
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" Version="[4.5,)" />
+  </Dependencies>
+</PackageManifest>

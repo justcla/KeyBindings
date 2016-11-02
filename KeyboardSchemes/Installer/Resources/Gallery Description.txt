@@ -1,0 +1,20 @@
+<p><strong>Hot Keys - Keyboard mapping scheme pack</strong></p>
+<p>Provides the following new keyboard mapping schemes:</p>
+<ul>
+<li>IntelliJ (C# style) </li>
+<li>ReSharper (IDEA style) </li>
+<li>ReSharper (VS C# style) </li>
+</ul>
+<p>Brings to life all your favorite shortcuts from other editting tools.</p>
+<p>Choose your new keyboard mapping scheme from Tools-&gt;Options; Environment-&gt;Keyboard</p>
+<p><img id="232640" src="https://i1.visualstudiogallery.msdn.s-msft.com/b7a67f68-89a0-482e-907e-2640fba944d6/image/file/232640/1/hotkeysmappingschemes.png" alt="" width="743" height="434" /></p>
+<p>&nbsp;</p>
+<p><strong><span style="text-decoration: underline;">Key notes:</span></strong></p>
+<ul>
+<li>Each mapping file does a best attempt at matching existing commands from the respective JetBrains mappings.&nbsp;See the one-page PDFs of each binding set here: <a href="https://github.com/justcla/KeyBindings/tree/master/KeyboardSchemes/KeymapRefs"> https://github.com/justcla/KeyBindings/tree/master/KeyboardSchemes/KeymapRefs&nbsp;</a> </li>
+<li>Many of the shortcuts defined by JetBrains cannot be mapped because Visual Studio has no equivalent command implemented. See the .vssettings files for details of each feature and whether there is a matching (or near-matching) command available. </li>
+<li>Because we can only have one active user-selected keyboard mapping scheme applied, using one of these mapping schemes will disable any other scheme. (ie. Visual C# 2005, Visual Basic 6, Visual C++ 6) To account for this, I have copied across all the commands  from the <strong>Visual C# 2005</strong> mapping scheme and enabled all those that don&rsquo;t conflict with the new mapping scheme being implemented. (I was able to bring across most commands!) </li>
+<li>The mappings defined attempt to use the Hot Commands features if they are available.<br /> (ie. Toggle Comment is mapped to Ctrl+/ )&nbsp; This will light up if the user installs HotCommands.<br /> HotCommands is available here: <a href="https://github.com/justcla/HotCommands">https://github.com/justcla/HotCommands<br /> </a>And on the Gallery here: <a href="https://visualstudiogallery.msdn.microsoft.com/f073b573-c9a3-4104-a682-bd7a6c1023a6"> https://visualstudiogallery.msdn.microsoft.com/f073b573-c9a3-4104-a682-bd7a6c1023a6&nbsp;</a> </li>
+<li>I have included a bunch of fixes and enhancements to Visual Studio command mapping that bring to life new functionality with the keyboard. For instance, Ctrl+Plus/Minus will expand/collapse regions in the editor. Alt+1 opens and closes Solution  Explorer; Alt+9 = Team Explorer ; Alt+0 = Output window. I have fixed a bug so now you can use the standard Windows keys Ctrl+PgUp/PgDown to move to the next/previous document tab. I have hooked up shortcut keys for GoToNext/Previous member.<br /> ....And some other minor improvements. </li>
+</ul>
+<p>Enjoy the power of great keyboard bindings!</p>
