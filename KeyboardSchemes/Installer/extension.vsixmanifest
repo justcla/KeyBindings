@@ -1,8 +1,14 @@
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">
   <Metadata>
-    <Identity Id="39de64aa-c460-490c-98f4-e6da8a7e1bd5" Version="1.0" Language="en-US" Publisher="Justin Clareburt" />
+    <Identity Id="39de64aa-c460-490c-98f4-e6da8a7e1bd5" Version="1.0.0" Language="en-US" Publisher="Justin Clareburt" />
     <DisplayName>Hot Keys - Keyboard Shortcuts</DisplayName>
     <Description xml:space="preserve">Installs alternative keyboard mapping schemes to work with Visual Studio.</Description>
+    <MoreInfo>https://visualstudiogallery.msdn.microsoft.com/b7a67f68-89a0-482e-907e-2640fba944d6</MoreInfo>
+    <License>License.txt</License>
+    <ReleaseNotes>ReleaseNotes.txt</ReleaseNotes>
+    <Icon>HotKeysIcon.png</Icon>
+    <PreviewImage>HotKeysPreviewImage.png</PreviewImage>
+    <Tags>HotKeys;Keyboard Mapping;ReSharper;IntelliJ;Productivity;Keyboard;Shortcuts</Tags>
   </Metadata>
   <Installation AllUsers="true" InstalledByMsi="true">
     <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[14.0,16.0)" />
@@ -10,4 +16,7 @@
   <Dependencies>
     <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" Version="[4.5,)" />
   </Dependencies>
+  <Prerequisites>
+    <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[14.0,16.0)" DisplayName="Visual Studio core editor" />
+  </Prerequisites>
 </PackageManifest>

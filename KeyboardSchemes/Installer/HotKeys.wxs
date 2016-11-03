@@ -39,6 +39,15 @@
 								<Component Id='ExtensionManifest' Guid='a53a6868-8832-4664-b476-99479665f44b'>
 									<File Id='ExtensionManifestFile' Name='extension.vsixmanifest' Source='extension.vsixmanifest' KeyPath='yes'/>
 								</Component>
+								<Component Id='IconImage' Guid='e8ce29ce-39b4-4baf-ab93-170d5753e378'>
+									<File Id='IconImageFile' Name='HotKeysIcon.png' Source='HotKeysIcon.png' KeyPath='yes'/>
+								</Component>
+								<Component Id='PreviewImage' Guid='0f93d0aa-87cd-4a65-ba9a-1c9c2042247c'>
+									<File Id='PreviewImageFile' Name='HotKeysPreviewImage.png' Source='HotKeysPreviewImage.png' KeyPath='yes'/>
+								</Component>
+								<Component Id='ReleaseNotes' Guid='270a0083-3bdb-4af1-81aa-ba45734f5a71'>
+									<File Id='ReleaseNotesFile' Name='ReleaseNotes.txt' Source='ReleaseNotes.txt' KeyPath='yes'/>
+								</Component>
 							</Directory>
 						</Directory>
 
@@ -55,6 +64,9 @@
 			<ComponentRef Id='ReSharperForIdeaVSK' />
 			<ComponentRef Id='ReSharperForVSCSharpVSK' />
 			<ComponentRef Id='ExtensionManifest' />
+			<ComponentRef Id='IconImage' />
+			<ComponentRef Id='PreviewImage' />
+			<ComponentRef Id='ReleaseNotes' />
 			<ComponentRef Id='ExtensionsConfigurationChanged' />
 		</Feature>
 		
