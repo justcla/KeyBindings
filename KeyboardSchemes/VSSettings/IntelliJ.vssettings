@@ -236,8 +236,8 @@
           <Shortcut Command="Window.PreviousTab" Scope="Text Editor">Ctrl+PgUp</Shortcut> <!-- Restore Global control for Ctrl+PgUp -->
           <Shortcut Command="Edit.MoveSelectedLinesUp" Scope="Text Editor">Ctrl+Shift+Up Arrow</Shortcut>
           <Shortcut Command="Edit.MoveSelectedLinesDown" Scope="Text Editor">Ctrl+Shift+Down Arrow</Shortcut>
-          <Shortcut Command="Window.CloseDocumentWindow" Scope="Difference Viewer">Esc</Shortcut>
-          <Shortcut Command="File.TfsCompare" Scope="Team Explorer">Ctrl+D</Shortcut>   <!-- IWC (?)  Team.OpenDiffView -->
+          <Shortcut Command="Window.NextToolWindow" Scope="Difference Viewer">Esc</Shortcut>   <!-- Allows you to return to the Tool Window that launch the DiffViewer -->  <!-- Contentious: Overrides Esc = Edit.SelectionCancel (ie. clear "find" selection) -->
+          <Shortcut Command="Team.Git.CompareWithUnmodified" Scope="Team Explorer">Ctrl+D</Shortcut>
           <!--Shortcut Command="Edit.QuickInfo" Scope="Global">Ctrl+Q</Shortcut-->  <!-- Force override of Global Quick Info shortcut -->  <!-- Bug: Unable to override text inside Quick Launch search box -->
       <!--=================-->
       <!-- Visual Studio C# 2005 Mappings -->
