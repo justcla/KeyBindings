@@ -178,7 +178,52 @@
                     <Shortcut Command="Edit.FormatDocument" Scope="Text Editor">Ctrl+E, Ctrl+D</Shortcut>
                     <Shortcut Command="View.PendingCheckins" Scope="Global">Ctrl+W, G</Shortcut>
                     <Shortcut Command="View.PendingCheckins" Scope="Global">Ctrl+W, Ctrl+G</Shortcut>
+
                     <Shortcut Command="View.QuickActions" Scope="Text Editor">Alt+Enter</Shortcut>
+
+                    <!-- ======================== -->
+                    <!-- New Shortcuts for VS2015 -->
+                    <!-- ======================== -->
+
+                    <!-- Global Window Shortcuts -->
+                    <!-- Toggle Close Tool Windows -->
+                    <Shortcut Command="Window.CloseToolWindow" Scope="Solution Explorer">Ctrl+Alt+L</Shortcut>   <!-- Tricky toggle feature -->
+                    <Shortcut Command="Window.CloseToolWindow" Scope="Team Explorer">Ctrl+\, M</Shortcut>    <!-- Tricky toggle feature -->
+                    <Shortcut Command="Window.CloseToolWindow" Scope="Team Explorer">Ctrl+\, Ctrl+M</Shortcut>    <!-- Tricky toggle feature -->
+
+                    <!-- Navigation -->
+                    <!-- Document Navigation -->   <!-- Note: Ctrl+PgUp/PgDn conflicts with Edit.ViewTop/ViewBottom -->
+                    <Shortcut Command="Window.NextTab" Scope="Text Editor">Ctrl+PgDn</Shortcut>   <!-- Restore Global control for Ctrl+PgDn -->
+                    <Shortcut Command="Window.PreviousTab" Scope="Text Editor">Ctrl+PgUp</Shortcut> <!-- Restore Global control for Ctrl+PgUp -->
+                    <!-- Alternative NextTab/PreviousTab mappings -->    <!-- Note: Alt+Left/Right conflicts with Global View.Forward/Backward -->
+                    <Shortcut Command="Window.NextTab" Scope="Global">Alt+Right Arrow</Shortcut>  <!-- Overrides Global View.NavigateForward -->
+                    <Shortcut Command="Window.NextTab" Scope="Text Editor">Alt+Right Arrow</Shortcut>  <!-- Override TextEditor bindings (Edit.CompleteWord) -->
+                    <Shortcut Command="Window.NextTab" Scope="Workflow Designer">Alt+Right Arrow</Shortcut>  <!-- Override to remove existing shortcut (Edit.CompleteWord)-->
+                    <Shortcut Command="Window.PreviousTab" Scope="Global">Alt+Left Arrow</Shortcut>    <!-- Overrides Global View.Backward (Alt+Left Arrow) -->
+                    <!-- In-Editor navigation -->
+                    <Shortcut Command="Edit.PreviousMethod" Scope="Text Editor">Ctrl+Alt+Up Arrow</Shortcut>     <!-- New! New keyboard binding (chosen by JustCla) Conflicts with HotCommands binding. -->
+                    <Shortcut Command="Edit.NextMethod" Scope="Text Editor">Ctrl+Alt+Down Arrow</Shortcut>     <!-- New! New keyboard binding (chosen by JustCla) Conflicts with HotCommands binding. -->
+
+                    <!-- Outlining shortcuts (Expand/Collapse sections of code) -->
+                    <Shortcut Command="Edit.ExpandCurrentRegion" Scope="Text Editor">Ctrl+Num +</Shortcut>
+                    <Shortcut Command="Edit.ExpandCurrentRegion" Scope="Text Editor">Ctrl+=</Shortcut>
+                    <Shortcut Command="Edit.CollapseCurrentRegion" Scope="Text Editor">Ctrl+Num -</Shortcut>
+                    <Shortcut Command="Edit.CollapseCurrentRegion" Scope="Text Editor">Ctrl+-</Shortcut>
+                    <Shortcut Command="Edit.ExpandAllOutlining" Scope="Text Editor">Ctrl+Shift+Num +</Shortcut>
+                    <Shortcut Command="Edit.ExpandAllOutlining" Scope="Text Editor">Ctrl+Shift+=</Shortcut>
+                    <Shortcut Command="Edit.CollapseAllOutlining" Scope="Text Editor">Ctrl+Shift+Num -</Shortcut>
+                    <Shortcut Command="Edit.CollapseAllOutlining" Scope="Text Editor">Ctrl+Shift+-</Shortcut>
+
+                    <!-- GoTo Next Error / Previous Error -->  <!-- New shortcuts. (Borrowed from ReSharper for VS C# ) -->
+                    <Shortcut Command="View.NextError" Scope="Global">Alt+PgDn</Shortcut>    <!-- NYI. Near-match. GoToNextHighlight -->
+                    <Shortcut Command="View.PreviousError" Scope="Global">Alt+PgUp</Shortcut>   <!-- NYI. Near-match. GoToPreviousHighlight -->
+                    <Shortcut Command="View.NextError" Scope="Global">Shift+Alt+PgDn</Shortcut>
+                    <Shortcut Command="View.PreviousError" Scope="Global">Shift+Alt+PgUp</Shortcut>
+
+                    <!-- Special -->
+                    <Shortcut Command="File.Rename" Scope="Solution Explorer">F2</Shortcut>
+                    <!--<Shortcut Command="EditorContextMenus.CodeWindow.OrganizeUsings.RemoveAndSort" Scope="Text Editor">Ctrl+Alt+O</Shortcut>  &lt;!&ndash; "OptimizeImports" &ndash;&gt;-->
+
                 </ShortcutsSchemeDef>
             </KeyboardShortcuts>
         </Category>

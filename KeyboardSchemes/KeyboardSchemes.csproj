@@ -57,6 +57,7 @@
     <Content Include="VSSettings\Visual C++ 2.vssettings" />
     <Content Include="VSSettings\Visual C++ 6.vssettings" />
     <Content Include="VSSettings\Visual CSharp 2005.vssettings" />
+    <Content Include="VSSettings\Visual CSharp 2015.vssettings" />
     <Content Include="VSSettings\Visual Studio 6.vssettings" />
   </ItemGroup>
   <ItemGroup>
