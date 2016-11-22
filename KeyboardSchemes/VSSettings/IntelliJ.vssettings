@@ -232,8 +232,6 @@
           <Shortcut Command="Window.QuickLaunch" Scope="Global">Ctrl+Shift+A</Shortcut>   <!-- Near-match: FindAction -->
           <Shortcut Command="Window.NextDocumentWindowNav" Scope="Global">Ctrl+Tab</Shortcut>   <!-- NYI(?) --><!-- SwitchBetweenTabsAndToolWindow: Implement as two features: Global and TextEditor ? -->
           <!-- Extras -->
-          <Shortcut Command="Window.NextTab" Scope="Text Editor">Ctrl+PgDn</Shortcut>   <!-- Restore Global control for Ctrl+PgDn -->
-          <Shortcut Command="Window.PreviousTab" Scope="Text Editor">Ctrl+PgUp</Shortcut> <!-- Restore Global control for Ctrl+PgUp -->
           <Shortcut Command="Edit.MoveSelectedLinesUp" Scope="Text Editor">Ctrl+Shift+Up Arrow</Shortcut>
           <Shortcut Command="Edit.MoveSelectedLinesDown" Scope="Text Editor">Ctrl+Shift+Down Arrow</Shortcut>
           <Shortcut Command="Window.NextToolWindow" Scope="Difference Viewer">Esc</Shortcut>   <!-- Allows you to return to the Tool Window that launch the DiffViewer -->  <!-- Contentious: Overrides Esc = Edit.SelectionCancel (ie. clear "find" selection) -->

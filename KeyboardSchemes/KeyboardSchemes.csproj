@@ -47,6 +47,7 @@
     <Content Include="VSKs\ReSharper for VS C#.vsk" />
     <Content Include="VSKs\ReSharperForIDEA-ImportLog.txt" />
     <Content Include="VSKs\ReSharperForVSC#-ImportLogs.txt" />
+    <Content Include="VSKs\Visual C# 2015.vsk" />
     <Content Include="VSSettings\Brief.vssettings" />
     <Content Include="VSSettings\Emacs.vssettings" />
     <Content Include="VSSettings\IntelliJ.vssettings" />
@@ -57,6 +58,7 @@
     <Content Include="VSSettings\Visual C++ 2.vssettings" />
     <Content Include="VSSettings\Visual C++ 6.vssettings" />
     <Content Include="VSSettings\Visual CSharp 2005.vssettings" />
+    <Content Include="VSSettings\Visual CSharp 2015.vssettings" />
     <Content Include="VSSettings\Visual Studio 6.vssettings" />
   </ItemGroup>
   <ItemGroup>
