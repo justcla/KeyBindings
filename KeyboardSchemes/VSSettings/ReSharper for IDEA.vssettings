@@ -107,8 +107,8 @@
           <Shortcut Command="ShowQuickFixes" Scope="Global">Alt+Enter</Shortcut>
           <Shortcut Command="InspectThis" Scope="Global">Ctrl+Shift+Alt+A</Shortcut>
           <Shortcut Command="View.CallHierarchy" Scope="Global">Ctrl+E, H</Shortcut>  <!-- Near-match (?) ViewTypeHierarchy. Not context aware. Only opens Tool window. -->
-          <Shortcut Command="View.NextError" Scope="Global">F12</Shortcut>    <!-- NYI. Near-match. GoToNextHighlight -->
-          <Shortcut Command="View.PreviousError" Scope="Global">Shift+F12</Shortcut>   <!-- NYI. Near-match. GoToPreviousHighlight -->
+          <Shortcut Command="View.NextError" Scope="Global">F12</Shortcut>    <!-- NYI. Near-match. GoToNextHighlight  (Edit.NextHighlightedReference?) -->
+          <Shortcut Command="View.PreviousError" Scope="Global">Shift+F12</Shortcut>   <!-- NYI. Near-match. GoToPreviousHighlight  (Edit.PreviousHighlightedReference?) -->
           <Shortcut Command="View.NextError" Scope="Global">Alt+F12</Shortcut>
           <Shortcut Command="View.PreviousError" Scope="Global">Shift+Alt+F12</Shortcut>
           <!-- Refactoring -->
