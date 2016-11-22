@@ -20,15 +20,19 @@
 					<Directory Id='INSTALLDIR' Name='IDE'>
 
 					<Component Id='IntelliJForCSharpVSK' Guid='b34a7d68-c5cd-4d0c-a23e-e142d47432d0'>
-							<File Id='IntelliJForCSharp_VSKFile' Name='IntelliJ (C# style).vsk' Source='../VSKs/IntelliJ for C#.vsk' KeyPath='yes'/>
+							<File Id='IntelliJForCSharp_VSKFile' Name='IntelliJ (IDEA style) for C#.vsk' Source='../VSKs/IntelliJ for C#.vsk' KeyPath='yes'/>
 						</Component>
 
 						<Component Id='ReSharperForIdeaVSK' Guid='c70e934d-3342-4db8-a0de-bace038d0842'>
-							<File Id='ReSharperForIDEA_VSKFile' Name='ReSharper (IDEA style).vsk' Source='../VSKs/ReSharper for IDEA.vsk' KeyPath='yes'/>
+							<File Id='ReSharperForIDEA_VSKFile' Name='ReSharper (IDEA style) for C#.vsk' Source='../VSKs/ReSharper for IDEA.vsk' KeyPath='yes'/>
 						</Component>
 
 						<Component Id='ReSharperForVSCSharpVSK' Guid='1b8a1335-1fff-446a-9e65-02d376638211'>
-							<File Id='ReSharperForCSharp_VSKFile' Name='ReSharper (VS C# style).vsk' Source='../VSKs/ReSharper for VS C#.vsk' KeyPath='yes'/>
+							<File Id='ReSharperForCSharp_VSKFile' Name='ReSharper (VS style) for C#.vsk' Source='../VSKs/ReSharper for VS C#.vsk' KeyPath='yes'/>
+						</Component>
+
+						<Component Id='VSCSharp2015VSK' Guid='ac421b78-7ab8-47b6-bab5-d6e4096dfe3b'>
+							<File Id='VSCSharp2015_VSKFile' Name='Visual C# 2015.vsk' Source='../VSKs/Visual C# 2015.vsk' KeyPath='yes'/>
 						</Component>
 
 						<Directory Id="Extensions" Name="Extensions">
@@ -63,6 +67,7 @@
 			<ComponentRef Id='IntelliJForCSharpVSK' />
 			<ComponentRef Id='ReSharperForIdeaVSK' />
 			<ComponentRef Id='ReSharperForVSCSharpVSK' />
+			<ComponentRef Id='VSCSharp2015VSK' />
 			<ComponentRef Id='ExtensionManifest' />
 			<ComponentRef Id='IconImage' />
 			<ComponentRef Id='PreviewImage' />
