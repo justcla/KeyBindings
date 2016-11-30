@@ -286,9 +286,9 @@
           <Shortcut Command="View.DocumentOutline" Scope="Team Explorer">Alt+7</Shortcut>   <!-- Force override -->
           <Shortcut Command="View.DocumentOutline" Scope="Text Editor">Alt+7</Shortcut>   <!-- Future-proof override -->
           <Shortcut Command="OpenToolWindow.Hierarchy" Scope="Global">Alt+8</Shortcut>   <!-- NYI(?) -->
-          <Shortcut Command="View.TfsTeamExplorer" Scope="Global">Alt+9</Shortcut>      <!-- Future-proof override -->
-          <Shortcut Command="View.TfsTeamExplorer" Scope="Text Editor">Alt+9</Shortcut>
-          <Shortcut Command="Window.CloseToolWindow" Scope="Team Explorer">Alt+9</Shortcut>   <!-- Getting tricky here for a toggle option. Could use Window.ActivateDocumentWindow -->
+          <Shortcut Command="Team.Git.GoToGitChanges" Scope="Global">Alt+9</Shortcut>
+          <Shortcut Command="Team.Git.GoToGitChanges" Scope="Text Editor">Alt+9</Shortcut>    <!-- Future-proof override -->
+          <Shortcut Command="Window.CloseToolWindow" Scope="Team Explorer">Alt+9</Shortcut>   <!-- Tricky toggle option. -->
           <Shortcut Command="File.SaveAll" Scope="Global">Ctrl+S</Shortcut>   <!-- NYI(?) -->
           <Shortcut Command="Project.SynchronizeAllFolders" Scope="Global">Ctrl+Alt+Y</Shortcut>   <!-- NYI(?) -->
           <Shortcut Command="View.FullScreen" Scope="Global">Ctrl+Shift+F12</Shortcut>   <!-- NYI(?) -->  <!-- ToggleMaximizingEditor. Near-match: View.FullScreen -->
@@ -300,9 +300,9 @@
           <Shortcut Command="Window.QuickLaunch" Scope="Global">Ctrl+Shift+A</Shortcut>   <!-- Near-match: FindAction -->
           <Shortcut Command="Window.NextDocumentWindowNav" Scope="Global">Ctrl+Tab</Shortcut>   <!-- NYI(?) --><!-- SwitchBetweenTabsAndToolWindow: Implement as two features: Global and TextEditor ? -->
           <!-- Source Control / Local History -->
-          <Shortcut Command="View.TfsTeamExplorer" Scope="Global">Ctrl+Shift+K</Shortcut>   <!-- Near-match -->  <!-- !! Changed shortcut from Ctrl+K (IDEA) to Ctrl+Shift+K (Rider) to free up Ctrl+Kk chord for old C# mappings --> <!-- SourceControl.PushDialog -->
-          <Shortcut Command="View.TfsTeamExplorer" Scope="Text Editor">Ctrl+Shift+K</Shortcut>   <!-- Force override --> <!-- !! Changed shortcut from Ctrl+K (IDEA) to Ctrl+Shift+K (Rider) to free up Ctrl+Kk chord for old C# mappings --> <!-- SourceControl.PushDialog -->
-          <Shortcut Command="View.TfsTeamExplorer" Scope="Workflow Designer">Ctrl+Shift+K</Shortcut>   <!-- Force override --> <!-- !! Changed shortcut from Ctrl+K (IDEA) to Ctrl+Shift+K (Rider) to free up Ctrl+Kk chord for old C# mappings --> <!-- SourceControl.PushDialog -->
+          <Shortcut Command="Team.Git.GoToGitSynchronization" Scope="Global">Ctrl+Shift+K</Shortcut>   <!-- Near-match -->  <!-- !! Changed shortcut from Ctrl+K (IDEA) to Ctrl+Shift+K (Rider) to free up Ctrl+Kk chord for old C# mappings --> <!-- SourceControl.PushDialog -->
+          <Shortcut Command="Team.Git.GoToGitSynchronization" Scope="Text Editor">Ctrl+Shift+K</Shortcut>   <!-- Force override --> <!-- !! Changed shortcut from Ctrl+K (IDEA) to Ctrl+Shift+K (Rider) to free up Ctrl+Kk chord for old C# mappings --> <!-- SourceControl.PushDialog -->
+          <Shortcut Command="Team.Git.GoToGitSynchronization" Scope="Workflow Designer">Ctrl+Shift+K</Shortcut>   <!-- Force override --> <!-- !! Changed shortcut from Ctrl+K (IDEA) to Ctrl+Shift+K (Rider) to free up Ctrl+Kk chord for old C# mappings --> <!-- SourceControl.PushDialog -->
           <!--<Shortcut Command="View.TfsTeamExplorer" Scope="Global">Ctrl+T</Shortcut>-->   <!-- Near-match -->  <!-- SourceControl.PullDialog -->  <!-- Conflict -->
           <!--<Shortcut Command="View.TfsTeamExplorer" Scope="Text Editor">Ctrl+T</Shortcut>-->   <!-- Force override --> <!-- SourceControl.PullDialog -->  <!-- Conflict -->
           <!--<Shortcut Command="View.TfsTeamExplorer" Scope="View Designer">Ctrl+T</Shortcut>-->   <!-- Force override --> <!-- SourceControl.PullDialog -->  <!-- Conflict -->
@@ -315,7 +315,7 @@
           <Shortcut Command="Window.NextTab" Scope="Text Editor">Ctrl+PgDn</Shortcut>   <!-- Restore Global control for Ctrl+PgDn -->
           <Shortcut Command="Window.PreviousTab" Scope="Text Editor">Ctrl+PgUp</Shortcut> <!-- Restore Global control for Ctrl+PgUp -->
           <Shortcut Command="Window.CloseDocumentWindow" Scope="Difference Viewer">Esc</Shortcut>
-          <Shortcut Command="File.TfsCompare" Scope="Team Explorer">Ctrl+D</Shortcut>   <!-- IWC (?)  Team.OpenDiffView -->
+          <Shortcut Command="Team.Git.CompareWithUnmodified" Scope="Team Explorer">Ctrl+D</Shortcut>   <!-- IWC (?)  Team.OpenDiffView -->
           <!--Shortcut Command="Edit.QuickInfo" Scope="Global">Ctrl+Q</Shortcut-->  <!-- Force override of Global Quick Info shortcut -->  <!-- Bug: Unable to override text inside Quick Launch search box -->
           <!--=================-->
           <!-- Visual Studio C# 2005 Mappings -->

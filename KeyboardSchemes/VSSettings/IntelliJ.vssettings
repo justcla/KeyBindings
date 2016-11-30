@@ -173,11 +173,9 @@
           <Shortcut Command="Refactoring.ExtractConstant" Scope="Text Editor">Ctrl+Alt+C</Shortcut>   <!-- NYI(?) -->
           <Shortcut Command="Refactoring.ExtractParameter" Scope="Text Editor">Ctrl+Alt+P</Shortcut>   <!-- NYI(?) -->
           <!-- Source Control / Local History -->
-          <Shortcut Command="View.TfsTeamExplorer" Scope="Global">Alt+9</Shortcut>    <!-- Moved here for menu ordering purposes -->
-          <Shortcut Command="View.TfsTeamExplorer" Scope="Text Editor">Alt+9</Shortcut>    <!-- Future-proof override -->  <!-- Moved here for menu ordering purposes -->
-          <Shortcut Command="View.TfsTeamExplorer" Scope="Global">Ctrl+Shift+K</Shortcut>   <!-- Near-match -->  <!-- !! Changed shortcut from Ctrl+K (IDEA) to Ctrl+Shift+K (Rider) to free up Ctrl+Kk chord for old C# mappings --> <!-- SourceControl.PushDialog -->
-          <Shortcut Command="View.TfsTeamExplorer" Scope="Text Editor">Ctrl+Shift+K</Shortcut>   <!-- Force override --> <!-- !! Changed shortcut from Ctrl+K (IDEA) to Ctrl+Shift+K (Rider) to free up Ctrl+Kk chord for old C# mappings --> <!-- SourceControl.PushDialog -->
-          <Shortcut Command="View.TfsTeamExplorer" Scope="Workflow Designer">Ctrl+Shift+K</Shortcut>   <!-- Force override --> <!-- !! Changed shortcut from Ctrl+K (IDEA) to Ctrl+Shift+K (Rider) to free up Ctrl+Kk chord for old C# mappings --> <!-- SourceControl.PushDialog -->
+          <Shortcut Command="Team.Git.GoToGitSynchronization" Scope="Global">Ctrl+Shift+K</Shortcut>   <!-- Near-match -->  <!-- !! Changed shortcut from Ctrl+K (IDEA) to Ctrl+Shift+K (Rider) to free up Ctrl+Kk chord for old C# mappings --> <!-- SourceControl.PushDialog -->
+          <Shortcut Command="Team.Git.GoToGitSynchronization" Scope="Text Editor">Ctrl+Shift+K</Shortcut>   <!-- Force override --> <!-- !! Changed shortcut from Ctrl+K (IDEA) to Ctrl+Shift+K (Rider) to free up Ctrl+Kk chord for old C# mappings --> <!-- SourceControl.PushDialog -->
+          <Shortcut Command="Team.Git.GoToGitSynchronization" Scope="Workflow Designer">Ctrl+Shift+K</Shortcut>   <!-- Force override --> <!-- !! Changed shortcut from Ctrl+K (IDEA) to Ctrl+Shift+K (Rider) to free up Ctrl+Kk chord for old C# mappings --> <!-- SourceControl.PushDialog -->
           <Shortcut Command="View.TfsTeamExplorer" Scope="Global">Ctrl+T</Shortcut>   <!-- Near-match -->  <!-- SourceControl.PullDialog -->
           <Shortcut Command="View.TfsTeamExplorer" Scope="Text Editor">Ctrl+T</Shortcut>   <!-- Force override --> <!-- SourceControl.PullDialog -->
           <Shortcut Command="View.TfsTeamExplorer" Scope="View Designer">Ctrl+T</Shortcut>   <!-- Force override --> <!-- SourceControl.PullDialog -->
@@ -218,8 +216,8 @@
           <Shortcut Command="View.DocumentOutline" Scope="Team Explorer">Alt+7</Shortcut>   <!-- Force override -->
           <Shortcut Command="View.DocumentOutline" Scope="Text Editor">Alt+7</Shortcut>   <!-- Future-proof override -->
           <Shortcut Command="OpenToolWindow.Hierarchy" Scope="Global">Alt+8</Shortcut>   <!-- NYI(?) -->
-          <!--<Shortcut Command="View.TfsTeamExplorer" Scope="Global">Alt+9</Shortcut>-->   <!-- Moved above for menu ordering purposes -->
-          <!--<Shortcut Command="View.TfsTeamExplorer" Scope="Text Editor">Alt+9</Shortcut>-->  <!-- Moved above for menu ordering purposes -->
+          <Shortcut Command="Team.Git.GoToGitChanges" Scope="Global">Alt+9</Shortcut>
+          <Shortcut Command="Team.Git.GoToGitChanges" Scope="Text Editor">Alt+9</Shortcut>  <!-- Future-proof override -->
           <Shortcut Command="Window.CloseToolWindow" Scope="Team Explorer">Alt+9</Shortcut>   <!-- Getting tricky here for a toggle option. Could use Window.ActivateDocumentWindow -->
           <Shortcut Command="File.SaveAll" Scope="Global">Ctrl+S</Shortcut>   <!-- NYI(?) -->
           <Shortcut Command="Project.SynchronizeAllFolders" Scope="Global">Ctrl+Alt+Y</Shortcut>   <!-- NYI(?) -->
