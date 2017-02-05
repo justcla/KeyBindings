@@ -1,3 +1,4 @@
 2-Nov-2016: v1.0.0 Initial Release
 21-Nov-2016: v1.2.0 Added Visual C# 2017 mapping
 30-Nov-2016: v1.2.1 Updated shortcuts for Version Control tool windows
+05-Feb-2017: v1.2.2 Removed IntelliJ Build/Debug shortcuts from ReSharper schemes

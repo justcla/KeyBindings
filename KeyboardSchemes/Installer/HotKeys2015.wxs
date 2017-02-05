@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='windows-1252'?>
+<Wix xmlns='http://schemas.microsoft.com/wix/2006/wi'>
+	<Product Name='Hot Keys for Visual Studio 2015' Id='781829cf-4493-4336-949d-f2420d9d11e3' UpgradeCode='1cfe8d34-0a5a-4b21-a2ea-53c1d4f931c6'
+    Language='1033' Codepage='1252' Version='1.0.0' Manufacturer='Justin Clareburt'>
+
+		<Package Id='*' Keywords='Installer' Description="Hot Keys for Visual Studio 2015 Installer"
+      Comments='Installs new keyboard mapping schemes for Visual Studio 2015' Manufacturer='Justin Clareburt'
+      InstallerVersion='100' Languages='1033' Compressed='yes' SummaryCodepage='1252' />
+
+		<Media Id='1' Cabinet='Sample.cab' EmbedCab='yes' DiskPrompt="CD-ROM #1" />
+		<Property Id='DiskPrompt' Value="Acme's Foobar 1.0 Installation [1]" />
+
+		<PropertyRef Id="VS2015_ROOT_FOLDER" />
+		<PropertyRef Id="VS2015_EXTENSIONS_DIR" />
+		<!--<Directory Id="VS2015_EXTENSIONS_DIR" Name="VS2015_EXTENSIONS_DIR" />-->
+
+		<Directory Id='TARGETDIR' Name='SourceDir'>
+			<Directory Id='VS2015_ROOT_FOLDER'>
+				<Directory Id='Common7_IDE_Dir' Name='Common7'>
+					<Directory Id='INSTALLDIR' Name='IDE'>
+
+					<Component Id='IntelliJForCSharpVSK' Guid='b34a7d68-c5cd-4d0c-a23e-e142d47432d0'>
+							<File Id='IntelliJForCSharp_VSKFile' Name='IntelliJ (IDEA style) for C#.vsk' Source='../VSKs/2015/IntelliJ for C#.vsk' KeyPath='yes'/>
+						</Component>
+
+						<Component Id='ReSharperForIdeaVSK' Guid='c70e934d-3342-4db8-a0de-bace038d0842'>
+							<File Id='ReSharperForIDEA_VSKFile' Name='ReSharper (IDEA style) for C#.vsk' Source='../VSKs/2015/ReSharper for IDEA.vsk' KeyPath='yes'/>
+						</Component>
+
+						<Component Id='ReSharperForVSCSharpVSK' Guid='1b8a1335-1fff-446a-9e65-02d376638211'>
+							<File Id='ReSharperForCSharp_VSKFile' Name='ReSharper (VS style) for C#.vsk' Source='../VSKs/2015/ReSharper for VS C#.vsk' KeyPath='yes'/>
+						</Component>
+
+						<Component Id='VSCSharp2015VSK' Guid='ac421b78-7ab8-47b6-bab5-d6e4096dfe3b'>
+							<File Id='VSCSharp2015_VSKFile' Name='Visual C# 2015.vsk' Source='../VSKs/2015/Visual C# 2015.vsk' KeyPath='yes'/>
+						</Component>
+
+						<Directory Id="Extensions" Name="Extensions">
+							<Component Id='ExtensionsConfigurationChanged' Guid='b4412a80-47c6-43e6-b46d-9498c05f72a8'>
+								<File Id='ExtensionsConfigurationChangedTouchFile' Name='extensions.configurationchanged2' Source='extensions.configurationchanged' KeyPath='yes'/>
+							</Component>
+							<Directory Id="KeyBindingSchemes" Name="KeyBindingSchemes">
+								<Component Id='ExtensionManifest' Guid='a53a6868-8832-4664-b476-99479665f44b'>
+									<File Id='ExtensionManifestFile' Name='extension.vsixmanifest' Source='extension.vsixmanifest' KeyPath='yes'/>
+								</Component>
+								<Component Id='IconImage' Guid='e8ce29ce-39b4-4baf-ab93-170d5753e378'>
+									<File Id='IconImageFile' Name='HotKeysIcon.png' Source='HotKeysIcon.png' KeyPath='yes'/>
+								</Component>
+								<Component Id='PreviewImage' Guid='0f93d0aa-87cd-4a65-ba9a-1c9c2042247c'>
+									<File Id='PreviewImageFile' Name='HotKeysPreviewImage.png' Source='HotKeysPreviewImage.png' KeyPath='yes'/>
+								</Component>
+								<Component Id='ReleaseNotes' Guid='270a0083-3bdb-4af1-81aa-ba45734f5a71'>
+									<File Id='ReleaseNotesFile' Name='ReleaseNotes.txt' Source='ReleaseNotes.txt' KeyPath='yes'/>
+								</Component>
+							</Directory>
+						</Directory>
+
+					</Directory>
+				</Directory>
+			</Directory>
+		</Directory>
+
+    <!-- Note: The "title" here will show in the Windows Add/Remove programs dialog -->
+		<Feature Id='Complete' Title='Hot Keys for Visual Studio 2015'
+						 Description='Installs alternative keyboard mapping schemes to work with Visual Studio 2015.'
+						 Display='expand' Level='1' ConfigurableDirectory='INSTALLDIR'>
+			<ComponentRef Id='IntelliJForCSharpVSK' />
+			<ComponentRef Id='ReSharperForIdeaVSK' />
+			<ComponentRef Id='ReSharperForVSCSharpVSK' />
+			<ComponentRef Id='VSCSharp2015VSK' />
+			<ComponentRef Id='ExtensionManifest' />
+			<ComponentRef Id='IconImage' />
+			<ComponentRef Id='PreviewImage' />
+			<ComponentRef Id='ReleaseNotes' />
+			<ComponentRef Id='ExtensionsConfigurationChanged' />
+		</Feature>
+		
+		<UIRef Id="WixUI_InstallDir" />
+		<WixVariable Id="WixUILicenseRtf" Value="License.rtf" />
+		<Property Id="WIXUI_INSTALLDIR" Value="VS2015_ROOT_FOLDER" />
+
+	</Product>
+</Wix>

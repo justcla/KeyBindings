@@ -30,13 +30,6 @@
                     <Scope Name="Global" ID="{5EFC7975-14BC-11CF-9B2B-00AA00573819}" />
                 </ScopeDefinitions>
                 <ShortcutsSchemeDef Name="Visual C# 2015">
-                    <RemoveShortcut Command="Edit.SelectCurrentWord" Scope="Text Editor">Ctrl+W</RemoveShortcut>
-                    <RemoveShortcut Command="Edit.GoToFindCombo" Scope="Global">Ctrl+D</RemoveShortcut>
-                    <RemoveShortcut Command="Window.NextSplitPane" Scope="Global">F6</RemoveShortcut>
-                    <RemoveShortcut Command="Help.ViewHelp" Scope="Global">Ctrl+F1</RemoveShortcut>
-                    <RemoveShortcut Command="Edit.NextBookmarkInFolder" Scope="Global">Ctrl+Shift+K, Ctrl+Shift+N</RemoveShortcut>
-                    <RemoveShortcut Command="Edit.PreviousBookmarkInFolder" Scope="Global">Ctrl+Shift+K, Ctrl+Shift+P</RemoveShortcut>
-                    <RemoveShortcut Command="View.CallHierarchy" Scope="Global">Ctrl+Alt+K</RemoveShortcut>
                     <Shortcut Command="Project.AddClass" Scope="Global">Shift+Alt+C</Shortcut>
                     <Shortcut Command="Edit.SelectCurrentWord" Scope="Global">Ctrl+Shift+W</Shortcut>
                     <Shortcut Command="Edit.GoToFindCombo" Scope="Global">Ctrl+/</Shortcut>
@@ -198,10 +191,10 @@
                     <Shortcut Command="Window.NextTab" Scope="Text Editor">Ctrl+PgDn</Shortcut>   <!-- Restore Global control for Ctrl+PgDn -->
                     <Shortcut Command="Window.PreviousTab" Scope="Text Editor">Ctrl+PgUp</Shortcut> <!-- Restore Global control for Ctrl+PgUp -->
                     <!-- Alternative NextTab/PreviousTab mappings -->    <!-- Note: Alt+Left/Right conflicts with Global View.Forward/Backward -->
-                    <Shortcut Command="Window.NextTab" Scope="Global">Alt+Right Arrow</Shortcut>  <!-- Overrides Global View.NavigateForward -->
-                    <Shortcut Command="Window.NextTab" Scope="Text Editor">Alt+Right Arrow</Shortcut>  <!-- Override TextEditor bindings (Edit.CompleteWord) -->
-                    <Shortcut Command="Window.NextTab" Scope="Workflow Designer">Alt+Right Arrow</Shortcut>  <!-- Override to remove existing shortcut (Edit.CompleteWord)-->
-                    <Shortcut Command="Window.PreviousTab" Scope="Global">Alt+Left Arrow</Shortcut>    <!-- Overrides Global View.Backward (Alt+Left Arrow) -->
+                    <Shortcut Command="View.NavigateForward" Scope="Global">Alt+Right Arrow</Shortcut>  <!-- Overrides Global View.NavigateForward -->
+                    <Shortcut Command="View.NavigateForward" Scope="Text Editor">Alt+Right Arrow</Shortcut>  <!-- Override TextEditor bindings (Edit.CompleteWord) -->
+                    <Shortcut Command="View.NavigateForward" Scope="Workflow Designer">Alt+Right Arrow</Shortcut>  <!-- Override to remove existing shortcut (Edit.CompleteWord)-->
+                    <Shortcut Command="View.NavigateBackward" Scope="Global">Alt+Left Arrow</Shortcut>    <!-- Overrides Global View.Backward (Alt+Left Arrow) -->
                     <!-- In-Editor navigation -->
                     <Shortcut Command="Edit.PreviousMethod" Scope="Text Editor">Ctrl+Alt+Up Arrow</Shortcut>     <!-- New! New keyboard binding (chosen by JustCla) Conflicts with HotCommands binding. -->
                     <Shortcut Command="Edit.NextMethod" Scope="Text Editor">Ctrl+Alt+Down Arrow</Shortcut>     <!-- New! New keyboard binding (chosen by JustCla) Conflicts with HotCommands binding. -->
@@ -210,11 +203,11 @@
                     <Shortcut Command="Edit.ExpandCurrentRegion" Scope="Text Editor">Ctrl+Num +</Shortcut>
                     <Shortcut Command="Edit.ExpandCurrentRegion" Scope="Text Editor">Ctrl+=</Shortcut>
                     <Shortcut Command="Edit.CollapseCurrentRegion" Scope="Text Editor">Ctrl+Num -</Shortcut>
-                    <Shortcut Command="Edit.CollapseCurrentRegion" Scope="Text Editor">Ctrl+-</Shortcut>
+                    <Shortcut Command="Edit.CollapseCurrentRegion" Scope="Text Editor">Ctrl+-</Shortcut>  <!-- Overrides View.NavigateBackward -->
                     <Shortcut Command="Edit.ExpandAllOutlining" Scope="Text Editor">Ctrl+Shift+Num +</Shortcut>
                     <Shortcut Command="Edit.ExpandAllOutlining" Scope="Text Editor">Ctrl+Shift+=</Shortcut>
                     <Shortcut Command="Edit.CollapseAllOutlining" Scope="Text Editor">Ctrl+Shift+Num -</Shortcut>
-                    <Shortcut Command="Edit.CollapseAllOutlining" Scope="Text Editor">Ctrl+Shift+-</Shortcut>
+                    <Shortcut Command="Edit.CollapseAllOutlining" Scope="Text Editor">Ctrl+Shift+-</Shortcut>  <!-- Overrides View.NavigateForward -->
                     <!-- Old VS Outlining shortcuts (provide Ctrl+M,[char] shortcut chords to add to existing Ctrl+M,Ctrl+[char] chords -->
                     <Shortcut Command="Edit.CollapseCurrentRegion" Scope="Text Editor">Ctrl+M, S</Shortcut>  <!-- Adding this -->
                     <Shortcut Command="Edit.ExpandCurrentRegion" Scope="Text Editor">Ctrl+M, E</Shortcut>  <!-- Adding this -->

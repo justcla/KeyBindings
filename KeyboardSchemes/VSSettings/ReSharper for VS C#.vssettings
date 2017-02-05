@@ -69,6 +69,19 @@
           <Shortcut Command="ToggleBookmarkWithMnemonic" Scope="Text Editor">Ctrl+F11</Shortcut>   <!-- NYI(?) Not in ReShaper map -->
           <Shortcut Command="Edit.ToggleBookmark" Scope="Text Editor">F11</Shortcut>   <!-- NYI(?) Not in ReShaper map -->
           <!-- Explore -->
+          <!-- VS2017+ shortcuts = Edit.GoTo.. VS2015 shortcuts = Edit.NavigateTo -->
+          <Shortcut Command="Edit.GoToAll" Scope="Global">Ctrl+T</Shortcut>
+          <Shortcut Command="Edit.GoToAll" Scope="Text Editor">Ctrl+T</Shortcut>
+          <Shortcut Command="Edit.GoToAll" Scope="View Designer">Ctrl+T</Shortcut>
+          <Shortcut Command="Edit.GoToAll" Scope="Query Designer">Ctrl+T</Shortcut>
+          <!--Shortcut Command="Edit.GoToType" Scope="Global">Ctrl+T, Ctrl+T</Shortcut-->  <!-- [GoTo Type] Cannot do this because it introduces a chord that conflicts with Ctrl+T -->
+          <Shortcut Command="Edit.GoToSymbol" Scope="Global">Shift+Alt+T</Shortcut>
+          <Shortcut Command="Edit.GoToSymbol" Scope="Text Editor">Shift+Alt+T</Shortcut>
+          <Shortcut Command="Edit.GoToFile" Scope="Global">Ctrl+Shift+T</Shortcut>
+          <Shortcut Command="Edit.GoToFile" Scope="Text Editor">Ctrl+Shift+T</Shortcut>
+          <Shortcut Command="Edit.GoToFile" Scope="Coded UI Test Editor">Ctrl+Shift+T</Shortcut>
+          <Shortcut Command="Edit.GoToMember" Scope="Global">Alt+\</Shortcut>
+          <!-- VS2015 shortcuts -->
           <Shortcut Command="Edit.NavigateTo" Scope="Global">Ctrl+T</Shortcut>  <!-- Near-match [GoTo everything] QuickLaunch or NavigateTo ?? -->
           <Shortcut Command="Edit.NavigateTo" Scope="Text Editor">Ctrl+T</Shortcut>  <!-- Near-match [GoTo everything] QuickLaunch or NavigateTo ?? -->
           <Shortcut Command="Edit.NavigateTo" Scope="View Designer">Ctrl+T</Shortcut>  <!-- Near-match [GoTo everything] QuickLaunch or NavigateTo ?? -->
@@ -160,6 +173,9 @@
           <Shortcut Command="TestExplorer.RepeatLastRun" Scope="Global">Ctrl+U, T</Shortcut>  <!-- NYI(?) RepeatPreviousRun -->
           <Shortcut Command="UnitTestExplorer" Scope="Global">Ctrl+Alt+U</Shortcut>  <!-- NYI(?) UnitTestExplorer -->
           <Shortcut Command="UnitTestSessions" Scope="Global">Ctrl+Alt+T</Shortcut>  <!-- NYI(?) UnitTestSessions -->
+          <!-- Other ReSharper shortcuts -->
+          <Shortcut Command="SolutionExplorer.SyncWithActiveDocument" Scope="Global">Ctrl+Shift+L</Shortcut>
+          <Shortcut Command="SolutionExplorer.SyncWithActiveDocument" Scope="Text Editor">Ctrl+Shift+L</Shortcut>
 
           <!--===================================================-->
           <!-- Other shortcuts - Copied from IntelliJ for C# map -->
@@ -213,25 +229,26 @@
           <!--<Shortcut Command="Edit.SearchStructurally" Scope="Global">Ctrl+Shift+S</Shortcut>-->  <!-- Dangerous to include. Excluding this specially -->
           <!--<Shortcut Command="Edit.ReplaceStructurally" Scope="Global">Ctrl+Shift+M</Shortcut>-->  <!-- Dangerous to include. Excluding this specially -->
           <!-- Compile and Run-->
-          <Shortcut Command="Build.BuildSolution" Scope="Global">Ctrl+F9</Shortcut>  <!-- Near-match: [Build project] Chosen as more sensible command since IntelliJ does not handle multi-project solutions whereas VS does. -->
+          <!-- ReSharper VS Build/Debug keys are same as base Visual Studio - not IntelliJ IDEA -->
+          <!--<Shortcut Command="Build.BuildSolution" Scope="Global">Ctrl+F9</Shortcut>  --><!-- Near-match: [Build project] Chosen as more sensible command since IntelliJ does not handle multi-project solutions whereas VS does. -->
           <!--<Shortcut Command="Build.BuildOnlyProject" Scope="Global">Ctrl+F9</Shortcut>-->  <!-- Alternative choice for build project, or compile (?) -->
-          <Shortcut Command="Build.Compile" Scope="Global">Ctrl+Shift+F9</Shortcut>  <!-- Compile selected file, package or module -->
-          <Shortcut Command="SelectConfigurationAndRun" Scope="Global">Alt+Shift+F10</Shortcut>  <!-- NYI -->
-          <Shortcut Command="SelectConfigurationAndDebug" Scope="Global">Alt+Shift+F9</Shortcut>  <!-- NYI -->
-          <Shortcut Command="Debug.StartWithoutDebugging" Scope="Global">Shift+F10</Shortcut> <!-- [Run] -->
-          <Shortcut Command="Debug.Start" Scope="Global">Shift+F9</Shortcut>  <!-- [Debug] -->
-          <Shortcut Command="Debug.RunContextConfigFromEditor" Scope="Global">Ctrl+Shift+F10</Shortcut>  <!-- NYI -->
+          <!--<Shortcut Command="Build.Compile" Scope="Global">Ctrl+Shift+F9</Shortcut>  --><!-- Compile selected file, package or module -->
+          <!--<Shortcut Command="SelectConfigurationAndRun" Scope="Global">Alt+Shift+F10</Shortcut>  --><!-- NYI -->
+          <!--<Shortcut Command="SelectConfigurationAndDebug" Scope="Global">Alt+Shift+F9</Shortcut>  --><!-- NYI -->
+          <!--<Shortcut Command="Debug.StartWithoutDebugging" Scope="Global">Shift+F10</Shortcut> --><!-- [Run] -->
+          <!--<Shortcut Command="Debug.Start" Scope="Global">Shift+F9</Shortcut>  --><!-- [Debug] -->
+          <!--<Shortcut Command="Debug.RunContextConfigFromEditor" Scope="Global">Ctrl+Shift+F10</Shortcut>  --><!-- NYI -->
           <!-- Debugging -->
           <!-- Consider defining these shortcuts at TextEditor and Debugger scope only to avoid unnecessary Global key bindings -->
-          <Shortcut Command="Debug.StepOver" Scope="Global">F8</Shortcut>
-          <Shortcut Command="Debug.StepInto" Scope="Global">F7</Shortcut>
-          <Shortcut Command="Debug.SmartStepInto" Scope="Global">Shift+F7</Shortcut>  <!-- NYI -->
-          <Shortcut Command="Debug.StepOut" Scope="Global">Shift+F8</Shortcut>
-          <Shortcut Command="Debug.RunToCursor" Scope="Global">Alt+F9</Shortcut>
-          <Shortcut Command="Debug.Immediate" Scope="Global">Alt+F8</Shortcut>  <!-- Near-match [Evaluate expression] Alternative: Debug.EvaluateStatement (?) -->
-          <Shortcut Command="Debug.Start" Scope="Global">F9</Shortcut>  <!-- ?? [Resume] -->
-          <Shortcut Command="Debug.ToggleBreakpoint" Scope="Global">Ctrl+F8</Shortcut>
-          <Shortcut Command="Debug.Breakpoints" Scope="Global">Ctrl+Shift+F8</Shortcut>
+          <!--<Shortcut Command="Debug.StepOver" Scope="Global">F8</Shortcut>-->
+          <!--<Shortcut Command="Debug.StepInto" Scope="Global">F7</Shortcut>-->
+          <!--<Shortcut Command="Debug.SmartStepInto" Scope="Global">Shift+F7</Shortcut>  --><!-- NYI -->
+          <!--<Shortcut Command="Debug.StepOut" Scope="Global">Shift+F8</Shortcut>-->
+          <!--<Shortcut Command="Debug.RunToCursor" Scope="Global">Alt+F9</Shortcut>-->
+          <!--<Shortcut Command="Debug.Immediate" Scope="Global">Alt+F8</Shortcut>  --><!-- Near-match [Evaluate expression] Alternative: Debug.EvaluateStatement (?) -->
+          <!--<Shortcut Command="Debug.Start" Scope="Global">F9</Shortcut>  --><!-- ?? [Resume] -->
+          <!--<Shortcut Command="Debug.ToggleBreakpoint" Scope="Global">Ctrl+F8</Shortcut>-->
+          <!--<Shortcut Command="Debug.Breakpoints" Scope="Global">Ctrl+Shift+F8</Shortcut>-->
           <!-- Navigation -->
           <Shortcut Command="Window.NextTab" Scope="Global">Alt+Right Arrow</Shortcut>
           <Shortcut Command="Window.NextTab" Scope="Text Editor">Alt+Right Arrow</Shortcut>  <!-- Need to override any TextEditor bindings that could block this global call -->
@@ -239,10 +256,10 @@
           <Shortcut Command="Window.PreviousTab" Scope="Global">Alt+Left Arrow</Shortcut>
           <Shortcut Command="Window.PreviousTab" Scope="Text Editor">Alt+Left Arrow</Shortcut>  <!-- Override to remove existing shortcut -->
           <Shortcut Command="Window.PreviousTab" Scope="Workflow Designer">Alt+Left Arrow</Shortcut>  <!-- Override to remove existing shortcut -->
-          <!--<Shortcut Command="Window.GoToMostRecentlyActiveToolWindow" Scope="Global">F12</Shortcut>-->  <!-- Conflict -->  <!-- NYI - [GoTo Most Previous (Recently Active) Tool Window] -->
+          <!--<Shortcut Command="Window.NextToolWindow" Scope="Global">Alt+F6</Shortcut>-->  <!-- GoTo Most Previous (Recently Active) Tool Window (Default map) -->
           <!--<Shortcut Command="Window.ActivateDocumentWindow" Scope="Global">Esc</Shortcut>-->  <!-- In Default map -->
-          <!--<Shortcut Command="Window.CloseToolWindow" Scope="Global">Shift+Esc</Shortcut>-->  <!-- Near-match for Window.HideLastActiveWindow -->    <!-- In Default map -->
-          <Shortcut Command="Window.CloseToolWindow" Scope="Global">Ctrl+Shift+F4</Shortcut>  <!-- Near-match -->  <!-- Should close most recent tool window -->
+          <!--<Shortcut Command="Window.AutoHide" Scope="Global">Shift+Esc</Shortcut> --><!-- Near-match for Window.HideLastActiveWindow. Note: Sets window to auto-hide mode, so will not open docked next time. -->
+          <!--<Shortcut Command="Window.CloseToolWindow" Scope="Global">Shift+Esc</Shortcut>  --> <!-- Near-match --><!--  --><!-- Should close most recent tool window -->
           <!--<Shortcut Command="Edit.GoTo" Scope="Global">Ctrl+G</Shortcut>-->  <!-- [GoTo Line] -->  <!-- In Default map -->
           <Shortcut Command="Window.RecentFilesPopup" Scope="Global">Ctrl+E</Shortcut>  <!-- NYI (Try to find in VS) -->
           <Shortcut Command="View.NavigateBackward" Scope="Global">Ctrl+Alt+Left Arrow</Shortcut>
