@@ -42,6 +42,7 @@
                     <Shortcut Command="Edit.NavigateTo" Scope="Global">Ctrl+Shift+T</Shortcut>
                     <Shortcut Command="Window.NextPane" Scope="Global">Ctrl+F7</Shortcut>
                     <Shortcut Command="Window.PreviousPane" Scope="Global">Ctrl+Shift+F7</Shortcut>
+                    <Shortcut Command="View.CallHierarchy" Scope="Global">Ctrl+Alt+H</Shortcut>
                     <!--VS 2005 Shortcuts -->
                     <Shortcut Command="Project.AddClass" Scope="Global">Shift+Alt+C</Shortcut>
                     <Shortcut Command="Edit.SelectCurrentWord" Scope="Global">Ctrl+Shift+W</Shortcut>
