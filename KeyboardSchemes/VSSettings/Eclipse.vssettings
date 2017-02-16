@@ -36,12 +36,12 @@
                     <Shortcut Command="View.NavigateForward" Scope="Workflow Designer">Alt+Right Arrow</Shortcut>  <!-- Override to remove existing shortcut (Edit.CompleteWord)-->
                     <Shortcut Command="View.NavigateBackward" Scope="Global">Alt+Left Arrow</Shortcut>    <!-- Overrides Global View.Backward (Alt+Left Arrow) -->
                     <Shortcut Command="Edit.CompleteWord" Scope="Text Editor">Ctrl+Space</Shortcut>
-                    <Shortcut Command="QuickAccess" Scope="Text Editor">Ctrl+3</Shortcut> <!--NYI-->
-                    <Shortcut Command="Window.Maximize" Scope="Text Editor">Ctrl+M</Shortcut> <!--NYI-->
-                    <Shortcut Command="Edit.GoToSymbol" Scope="Text Editor">Ctrl+Shift+T</Shortcut>
-                    <Shortcut Command="Edit.NavigateTo" Scope="Text Editor">Ctrl+Shift+T</Shortcut>
-                    <Shortcut Command="Window.NextPane" Scope="Text Editor">Ctrl+F7</Shortcut>
-                    <Shortcut Command="Window.PreviousPane" Scope="Text Editor">Ctrl+Shift+F7</Shortcut>
+                    <Shortcut Command="QuickAccess" Scope="Global">Ctrl+3</Shortcut> <!--NYI-->
+                    <Shortcut Command="Window.Maximize" Scope="Global">Ctrl+M</Shortcut> <!--NYI-->
+                    <Shortcut Command="Edit.GoToSymbol" Scope="Global">Ctrl+Shift+T</Shortcut>
+                    <Shortcut Command="Edit.NavigateTo" Scope="Global">Ctrl+Shift+T</Shortcut>
+                    <Shortcut Command="Window.NextPane" Scope="Global">Ctrl+F7</Shortcut>
+                    <Shortcut Command="Window.PreviousPane" Scope="Global">Ctrl+Shift+F7</Shortcut>
                     <!--VS 2005 Shortcuts -->
                     <Shortcut Command="Project.AddClass" Scope="Global">Shift+Alt+C</Shortcut>
                     <Shortcut Command="Edit.SelectCurrentWord" Scope="Global">Ctrl+Shift+W</Shortcut>

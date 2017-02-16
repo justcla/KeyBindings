@@ -49,6 +49,9 @@
     <Content Include="VSKs\ReSharperForVSC#-ImportLogs.txt" />
     <Content Include="VSKs\Visual C# 2015.vsk" />
     <Content Include="VSSettings\Brief.vssettings" />
+    <Content Include="VSSettings\Eclipse.vssettings">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="VSSettings\Emacs.vssettings" />
     <Content Include="VSSettings\IntelliJ.vssettings">
       <SubType>Designer</SubType>
@@ -70,6 +73,7 @@
   <ItemGroup>
     <None Include="Installer\Build2015MSI.bat" />
     <None Include="Installer\Build2017MSI.bat" />
+    <None Include="KeymapRefs\Eclipse_DefaultKeymap_IDEA.pdf" />
     <None Include="KeymapRefs\IntelliJIDEA_ReferenceCard.pdf" />
     <None Include="KeymapRefs\ReSharperCppDefaultKeymap_VSscheme.pdf" />
     <None Include="KeymapRefs\ReSharper_DefaultKeymap_IDEAscheme.pdf" />
