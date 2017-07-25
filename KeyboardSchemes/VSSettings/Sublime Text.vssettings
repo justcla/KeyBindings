@@ -59,6 +59,7 @@
           <Shortcut Command="Edit.MoveControlRight" Scope="Global">Ctrl+Right Arrow</Shortcut>
           <Shortcut Command="Edit.MakeLowercase" Scope="Text Editor">Ctrl+K, Ctrl+L</Shortcut>
           <Shortcut Command="Edit.MakeUppercase" Scope="Text Editor">Ctrl+K, Ctrl+U</Shortcut>
+          <Shortcut Command="View.CommandWindow" Scope="Global">Ctrl+Shift+P</Shortcut>
           
           <!--VS 2005 C# Shortcuts-->
           <RemoveShortcut Command="Edit.SelectCurrentWord" Scope="Text Editor">Ctrl+W</RemoveShortcut>
