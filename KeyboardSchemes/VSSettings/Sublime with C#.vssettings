@@ -29,7 +29,7 @@
           <Scope Name="VC Dialog Editor" ID="{543E0C02-8C85-4E43-933A-5EF320E3431F}" />
           <Scope Name="Global" ID="{5EFC7975-14BC-11CF-9B2B-00AA00573819}" />
         </ScopeDefinitions>
-        <ShortcutsSchemeDef Name="Sublime Text">
+        <ShortcutsSchemeDef Name="Sublime with C#">
           <!-- Sublime Text shortcuts -->
           <Shortcut Command="File.OpenFile" Scope="Global">Ctrl+O</Shortcut>
           <Shortcut Command="Edit.IncreaseLineIndent" Scope="Text Editor">Ctrl+]</Shortcut>
