@@ -30,6 +30,27 @@
           <Scope Name="Global" ID="{5EFC7975-14BC-11CF-9B2B-00AA00573819}" />
         </ScopeDefinitions>
         <ShortcutsSchemeDef Name="Sublime Text">
+          
+          <Shortcut Command="File.OpenFile" Scope="Global">Ctrl+O</Shortcut>
+          <Shortcut Command="Edit.IncreaseLineIndent" Scope="Global">Ctrl+]</Shortcut>
+          <Shortcut Command="Edit.DecreaseLineIndent" Scope="Global">Ctrl+[</Shortcut>
+          <Shortcut Command="Edit.LineDelete" Scope="Global">Ctrl+Shift+K</Shortcut>
+          <Shortcut Command="Edit.MoveSelectedLinesUp" Scope="Global">Ctrl+Shift+Up Arrow</Shortcut>
+          <Shortcut Command="Edit.MoveSelectedLinesDown" Scope="Global">Ctrl+Shift+Down Arrow</Shortcut>
+          <Shortcut Command="Edit.Undo" Scope="Global">Ctrl+Z</Shortcut>
+          <Shortcut Command="Edit.Redo" Scope="Global">Ctrl+Y</Shortcut>
+          <Shortcut Command="Edit.GotoBrace" Scope="Global">Ctrl+M</Shortcut>
+          <Shortcut Command="Edit.GoToFile" Scope="Global">Ctrl+P</Shortcut>
+          <Shortcut Command="Edit.SelectCurrentWord" Scope="Global">Ctrl+D</Shortcut>
+          <Shortcut Command="Edit.Find" Scope="Global">Ctrl+F</Shortcut>
+          <Shortcut Command="Edit.FindinFiles" Scope="Global">Ctrl+Shift+F</Shortcut>
+          <Shortcut Command="Edit.Replace" Scope="Global">Ctrl+H</Shortcut>
+          <Shortcut Command="Edit.GoToDefinition" Scope="Global">Ctrl+F12</Shortcut>
+          <Shortcut Command="Window.NewWindow" Scope="Global">Ctrl+Shift+N</Shortcut>
+          <Shortcut Command="Edit.GotoBraceExtend" Scope="Global">Ctrl+Shift+M</Shortcut>visual studio c# 2005 shortcuts
+          
+          <!--VS 2005 C# Shortcuts-->
+          
           <RemoveShortcut Command="Edit.SelectCurrentWord" Scope="Text Editor">Ctrl+W</RemoveShortcut>
           <RemoveShortcut Command="Edit.GoToFindCombo" Scope="Global">Ctrl+D</RemoveShortcut>
           <RemoveShortcut Command="Window.NextSplitPane" Scope="Global">F6</RemoveShortcut>
