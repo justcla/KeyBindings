@@ -29,7 +29,39 @@
           <Scope Name="VC Dialog Editor" ID="{543E0C02-8C85-4E43-933A-5EF320E3431F}" />
           <Scope Name="Global" ID="{5EFC7975-14BC-11CF-9B2B-00AA00573819}" />
         </ScopeDefinitions>
-        <ShortcutsSchemeDef Name="Sublime Text">
+        <ShortcutsSchemeDef Name="Sublime with C#">
+          <!-- Sublime Text shortcuts -->
+          <Shortcut Command="File.OpenFile" Scope="Global">Ctrl+O</Shortcut>
+          <Shortcut Command="Edit.IncreaseLineIndent" Scope="Text Editor">Ctrl+]</Shortcut>
+          <Shortcut Command="Edit.DecreaseLineIndent" Scope="Text Editor">Ctrl+[</Shortcut>
+          <Shortcut Command="Edit.LineDelete" Scope="Text Editor">Ctrl+Shift+K</Shortcut>
+          <Shortcut Command="Edit.MoveSelectedLinesUp" Scope="Text Editor">Ctrl+Shift+Up Arrow</Shortcut>
+          <Shortcut Command="Edit.MoveSelectedLinesDown" Scope="Text Editor">Ctrl+Shift+Down Arrow</Shortcut>
+          <Shortcut Command="Edit.Undo" Scope="Global">Ctrl+Z</Shortcut>
+          <Shortcut Command="Edit.Redo" Scope="Global">Ctrl+Y</Shortcut>
+          <Shortcut Command="Edit.GotoBrace" Scope="Text Editor">Ctrl+M</Shortcut>
+          <Shortcut Command="Edit.GoToFile" Scope="Global">Ctrl+P</Shortcut>
+          <Shortcut Command="Edit.SelectCurrentWord" Scope="Text Editor">Ctrl+D</Shortcut>
+          <Shortcut Command="Edit.Find" Scope="Text Editor">Ctrl+F</Shortcut>
+          <Shortcut Command="Edit.Find" Scope="Text Editor">Ctrl+E</Shortcut>
+          <Shortcut Command="Edit.FindinFiles" Scope="Global">Ctrl+Shift+F</Shortcut>
+          <Shortcut Command="Edit.Replace" Scope="Global">Ctrl+H</Shortcut>
+          <Shortcut Command="Edit.Replace" Scope="Global">Ctrl+Shift+E</Shortcut>
+          <Shortcut Command="Edit.GoToDefinition" Scope="Text Editor">Ctrl+F12</Shortcut>
+          <Shortcut Command="Window.NewWindow" Scope="Global">Ctrl+Shift+N</Shortcut>
+          <Shortcut Command="Window.CloseDocumentWindow" Scope="Global">Ctrl+Shift+W</Shortcut>
+          <Shortcut Command="Edit.GotoBraceExtend" Scope="Text Editor">Ctrl+Shift+M</Shortcut>
+          <Shortcut Command="Edit.GoToSymbol" Scope="Text Editor">Ctrl+R</Shortcut>
+          <Shortcut Command="Edit.GoToSymbol" Scope="Text Editor">Ctrl+;</Shortcut>
+          <Shortcut Command="Edit.FindPrevious" Scope="Global">Ctrl+F4</Shortcut>
+          <Shortcut Command="Edit.FindPrevious" Scope="Global">F4</Shortcut>
+          <Shortcut Command="Edit.MoveControlLeft" Scope="Global">Ctrl+Left Arrow</Shortcut>
+          <Shortcut Command="Edit.MoveControlRight" Scope="Global">Ctrl+Right Arrow</Shortcut>
+          <Shortcut Command="Edit.MakeLowercase" Scope="Text Editor">Ctrl+K, Ctrl+L</Shortcut>
+          <Shortcut Command="Edit.MakeUppercase" Scope="Text Editor">Ctrl+K, Ctrl+U</Shortcut>
+          <Shortcut Command="View.CommandWindow" Scope="Global">Ctrl+Shift+P</Shortcut>
+          
+          <!--VS 2005 C# Shortcuts-->
           <RemoveShortcut Command="Edit.SelectCurrentWord" Scope="Text Editor">Ctrl+W</RemoveShortcut>
           <RemoveShortcut Command="Edit.GoToFindCombo" Scope="Global">Ctrl+D</RemoveShortcut>
           <RemoveShortcut Command="Window.NextSplitPane" Scope="Global">F6</RemoveShortcut>
