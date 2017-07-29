@@ -31,7 +31,10 @@
         </ScopeDefinitions>
         <ShortcutsSchemeDef Name="Sublime with C#">
           <!-- Sublime Text shortcuts -->
+          <Shortcut Command="Edit.GoToFile" Scope="Global">Ctrl+P</Shortcut>
+          <Shortcut Command="View.CommandWindow" Scope="Global">Ctrl+Shift+P</Shortcut>   <!--Should be Command Palete-->
           <Shortcut Command="File.OpenFile" Scope="Global">Ctrl+O</Shortcut>
+          <Shortcut Command="Window.CloseDocumentWindow" Scope="Global">Ctrl+W</Shortcut>
           <Shortcut Command="Edit.IncreaseLineIndent" Scope="Text Editor">Ctrl+]</Shortcut>
           <Shortcut Command="Edit.DecreaseLineIndent" Scope="Text Editor">Ctrl+[</Shortcut>
           <Shortcut Command="Edit.LineDelete" Scope="Text Editor">Ctrl+Shift+K</Shortcut>
@@ -40,27 +43,43 @@
           <Shortcut Command="Edit.Undo" Scope="Global">Ctrl+Z</Shortcut>
           <Shortcut Command="Edit.Redo" Scope="Global">Ctrl+Y</Shortcut>
           <Shortcut Command="Edit.GotoBrace" Scope="Text Editor">Ctrl+M</Shortcut>
-          <Shortcut Command="Edit.GoToFile" Scope="Global">Ctrl+P</Shortcut>
           <Shortcut Command="Edit.SelectCurrentWord" Scope="Text Editor">Ctrl+D</Shortcut>
           <Shortcut Command="Edit.Find" Scope="Text Editor">Ctrl+F</Shortcut>
-          <Shortcut Command="Edit.Find" Scope="Text Editor">Ctrl+E</Shortcut>
+          <Shortcut Command="Edit.IncrementalSearch" Scope="Text Editor">Ctrl+E</Shortcut>
           <Shortcut Command="Edit.FindinFiles" Scope="Global">Ctrl+Shift+F</Shortcut>
           <Shortcut Command="Edit.Replace" Scope="Global">Ctrl+H</Shortcut>
           <Shortcut Command="Edit.Replace" Scope="Global">Ctrl+Shift+E</Shortcut>
-          <Shortcut Command="Edit.GoToDefinition" Scope="Text Editor">Ctrl+F12</Shortcut>
-          <Shortcut Command="Window.NewWindow" Scope="Global">Ctrl+Shift+N</Shortcut>
-          <Shortcut Command="Window.CloseDocumentWindow" Scope="Global">Ctrl+Shift+W</Shortcut>
+          <Shortcut Command="Edit.GoToDefinition" Scope="Text Editor">F12</Shortcut>
+          <Shortcut Command="Window.NewWindow" Scope="Global">Ctrl+Shift+N</Shortcut>  <!--Bad match. Should open new blank text file-->
           <Shortcut Command="Edit.GotoBraceExtend" Scope="Text Editor">Ctrl+Shift+M</Shortcut>
-          <Shortcut Command="Edit.GoToSymbol" Scope="Text Editor">Ctrl+R</Shortcut>
-          <Shortcut Command="Edit.GoToSymbol" Scope="Text Editor">Ctrl+;</Shortcut>
-          <Shortcut Command="Edit.FindPrevious" Scope="Global">Ctrl+F4</Shortcut>
-          <Shortcut Command="Edit.FindPrevious" Scope="Global">F4</Shortcut>
-          <Shortcut Command="Edit.MoveControlLeft" Scope="Global">Ctrl+Left Arrow</Shortcut>
-          <Shortcut Command="Edit.MoveControlRight" Scope="Global">Ctrl+Right Arrow</Shortcut>
+          <Shortcut Command="Edit.GoToSymbol" Scope="Global">Ctrl+R</Shortcut>
+          <Shortcut Command="Edit.GoToNextLocation" Scope="Global">F4</Shortcut>
+          <Shortcut Command="Edit.GoToPrevLocation" Scope="Global">Ctrl+F4</Shortcut>
+          <Shortcut Command="Edit.WordPrevious" Scope="Global">Ctrl+Left Arrow</Shortcut>
+          <Shortcut Command="Edit.WordNext" Scope="Global">Ctrl+Right Arrow</Shortcut>
+          <Shortcut Command="Edit.WordPreviousExtend" Scope="Global">Ctrl+Shift+Left Arrow</Shortcut>
+          <Shortcut Command="Edit.WordNextExtend" Scope="Global">Ctrl+Shift+Right Arrow</Shortcut>
           <Shortcut Command="Edit.MakeLowercase" Scope="Text Editor">Ctrl+K, Ctrl+L</Shortcut>
           <Shortcut Command="Edit.MakeUppercase" Scope="Text Editor">Ctrl+K, Ctrl+U</Shortcut>
-          <Shortcut Command="View.CommandWindow" Scope="Global">Ctrl+Shift+P</Shortcut>
-          
+          <Shortcut Command="View.Fullscreen" Scope="Global">F11</Shortcut>
+          <Shortcut Command="Window.AutoHideAll" Scope="Global">Shift+F11</Shortcut>
+          <!--DistractionFree = Shift+F11 (Fullscreen, hide all windows, remove margins, remove tabs-->
+          <Shortcut Command="View.SolutionExplorer" Scope="Global">Ctrl+0</Shortcut>
+          <Shortcut Command="View.NavigateBackward" Scope="Global">Alt+-</Shortcut>
+          <Shortcut Command="View.NavigateForward" Scope="Global">Alt+Shift+-</Shortcut>
+          <Shortcut Command="Edit.LineUpExtendColumn" Scope="Text Editor">Ctrl+Alt+Up Arrow</Shortcut>
+          <Shortcut Command="Edit.LineDownExtendColumn" Scope="Text Editor">Ctrl+Alt+Down Arrow</Shortcut>
+          <!--Need VSTricks for CamelCase navigation, selection and deletion. Plus Duplicate line or selection -->
+          <Shortcut Command="Edit.SubWordNext" Scope="Text Editor">Alt+Right Arrow</Shortcut>
+          <Shortcut Command="Edit.SubWordPrevious" Scope="Text Editor">Alt+Left Arrow</Shortcut>
+          <Shortcut Command="Edit.SubWordNextExtend" Scope="Text Editor">Shift+Alt+Right Arrow</Shortcut>
+          <Shortcut Command="Edit.SubWordPreviousExtend" Scope="Text Editor">Shift+Alt+Left Arrow</Shortcut>
+          <Shortcut Command="Edit.SubWordNextExtendColumn" Scope="Text Editor">Ctrl+Shift+Right Arrow</Shortcut> 
+          <Shortcut Command="Edit.SubWordPreviousExtendColumn" Scope="Text Editor">Ctrl+Shift+Left Arrow</Shortcut> 
+          <Shortcut Command="Edit.SubWordDeletetoEnd" Scope="Text Editor">Alt+Del</Shortcut>   <!--Not actually implemented by Sublime-->
+          <Shortcut Command="Edit.SubWordDeletetoStart" Scope="Text Editor">Alt+Bkspce</Shortcut>   <!--Not actually implemented by Sublime-->
+          <Shortcut Command="Edit.DuplicateLineSelection" Scope="Text Editor">Ctrl+Shift+D</Shortcut>
+
           <!--VS 2005 C# Shortcuts-->
           <RemoveShortcut Command="Edit.SelectCurrentWord" Scope="Text Editor">Ctrl+W</RemoveShortcut>
           <RemoveShortcut Command="Edit.GoToFindCombo" Scope="Global">Ctrl+D</RemoveShortcut>

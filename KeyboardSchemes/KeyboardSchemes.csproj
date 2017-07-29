@@ -58,7 +58,10 @@
     </Content>
     <Content Include="VSSettings\ReSharper for VS C#.vssettings" />
     <Content Include="VSSettings\ReSharperFor2015.vssettings" />
-    <Content Include="VSSettings\Sublime Text.vssettings" />
+    <Content Include="VSSettings\Sublime with C#.vssettings" />
+    <Content Include="VSSettings\Sublime with C++.vssettings">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="VSSettings\Visual Basic 6.vssettings" />
     <Content Include="VSSettings\Visual C++ 2.vssettings" />
     <Content Include="VSSettings\Visual C++ 6.vssettings" />
