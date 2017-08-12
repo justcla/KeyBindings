@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!--This is the file that defines the IDs for all the commands exposed by VisualStudio. -->
+  <Extern href="stdidcmd.h"/>
+  <!--This header contains the command ids for the menus provided by the shell. -->
+  <Extern href="vsshlids.h"/>
+
+  <!--The Commands section is where commands, menus, and menu groups are defined.
+      This section uses a Guid to identify the package that provides the command defined inside it. -->
+  <Commands package="guidHotKeysPackage">
+
+    <Groups>
+      <Group guid="guidHotKeysPackageCmdSet" id="HotKeysMenuGroup" priority="0x0600">
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_MENU_TOOLS"/>
+      </Group>
+    </Groups>
+
+    <Buttons>
+      <Button guid="guidHotKeysPackageCmdSet" id="InstallShortcutsCmdId" priority="0x0100" type="Button">
+        <Parent guid="guidHotKeysPackageCmdSet" id="HotKeysMenuGroup" />
+        <Strings>
+          <ButtonText>Install Keyboard Shortcuts</ButtonText>
+        </Strings>
+      </Button>
+    </Buttons>
+
+  </Commands>
+
+  <Symbols>
+    <!-- This is the package guid. -->
+    <GuidSymbol name="guidHotKeysPackage" value="{d4e0c657-5b83-4772-916d-a5988de91ae8}" />
+    <!-- This is the guid used to group the menu commands together -->
+    <GuidSymbol name="guidHotKeysPackageCmdSet" value="{ea5095d0-5740-4a49-b8b1-60ee20c36ed2}">
+      <IDSymbol name="HotKeysMenuGroup" value="0x1020" />
+      <IDSymbol name="InstallShortcutsCmdId" value="0x0100" />
+    </GuidSymbol>
+  </Symbols>
+
+</CommandTable>
