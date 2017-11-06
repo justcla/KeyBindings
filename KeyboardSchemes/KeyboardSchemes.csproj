@@ -41,13 +41,6 @@
     <Content Include="Installer\HotKeysPreviewImage.png" />
     <Content Include="Installer\License.rtf" />
     <Content Include="Installer\ReleaseNotes.txt" />
-    <Content Include="VSKs\IntelliJ for C#.vsk" />
-    <Content Include="VSKs\IntelliJ-ImportLog.txt" />
-    <Content Include="VSKs\ReSharper for IDEA.vsk" />
-    <Content Include="VSKs\ReSharper for VS C#.vsk" />
-    <Content Include="VSKs\ReSharperForIDEA-ImportLog.txt" />
-    <Content Include="VSKs\ReSharperForVSC#-ImportLogs.txt" />
-    <Content Include="VSKs\Visual C# 2015.vsk" />
     <Content Include="VSSettings\Brief.vssettings" />
     <Content Include="VSSettings\Emacs.vssettings" />
     <Content Include="VSSettings\IntelliJ.vssettings">
@@ -80,6 +73,9 @@
     <None Include="KeymapRefs\ReSharper_DefaultKeymap_VSscheme.pdf" />
     <None Include="KeymapRefs\VSCode-keyboard-shortcuts-linux.pdf" />
     <None Include="KeymapRefs\VSCode-keyboard-shortcuts-windows.pdf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="VSKs\" />
   </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
