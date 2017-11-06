@@ -18,9 +18,11 @@ namespace HotKeys
     class ShortcutSchemeInstaller
     {
 
-        private readonly Package package;
-        private readonly string SublimeVSKFileSrc = "SublimeWithCSharp.vsk";
-        private readonly string SublimeVSKFileDest = "Sublime with C#.*";
+        private Package package;
+        //private readonly string SublimeVSKFileSrc = "SublimeWithCSharp.vsk";
+        //private readonly string SublimeVSKFileDest = "Sublime with C#.*";
+
+        private readonly string MappingSchemeFolder = "MappingSchemes";
 
         private IServiceProvider ServiceProvider
         {
@@ -29,6 +31,27 @@ namespace HotKeys
                 return this.package;
             }
         }
+
+        //private static ShortcutSchemeInstaller instance;
+
+        //private ShortcutSchemeInstaller() { }
+
+        //public static ShortcutSchemeInstaller Instance
+        //{
+        //    get
+        //    {
+        //        if (instance == null)
+        //        {
+        //            instance = new ShortcutSchemeInstaller();
+        //        }
+        //        return instance;
+        //    }
+        //}
+
+        //public static void Initialize(Package pagkage)
+        //{
+        //    Instance.package = pagkage;
+        //}
 
         public ShortcutSchemeInstaller(Package package)
         {
@@ -39,20 +62,17 @@ namespace HotKeys
         {
             try
             {
-                // if the emacs keybindings are not installed and the user is not running elevated
-                // then we need to copy the emacs.vsk for our extension to work
-                // get an ok from the user first
                 //if (!IsVskInstalled(EmacsVskFile))
                 {
+                    //string installPath = Path.Combine(GetExtensionFolder(), SublimeVSKFileSrc);
 
-                    string installPath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-                    installPath = Path.Combine(installPath, SublimeVSKFileSrc);
-
-                    var dlg = new InstallVSKConfirmDialog();
-                    dlg.StartPosition = FormStartPosition.CenterScreen;
-                    if (IsAdministrator || dlg.ShowDialog() == DialogResult.OK)
+                    //var dlg = new InstallVSKConfirmDialog();
+                    //dlg.StartPosition = FormStartPosition.CenterScreen;
+    
+                    // get an ok from the user first
+                    if (ConfirmInstallVSKs())
                     {
-                        CopyVskUsingXCopy(installPath);
+                        CopyVskUsingXCopy(GetVSKSourceFolder());
                     }
                 }
             }
@@ -60,6 +80,25 @@ namespace HotKeys
             {
                 var message = e.Message;
             }
+        }
+
+        private static bool ConfirmInstallVSKs()
+        {
+            const string title = "Install Keyboard Mapping Schemes";
+            const string message =
+                "To install the keyboard mapping scheme files, you will need administrator permission.\n" +
+                "Click OK to continue, then approve the administrator prompt.";
+            return MessageBox.Show(message, title, MessageBoxButtons.OKCancel) == DialogResult.OK;
+        }
+
+        string GetVSKSourceFolder()
+        {
+            return Path.Combine(GetExtensionFolder(), MappingSchemeFolder);
+        }
+
+        private static string GetExtensionFolder()
+        {
+            return Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
         }
 
         internal bool IsVskInstalled(string vskFilename)
@@ -94,11 +133,12 @@ namespace HotKeys
 
         private void CopyVskUsingXCopy(string vskSrcPath)
         {
-            var vskDestPath = Path.Combine(VSInstallationPath, SublimeVSKFileDest);
+            //var vskDestPath = Path.Combine(VSInstallationPath, SublimeVSKFileDest);
+            var vskDestPath = VSInstallationPath;
 
             var process = new System.Diagnostics.Process();
             process.StartInfo.FileName = @"xcopy.exe";
-            process.StartInfo.Arguments = string.Format(@" /Y ""{0}"" ""{1}""", vskSrcPath, vskDestPath);
+            process.StartInfo.Arguments = string.Format(@" /Y /D ""{0}\*.vsk"" ""{1}""", vskSrcPath, vskDestPath);
             if (Environment.OSVersion.Platform == PlatformID.Win32NT && Environment.OSVersion.Version.Major > 5)
             {
                 process.StartInfo.Verb = "runas";
