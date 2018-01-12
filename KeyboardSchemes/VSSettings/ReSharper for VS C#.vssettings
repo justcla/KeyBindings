@@ -98,16 +98,15 @@
           <Shortcut Command="Edit.FindAllReferences" Scope="Global">Ctrl+Shift+Alt+F12</Shortcut>  <!-- NYI Find usages (advanced) -->
           <Shortcut Command="View.FindSymbolResults" Scope="Global">Ctrl+Alt+F12</Shortcut>   <!-- Could also map to View.FindResults1 or View.FindResults2 - Used for Alt+3 -->
           <Shortcut Command="Edit.HighlightUsagesInFile" Scope="Global">Shift+Alt+F11</Shortcut>  <!-- NYI/Broken? Need to find VS command. This happens automatically with setting applied. -->
-          <Shortcut Command="Edit.PreviousHighlightedReference" Scope="Global">Ctrl+Alt+Up Arrow</Shortcut>  <!-- NYI GoToPreviousUsage Could be Edit.FindPrevious -->
-          <Shortcut Command="Edit.NextHighlightedReference" Scope="Global">Ctrl+Alt+Down Arrow</Shortcut>  <!-- NYI GoToNextUsage. Could be Edit.FindNext -->
+          <Shortcut Command="Edit.PreviousHighlightedReference" Scope="Global">Ctrl+Alt+PgUp</Shortcut>  <!-- NYI GoToPreviousUsage Could be Edit.FindPrevious -->
+          <Shortcut Command="Edit.NextHighlightedReference" Scope="Global">Ctrl+Alt+PgDn</Shortcut>  <!-- NYI GoToNextUsage. Could be Edit.FindNext -->
           <!--<Shortcut Command="Edit.FindUsagesInFile" Scope="Global">Ctrl+F7</Shortcut>-->  <!-- NYI/Broken? Need to find VS command (Not in ReShaper map) -->
           <!--<Shortcut Command="Edit.ShowUsages" Scope="Global">Ctrl+Alt+F7</Shortcut>-->  <!-- NYI/Broken? Need to find VS command (Not in ReShaper map) -->
           <Shortcut Command="View.AnalyzeReferences" Scope="Global">Ctrl+Alt+Y</Shortcut>  <!-- NYI (?) Analyze References window -->
           <!-- Navigate to -->
-          <!--<Shortcut Command="Edit.NavigateTo" Scope="Text Editor">Alt+`</Shortcut>-->  <!-- Navigate To -->  <!-- Choosing not to overrider default CodeLens shortcut -->
+          <!--<Shortcut Command="Edit.NavigateTo" Scope="Text Editor">Alt+`</Shortcut>-->  <!-- Navigate To (Context menu?) -->  <!-- Choosing not to overrider default CodeLens shortcut -->
           <Shortcut Command="Edit.GoToDefinition" Scope="Text Editor">F12</Shortcut>  <!-- [GoTo Declaration] -->
-          <Shortcut Command="Edit.GoToTypeOfSymbol" Scope="Text Editor">Ctrl+Shift+F11</Shortcut>  <!-- NYI(?) Go to type of symbol -->
-          <Shortcut Command="Edit.GoToTypeDeclaration" Scope="Text Editor">Ctrl+Shift+B</Shortcut>  <!-- NYI (Not on ReSharper map) -->
+          <Shortcut Command="Edit.GoToTypeDeclaration" Scope="Text Editor">Ctrl+Shift+F11</Shortcut>  <!-- NYI(?) Go to type of symbol. Could this be GoToTypeDeclaration? -->
           <Shortcut Command="Edit.GoToImplementation" Scope="Text Editor">Ctrl+F12</Shortcut>
           <Shortcut Command="Edit.GoToSuperMethod" Scope="Text Editor">Alt+Home</Shortcut>    <!-- NYI - Go To base symboles -->
           <Shortcut Command="Edit.GoToDerivedSymbols" Scope="Text Editor">Alt+End</Shortcut>    <!-- NYI - Go To derived symbols -->
@@ -120,14 +119,14 @@
           <Shortcut Command="Edit.MoveToCodeBlockEnd" Scope="Text Editor">Ctrl+]</Shortcut>  <!-- NYI (Not in ReSharper map) -->
           <Shortcut Command="View.TaskList" Scope="Global">Ctrl+Alt+D</Shortcut>      <!-- To-do items window -->
           <Shortcut Command="View.StackTrace" Scope="Global">Ctrl+E, T</Shortcut>      <!-- NYI(?) Explore Stack Trace -->
-          <Shortcut Command="LocateInSolutionExplorer" Scope="Global">Shift+Alt+L</Shortcut>      <!-- NYI(Must be somewhere!) Locate in Solution Explorer -->
+          <Shortcut Command="SolutionExplorer.SyncWithActiveDocument" Scope="Global">Shift+Alt+L</Shortcut>      <!-- Locate in Solution Explorer -->
           <!-- Improve -->
           <Shortcut Command="ShowQuickFixes" Scope="Global">Alt+Enter</Shortcut>
           <Shortcut Command="InspectThis" Scope="Global">Ctrl+Shift+Alt+A</Shortcut>
           <Shortcut Command="View.InspectionResults" Scope="Global">Ctrl+Alt+V</Shortcut>  <!-- NYI(?) Inspection results window -->
           <Shortcut Command="View.CallHierarchy" Scope="Global">Ctrl+E, H</Shortcut>  <!-- Near-match (?) ViewTypeHierarchy. Not context aware. Only opens Tool window. -->
-          <Shortcut Command="View.NextError" Scope="Global">Alt+PgDn</Shortcut>    <!-- NYI. Near-match. GoToNextHighlight -->
-          <Shortcut Command="View.PreviousError" Scope="Global">Alt+PgUp</Shortcut>   <!-- NYI. Near-match. GoToPreviousHighlight -->
+          <Shortcut Command="Edit.GoToNextLocation" Scope="Global">Alt+PgDn</Shortcut>    <!-- (NYI?) Near-match. GoToNextHighlight (error/warning/suggestion) -->
+          <Shortcut Command="Edit.GoToPrevLocation" Scope="Global">Alt+PgUp</Shortcut>   <!-- (NYI?) Near-match. GoToPreviousHighlight (error/warning/suggestion) -->
           <Shortcut Command="View.NextError" Scope="Global">Shift+Alt+PgDn</Shortcut>
           <Shortcut Command="View.PreviousError" Scope="Global">Shift+Alt+PgUp</Shortcut>
           <!-- Refactoring -->
@@ -142,6 +141,9 @@
           <Shortcut Command="File.Move" Scope="Solution Explorer">Ctrl+R, Ctrl+O</Shortcut>   <!-- NYI(?) Move type or static member -->
           <Shortcut Command="Refactoring.Move" Scope="Text Editor">Ctrl+R, O</Shortcut>   <!-- NYI(?) Move type or static member -->
           <Shortcut Command="Refactoring.Move" Scope="Text Editor">Ctrl+R, Ctrl+O</Shortcut>   <!-- NYI(?) Move type or static member -->
+          <Shortcut Command="Refactor.RemoveParameters" Scope="Text Editor">Ctrl+R, D</Shortcut>   <!-- NYI(?) Safe Delete -->
+          <Shortcut Command="Refactor.RemoveParameters" Scope="Text Editor">Ctrl+R, Ctrl+D</Shortcut>   <!-- NYI(?) Safe Delete -->
+          <Shortcut Command="Refactor.RemoveParameters" Scope="Text Editor">Alt+Del</Shortcut>   <!-- NYI(?) Safe Delete -->
           <Shortcut Command="Refactoring.SafeDelete" Scope="Solution Explorer">Ctrl+R, D</Shortcut>   <!-- NYI(?) Safe Delete -->  <!-- Solution Explorer only ? -->
           <Shortcut Command="Refactoring.SafeDelete" Scope="Solution Explorer">Ctrl+R, Ctrl+D</Shortcut>   <!-- NYI(?) Safe Delete -->  <!-- Solution Explorer only ? -->
           <Shortcut Command="Refactoring.SafeDelete" Scope="Solution Explorer">Alt+Del</Shortcut>   <!-- NYI(?) Safe Delete -->  <!-- Solution Explorer only ? -->
@@ -149,8 +151,8 @@
           <Shortcut Command="Refactor.ExtractMethod" Scope="Text Editor">Ctrl+R, Ctrl+M</Shortcut>
           <Shortcut Command="View.QuickActions" Scope="Text Editor">Ctrl+R, V</Shortcut>   <!-- IWC IntroduceVariable -->  <!-- Refactoring.IntroduceVariable - Analyzers exist: Introduce local (for one, or all) -->
           <Shortcut Command="View.QuickActions" Scope="Text Editor">Ctrl+R, Ctrl+V</Shortcut>   <!-- IWC IntroduceVariable -->  <!-- Refactoring.IntroduceVariable - Analyzers exist: Introduce local (for one, or all) -->
-          <Shortcut Command="Refactoring.ExtractField" Scope="Text Editor">Ctrl+R, F</Shortcut>   <!-- NYI(?) Introduce field -->
-          <Shortcut Command="Refactoring.ExtractField" Scope="Text Editor">Ctrl+R, Ctrl+F</Shortcut>   <!-- NYI(?) Introduce field -->
+          <Shortcut Command="View.QuickActions" Scope="Text Editor">Ctrl+R, F</Shortcut>   <!-- Introduce field - need command - only available on analyzer -->
+          <Shortcut Command="View.QuickActions" Scope="Text Editor">Ctrl+R, Ctrl+F</Shortcut>   <!-- Introduce field - need command - only available on analyzer -->
           <Shortcut Command="Refactoring.ExtractParameter" Scope="Text Editor">Ctrl+R, P</Shortcut>   <!-- NYI(?) Introduce parameter -->
           <Shortcut Command="Refactoring.ExtractParameter" Scope="Text Editor">Ctrl+R, Ctrl+P</Shortcut>   <!-- NYI(?) Introduce parameter -->
           <Shortcut Command="View.QuickActions" Scope="Text Editor">Ctrl+R, I</Shortcut>   <!-- IWC / Partial-Impl -->  <!-- Refactoring.Inline - Analyzers exist: Inline temporary variable. Could not find Inline Method. -->
@@ -180,6 +182,9 @@
           <!--===================================================-->
           <!-- Other shortcuts - Copied from IntelliJ for C# map -->
           <!--===================================================-->
+          
+          <!--Alt+Right Arrow = Open Completion-->
+         
           <Shortcut Command="Edit.ShowDocumentation" Scope="Text Editor">Shift+F1</Shortcut>  <!-- NYI -->
           <Shortcut Command="Edit.ShowErrorInfo" Scope="Text Editor">Ctrl+F1</Shortcut>  <!-- NYI -->
           <Shortcut Command="Edit.OverrideMethods" Scope="Text Editor">Ctrl+O</Shortcut>  <!-- NYI -->
@@ -198,25 +203,25 @@
           <!--<Shortcut Command="Edit.Paste" Scope="Text Editor">Ctrl+V</Shortcut>-->    <!-- In Default map -->
           <!--<Shortcut Command="Edit.Paste" Scope="Text Editor">Shift+Ins</Shortcut>-->    <!-- In Default map -->
           <!--<Shortcut Command="Edit.CycleClipboardRing" Scope="Text Editor">Ctrl+Shift+V</Shortcut>-->    <!-- In Default map -->
-          <Shortcut Command="Edit.LineDelete" Scope="Text Editor">Ctrl+Y</Shortcut>
-          <Shortcut Command="Edit.SmartJoinLines" Scope="Text Editor">Ctrl+Shift+J</Shortcut>  <!-- NYI -->
+          <!--<Shortcut Command="Edit.LineDelete" Scope="Text Editor">Ctrl+Y</Shortcut>   --><!-- Is this overiding Redo shortcut? -->
+          <Shortcut Command="Edit.SmartJoinLines" Scope="Text Editor">Ctrl+Shift+J</Shortcut>  <!-- NYI - Available in HotCommands (Basic Join Lines) -->
           <Shortcut Command="Edit.SmartBreakLine" Scope="Text Editor">Ctrl+Enter</Shortcut>  <!-- [Smart line split] C# behaviour is a near-match. Actually just does LineOpenBelow. -->
           <Shortcut Command="Edit.LineOpenBelow" Scope="Text Editor">Shift+Enter</Shortcut>  <!-- [Start new line] -->
           <Shortcut Command="Edit.ToggleCase" Scope="Text Editor">Ctrl+Shift+U</Shortcut>
           <Shortcut Command="Edit.SelectToStartBrace" Scope="Text Editor">Ctrl+Shift+[</Shortcut>  <!-- NYI -->
-          <Shortcut Command="Edit.SelectToEndBrace" Scope="Text Editor">Ctrl+Shift+]</Shortcut>  <!-- NYI -->
+          <!--<Shortcut Command="Edit.GoToBraceExtend" Scope="Text Editor">Ctrl+Shift+]</Shortcut>  --><!-- In Default map -->
           <!--<Shortcut Command="Edit.WordDeleteToEnd" Scope="Text Editor">Ctrl+Del</Shortcut>-->    <!-- In Default map -->
           <!--<Shortcut Command="Edit.WordDeleteToStart" Scope="Text Editor">Ctrl+Bkspce</Shortcut>-->    <!-- In Default map -->
           <!--<Shortcut Command="Window.CloseDocumentWindow" Scope="Text Editor">Ctrl+F4</Shortcut>-->    <!-- In Default map -->
           <!-- Outlining shortcuts (Expand/Collapse sections of code) -->
           <Shortcut Command="Edit.ExpandCurrentRegion" Scope="Text Editor">Ctrl+Num +</Shortcut>
-          <Shortcut Command="Edit.ExpandCurrentRegion" Scope="Text Editor">Ctrl+=</Shortcut>  <!-- Introduced shortcut. IntelliJ uses Ctrl+Shift+= for ExpandCurrentRegion. -->
+          <!--<Shortcut Command="Edit.ExpandCurrentRegion" Scope="Text Editor">Ctrl+=</Shortcut>  --><!-- Introduced shortcut. IntelliJ uses Ctrl+Shift+= for ExpandCurrentRegion. -->
           <Shortcut Command="Edit.CollapseCurrentRegion" Scope="Text Editor">Ctrl+Num -</Shortcut>
-          <Shortcut Command="Edit.CollapseCurrentRegion" Scope="Text Editor">Ctrl+-</Shortcut>
+          <!--<Shortcut Command="Edit.CollapseCurrentRegion" Scope="Text Editor">Ctrl+-</Shortcut>-->    <!-- R# VS C# Nav keys are the same as "Default" mapping -->
           <Shortcut Command="Edit.ExpandAllOutlining" Scope="Text Editor">Ctrl+Shift+Num +</Shortcut>
-          <Shortcut Command="Edit.ExpandAllOutlining" Scope="Text Editor">Ctrl+Shift+=</Shortcut>  <!-- Modified shortcut. IntelliJ uses Ctrl+Shift+= for ExpandCurrentRegion. -->
+          <!--<Shortcut Command="Edit.ExpandAllOutlining" Scope="Text Editor">Ctrl+Shift+=</Shortcut>  --><!-- Modified shortcut. IntelliJ uses Ctrl+Shift+= for ExpandCurrentRegion. -->
           <Shortcut Command="Edit.CollapseAllOutlining" Scope="Text Editor">Ctrl+Shift+Num -</Shortcut>
-          <Shortcut Command="Edit.CollapseAllOutlining" Scope="Text Editor">Ctrl+Shift+-</Shortcut>
+          <!--<Shortcut Command="Edit.CollapseAllOutlining" Scope="Text Editor">Ctrl+Shift+-</Shortcut>-->     <!-- R# VS C# Nav keys are the same as "Default" mapping -->
           <!-- Search/Replace -->
           <!--<Shortcut Command="Edit.NavigateTo" Scope="Global">Shift, Shift</Shortcut>-->  <!-- [Search everywhere] Alt: Window.QuickLaunch (?) Doesn't work -->
           <!--<Shortcut Command="Edit.Find" Scope="Global">Ctrl+F</Shortcut>-->    <!-- In Default map -->
@@ -250,22 +255,22 @@
           <!--<Shortcut Command="Debug.ToggleBreakpoint" Scope="Global">Ctrl+F8</Shortcut>-->
           <!--<Shortcut Command="Debug.Breakpoints" Scope="Global">Ctrl+Shift+F8</Shortcut>-->
           <!-- Navigation -->
-          <Shortcut Command="Window.NextTab" Scope="Global">Alt+Right Arrow</Shortcut>
-          <Shortcut Command="Window.NextTab" Scope="Text Editor">Alt+Right Arrow</Shortcut>  <!-- Need to override any TextEditor bindings that could block this global call -->
-          <Shortcut Command="Window.NextTab" Scope="Workflow Designer">Alt+Right Arrow</Shortcut>  <!-- Override to remove existing shortcut -->
-          <Shortcut Command="Window.PreviousTab" Scope="Global">Alt+Left Arrow</Shortcut>
-          <Shortcut Command="Window.PreviousTab" Scope="Text Editor">Alt+Left Arrow</Shortcut>  <!-- Override to remove existing shortcut -->
-          <Shortcut Command="Window.PreviousTab" Scope="Workflow Designer">Alt+Left Arrow</Shortcut>  <!-- Override to remove existing shortcut -->
+          <!--<Shortcut Command="Window.NextTab" Scope="Global">Alt+Right Arrow</Shortcut>-->
+          <!--<Shortcut Command="Window.NextTab" Scope="Text Editor">Alt+Right Arrow</Shortcut>  --><!-- Need to override any TextEditor bindings that could block this global call -->
+          <!--<Shortcut Command="Window.NextTab" Scope="Workflow Designer">Alt+Right Arrow</Shortcut>  --><!-- Override to remove existing shortcut -->
+          <!--<Shortcut Command="Window.PreviousTab" Scope="Global">Alt+Left Arrow</Shortcut>-->
+          <!--<Shortcut Command="Window.PreviousTab" Scope="Text Editor">Alt+Left Arrow</Shortcut>  --><!-- Override to remove existing shortcut -->
+          <!--<Shortcut Command="Window.PreviousTab" Scope="Workflow Designer">Alt+Left Arrow</Shortcut>  --><!-- Override to remove existing shortcut -->
           <!--<Shortcut Command="Window.NextToolWindow" Scope="Global">Alt+F6</Shortcut>-->  <!-- GoTo Most Previous (Recently Active) Tool Window (Default map) -->
           <!--<Shortcut Command="Window.ActivateDocumentWindow" Scope="Global">Esc</Shortcut>-->  <!-- In Default map -->
           <!--<Shortcut Command="Window.AutoHide" Scope="Global">Shift+Esc</Shortcut> --><!-- Near-match for Window.HideLastActiveWindow. Note: Sets window to auto-hide mode, so will not open docked next time. -->
           <!--<Shortcut Command="Window.CloseToolWindow" Scope="Global">Shift+Esc</Shortcut>  --> <!-- Near-match --><!--  --><!-- Should close most recent tool window -->
           <!--<Shortcut Command="Edit.GoTo" Scope="Global">Ctrl+G</Shortcut>-->  <!-- [GoTo Line] -->  <!-- In Default map -->
           <Shortcut Command="Window.RecentFilesPopup" Scope="Global">Ctrl+E</Shortcut>  <!-- NYI (Try to find in VS) -->
-          <Shortcut Command="View.NavigateBackward" Scope="Global">Ctrl+Alt+Left Arrow</Shortcut>
-          <Shortcut Command="View.NavigateBackward" Scope="HTML Editor Design View">Ctrl+Alt+Left Arrow</Shortcut>  <!-- Override to remove existing shortcut -->
-          <Shortcut Command="View.NavigateForward" Scope="Global">Ctrl+Alt+Right Arrow</Shortcut>
-          <Shortcut Command="View.NavigateForward" Scope="HTML Editor Design View">Ctrl+Alt+Right Arrow</Shortcut>  <!-- Override to remove existing shortcut -->
+          <!--<Shortcut Command="View.NavigateBackward" Scope="Global">Ctrl+Alt+Left Arrow</Shortcut>-->
+          <!--<Shortcut Command="View.NavigateBackward" Scope="HTML Editor Design View">Ctrl+Alt+Left Arrow</Shortcut>  --><!-- Override to remove existing shortcut -->
+          <!--<Shortcut Command="View.NavigateForward" Scope="Global">Ctrl+Alt+Right Arrow</Shortcut>-->
+          <!--<Shortcut Command="View.NavigateForward" Scope="HTML Editor Design View">Ctrl+Alt+Right Arrow</Shortcut>  --><!-- Override to remove existing shortcut -->
           <Shortcut Command="View.SelectCurrentFileOrSymbolInAnyView" Scope="Global">Alt+F1</Shortcut>  <!-- NYI - [Select current file or symbol in any view] -->
           <Shortcut Command="Edit.OpenQuickDefLookup" Scope="Text Editor">Ctrl+Shift+I</Shortcut>  <!-- NYI -->
           <!--<Shortcut Command="FileStructurePopup" Scope="Global">Ctrl+F12</Shortcut>-->  <!-- Conflict -->  <!-- NYI -->
@@ -276,6 +281,8 @@
           <Shortcut Command="View.ViewCode" Scope="Global">Ctrl+Enter</Shortcut>
           <Shortcut Command="Window.MoveToNavigationBar" Scope="Text Editor">Alt+Home</Shortcut>   <!-- Near Match (?) -->  <!-- Should be Global.ShowNavigationBar -->
           <!-- General -->
+          <!-- Open Tool Windows -->
+          <!--Alt+ Arrows works with CodeLens-->
           <Shortcut Command="View.Output" Scope="Global">Alt+0</Shortcut>   <!-- Near-match (?) Messages -->
           <Shortcut Command="View.Output" Scope="Team Explorer">Alt+0</Shortcut>   <!--Force override -->
           <Shortcut Command="View.Output" Scope="Text Editor">Alt+0</Shortcut>   <!--Future-proof override -->
@@ -306,15 +313,16 @@
           <Shortcut Command="Team.Git.GoToGitChanges" Scope="Global">Alt+9</Shortcut>
           <Shortcut Command="Team.Git.GoToGitChanges" Scope="Text Editor">Alt+9</Shortcut>    <!-- Future-proof override -->
           <Shortcut Command="Window.CloseToolWindow" Scope="Team Explorer">Alt+9</Shortcut>   <!-- Tricky toggle option. -->
-          <Shortcut Command="File.SaveAll" Scope="Global">Ctrl+S</Shortcut>   <!-- NYI(?) -->
+          <!-- Others -->
+          <!--<Shortcut Command="File.SaveAll" Scope="Global">Ctrl+S</Shortcut>   --><!-- NYI(?) -->
           <Shortcut Command="Project.SynchronizeAllFolders" Scope="Global">Ctrl+Alt+Y</Shortcut>   <!-- NYI(?) -->
-          <Shortcut Command="View.FullScreen" Scope="Global">Ctrl+Shift+F12</Shortcut>   <!-- NYI(?) -->  <!-- ToggleMaximizingEditor. Near-match: View.FullScreen -->
+          <!--<Shortcut Command="View.FullScreen" Scope="Global">Ctrl+Shift+F12</Shortcut>   --><!-- NYI(?) --><!--  --><!-- ToggleMaximizingEditor. Near-match: View.FullScreen -->
           <Shortcut Command="AddToFavorites" Scope="Global">Shift+Alt+F</Shortcut>   <!-- NYI(?) -->
           <Shortcut Command="InspectCurrentFileWithCurrentProfile" Scope="Global">Shift+Alt+I</Shortcut>   <!-- NYI(?) -->
           <Shortcut Command="QuickSwitchCurrentScheme" Scope="Global">Ctrl+`</Shortcut>   <!-- NYI(?) -->
           <Shortcut Command="Tools.Options" Scope="Global">Ctrl+Alt+S</Shortcut>   <!-- Near-match(?) OpenSettingsDialog -->
           <Shortcut Command="ClassViewContextMenus.ClassViewMultiselectProjectreferencesItems.Properties" Scope="Global">Ctrl+Shift+Alt+S</Shortcut>   <!-- Near-match(?) OpenProjectStructureDialog -->
-          <Shortcut Command="Window.QuickLaunch" Scope="Global">Ctrl+Shift+A</Shortcut>   <!-- Near-match: FindAction -->
+          <!--<Shortcut Command="Window.QuickLaunch" Scope="Global">Ctrl+Shift+A</Shortcut>   --><!-- Near-match: FindAction -->
           <Shortcut Command="Window.NextDocumentWindowNav" Scope="Global">Ctrl+Tab</Shortcut>   <!-- NYI(?) --><!-- SwitchBetweenTabsAndToolWindow: Implement as two features: Global and TextEditor ? -->
           <!-- Source Control / Local History -->
           <Shortcut Command="Team.Git.GoToGitSynchronization" Scope="Global">Ctrl+Shift+K</Shortcut>   <!-- Near-match -->  <!-- !! Changed shortcut from Ctrl+K (IDEA) to Ctrl+Shift+K (Rider) to free up Ctrl+Kk chord for old C# mappings --> <!-- SourceControl.PushDialog -->
@@ -340,6 +348,7 @@
           <!-- Capturing these, because some will be lost if changing schemes -->
           <!-- Global Window Navigation shortcuts -->
           <!-- Note: These won't work at Text Editor scope if Edit.IncreaseSelection is implemented and bound to Ctrl+W -->
+          <!-- ReSharper uses Ctrl+W for expand selection -->
           <Shortcut Command="View.ArchitectureExplorer" Scope="Global">Ctrl+W, N</Shortcut>   <!-- Invalid Command -->
           <Shortcut Command="View.ArchitectureExplorer" Scope="Global">Ctrl+W, Ctrl+N</Shortcut>   <!-- Invalid Command -->
           <!--<Shortcut Command="View.Notifications" Scope="Global">Ctrl+W, N</Shortcut>-->   <!-- Default command (Here just for reference) -->
@@ -389,6 +398,7 @@
           <!--<Shortcut Command="Build.BuildSelection" Scope="Global">Shift+F6</Shortcut>-->      <!-- In Default map -->
           <!-- Global Debugging shortcuts -->
           <!-- Note: These won't work in Text Editor scope -->
+          <!-- Remove these -->
           <Shortcut Command="Debug.Breakpoints" Scope="Global">Ctrl+D, B</Shortcut>
           <Shortcut Command="Debug.Breakpoints" Scope="Global">Ctrl+D, Ctrl+B</Shortcut>
           <Shortcut Command="Debug.Watch1" Scope="Global">Ctrl+D, W</Shortcut>
