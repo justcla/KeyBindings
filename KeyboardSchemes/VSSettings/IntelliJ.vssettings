@@ -50,7 +50,7 @@
           <Shortcut Command="Edit.CycleClipboardRing" Scope="Text Editor">Ctrl+Shift+V</Shortcut>
           <Shortcut Command="Edit.DuplicateSelection" Scope="Text Editor">Ctrl+D</Shortcut>  <!-- NYI [Duplicate current line or selected block(s)] HotCommands.DuplicateCode -->
           <Shortcut Command="Edit.LineDelete" Scope="Text Editor">Ctrl+Y</Shortcut>
-          <Shortcut Command="Edit.SmartJoinLines" Scope="Text Editor">Ctrl+Shift+J</Shortcut>  <!-- NYI -->
+          <Shortcut Command="Edit.JoinLines" Scope="Text Editor">Ctrl+Shift+J</Shortcut>  <!-- NYI Near match for Smart Join lines - Hot Commands Join Line -->
           <Shortcut Command="Edit.SmartBreakLine" Scope="Text Editor">Ctrl+Enter</Shortcut>  <!-- [Smart line split] C# behaviour is a near-match. Actually just does LineOpenBelow. -->
           <Shortcut Command="Edit.LineOpenBelow" Scope="Text Editor">Shift+Enter</Shortcut>  <!-- [Start new line] -->
           <Shortcut Command="Edit.ToggleCase" Scope="Text Editor">Ctrl+Shift+U</Shortcut>
@@ -69,8 +69,9 @@
           <Shortcut Command="Edit.CollapseAllOutlining" Scope="Text Editor">Ctrl+Shift+Num -</Shortcut>
           <Shortcut Command="Edit.CollapseAllOutlining" Scope="Text Editor">Ctrl+Shift+-</Shortcut>
           <!-- Search/Replace -->
-          <Shortcut Command="Edit.NavigateTo" Scope="Global">Shift, Shift</Shortcut>  <!-- [Search everywhere] Alt: Window.QuickLaunch (?) -->
-          <Shortcut Command="Edit.Find" Scope="Global">Ctrl+F</Shortcut>
+          <Shortcut Command="Edit.GoToAll" Scope="Global">Shift, Shift</Shortcut>  <!-- [Search everywhere] Alt: Window.QuickLaunch (?) -->
+          <!--<Shortcut Command="Edit.NavigateTo" Scope="Global">Shift, Shift</Shortcut>-->  <!--Double-Shift shortcut does not work in VS -->
+          <!-- [Search everywhere] Alt: Window.QuickLaunch (?) -->          <Shortcut Command="Edit.Find" Scope="Global">Ctrl+F</Shortcut>
           <Shortcut Command="Edit.Find" Scope="Text Editor">Ctrl+F</Shortcut>  <!-- Future-proof override -->
           <Shortcut Command="Edit.FindNext" Scope="Global">F3</Shortcut>
           <Shortcut Command="Edit.FindPrevious" Scope="Global">Shift+F3</Shortcut>
@@ -106,18 +107,24 @@
           <Shortcut Command="Debug.ToggleBreakpoint" Scope="Global">Ctrl+F8</Shortcut>
           <Shortcut Command="Debug.Breakpoints" Scope="Global">Ctrl+Shift+F8</Shortcut>
           <!-- Navigation -->
-          <Shortcut Command="Edit.NavigateTo" Scope="Global">Ctrl+N</Shortcut>  <!-- Near-match [GoTo Class/Type] -->
-          <Shortcut Command="Edit.NavigateTo" Scope="Global">Ctrl+Shift+N</Shortcut>  <!-- Near-match [GoTo File] -->
-          <Shortcut Command="Edit.NavigateTo" Scope="Global">Ctrl+Shift+Alt+N</Shortcut>  <!-- Near-match [GoTo Symbol] -->
+          <!-- VS2017+ shortcuts: Edit.GoTo.. -->
+          <Shortcut Command="Edit.GoToType" Scope="Global">Ctrl+N</Shortcut>
+          <Shortcut Command="Edit.GoToFile" Scope="Global">Ctrl+Shift+N</Shortcut>
+          <Shortcut Command="Edit.GoToSymbol" Scope="Global">Ctrl+Shift+Alt+N</Shortcut>
+          <!-- VS2015 shortcuts: Edit.NavigateTo -->
+          <Shortcut Command="Edit.NavigateTo" Scope="Global">Ctrl+N</Shortcut> <!-- [VS2015] Near-match [GoTo Class/Type] -->
+          <Shortcut Command="Edit.NavigateTo" Scope="Global">Ctrl+Shift+N</Shortcut> <!-- [VS2015] Near-match [GoTo File] -->
+          <Shortcut Command="Edit.NavigateTo" Scope="Global">Ctrl+Shift+Alt+N</Shortcut> <!-- [VS2015] Near-match [GoTo Symbol] -->
+          <!-- Other navigation shortcuts -->
           <Shortcut Command="Window.NextTab" Scope="Global">Alt+Right Arrow</Shortcut>
           <Shortcut Command="Window.NextTab" Scope="Text Editor">Alt+Right Arrow</Shortcut>  <!-- Need to override any TextEditor bindings that could block this global call -->
           <Shortcut Command="Window.NextTab" Scope="Workflow Designer">Alt+Right Arrow</Shortcut>  <!-- Override to remove existing shortcut -->
           <Shortcut Command="Window.PreviousTab" Scope="Global">Alt+Left Arrow</Shortcut>
           <Shortcut Command="Window.PreviousTab" Scope="Text Editor">Alt+Left Arrow</Shortcut>  <!-- Override to remove existing shortcut -->
           <Shortcut Command="Window.PreviousTab" Scope="Workflow Designer">Alt+Left Arrow</Shortcut>  <!-- Override to remove existing shortcut -->
-          <Shortcut Command="Window.GoToMostRecentlyActiveToolWindow" Scope="Global">F12</Shortcut>   <!-- NYI - [GoTo Most Previous (Recently Active) Tool Window] -->
+          <Shortcut Command="Window.NextToolWindow" Scope="Global">F12</Shortcut>   <!-- New! NYI - [GoTo Most Previous (Recently Active) Tool Window] -->
           <Shortcut Command="Window.ActivateDocumentWindow" Scope="Global">Esc</Shortcut>
-          <Shortcut Command="Window.CloseToolWindow" Scope="Global">Shift+Esc</Shortcut>  <!-- Near-match for Window.HideLastActiveWindow -->
+          <Shortcut Command="Window.AutoHide" Scope="Global">Shift+Esc</Shortcut>  <!-- Near-match for Window.HideLastActiveWindow. Note: Sets window to auto-hide mode, so will not open docked next time. -->
           <Shortcut Command="Window.CloseToolWindow" Scope="Global">Ctrl+Shift+F4</Shortcut>  <!-- Near-match -->  <!-- Should close most recent tool window -->
           <Shortcut Command="Edit.GoTo" Scope="Global">Ctrl+G</Shortcut>  <!-- [GoTo Line] -->
           <Shortcut Command="Window.RecentFilesPopup" Scope="Global">Ctrl+E</Shortcut>  <!-- NYI (Try to find in VS) -->
@@ -173,11 +180,9 @@
           <Shortcut Command="Refactoring.ExtractConstant" Scope="Text Editor">Ctrl+Alt+C</Shortcut>   <!-- NYI(?) -->
           <Shortcut Command="Refactoring.ExtractParameter" Scope="Text Editor">Ctrl+Alt+P</Shortcut>   <!-- NYI(?) -->
           <!-- Source Control / Local History -->
-          <Shortcut Command="View.TfsTeamExplorer" Scope="Global">Alt+9</Shortcut>    <!-- Moved here for menu ordering purposes -->
-          <Shortcut Command="View.TfsTeamExplorer" Scope="Text Editor">Alt+9</Shortcut>    <!-- Future-proof override -->  <!-- Moved here for menu ordering purposes -->
-          <Shortcut Command="View.TfsTeamExplorer" Scope="Global">Ctrl+Shift+K</Shortcut>   <!-- Near-match -->  <!-- !! Changed shortcut from Ctrl+K (IDEA) to Ctrl+Shift+K (Rider) to free up Ctrl+Kk chord for old C# mappings --> <!-- SourceControl.PushDialog -->
-          <Shortcut Command="View.TfsTeamExplorer" Scope="Text Editor">Ctrl+Shift+K</Shortcut>   <!-- Force override --> <!-- !! Changed shortcut from Ctrl+K (IDEA) to Ctrl+Shift+K (Rider) to free up Ctrl+Kk chord for old C# mappings --> <!-- SourceControl.PushDialog -->
-          <Shortcut Command="View.TfsTeamExplorer" Scope="Workflow Designer">Ctrl+Shift+K</Shortcut>   <!-- Force override --> <!-- !! Changed shortcut from Ctrl+K (IDEA) to Ctrl+Shift+K (Rider) to free up Ctrl+Kk chord for old C# mappings --> <!-- SourceControl.PushDialog -->
+          <Shortcut Command="Team.Git.GoToGitSynchronization" Scope="Global">Ctrl+Shift+K</Shortcut>   <!-- Near-match -->  <!-- !! Changed shortcut from Ctrl+K (IDEA) to Ctrl+Shift+K (Rider) to free up Ctrl+Kk chord for old C# mappings --> <!-- SourceControl.PushDialog -->
+          <Shortcut Command="Team.Git.GoToGitSynchronization" Scope="Text Editor">Ctrl+Shift+K</Shortcut>   <!-- Force override --> <!-- !! Changed shortcut from Ctrl+K (IDEA) to Ctrl+Shift+K (Rider) to free up Ctrl+Kk chord for old C# mappings --> <!-- SourceControl.PushDialog -->
+          <Shortcut Command="Team.Git.GoToGitSynchronization" Scope="Workflow Designer">Ctrl+Shift+K</Shortcut>   <!-- Force override --> <!-- !! Changed shortcut from Ctrl+K (IDEA) to Ctrl+Shift+K (Rider) to free up Ctrl+Kk chord for old C# mappings --> <!-- SourceControl.PushDialog -->
           <Shortcut Command="View.TfsTeamExplorer" Scope="Global">Ctrl+T</Shortcut>   <!-- Near-match -->  <!-- SourceControl.PullDialog -->
           <Shortcut Command="View.TfsTeamExplorer" Scope="Text Editor">Ctrl+T</Shortcut>   <!-- Force override --> <!-- SourceControl.PullDialog -->
           <Shortcut Command="View.TfsTeamExplorer" Scope="View Designer">Ctrl+T</Shortcut>   <!-- Force override --> <!-- SourceControl.PullDialog -->
@@ -218,12 +223,12 @@
           <Shortcut Command="View.DocumentOutline" Scope="Team Explorer">Alt+7</Shortcut>   <!-- Force override -->
           <Shortcut Command="View.DocumentOutline" Scope="Text Editor">Alt+7</Shortcut>   <!-- Future-proof override -->
           <Shortcut Command="OpenToolWindow.Hierarchy" Scope="Global">Alt+8</Shortcut>   <!-- NYI(?) -->
-          <!--<Shortcut Command="View.TfsTeamExplorer" Scope="Global">Alt+9</Shortcut>-->   <!-- Moved above for menu ordering purposes -->
-          <!--<Shortcut Command="View.TfsTeamExplorer" Scope="Text Editor">Alt+9</Shortcut>-->  <!-- Moved above for menu ordering purposes -->
+          <Shortcut Command="Team.Git.GoToGitChanges" Scope="Global">Alt+9</Shortcut>
+          <Shortcut Command="Team.Git.GoToGitChanges" Scope="Text Editor">Alt+9</Shortcut>  <!-- Future-proof override -->
           <Shortcut Command="Window.CloseToolWindow" Scope="Team Explorer">Alt+9</Shortcut>   <!-- Getting tricky here for a toggle option. Could use Window.ActivateDocumentWindow -->
           <Shortcut Command="File.SaveAll" Scope="Global">Ctrl+S</Shortcut>   <!-- NYI(?) -->
           <Shortcut Command="Project.SynchronizeAllFolders" Scope="Global">Ctrl+Alt+Y</Shortcut>   <!-- NYI(?) -->
-          <Shortcut Command="View.FullScreen" Scope="Global">Ctrl+Shift+F12</Shortcut>   <!-- NYI(?) -->  <!-- ToggleMaximizingEditor. Near-match: View.FullScreen -->
+          <Shortcut Command="Window.AutoHideAll" Scope="Global">Ctrl+Shift+F12</Shortcut>   <!-- Near-match: ToggleMaximizingEditor -->
           <Shortcut Command="AddToFavorites" Scope="Global">Alt+Shift+F</Shortcut>   <!-- NYI(?) -->
           <Shortcut Command="InspectCurrentFileWithCurrentProfile" Scope="Global">Alt+Shift+I</Shortcut>   <!-- NYI(?) -->
           <Shortcut Command="QuickSwitchCurrentScheme" Scope="Global">Ctrl+`</Shortcut>   <!-- NYI(?) -->
@@ -232,14 +237,14 @@
           <Shortcut Command="Window.QuickLaunch" Scope="Global">Ctrl+Shift+A</Shortcut>   <!-- Near-match: FindAction -->
           <Shortcut Command="Window.NextDocumentWindowNav" Scope="Global">Ctrl+Tab</Shortcut>   <!-- NYI(?) --><!-- SwitchBetweenTabsAndToolWindow: Implement as two features: Global and TextEditor ? -->
           <!-- Extras -->
-          <Shortcut Command="Window.NextTab" Scope="Text Editor">Ctrl+PgDn</Shortcut>   <!-- Restore Global control for Ctrl+PgDn -->
-          <Shortcut Command="Window.PreviousTab" Scope="Text Editor">Ctrl+PgUp</Shortcut> <!-- Restore Global control for Ctrl+PgUp -->
           <Shortcut Command="Edit.MoveSelectedLinesUp" Scope="Text Editor">Ctrl+Shift+Up Arrow</Shortcut>
           <Shortcut Command="Edit.MoveSelectedLinesDown" Scope="Text Editor">Ctrl+Shift+Down Arrow</Shortcut>
-          <Shortcut Command="Window.CloseDocumentWindow" Scope="Difference Viewer">Esc</Shortcut>
-          <Shortcut Command="File.TfsCompare" Scope="Team Explorer">Ctrl+D</Shortcut>   <!-- IWC (?)  Team.OpenDiffView -->
+          <Shortcut Command="Window.NextToolWindow" Scope="Difference Viewer">Esc</Shortcut>   <!-- Allows you to return to the Tool Window that launch the DiffViewer -->  <!-- Contentious: Overrides Esc = Edit.SelectionCancel (ie. clear "find" selection) -->
+          <Shortcut Command="Team.Git.CompareWithUnmodified" Scope="Team Explorer">Ctrl+D</Shortcut>
           <!--Shortcut Command="Edit.QuickInfo" Scope="Global">Ctrl+Q</Shortcut-->  <!-- Force override of Global Quick Info shortcut -->  <!-- Bug: Unable to override text inside Quick Launch search box -->
-      <!--=================-->
+          <!-- Introduced shortcut to dock took window -->
+          <Shortcut Command="Window.Dock" Scope="Global">Ctrl+Ins</Shortcut>
+          <!--=================-->
       <!-- Visual Studio C# 2005 Mappings -->
       <!--=================-->
           <!-- Capturing these, because some will be lost if changing schemes -->

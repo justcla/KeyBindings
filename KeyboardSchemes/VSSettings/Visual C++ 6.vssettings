@@ -50,10 +50,10 @@
                     <Shortcut Command="View.ViewDesigner" Scope="Global">SHIFT+F7</Shortcut>
                     <Shortcut Command="Window.ActivateDocumentWindow" Scope="Global">ALT+0</Shortcut>
                     <Shortcut Command="Window.MovetoNavigationBar" Scope="Global">CTRL+F8</Shortcut>
-					<Shortcut Command="Debug.ParallelStacks" Scope="Global">CTRL+SHIFT+D,S</Shortcut>
-					<Shortcut Command="Debug.ParallelStacks" Scope="Global">CTRL+SHIFT+D,CTRL+SHIFT+S</Shortcut>
-					<Shortcut Command="Debug.ParallelTasks" Scope="Global">CTRL+SHIFT+D,K</Shortcut>
-					<Shortcut Command="Debug.ParallelTasks" Scope="Global">CTRL+SHIFT+D,CTRL+SHIFT+K</Shortcut>
+					          <Shortcut Command="Debug.ParallelStacks" Scope="Global">CTRL+SHIFT+D,S</Shortcut>
+					          <Shortcut Command="Debug.ParallelStacks" Scope="Global">CTRL+SHIFT+D,CTRL+SHIFT+S</Shortcut>
+					          <Shortcut Command="Debug.ParallelTasks" Scope="Global">CTRL+SHIFT+D,K</Shortcut>
+					          <Shortcut Command="Debug.ParallelTasks" Scope="Global">CTRL+SHIFT+D,CTRL+SHIFT+K</Shortcut>
                     <Shortcut Command="View.QuickActions" Scope="Text Editor">Alt+Enter</Shortcut>
                 </ShortcutsSchemeDef>
             </KeyboardShortcuts>

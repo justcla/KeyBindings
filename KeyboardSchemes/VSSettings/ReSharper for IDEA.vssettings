@@ -70,6 +70,13 @@
           <Shortcut Command="ToggleBookmarkWithMnemonic" Scope="Text Editor">Ctrl+F11</Shortcut>   <!-- NYI(?) Not in ReShaper map -->
           <Shortcut Command="Edit.ToggleBookmark" Scope="Text Editor">F11</Shortcut>   <!-- NYI(?) Not in ReShaper map -->
           <!-- Explore -->
+          <!-- VS2017 shortcuts -->
+          <Shortcut Command="Edit.GoToAll" Scope="Global">Ctrl+N</Shortcut>  <!-- VS2017+ -->
+          <!--Shortcut Command="Edit.GoToType" Scope="Global">Ctrl+N, Ctrl+N</Shortcut-->  <!-- VS2017+ - Cannot do this because it introduces a chord that conflicts with Ctrl+N -->
+          <Shortcut Command="Edit.GoToSymbol" Scope="Global">Ctrl+Shift+Alt+N</Shortcut>  <!-- VS2017+ -->
+          <Shortcut Command="Edit.GoToFile" Scope="Global">Ctrl+Shift+N</Shortcut>  <!-- VS2017+ -->
+          <Shortcut Command="Edit.GoToMember" Scope="Global">Ctrl+F12</Shortcut>  <!-- VS2017+ -->
+          <!-- VS2015 shortcuts -->
           <Shortcut Command="Edit.NavigateTo" Scope="Global">Ctrl+N</Shortcut>  <!-- Near-match [GoTo everything] QuickLaunch or NavigateTo ?? -->
           <!--Shortcut Command="Edit.NavigateTo" Scope="Global">Ctrl+N, Ctrl+N</Shortcut-->  <!-- Near-match [GoTo Type] Cannot do this because it introduces a chord that conflicts with Ctrl+N -->
           <Shortcut Command="Edit.NavigateTo" Scope="Global">Ctrl+Shift+Alt+N</Shortcut>  <!-- Near-match [GoTo Symbol] -->
@@ -86,7 +93,8 @@
           <Shortcut Command="Edit.ShowUsages" Scope="Global">Ctrl+Alt+F7</Shortcut>  <!-- NYI/Broken? Need to find VS command (Not in ReShaper map) -->
           <Shortcut Command="View.AnalyzeReferences" Scope="Global">Ctrl+Alt+Y</Shortcut>  <!-- NYI (?) Analyze References window -->
           <!-- Navigate to -->
-          <Shortcut Command="Edit.NavigateTo" Scope="Text Editor">Ctrl+Shift+G</Shortcut>  <!-- Navigate To -->
+          <!--<Shortcut Command="Edit.GoToAll" Scope="Text Editor">Ctrl+Shift+G</Shortcut>  --><!-- Navigate To (VS2017) -->
+          <!--<Shortcut Command="Edit.NavigateTo" Scope="Text Editor">Ctrl+Shift+G</Shortcut>  --><!-- Navigate To (VS2015) -->
           <Shortcut Command="Edit.GoToDefinition" Scope="Text Editor">Ctrl+B</Shortcut>  <!-- [GoTo Declaration] -->
           <Shortcut Command="Edit.GoToTypeOfSymbol" Scope="Text Editor">Ctrl+Shift+T</Shortcut>  <!-- NYI(?) Go to type of symbol -->
           <Shortcut Command="Edit.GoToTypeDeclaration" Scope="Text Editor">Ctrl+Shift+B</Shortcut>  <!-- NYI (Not on ReSharper map) -->
@@ -107,8 +115,8 @@
           <Shortcut Command="ShowQuickFixes" Scope="Global">Alt+Enter</Shortcut>
           <Shortcut Command="InspectThis" Scope="Global">Ctrl+Shift+Alt+A</Shortcut>
           <Shortcut Command="View.CallHierarchy" Scope="Global">Ctrl+E, H</Shortcut>  <!-- Near-match (?) ViewTypeHierarchy. Not context aware. Only opens Tool window. -->
-          <Shortcut Command="View.NextError" Scope="Global">F12</Shortcut>    <!-- NYI. Near-match. GoToNextHighlight -->
-          <Shortcut Command="View.PreviousError" Scope="Global">Shift+F12</Shortcut>   <!-- NYI. Near-match. GoToPreviousHighlight -->
+          <Shortcut Command="View.NextError" Scope="Global">F12</Shortcut>    <!-- NYI. Near-match. GoToNextHighlight  (Edit.NextHighlightedReference?) -->
+          <Shortcut Command="View.PreviousError" Scope="Global">Shift+F12</Shortcut>   <!-- NYI. Near-match. GoToPreviousHighlight  (Edit.PreviousHighlightedReference?) -->
           <Shortcut Command="View.NextError" Scope="Global">Alt+F12</Shortcut>
           <Shortcut Command="View.PreviousError" Scope="Global">Shift+Alt+F12</Shortcut>
           <!-- Refactoring -->
@@ -141,6 +149,9 @@
           <Shortcut Command="TestExplorer.RepeatLastRun" Scope="Global">Ctrl+T, T</Shortcut>  <!-- NYI(?) RepeatPreviousRun -->
           <Shortcut Command="UnitTestExplorer" Scope="Global">Ctrl+Alt+T</Shortcut>  <!-- NYI(?) UnitTestExplorer -->
           <Shortcut Command="UnitTestSessions" Scope="Global">Ctrl+Alt+R</Shortcut>  <!-- NYI(?) UnitTestSessions -->
+          <!-- Other ReSharper shortcuts -->
+          <Shortcut Command="SolutionExplorer.SyncWithActiveDocument" Scope="Global">Ctrl+Shift+L</Shortcut>
+          <Shortcut Command="SolutionExplorer.SyncWithActiveDocument" Scope="Text Editor">Ctrl+Shift+L</Shortcut>
 
       <!--===================================================-->
       <!-- Other shortcuts - Copied from IntelliJ for C# map -->
@@ -164,7 +175,7 @@
           <!--<Shortcut Command="Edit.Paste" Scope="Text Editor">Shift+Ins</Shortcut>-->    <!-- In Default map -->
           <!--<Shortcut Command="Edit.CycleClipboardRing" Scope="Text Editor">Ctrl+Shift+V</Shortcut>-->    <!-- In Default map -->
           <Shortcut Command="Edit.LineDelete" Scope="Text Editor">Ctrl+Y</Shortcut>
-          <Shortcut Command="Edit.SmartJoinLines" Scope="Text Editor">Ctrl+Shift+J</Shortcut>  <!-- NYI -->
+          <Shortcut Command="Edit.JoinLines" Scope="Text Editor">Ctrl+Shift+J</Shortcut>  <!-- NYI Near match for Smart Join lines - Hot Commands Join Line -->
           <Shortcut Command="Edit.SmartBreakLine" Scope="Text Editor">Ctrl+Enter</Shortcut>  <!-- [Smart line split] C# behaviour is a near-match. Actually just does LineOpenBelow. -->
           <Shortcut Command="Edit.LineOpenBelow" Scope="Text Editor">Shift+Enter</Shortcut>  <!-- [Start new line] -->
           <Shortcut Command="Edit.ToggleCase" Scope="Text Editor">Ctrl+Shift+U</Shortcut>
@@ -194,25 +205,26 @@
           <!--<Shortcut Command="Edit.SearchStructurally" Scope="Global">Ctrl+Shift+S</Shortcut>-->  <!-- Dangerous to include. Excluding this specially -->
           <!--<Shortcut Command="Edit.ReplaceStructurally" Scope="Global">Ctrl+Shift+M</Shortcut>-->  <!-- Dangerous to include. Excluding this specially -->
           <!-- Compile and Run-->
-          <Shortcut Command="Build.BuildSolution" Scope="Global">Ctrl+F9</Shortcut>  <!-- Near-match: [Build project] Chosen as more sensible command since IntelliJ does not handle multi-project solutions whereas VS does. -->
+          <!-- ReSharper IDEA Build/Debug keys are same as base Visual Studio - not IntelliJ IDEA -->
+          <!--<Shortcut Command="Build.BuildSolution" Scope="Global">Ctrl+F9</Shortcut>  --><!-- Near-match: [Build project] Chosen as more sensible command since IntelliJ does not handle multi-project solutions whereas VS does. -->
           <!--<Shortcut Command="Build.BuildOnlyProject" Scope="Global">Ctrl+F9</Shortcut>-->  <!-- Alternative choice for build project, or compile (?) -->
-          <Shortcut Command="Build.Compile" Scope="Global">Ctrl+Shift+F9</Shortcut>  <!-- Compile selected file, package or module -->
-          <Shortcut Command="SelectConfigurationAndRun" Scope="Global">Alt+Shift+F10</Shortcut>  <!-- NYI -->
-          <Shortcut Command="SelectConfigurationAndDebug" Scope="Global">Alt+Shift+F9</Shortcut>  <!-- NYI -->
-          <Shortcut Command="Debug.StartWithoutDebugging" Scope="Global">Shift+F10</Shortcut> <!-- [Run] -->
-          <Shortcut Command="Debug.Start" Scope="Global">Shift+F9</Shortcut>  <!-- [Debug] -->
-          <Shortcut Command="Debug.RunContextConfigFromEditor" Scope="Global">Ctrl+Shift+F10</Shortcut>  <!-- NYI -->
+          <!--<Shortcut Command="Build.Compile" Scope="Global">Ctrl+Shift+F9</Shortcut>  --><!-- Compile selected file, package or module -->
+          <!--<Shortcut Command="SelectConfigurationAndRun" Scope="Global">Alt+Shift+F10</Shortcut>  --><!-- NYI -->
+          <!--<Shortcut Command="SelectConfigurationAndDebug" Scope="Global">Alt+Shift+F9</Shortcut>  --><!-- NYI -->
+          <!--<Shortcut Command="Debug.StartWithoutDebugging" Scope="Global">Shift+F10</Shortcut> --><!-- [Run] -->
+          <!--<Shortcut Command="Debug.Start" Scope="Global">Shift+F9</Shortcut>  --><!-- [Debug] -->
+          <!--<Shortcut Command="Debug.RunContextConfigFromEditor" Scope="Global">Ctrl+Shift+F10</Shortcut>  --><!-- NYI -->
           <!-- Debugging -->
           <!-- Consider defining these shortcuts at TextEditor and Debugger scope only to avoid unnecessary Global key bindings -->
-          <Shortcut Command="Debug.StepOver" Scope="Global">F8</Shortcut>
-          <Shortcut Command="Debug.StepInto" Scope="Global">F7</Shortcut>
-          <Shortcut Command="Debug.SmartStepInto" Scope="Global">Shift+F7</Shortcut>  <!-- NYI -->
-          <Shortcut Command="Debug.StepOut" Scope="Global">Shift+F8</Shortcut>
-          <Shortcut Command="Debug.RunToCursor" Scope="Global">Alt+F9</Shortcut>
-          <Shortcut Command="Debug.Immediate" Scope="Global">Alt+F8</Shortcut>  <!-- Near-match [Evaluate expression] Alternative: Debug.EvaluateStatement (?) -->
-          <Shortcut Command="Debug.Start" Scope="Global">F9</Shortcut>  <!-- ?? [Resume] -->
-          <Shortcut Command="Debug.ToggleBreakpoint" Scope="Global">Ctrl+F8</Shortcut>
-          <Shortcut Command="Debug.Breakpoints" Scope="Global">Ctrl+Shift+F8</Shortcut>
+          <!--<Shortcut Command="Debug.StepOver" Scope="Global">F8</Shortcut>-->
+          <!--<Shortcut Command="Debug.StepInto" Scope="Global">F7</Shortcut>-->
+          <!--<Shortcut Command="Debug.SmartStepInto" Scope="Global">Shift+F7</Shortcut>  --><!-- NYI -->
+          <!--<Shortcut Command="Debug.StepOut" Scope="Global">Shift+F8</Shortcut>-->
+          <!--<Shortcut Command="Debug.RunToCursor" Scope="Global">Alt+F9</Shortcut>-->
+          <!--<Shortcut Command="Debug.Immediate" Scope="Global">Alt+F8</Shortcut>  --><!-- Near-match [Evaluate expression] Alternative: Debug.EvaluateStatement (?) -->
+          <!--<Shortcut Command="Debug.Start" Scope="Global">F9</Shortcut>  --><!-- ?? [Resume] -->
+          <!--<Shortcut Command="Debug.ToggleBreakpoint" Scope="Global">Ctrl+F8</Shortcut>-->
+          <!--<Shortcut Command="Debug.Breakpoints" Scope="Global">Ctrl+Shift+F8</Shortcut>-->
           <!-- Navigation -->
           <Shortcut Command="Window.NextTab" Scope="Global">Alt+Right Arrow</Shortcut>
           <Shortcut Command="Window.NextTab" Scope="Text Editor">Alt+Right Arrow</Shortcut>  <!-- Need to override any TextEditor bindings that could block this global call -->
@@ -267,8 +279,8 @@
           <Shortcut Command="View.DocumentOutline" Scope="Team Explorer">Alt+7</Shortcut>   <!-- Force override -->
           <Shortcut Command="View.DocumentOutline" Scope="Text Editor">Alt+7</Shortcut>   <!-- Future-proof override -->
           <Shortcut Command="OpenToolWindow.Hierarchy" Scope="Global">Alt+8</Shortcut>   <!-- NYI(?) -->
-          <Shortcut Command="View.TfsTeamExplorer" Scope="Global">Alt+9</Shortcut>      <!-- Future-proof override -->
-          <Shortcut Command="View.TfsTeamExplorer" Scope="Text Editor">Alt+9</Shortcut>
+          <Shortcut Command="Team.Git.GoToGitChanges" Scope="Global">Alt+9</Shortcut>      <!-- Future-proof override -->
+          <Shortcut Command="Team.Git.GoToGitChanges" Scope="Text Editor">Alt+9</Shortcut>
           <Shortcut Command="Window.CloseToolWindow" Scope="Team Explorer">Alt+9</Shortcut>   <!-- Getting tricky here for a toggle option. Could use Window.ActivateDocumentWindow -->
           <Shortcut Command="File.SaveAll" Scope="Global">Ctrl+S</Shortcut>   <!-- NYI(?) -->
           <Shortcut Command="Project.SynchronizeAllFolders" Scope="Global">Ctrl+Alt+Y</Shortcut>   <!-- NYI(?) -->
@@ -281,23 +293,23 @@
           <Shortcut Command="Window.QuickLaunch" Scope="Global">Ctrl+Shift+A</Shortcut>   <!-- Near-match: FindAction -->
           <Shortcut Command="Window.NextDocumentWindowNav" Scope="Global">Ctrl+Tab</Shortcut>   <!-- NYI(?) --><!-- SwitchBetweenTabsAndToolWindow: Implement as two features: Global and TextEditor ? -->
           <!-- Source Control / Local History -->
-          <Shortcut Command="View.TfsTeamExplorer" Scope="Global">Ctrl+Shift+K</Shortcut>   <!-- Near-match -->  <!-- !! Changed shortcut from Ctrl+K (IDEA) to Ctrl+Shift+K (Rider) to free up Ctrl+Kk chord for old C# mappings --> <!-- SourceControl.PushDialog -->
-          <Shortcut Command="View.TfsTeamExplorer" Scope="Text Editor">Ctrl+Shift+K</Shortcut>   <!-- Force override --> <!-- !! Changed shortcut from Ctrl+K (IDEA) to Ctrl+Shift+K (Rider) to free up Ctrl+Kk chord for old C# mappings --> <!-- SourceControl.PushDialog -->
-          <Shortcut Command="View.TfsTeamExplorer" Scope="Workflow Designer">Ctrl+Shift+K</Shortcut>   <!-- Force override --> <!-- !! Changed shortcut from Ctrl+K (IDEA) to Ctrl+Shift+K (Rider) to free up Ctrl+Kk chord for old C# mappings --> <!-- SourceControl.PushDialog -->
+          <Shortcut Command="Team.Git.GoToGitSynchronization" Scope="Global">Ctrl+Shift+K</Shortcut>   <!-- Near-match -->  <!-- !! Changed shortcut from Ctrl+K (IDEA) to Ctrl+Shift+K (Rider) to free up Ctrl+Kk chord for old C# mappings --> <!-- SourceControl.PushDialog -->
+          <Shortcut Command="Team.Git.GoToGitSynchronization" Scope="Text Editor">Ctrl+Shift+K</Shortcut>   <!-- Force override --> <!-- !! Changed shortcut from Ctrl+K (IDEA) to Ctrl+Shift+K (Rider) to free up Ctrl+Kk chord for old C# mappings --> <!-- SourceControl.PushDialog -->
+          <Shortcut Command="Team.Git.GoToGitSynchronization" Scope="Workflow Designer">Ctrl+Shift+K</Shortcut>   <!-- Force override --> <!-- !! Changed shortcut from Ctrl+K (IDEA) to Ctrl+Shift+K (Rider) to free up Ctrl+Kk chord for old C# mappings --> <!-- SourceControl.PushDialog -->
           <!--<Shortcut Command="View.TfsTeamExplorer" Scope="Global">Ctrl+T</Shortcut>-->   <!-- Near-match -->  <!-- SourceControl.PullDialog -->  <!-- Conflict -->
           <!--<Shortcut Command="View.TfsTeamExplorer" Scope="Text Editor">Ctrl+T</Shortcut>-->   <!-- Force override --> <!-- SourceControl.PullDialog -->  <!-- Conflict -->
           <!--<Shortcut Command="View.TfsTeamExplorer" Scope="View Designer">Ctrl+T</Shortcut>-->   <!-- Force override --> <!-- SourceControl.PullDialog -->  <!-- Conflict -->
-          <Shortcut Command="View.TfsTeamExplorer" Scope="Query Designer">Ctrl+T</Shortcut>   <!-- Force override -->  <!-- SourceControl.PullDialog -->
+          <!--<Shortcut Command="View.TfsTeamExplorer" Scope="Query Designer">Ctrl+T</Shortcut>-->   <!-- Force override -->  <!-- SourceControl.PullDialog -->
           <Shortcut Command="Team.Git.ViewHistory" Scope="Text Editor">Shift+Alt+C</Shortcut>   <!-- Near-match (Git History instead of Local History) -->  <!-- LocalHistory.ViewRecentChanges -->
           <Shortcut Command="Team.Git.ViewHistory" Scope="Solution Explorer">Shift+Alt+C</Shortcut>  <!-- Additional placement -->
           <Shortcut Command="Team.Git.ViewHistory" Scope="Team Explorer">Shift+Alt+C</Shortcut>   <!-- Additional placement -->
           <Shortcut Command="SourceControl.QuickPopup" Scope="Text Editor">Alt+`</Shortcut>   <!-- NYI(?) -->
           <!-- Extras -->
-          <Shortcut Command="Window.NextTab" Scope="Text Editor">Ctrl+PgDn</Shortcut>   <!-- Restore Global control for Ctrl+PgDn -->
-          <Shortcut Command="Window.PreviousTab" Scope="Text Editor">Ctrl+PgUp</Shortcut> <!-- Restore Global control for Ctrl+PgUp -->
-          <Shortcut Command="Window.CloseDocumentWindow" Scope="Difference Viewer">Esc</Shortcut>
-          <Shortcut Command="File.TfsCompare" Scope="Team Explorer">Ctrl+D</Shortcut>   <!-- IWC (?)  Team.OpenDiffView -->
+          <Shortcut Command="Window.CloseDocumentWindow" Scope="Difference Viewer">Esc</Shortcut>   <!-- Controversial. Means you cannot escape from Find or Text Selection -->
+          <Shortcut Command="Team.Git.CompareWithUnmodified" Scope="Team Explorer">Ctrl+D</Shortcut>   <!-- IWC (?)  Team.OpenDiffView -->
           <!--Shortcut Command="Edit.QuickInfo" Scope="Global">Ctrl+Q</Shortcut-->  <!-- Force override of Global Quick Info shortcut -->  <!-- Bug: Unable to override text inside Quick Launch search box -->
+          <!--<Shortcut Command="Window.AutoHideAll" Scope="Global">Ctrl+Shift+F12</Shortcut> --><!-- Near-match: ToggleMaximizingEditor. Ctrl+Shift+F12 would override View.NextError in default scheme. -->
+          <!--<Shortcut Command="Window.Dock" Scope="Global">Ctrl+Ins</Shortcut>  --><!-- Introduced shortcut to dock took window. Ctrl+Ins would override Edit.Copy in default scheme. -->
           <!--=================-->
           <!-- Visual Studio C# 2005 Mappings -->
           <!--=================-->

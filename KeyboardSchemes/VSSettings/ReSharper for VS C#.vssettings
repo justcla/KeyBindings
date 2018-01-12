@@ -175,6 +175,9 @@
           <Shortcut Command="TestExplorer.RepeatLastRun" Scope="Global">Ctrl+U, T</Shortcut>  <!-- NYI(?) RepeatPreviousRun -->
           <Shortcut Command="UnitTestExplorer" Scope="Global">Ctrl+Alt+U</Shortcut>  <!-- NYI(?) UnitTestExplorer -->
           <Shortcut Command="UnitTestSessions" Scope="Global">Ctrl+Alt+T</Shortcut>  <!-- NYI(?) UnitTestSessions -->
+          <!-- Other ReSharper shortcuts -->
+          <Shortcut Command="SolutionExplorer.SyncWithActiveDocument" Scope="Global">Ctrl+Shift+L</Shortcut>
+          <Shortcut Command="SolutionExplorer.SyncWithActiveDocument" Scope="Text Editor">Ctrl+Shift+L</Shortcut>
 
           <!--===================================================-->
           <!-- Other shortcuts - Copied from IntelliJ for C# map -->

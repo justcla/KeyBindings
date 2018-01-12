@@ -1,34 +1,37 @@
 <?xml version='1.0' encoding='windows-1252'?>
 <Wix xmlns='http://schemas.microsoft.com/wix/2006/wi'>
-	<Product Name='Hot Keys for Visual Studio' Id='781829cf-4493-4336-949d-f2420d9d11e3' UpgradeCode='1cfe8d34-0a5a-4b21-a2ea-53c1d4f931c6'
-    Language='1033' Codepage='1252' Version='1.0.0' Manufacturer='Justin Clareburt'>
+	<Product Name='Hot Keys for Visual Studio 2017' Id='f0a58a89-4af2-4a0c-8e5d-508e9912d508' UpgradeCode='98e97300-245e-4916-9f58-9417e5e33d17'
+		Language='1033' Codepage='1252' Version='1.0.0' Manufacturer='Justin Clareburt'>
 
-		<Package Id='*' Keywords='Installer' Description="Visual Studio Hot Keys Installer"
-      Comments='Installs new keyboard mapping schemes for Visual Studio' Manufacturer='Justin Clareburt'
-      InstallerVersion='100' Languages='1033' Compressed='yes' SummaryCodepage='1252' />
+		<Package Id='*' Keywords='Installer' Description="Hot Keys for Visual Studio 2017 Installer"
+			Comments='Installs new keyboard mapping schemes for Visual Studio 2017' Manufacturer='Justin Clareburt'
+			InstallerVersion='100' Languages='1033' Compressed='yes' SummaryCodepage='1252' />
 
 		<Media Id='1' Cabinet='Sample.cab' EmbedCab='yes' DiskPrompt="CD-ROM #1" />
 		<Property Id='DiskPrompt' Value="Acme's Foobar 1.0 Installation [1]" />
 
-		<PropertyRef Id="VS2015_ROOT_FOLDER" />
-		<PropertyRef Id="VS2015_EXTENSIONS_DIR" />
-		<!--<Directory Id="VS2015_EXTENSIONS_DIR" Name="VS2015_EXTENSIONS_DIR" />-->
-
 		<Directory Id='TARGETDIR' Name='SourceDir'>
-			<Directory Id='VS2015_ROOT_FOLDER'>
-				<Directory Id='Common7_IDE_Dir' Name='Common7'>
-					<Directory Id='INSTALLDIR' Name='IDE'>
+			<Directory Id='ProgramFilesFolder' Name='PFiles'>
+				<Directory Id='MicrosoftVisualStudio' Name='Microsoft Visual Studio'>
+					<Directory Id='VS2017' Name='2017'>
+						<Directory Id='VS_ROOT_DIR' Name='Community'>
+							<Directory Id='Common7' Name='Common7'>
+							 <Directory Id='INSTALLDIR' Name='IDE'>
 
 					<Component Id='IntelliJForCSharpVSK' Guid='b34a7d68-c5cd-4d0c-a23e-e142d47432d0'>
-							<File Id='IntelliJForCSharp_VSKFile' Name='IntelliJ (C# style).vsk' Source='../VSKs/IntelliJ for C#.vsk' KeyPath='yes'/>
+							<File Id='IntelliJForCSharp_VSKFile' Name='IntelliJ (IDEA style) for C#.vsk' Source='../VSKs/2017/IntelliJ for C#.vsk' KeyPath='yes'/>
 						</Component>
 
 						<Component Id='ReSharperForIdeaVSK' Guid='c70e934d-3342-4db8-a0de-bace038d0842'>
-							<File Id='ReSharperForIDEA_VSKFile' Name='ReSharper (IDEA style).vsk' Source='../VSKs/ReSharper for IDEA.vsk' KeyPath='yes'/>
+							<File Id='ReSharperForIDEA_VSKFile' Name='ReSharper (IDEA style) for C#.vsk' Source='../VSKs/2017/ReSharper for IDEA.vsk' KeyPath='yes'/>
 						</Component>
 
 						<Component Id='ReSharperForVSCSharpVSK' Guid='1b8a1335-1fff-446a-9e65-02d376638211'>
-							<File Id='ReSharperForCSharp_VSKFile' Name='ReSharper (VS C# style).vsk' Source='../VSKs/ReSharper for VS C#.vsk' KeyPath='yes'/>
+							<File Id='ReSharperForCSharp_VSKFile' Name='ReSharper (VS style) for C#.vsk' Source='../VSKs/2017/ReSharper for VS C#.vsk' KeyPath='yes'/>
+						</Component>
+
+						<Component Id='VSCSharp2015VSK' Guid='ac421b78-7ab8-47b6-bab5-d6e4096dfe3b'>
+							<File Id='VSCSharp2015_VSKFile' Name='Visual C# 2015.vsk' Source='../VSKs/2017/Visual C# 2015.vsk' KeyPath='yes'/>
 						</Component>
 
 						<Directory Id="Extensions" Name="Extensions">
@@ -51,18 +54,22 @@
 							</Directory>
 						</Directory>
 
+							 </Directory>
+						 </Directory>
+						</Directory>
 					</Directory>
 				</Directory>
 			</Directory>
 		</Directory>
 
-    <!-- Note: The "title" here will show in the Windows Add/Remove programs dialog -->
-		<Feature Id='Complete' Title='Visual Studio Hot Keys'
-						 Description='Installs alternative keyboard mapping schemes to work with Visual Studio.'
+		<!-- Note: The "title" here will show in the Windows Add/Remove programs dialog -->
+		<Feature Id='Complete' Title='Hot Keys for Visual Studio 2017'
+						 Description='Installs alternative keyboard mapping schemes to work with Visual Studio 2017.'
 						 Display='expand' Level='1' ConfigurableDirectory='INSTALLDIR'>
 			<ComponentRef Id='IntelliJForCSharpVSK' />
 			<ComponentRef Id='ReSharperForIdeaVSK' />
 			<ComponentRef Id='ReSharperForVSCSharpVSK' />
+			<ComponentRef Id='VSCSharp2015VSK' />
 			<ComponentRef Id='ExtensionManifest' />
 			<ComponentRef Id='IconImage' />
 			<ComponentRef Id='PreviewImage' />
@@ -72,7 +79,7 @@
 		
 		<UIRef Id="WixUI_InstallDir" />
 		<WixVariable Id="WixUILicenseRtf" Value="License.rtf" />
-		<Property Id="WIXUI_INSTALLDIR" Value="VS2015_ROOT_FOLDER" />
+		<Property Id="WIXUI_INSTALLDIR" Value="VS_ROOT_DIR" />
 
 	</Product>
 </Wix>
