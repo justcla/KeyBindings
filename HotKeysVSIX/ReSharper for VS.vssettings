@@ -1,0 +1,237 @@
+<UserSettings>
+  <ApplicationIdentity version="15.0"/>
+  <ToolsOptions>
+    <ToolsOptionsCategory name="Environment" RegisteredName="Environment"/>
+  </ToolsOptions>
+  <Category name="Environment_Group" RegisteredName="Environment_Group">
+    <Category name="Environment_KeyBindings" Category="{F09035F1-80D2-4312-8EC4-4D354A4BCB4C}" Package="{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}" RegisteredName="Environment_KeyBindings" PackageName="Visual Studio Environment Package">
+      <Version>15.0.0.0</Version>
+      <KeyboardShortcuts>
+        <ScopeDefinitions>
+          <Scope Name="Team Explorer" ID="{7AA20502-9463-47B7-BF43-341BAF51157C}"/>
+          <Scope Name="VC Dialog Editor" ID="{543E0C02-8C85-4E43-933A-5EF320E3431F}"/>
+          <Scope Name="Find All References Tool Window" ID="{1FA1FD06-3592-4D1D-AC75-0B953320140C}"/>
+          <Scope Name="Live Property Explorer" ID="{31FC2115-5126-4A87-B2F7-77EAAB65048B}"/>
+          <Scope Name="XML (Text) Editor" ID="{FA3CD31E-987B-443A-9B81-186104E8DAC1}"/>
+          <Scope Name="Text Editor" ID="{8B382828-6202-11D1-8870-0000F87579D2}"/>
+          <Scope Name="Microsoft SQL Server Data Tools, T-SQL PDW Editor" ID="{C9626B29-6A42-411C-BD76-DAD855C86913}"/>
+          <Scope Name="Work Item Results View" ID="{7026002D-01F6-44E7-95CF-A896C00DA3F8}"/>
+          <Scope Name="ADO.NET Entity Data Model Designer" ID="{C99AEA30-8E36-4515-B76F-496F5A48A6AA}"/>
+          <Scope Name="Solution Explorer" ID="{3AE79031-E1BC-11D0-8F78-00A0C9110057}"/>
+          <Scope Name="Query Designer" ID="{B2C40B32-3A37-4CA9-97B9-FA44248B69FF}"/>
+          <Scope Name="CSharp Editor with Encoding" ID="{08467B34-B90F-4D91-BDCA-EB8C8CF3033A}"/>
+          <Scope Name="WebBrowser" ID="{E8B06F41-6D01-11D2-AA7D-00C04F990343}"/>
+          <Scope Name="CSS Editor" ID="{A5401142-F49D-43DB-90B1-F57BA349E55C}"/>
+          <Scope Name="DataSet Editor" ID="{B334A759-F450-40A5-BE2A-65937BCD5415}"/>
+          <Scope Name="XAML Designer" ID="{E9B8485C-1217-4277-9ED6-C825A5AC1968}"/>
+          <Scope Name="F# Interactive" ID="{DEE22B65-9761-4A26-8FB2-759B971D6DFC}"/>
+          <Scope Name="View Designer" ID="{B968E165-98E0-41F0-8FBE-A8ED1D246A90}"/>
+          <Scope Name="XAML Editor" ID="{A4F9FF65-A78C-4650-866D-5069CC4127CF}"/>
+          <Scope Name="Microsoft SQL Server Data Tools, Table Designer" ID="{2366CF66-2394-4701-AFCA-37ED7FD41648}"/>
+          <Scope Name="Microsoft Visual Basic Editor" ID="{2C015C70-C72C-11D0-88C3-00A0C9110049}"/>
+          <Scope Name="Global" ID="{5EFC7975-14BC-11CF-9B2B-00AA00573819}"/>
+          <Scope Name="HTML Editor" ID="{40D31677-CBC0-4297-A9EF-89D907823A98}"/>
+          <Scope Name="Live Visual Tree" ID="{A2EAF38F-A0AD-4503-91F8-5F004A69A040}"/>
+          <Scope Name="Work Item Query View" ID="{B6303490-B828-410C-9216-AE727D0E282D}"/>
+          <Scope Name="DOM Explorer" ID="{01E50993-E6A4-491E-AB3F-3A9939DE3524}"/>
+          <Scope Name="Team Foundation Build Detail Editor" ID="{86306A97-84F2-4F5A-889B-1318501AEB5F}"/>
+          <Scope Name="Database Designer" ID="{CFF78A9B-78A3-45A3-9142-0267AFC261FA}"/>
+          <Scope Name="Work Item Editor" ID="{40A91D9D-8076-4D28-87C5-5AF9F0ACFE0F}"/>
+          <Scope Name="JSON Editor" ID="{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"/>
+          <Scope Name="CSharp Editor" ID="{A6C744A8-0E4A-4FC6-886A-064283054674}"/>
+          <Scope Name="VC String Editor" ID="{58442DA9-10DA-4AA9-A2AF-96E4D481379B}"/>
+          <Scope Name="Interactive Window" ID="{2D0A56AA-9527-4B78-B6E6-EBE6E05DA749}"/>
+          <Scope Name="Merge Editor Window" ID="{9A9A8AAA-ACD2-4DB6-BD81-8D64176C52B6}"/>
+          <Scope Name="Microsoft Visual Basic Code Page Editor" ID="{6C33E1AA-1401-4536-AB67-0E21E6E569DA}"/>
+          <Scope Name="Settings Designer" ID="{515231AD-C9DC-4AA3-808F-E1B65E72081C}"/>
+          <Scope Name="Windows Forms Designer" ID="{BA09E2AF-9DF2-4068-B2F0-4C7E5CC19E2F}"/>
+          <Scope Name="Markdown Editor" ID="{B3984FB3-6A50-488A-A8A5-1EA6929ADF43}"/>
+          <Scope Name="VC Accelerator Editor" ID="{EB56D0B5-BEE7-4D0C-8BE6-88A8ED256695}"/>
+          <Scope Name="Managed Resources Editor" ID="{FEA4DCC9-3645-44CD-92E7-84B55A16465C}"/>
+          <Scope Name="FSharpEditorFactory" ID="{8A5AA6CF-46E3-4520-A70A-7393D15233E9}"/>
+          <Scope Name="JavaScript Console" ID="{074F1AD9-308B-488C-861E-CF88182E2788}"/>
+          <Scope Name="Difference Viewer" ID="{79D52DDF-52BC-43F1-9663-B3E85CDCA912}"/>
+          <Scope Name="Microsoft SQL Server Data Tools, Schema Compare" ID="{00E9D2E3-9044-47D1-978C-BE2825249219}"/>
+          <Scope Name="Table Designer" ID="{4194FEE5-6777-419F-A5FC-47A536DF1BDB}"/>
+          <Scope Name="HTML Editor Design View" ID="{CB3FCFEA-03DF-11D1-81D2-00A0C91BBEE3}"/>
+          <Scope Name="HTML Editor Source View" ID="{CB3FCFEB-03DF-11D1-81D2-00A0C91BBEE3}"/>
+          <Scope Name="VC Image Editor" ID="{C0BA70ED-069E-412B-9C06-7442E28A11B9}"/>
+          <Scope Name="Microsoft SQL Server Data Tools, T-SQL Editor" ID="{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"/>
+          <Scope Name="Query Results" ID="{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"/>
+          <Scope Name="Test Explorer" ID="{E1B7D1F8-9B3C-49B1-8F4F-BFC63A88835D}"/>
+          <Scope Name="XML Schema Designer" ID="{DEE6CEF9-3BCA-449A-82A6-FC757D6956FB}"/>
+        </ScopeDefinitions>
+        <DefaultShortcuts>
+          <Shortcut Command="View.ViewCode" Scope="Global">F7</Shortcut>
+          <Shortcut Command="View.ViewDesigner" Scope="Global">Shift+F7</Shortcut>
+        </DefaultShortcuts>
+        <ShortcutsScheme/>
+        <UserShortcuts>
+          <!-- Editing Key bindings -->
+          <Shortcut Command="Edit.CompleteWord" Scope="Text Editor">Ctrl+Space</Shortcut>   <!-- Symbol Code Completion -->
+          <Shortcut Command="Edit.SmartCompleteWord" Scope="Text Editor">Ctrl+Alt+Space</Shortcut>  <!-- NYI -->  <!-- Smart code completion -->
+          <Shortcut Command="InsertSymbolCompletion" Scope="Text Editor">Shift+Alt+Space</Shortcut>  <!-- NYI (?)-->  <!-- Insert symbol completion -->
+          <Shortcut Command="Edit.CompleteStatement" Scope="Text Editor">Ctrl+Shift+Enter</Shortcut>  <!-- NYI -->  <!-- Complete statement -->
+          <Shortcut Command="Edit.ParameterInfo" Scope="Text Editor">Ctrl+Shift+Space</Shortcut>  <!-- Parameter Info -->
+          <Shortcut Command="Edit.ParameterInfoPrevious" Scope="Text Editor">Ctrl+Shift+Alt+Space</Shortcut>   <!-- Go to previous signature (in paramter info) -->
+          <Shortcut Command="Edit.QuickInfo" Scope="Text Editor">Ctrl+Shift+F1</Shortcut>    <!-- Quick documentation -->
+          <!-- Move code up/down/left/right -->
+          <Shortcut Command="Edit.MoveSelectedLinesUp" Scope="Text Editor">Ctrl+Shift+Alt+Up Arrow</Shortcut>
+          <Shortcut Command="Edit.MoveSelectedLinesDown" Scope="Text Editor">Ctrl+Shift+Alt+Down Arrow</Shortcut>
+          <Shortcut Command="Edit.MoveSelectedLinesLeft" Scope="Text Editor">Ctrl+Shift+Alt+Left Arrow</Shortcut>  <!-- NYI -->
+          <Shortcut Command="Edit.MoveSelectedLinesRight" Scope="Text Editor">Ctrl+Shift+Alt+Right Arrow</Shortcut>  <!-- NYI -->
+          <!--Shortcut Command="Edit.SelectCurrentWord" Scope="Text Editor">Ctrl+W</Shortcut-->   <!-- Near-match - IncreaseSelection Need this if HotCommands not available -->
+          <Shortcut Command="Edit.IncreaseSelection" Scope="Text Editor">Ctrl+Alt+Right Arrow</Shortcut>  <!-- NYI. ReSharper:ExtendSelection; HotCommands:IncreaseSelection-->
+          <Shortcut Command="Edit.DecreaseSelection" Scope="Text Editor">Ctrl+Alt+Left Arrow</Shortcut>  <!-- NYI ReSharper:ShrinkSelection; HotCommands:DecreaseSelection-->
+          <Shortcut Command="Edit.DuplicateSelection" Scope="Text Editor">Ctrl+D</Shortcut>  <!-- NYI HotCommands.DuplicateSelection -->
+          <Shortcut Command="Edit.SelectContainingDeclaration" Scope="Text Editor">Ctrl+Shift+[</Shortcut>  <!-- NYI (?) Select containing declaration -->
+          <Shortcut Command="Edit.ToggleComment" Scope="Text Editor">Ctrl+Alt+/</Shortcut>  <!-- NYI HotCommands.ToggleLineComment. Near-match. Should be ToggleLineComment -->
+          <Shortcut Command="Edit.ToggleBlockComment" Scope="Text Editor">Ctrl+Shift+/</Shortcut>  <!-- NYI -->
+          <!-- Generate code -->
+          <!-- Live Templates -->
+          <Shortcut Command="Edit.GenerateCode" Scope="Text Editor">Alt+Insert</Shortcut>  <!-- NYI Generate constructors, properties, implementing/overriding members, etc -->
+          <Shortcut Command="Edit.InsertSnippet" Scope="Text Editor">Ctrl+E, J</Shortcut>   <!-- Near-match - InsertLiveTemplate -->
+          <Shortcut Command="SurroundWithLiveTemplate" Scope="Text Editor">Ctrl+E, U</Shortcut>   <!-- NYI(?) -->
+          <Shortcut Command="CreateFileFromTemplate" Scope="Solution Explorer">Alt+Insert</Shortcut>  <!-- NYI Create file from template -->
+          <Shortcut Command="Navigate.GoToLastEditLocation" Scope="Global">Ctrl+Shift+Bkspce</Shortcut>  <!-- NYI Go to last edit location -->
+          <Shortcut Command="View.RecentFiles" Scope="Global">Ctrl+,</Shortcut>  <!-- NYI (?) -->
+          <Shortcut Command="View.RecentEdits" Scope="Global">Ctrl+Shift+,</Shortcut>  <!-- NYI (?) -->
+          <Shortcut Command="GoTo.RelatedFiles" Scope="Global">Ctrl+Alt+F7</Shortcut>  <!-- NYI (?) -->
+          <Shortcut Command="View.BookmarkWindow" Scope="Global">Ctrl+`</Shortcut>
+          <Shortcut Command="GoToNumberedBookmark.0" Scope="Global">Ctrl+0</Shortcut>   <!-- NYI(?) Go to bookmark -->
+          <Shortcut Command="GoToNumberedBookmark.1" Scope="Global">Ctrl+1</Shortcut>   <!-- NYI(?) -->
+          <Shortcut Command="GoToNumberedBookmark.2" Scope="Global">Ctrl+2</Shortcut>   <!-- NYI(?) -->
+          <Shortcut Command="GoToNumberedBookmark.3" Scope="Global">Ctrl+3</Shortcut>   <!-- NYI(?) -->
+          <Shortcut Command="GoToNumberedBookmark.4" Scope="Global">Ctrl+4</Shortcut>   <!-- NYI(?) -->
+          <Shortcut Command="GoToNumberedBookmark.5" Scope="Global">Ctrl+5</Shortcut>   <!-- NYI(?) -->
+          <Shortcut Command="GoToNumberedBookmark.6" Scope="Global">Ctrl+6</Shortcut>   <!-- NYI(?) -->
+          <Shortcut Command="GoToNumberedBookmark.7" Scope="Global">Ctrl+7</Shortcut>   <!-- NYI(?) -->
+          <Shortcut Command="GoToNumberedBookmark.8" Scope="Global">Ctrl+8</Shortcut>   <!-- NYI(?) -->
+          <Shortcut Command="GoToNumberedBookmark.9" Scope="Global">Ctrl+9</Shortcut>   <!-- NYI(?) -->
+          <Shortcut Command="ToggleNumberedBookmark.0" Scope="Global">Ctrl+Shift+0</Shortcut>   <!-- NYI(?) Set/Remove bokmark -->
+          <Shortcut Command="ToggleNumberedBookmark.1" Scope="Global">Ctrl+Shift+1</Shortcut>   <!-- NYI(?) -->
+          <Shortcut Command="ToggleNumberedBookmark.2" Scope="Global">Ctrl+Shift+2</Shortcut>   <!-- NYI(?) -->
+          <Shortcut Command="ToggleNumberedBookmark.3" Scope="Global">Ctrl+Shift+3</Shortcut>   <!-- NYI(?) -->
+          <Shortcut Command="ToggleNumberedBookmark.4" Scope="Global">Ctrl+Shift+4</Shortcut>   <!-- NYI(?) -->
+          <Shortcut Command="ToggleNumberedBookmark.5" Scope="Global">Ctrl+Shift+5</Shortcut>   <!-- NYI(?) -->
+          <Shortcut Command="ToggleNumberedBookmark.6" Scope="Global">Ctrl+Shift+6</Shortcut>   <!-- NYI(?) -->
+          <Shortcut Command="ToggleNumberedBookmark.7" Scope="Global">Ctrl+Shift+7</Shortcut>   <!-- NYI(?) -->
+          <Shortcut Command="ToggleNumberedBookmark.8" Scope="Global">Ctrl+Shift+8</Shortcut>   <!-- NYI(?) -->
+          <Shortcut Command="ToggleNumberedBookmark.9" Scope="Global">Ctrl+Shift+9</Shortcut>   <!-- NYI(?) -->
+          <Shortcut Command="ToggleBookmarkWithMnemonic" Scope="Text Editor">Ctrl+F11</Shortcut>   <!-- NYI(?) Not in ReShaper map -->
+          <Shortcut Command="Edit.ToggleBookmark" Scope="Text Editor">F11</Shortcut>   <!-- NYI(?) Not in ReShaper map -->
+          <!-- Explore -->
+          <!-- VS2017+ shortcuts = Edit.GoTo.. VS2015 shortcuts = Edit.NavigateTo -->
+          <Shortcut Command="Edit.GoToAll" Scope="Global">Ctrl+T</Shortcut>
+          <Shortcut Command="Edit.GoToAll" Scope="Text Editor">Ctrl+T</Shortcut>
+          <Shortcut Command="Edit.GoToAll" Scope="View Designer">Ctrl+T</Shortcut>
+          <Shortcut Command="Edit.GoToAll" Scope="Query Designer">Ctrl+T</Shortcut>
+          <!--Shortcut Command="Edit.GoToType" Scope="Global">Ctrl+T, Ctrl+T</Shortcut-->  <!-- [GoTo Type] Cannot do this because it introduces a chord that conflicts with Ctrl+T -->
+          <Shortcut Command="Edit.GoToSymbol" Scope="Global">Shift+Alt+T</Shortcut>
+          <Shortcut Command="Edit.GoToSymbol" Scope="Text Editor">Shift+Alt+T</Shortcut>
+          <Shortcut Command="Edit.GoToFile" Scope="Global">Ctrl+Shift+T</Shortcut>
+          <Shortcut Command="Edit.GoToFile" Scope="Text Editor">Ctrl+Shift+T</Shortcut>
+          <Shortcut Command="Edit.GoToFile" Scope="Coded UI Test Editor">Ctrl+Shift+T</Shortcut>
+          <Shortcut Command="Edit.GoToMember" Scope="Global">Alt+\</Shortcut>
+          <!-- VS2015 shortcuts -->
+          <Shortcut Command="Edit.NavigateTo" Scope="Global">Ctrl+T</Shortcut>  <!-- Near-match [GoTo everything] QuickLaunch or NavigateTo ?? -->
+          <Shortcut Command="Edit.NavigateTo" Scope="Text Editor">Ctrl+T</Shortcut>  <!-- Near-match [GoTo everything] QuickLaunch or NavigateTo ?? -->
+          <Shortcut Command="Edit.NavigateTo" Scope="View Designer">Ctrl+T</Shortcut>  <!-- Near-match [GoTo everything] QuickLaunch or NavigateTo ?? -->
+          <Shortcut Command="Edit.NavigateTo" Scope="Query Designer">Ctrl+T</Shortcut>  <!-- Near-match [GoTo everything] QuickLaunch or NavigateTo ?? -->
+          <!--Shortcut Command="Edit.NavigateTo" Scope="Global">Ctrl+T, Ctrl+T</Shortcut-->  <!-- Near-match [GoTo Type] Cannot do this because it introduces a chord that conflicts with Ctrl+N -->
+          <Shortcut Command="Edit.NavigateTo" Scope="Global">Shift+Alt+T</Shortcut>  <!-- Near-match [GoTo Symbol] -->
+          <Shortcut Command="Edit.NavigateTo" Scope="Text Editor">Shift+Alt+T</Shortcut>  <!-- Near-match [GoTo Symbol] -->
+          <Shortcut Command="Edit.NavigateTo" Scope="Global">Ctrl+Shift+T</Shortcut>  <!-- Near-match [GoTo File] -->
+          <Shortcut Command="Edit.NavigateTo" Scope="Text Editor">Ctrl+Shift+T</Shortcut>  <!-- Near-match [GoTo File] -->
+          <Shortcut Command="Edit.NavigateTo" Scope="Coded UI Test Editor">Ctrl+Shift+T</Shortcut>  <!-- Near-match [GoTo File] -->
+          <Shortcut Command="Edit.NavigateTo" Scope="Global">Alt+\</Shortcut>  <!-- Near-match [GoTo Member] -->
+          <!-- Find usages -->
+          <Shortcut Command="Edit.FindAllReferences" Scope="Global">Shift+F12</Shortcut>
+          <Shortcut Command="Edit.FindAllReferences" Scope="Global">Ctrl+Shift+Alt+F12</Shortcut>  <!-- NYI Find usages (advanced) -->
+          <Shortcut Command="View.FindSymbolResults" Scope="Global">Ctrl+Alt+F12</Shortcut>   <!-- Could also map to View.FindResults1 or View.FindResults2 - Used for Alt+3 -->
+          <Shortcut Command="Edit.HighlightUsagesInFile" Scope="Global">Shift+Alt+F11</Shortcut>  <!-- NYI/Broken? Need to find VS command. This happens automatically with setting applied. -->
+          <Shortcut Command="Edit.PreviousHighlightedReference" Scope="Global">Ctrl+Alt+PgUp</Shortcut>  <!-- NYI GoToPreviousUsage Could be Edit.FindPrevious -->
+          <Shortcut Command="Edit.NextHighlightedReference" Scope="Global">Ctrl+Alt+PgDn</Shortcut>  <!-- NYI GoToNextUsage. Could be Edit.FindNext -->
+          <!--<Shortcut Command="Edit.FindUsagesInFile" Scope="Global">Ctrl+F7</Shortcut>-->  <!-- NYI/Broken? Need to find VS command (Not in ReShaper map) -->
+          <!--<Shortcut Command="Edit.ShowUsages" Scope="Global">Ctrl+Alt+F7</Shortcut>-->  <!-- NYI/Broken? Need to find VS command (Not in ReShaper map) -->
+          <Shortcut Command="View.AnalyzeReferences" Scope="Global">Ctrl+Alt+Y</Shortcut>  <!-- NYI (?) Analyze References window -->
+          <!-- Navigate to -->
+          <!--<Shortcut Command="Edit.NavigateTo" Scope="Text Editor">Alt+`</Shortcut>-->  <!-- Navigate To (Context menu?) -->  <!-- Choosing not to overrider default CodeLens shortcut -->
+          <Shortcut Command="Edit.GoToDefinition" Scope="Text Editor">F12</Shortcut>  <!-- [GoTo Declaration] -->
+          <Shortcut Command="Edit.GoToTypeDeclaration" Scope="Text Editor">Ctrl+Shift+F11</Shortcut>  <!-- NYI(?) Go to type of symbol. Could this be GoToTypeDeclaration? -->
+          <Shortcut Command="Edit.GoToImplementation" Scope="Text Editor">Ctrl+F12</Shortcut>
+          <Shortcut Command="Edit.GoToSuperMethod" Scope="Text Editor">Alt+Home</Shortcut>    <!-- NYI - Go To base symboles -->
+          <Shortcut Command="Edit.GoToDerivedSymbols" Scope="Text Editor">Alt+End</Shortcut>    <!-- NYI - Go To derived symbols -->
+          <Shortcut Command="Edit.GoToUsage" Scope="Text Editor">Shift+Alt+F12</Shortcut>    <!-- NYI - Go To usage (?? What is this ??) -->
+          <!-- File structure -->
+          <Shortcut Command="View.DocumentOutline" Scope="Text Editor">Ctrl+Alt+F</Shortcut>    <!-- NYI (Near-match) - File structure -->
+          <Shortcut Command="Edit.NextMethod" Scope="Text Editor">Alt+Down Arrow</Shortcut>   <!-- Go to next member/tag -->
+          <Shortcut Command="Edit.PreviousMethod" Scope="Text Editor">Alt+Up Arrow</Shortcut>   <!-- Go to previous member/tag -->
+          <Shortcut Command="Edit.MoveToCodeBlockStart" Scope="Text Editor">Ctrl+[</Shortcut>  <!-- NYI -->    <!-- Go to containing declaration -->
+          <Shortcut Command="Edit.MoveToCodeBlockEnd" Scope="Text Editor">Ctrl+]</Shortcut>  <!-- NYI (Not in ReSharper map) -->
+          <Shortcut Command="View.TaskList" Scope="Global">Ctrl+Alt+D</Shortcut>      <!-- To-do items window -->
+          <Shortcut Command="View.StackTrace" Scope="Global">Ctrl+E, T</Shortcut>      <!-- NYI(?) Explore Stack Trace -->
+          <Shortcut Command="SolutionExplorer.SyncWithActiveDocument" Scope="Global">Shift+Alt+L</Shortcut>      <!-- Locate in Solution Explorer -->
+          <!-- Improve -->
+          <Shortcut Command="ShowQuickFixes" Scope="Global">Alt+Enter</Shortcut>
+          <Shortcut Command="InspectThis" Scope="Global">Ctrl+Shift+Alt+A</Shortcut>
+          <Shortcut Command="View.InspectionResults" Scope="Global">Ctrl+Alt+V</Shortcut>  <!-- NYI(?) Inspection results window -->
+          <Shortcut Command="View.CallHierarchy" Scope="Global">Ctrl+E, H</Shortcut>  <!-- Near-match (?) ViewTypeHierarchy. Not context aware. Only opens Tool window. -->
+          <Shortcut Command="Edit.GoToNextLocation" Scope="Global">Alt+PgDn</Shortcut>    <!-- (NYI?) Near-match. GoToNextHighlight (error/warning/suggestion) -->
+          <Shortcut Command="Edit.GoToPrevLocation" Scope="Global">Alt+PgUp</Shortcut>   <!-- (NYI?) Near-match. GoToPreviousHighlight (error/warning/suggestion) -->
+          <Shortcut Command="View.NextError" Scope="Global">Shift+Alt+PgDn</Shortcut>
+          <Shortcut Command="View.PreviousError" Scope="Global">Shift+Alt+PgUp</Shortcut>
+          <!-- Refactoring -->
+          <Shortcut Command="Refactor.This" Scope="Global">Ctrl+Shift+R</Shortcut>    <!-- Refactor this. Open Edit->Refactor menu ? -->
+          <Shortcut Command="Refactor.Rename" Scope="Global">Ctrl+R, R</Shortcut>
+          <Shortcut Command="Refactor.Rename" Scope="Global">Ctrl+R, Ctrl+R</Shortcut>  <!-- In Default map -->
+          <Shortcut Command="Refactor.Rename" Scope="Text Editor">Ctrl+R, R</Shortcut>
+          <Shortcut Command="Refactor.Rename" Scope="Text Editor">Ctrl+R, Ctrl+R</Shortcut>
+          <Shortcut Command="File.Rename" Scope="Solution Explorer">Ctrl+R, R</Shortcut>
+          <Shortcut Command="File.Rename" Scope="Solution Explorer">Ctrl+R, Ctrl+R</Shortcut>
+          <Shortcut Command="File.Move" Scope="Solution Explorer">Ctrl+R, O</Shortcut>   <!-- NYI(?) Move type or static member -->
+          <Shortcut Command="File.Move" Scope="Solution Explorer">Ctrl+R, Ctrl+O</Shortcut>   <!-- NYI(?) Move type or static member -->
+          <Shortcut Command="Refactoring.Move" Scope="Text Editor">Ctrl+R, O</Shortcut>   <!-- NYI(?) Move type or static member -->
+          <Shortcut Command="Refactoring.Move" Scope="Text Editor">Ctrl+R, Ctrl+O</Shortcut>   <!-- NYI(?) Move type or static member -->
+          <Shortcut Command="Refactor.RemoveParameters" Scope="Text Editor">Ctrl+R, D</Shortcut>   <!-- NYI(?) Safe Delete -->
+          <Shortcut Command="Refactor.RemoveParameters" Scope="Text Editor">Ctrl+R, Ctrl+D</Shortcut>   <!-- NYI(?) Safe Delete -->
+          <Shortcut Command="Refactor.RemoveParameters" Scope="Text Editor">Alt+Del</Shortcut>   <!-- NYI(?) Safe Delete -->
+          <Shortcut Command="Refactoring.SafeDelete" Scope="Solution Explorer">Ctrl+R, D</Shortcut>   <!-- NYI(?) Safe Delete -->  <!-- Solution Explorer only ? -->
+          <Shortcut Command="Refactoring.SafeDelete" Scope="Solution Explorer">Ctrl+R, Ctrl+D</Shortcut>   <!-- NYI(?) Safe Delete -->  <!-- Solution Explorer only ? -->
+          <Shortcut Command="Refactoring.SafeDelete" Scope="Solution Explorer">Alt+Del</Shortcut>   <!-- NYI(?) Safe Delete -->  <!-- Solution Explorer only ? -->
+          <Shortcut Command="Refactor.ExtractMethod" Scope="Text Editor">Ctrl+R, M</Shortcut>
+          <Shortcut Command="Refactor.ExtractMethod" Scope="Text Editor">Ctrl+R, Ctrl+M</Shortcut>
+          <Shortcut Command="View.QuickActions" Scope="Text Editor">Ctrl+R, V</Shortcut>   <!-- IWC IntroduceVariable -->  <!-- Refactoring.IntroduceVariable - Analyzers exist: Introduce local (for one, or all) -->
+          <Shortcut Command="View.QuickActions" Scope="Text Editor">Ctrl+R, Ctrl+V</Shortcut>   <!-- IWC IntroduceVariable -->  <!-- Refactoring.IntroduceVariable - Analyzers exist: Introduce local (for one, or all) -->
+          <Shortcut Command="View.QuickActions" Scope="Text Editor">Ctrl+R, F</Shortcut>   <!-- Introduce field - need command - only available on analyzer -->
+          <Shortcut Command="View.QuickActions" Scope="Text Editor">Ctrl+R, Ctrl+F</Shortcut>   <!-- Introduce field - need command - only available on analyzer -->
+          <Shortcut Command="Refactoring.ExtractParameter" Scope="Text Editor">Ctrl+R, P</Shortcut>   <!-- NYI(?) Introduce parameter -->
+          <Shortcut Command="Refactoring.ExtractParameter" Scope="Text Editor">Ctrl+R, Ctrl+P</Shortcut>   <!-- NYI(?) Introduce parameter -->
+          <Shortcut Command="View.QuickActions" Scope="Text Editor">Ctrl+R, I</Shortcut>   <!-- IWC / Partial-Impl -->  <!-- Refactoring.Inline - Analyzers exist: Inline temporary variable. Could not find Inline Method. -->
+          <Shortcut Command="View.QuickActions" Scope="Text Editor">Ctrl+R, Ctrl+I</Shortcut>   <!-- IWC / Partial-Impl -->  <!-- Refactoring.Inline - Analyzers exist: Inline temporary variable. Could not find Inline Method. -->
+          <Shortcut Command="Refactor.ReorderParameters" Scope="Text Editor">Ctrl+R, S</Shortcut>         <!-- Change Signature Dialog -->
+          <Shortcut Command="Refactor.ReorderParameters" Scope="Text Editor">Ctrl+R, Ctrl+S</Shortcut>         <!-- Change Signature Dialog -->
+          <!--<Shortcut Command="File.Copy" Scope="Solution Explorer">F5</Shortcut>-->  <!-- NYI(?) (Not in ReSharper map) -->
+          <!--<Shortcut Command="Refactoring.ExtractConstant" Scope="Text Editor">Ctrl+Alt+C</Shortcut>-->   <!-- NYI(?) (Not in ReSharper map) -->
+          <!-- Code cleanup -->
+          <Shortcut Command="CodeCleanup" Scope="Text Editor">Ctrl+E, C</Shortcut>   <!-- NYI(?) Code cleanup -->
+          <Shortcut Command="CodeCleanup" Scope="Text Editor">Ctrl+E, Ctrl+C</Shortcut>   <!-- NYI(?) Code cleanup -->
+          <Shortcut Command="ApplyCodeStyle" Scope="Text Editor">Ctrl+Alt+S</Shortcut>   <!-- NYI(?) Apply code style -->
+          <!--Shortcut Command="Edit.FormatCode" Scope="Text Editor">Ctrl+Alt+Enter</Shortcut-->  <!-- HotCommands.FormatCode  IntelliJ: Reformat Code. Offers choice of selection/document where appropriate. -->
+          <Shortcut Command="Edit.FormatDocument" Scope="Text Editor">Ctrl+Alt+Enter</Shortcut>  <!-- Near-match -->
+          <!-- Run unit tests -->
+          <Shortcut Command="TestExplorer.RunAllTestsInContext" Scope="Global">Ctrl+U, R</Shortcut>  <!-- NYI(?) RunUnitTests -->
+          <Shortcut Command="TestExplorer.DebugAllTestsInContext" Scope="Global">Ctrl+U, D</Shortcut>  <!-- NYI(?) DebugUnitTests (TestExplorer.DebugAllTests)-->
+          <Shortcut Command="TestExplorer.RunAllTests" Scope="Global">Ctrl+U, L</Shortcut>  <!-- NYI(?) RunAllTestsFromSolution -->
+          <Shortcut Command="TestExplorer.RunCurrentSession" Scope="Global">Ctrl+U, Y</Shortcut>  <!-- NYI(?) RunCurrentSession -->
+          <Shortcut Command="TestExplorer.RepeatLastRun" Scope="Global">Ctrl+U, T</Shortcut>  <!-- NYI(?) RepeatPreviousRun -->
+          <Shortcut Command="UnitTestExplorer" Scope="Global">Ctrl+Alt+U</Shortcut>  <!-- NYI(?) UnitTestExplorer -->
+          <Shortcut Command="UnitTestSessions" Scope="Global">Ctrl+Alt+T</Shortcut>  <!-- NYI(?) UnitTestSessions -->
+          <!-- Other ReSharper shortcuts -->
+          <Shortcut Command="SolutionExplorer.SyncWithActiveDocument" Scope="Global">Ctrl+Shift+L</Shortcut>
+          <Shortcut Command="SolutionExplorer.SyncWithActiveDocument" Scope="Text Editor">Ctrl+Shift+L</Shortcut>
+        </UserShortcuts>
+      </KeyboardShortcuts>
+    </Category>
+  </Category>
+</UserSettings>
