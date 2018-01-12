@@ -72,13 +72,14 @@ namespace HotKeys
                     // get an ok from the user first
                     if (ConfirmInstallVSKs())
                     {
-                        CopyVskUsingXCopy(GetVSKSourceFolder());
+                        CopyVskUsingXCopy();
                     }
                 }
             }
             catch (Exception e)
             {
                 var message = e.Message;
+                MessageBox.Show("Error occurred while installing keyboard mapping schemes:\n\n" + message);
             }
         }
 
@@ -131,19 +132,20 @@ namespace HotKeys
             }
         }
 
-        private void CopyVskUsingXCopy(string vskSrcPath)
+        private void CopyVskUsingXCopy()
         {
-            //var vskDestPath = Path.Combine(VSInstallationPath, SublimeVSKFileDest);
+            var scriptPath = Path.Combine(GetExtensionFolder(), "InstallKeyboardSchemes.bat");
+            var vskSrcPath = GetVSKSourceFolder();
             var vskDestPath = VSInstallationPath;
 
             var process = new System.Diagnostics.Process();
-            process.StartInfo.FileName = @"xcopy.exe";
-            process.StartInfo.Arguments = string.Format(@" /Y /D ""{0}\*.vsk"" ""{1}""", vskSrcPath, vskDestPath);
+            process.StartInfo.FileName = scriptPath;
+            process.StartInfo.Arguments = $@"""{vskSrcPath}"" ""{vskDestPath}""";
             if (Environment.OSVersion.Platform == PlatformID.Win32NT && Environment.OSVersion.Version.Major > 5)
             {
                 process.StartInfo.Verb = "runas";
             }
-            process.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
+            //process.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
             process.Start();
         }
 
