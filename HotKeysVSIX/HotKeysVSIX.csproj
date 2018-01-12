@@ -48,7 +48,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="EmbeddedVSIX\KeyboardShortcutsManager.vsix" />
+    <Content Include="EmbeddedVSIX\KeyboardShortcutsManager.vsix">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
     <None Include="source.extension.vsixmanifest">
       <SubType>Designer</SubType>
     </None>
@@ -61,7 +64,10 @@
       <IncludeInVSIX>true</IncludeInVSIX>
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="ReSharper for VS.vssettings">
+    <Content Include="ReSharper %28IDEA style%29.vssettings">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="ReSharper %28VS style%29.vssettings">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
     <Content Include="Resources\HotKeysIcon.png">
