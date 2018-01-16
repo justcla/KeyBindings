@@ -81,9 +81,12 @@
           <Shortcut Command="Edit.MoveSelectedLinesLeft" Scope="Text Editor">Ctrl+Shift+Alt+Left Arrow</Shortcut>  <!-- NYI -->
           <Shortcut Command="Edit.MoveSelectedLinesRight" Scope="Text Editor">Ctrl+Shift+Alt+Right Arrow</Shortcut>  <!-- NYI -->
           <!--Shortcut Command="Edit.SelectCurrentWord" Scope="Text Editor">Ctrl+W</Shortcut-->   <!-- Near-match - IncreaseSelection Need this if HotCommands not available -->
-          <Shortcut Command="Edit.IncreaseSelection" Scope="Text Editor">Ctrl+Alt+Right Arrow</Shortcut>  <!-- NYI. ReSharper:ExtendSelection; HotCommands:IncreaseSelection-->
-          <Shortcut Command="Edit.DecreaseSelection" Scope="Text Editor">Ctrl+Alt+Left Arrow</Shortcut>  <!-- NYI ReSharper:ShrinkSelection; HotCommands:DecreaseSelection-->
-          <Shortcut Command="Edit.DuplicateSelection" Scope="Text Editor">Ctrl+D</Shortcut>  <!-- NYI HotCommands.DuplicateSelection -->
+          <Shortcut Command="Edit.ExpandSelection" Scope="Text Editor">Ctrl+W</Shortcut>  <!-- Available VS2017 v15.5 -->
+          <Shortcut Command="Edit.ContractSelection" Scope="Text Editor">Ctrl+Shift+W</Shortcut>  <!-- Available VS2017 v15.5 -->
+          <Shortcut Command="Edit.IncreaseSelection" Scope="Text Editor">Ctrl+Alt+Right Arrow</Shortcut>  <!-- Fallback to HotCommands.IncreaseSelection-->
+          <Shortcut Command="Edit.DecreaseSelection" Scope="Text Editor">Ctrl+Alt+Left Arrow</Shortcut>  <!-- Fallback to HotCommands.DecreaseSelection-->
+          <Shortcut Command="Edit.Duplicate" Scope="Text Editor">Ctrl+D</Shortcut>  <!-- Implemented in VS2017 v15.6 -->
+          <Shortcut Command="Edit.DuplicateSelection" Scope="Text Editor">Ctrl+D</Shortcut>  <!-- Fallback to HotCommands for older versions of VS. -->
           <Shortcut Command="Edit.SelectContainingDeclaration" Scope="Text Editor">Ctrl+Shift+[</Shortcut>  <!-- NYI (?) Select containing declaration -->
           <Shortcut Command="Edit.ToggleComment" Scope="Text Editor">Ctrl+Alt+/</Shortcut>  <!-- NYI HotCommands.ToggleLineComment. Near-match. Should be ToggleLineComment -->
           <Shortcut Command="Edit.ToggleBlockComment" Scope="Text Editor">Ctrl+Shift+/</Shortcut>  <!-- NYI -->
