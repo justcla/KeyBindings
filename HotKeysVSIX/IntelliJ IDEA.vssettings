@@ -104,6 +104,7 @@
           <Shortcut Command="Edit.CycleClipboardRing" Scope="Text Editor">Ctrl+Shift+V</Shortcut>
           <Shortcut Command="Edit.Duplicate" Scope="Text Editor">Ctrl+D</Shortcut>  <!-- Implemented in VS2017 v15.6 -->
           <Shortcut Command="Edit.DuplicateSelection" Scope="Text Editor">Ctrl+D</Shortcut>  <!-- Fallback to HotCommands for older versions of VS. -->
+          <RemoveShortcut Command="Edit.Redo" Scope="Global">Ctrl+Y</RemoveShortcut>
           <Shortcut Command="Edit.LineDelete" Scope="Text Editor">Ctrl+Y</Shortcut>
           <Shortcut Command="Edit.JoinLines" Scope="Text Editor">Ctrl+Shift+J</Shortcut>  <!-- NYI Near match for Smart Join lines - Hot Commands Join Line -->
           <Shortcut Command="Edit.SmartBreakLine" Scope="Text Editor">Ctrl+Enter</Shortcut>  <!-- [Smart line split] C# behaviour is a near-match. Actually just does LineOpenBelow. -->

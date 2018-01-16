@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="HotKeys.5ae23bc9-e935-43ae-80d2-40ffea76a743" Version="2.0.1" Language="en-US" Publisher="Justin Clareburt" />
+        <Identity Id="HotKeys.e18a1a2b-78e5-4f4c-aade-448d36fd6016" Version="2.0.2" Language="en-US" Publisher="Justin Clareburt" />
         <DisplayName>Hot Keys - Keyboard Shortcuts</DisplayName>
         <Description xml:space="preserve">Installs alternative keyboard mapping schemes to work with Visual Studio.</Description>
+        <MoreInfo>https://aka.ms/hotkeys2017</MoreInfo>
         <ReleaseNotes>ReleaseNotes.txt</ReleaseNotes>
         <Icon>Resources\HotKeysIcon.png</Icon>
         <PreviewImage>Resources\HotKeysPreviewImage.png</PreviewImage>
