@@ -6,7 +6,7 @@
         <Description xml:space="preserve">Installs alternative keyboard mapping schemes to work with Visual Studio.</Description>
         <MoreInfo>https://aka.ms/hotkeys2017</MoreInfo>
         <ReleaseNotes>ReleaseNotes.txt</ReleaseNotes>
-        <Icon>Resources\HotKeysIcon.png</Icon>
+        <Icon>Resources\Market_HotKeys_128x.png</Icon>
         <PreviewImage>Resources\HotKeysPreviewImage.png</PreviewImage>
     </Metadata>
     <Installation>
@@ -15,7 +15,7 @@
     <Dependencies>
         <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
         <Dependency Id="Microsoft.VisualStudio.MPF.15.0" DisplayName="Visual Studio MPF 15.0" d:Source="Installed" Version="[15.0]" />
-        <Dependency d:Source="File" Version="[1.0.4,)" d:InstallSource="Embed" DisplayName="Keyboard Shortcuts Manager" Id="VSShortcutsManager.d8578b8b-cb70-49ee-b009-9e659c413f4b" Location="EmbeddedVSIX\KeyboardShortcutsManager.vsix" />
+        <Dependency d:Source="File" Version="[1.0.6,)" d:InstallSource="Embed" DisplayName="Keyboard Shortcuts Manager" Id="VSShortcutsManager.d8578b8b-cb70-49ee-b009-9e659c413f4b" Location="EmbeddedVSIX\KeyboardShortcutsManager.vsix" />
     </Dependencies>
     <Prerequisites>
         <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.0,16.0)" DisplayName="Visual Studio core editor" />

@@ -70,14 +70,13 @@
     <Content Include="ReSharper %28VS style%29.vssettings">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <Content Include="Resources\HotKeysIcon.png">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
+    <Content Include="Resources\HotKeysIcon.png" />
     <Content Include="Resources\HotKeysPreviewImage.png">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
     <Content Include="Resources\Market_HotKeys_128x.png">
       <IncludeInVSIX>true</IncludeInVSIX>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
