@@ -52,9 +52,32 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
+    <Content Include="IntelliJ for CSharp.vsk">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Visual CSharp 2015.vssettings">
+      <SubType>Designer</SubType>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <None Include="packages.config" />
+    <Content Include="ReSharper for IDEA.vsk">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="ReSharper for VS CSharp.vsk">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
     <None Include="source.extension.vsixmanifest">
       <SubType>Designer</SubType>
     </None>
+    <Content Include="Sublime with CSharp.vsk">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Sublime with C++.vsk">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Visual CSharp 2015.vsk">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Content Include="ReleaseNotes.txt">
@@ -78,6 +101,9 @@
       <IncludeInVSIX>true</IncludeInVSIX>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\packages\Microsoft.VisualStudio.SDK.Analyzers.15.8.9-beta\analyzers\cs\Microsoft.VisualStudio.SDK.Analyzers.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\VSSDK\Microsoft.VsSDK.targets" Condition="'$(VSToolsPath)' != ''" />
