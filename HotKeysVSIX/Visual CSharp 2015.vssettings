@@ -57,160 +57,209 @@
           <Scope Name="Test Explorer" ID="{E1B7D1F8-9B3C-49B1-8F4F-BFC63A88835D}"/>
           <Scope Name="XML Schema Designer" ID="{DEE6CEF9-3BCA-449A-82A6-FC757D6956FB}"/>
         </ScopeDefinitions>
-        <DefaultShortcuts>
-          <Shortcut Command="View.ViewCode" Scope="Global">F7</Shortcut>
-          <Shortcut Command="View.ViewDesigner" Scope="Global">Shift+F7</Shortcut>
-        </DefaultShortcuts>
+        <DefaultShortcuts/>
+          <!--<Shortcut Command="View.ViewCode" Scope="Global">F7</Shortcut>-->
+          <!--<Shortcut Command="View.ViewDesigner" Scope="Global">Shift+F7</Shortcut>-->
+        <!--</DefaultShortcuts>-->
         <ShortcutsScheme/>
         <UserShortcuts>
-          <Shortcut Command="Project.AddClass" Scope="Global">Shift+Alt+C</Shortcut>
-          <Shortcut Command="Edit.SelectCurrentWord" Scope="Global">Ctrl+Shift+W</Shortcut>
-          <Shortcut Command="Edit.GoToFindCombo" Scope="Global">Ctrl+/</Shortcut>
-          <Shortcut Command="View.ArchitectureExplorer" Scope="Global">Ctrl+W, N</Shortcut>
-          <Shortcut Command="View.ArchitectureExplorer" Scope="Global">Ctrl+W, Ctrl+N</Shortcut>
-          <Shortcut Command="View.CallHierarchy" Scope="Global">Ctrl+W, K</Shortcut>
-          <Shortcut Command="View.CallHierarchy" Scope="Global">Ctrl+W, Ctrl+K</Shortcut>
-          <Shortcut Command="View.TfsTeamExplorer" Scope="Global">Ctrl+W, M</Shortcut>    <!-- Fix -->
-          <Shortcut Command="View.TfsTeamExplorer" Scope="Global">Ctrl+W, Ctrl+M</Shortcut>    <!-- Fix -->
-          <Shortcut Command="View.SolutionExplorer" Scope="Global">Ctrl+W, S</Shortcut>
-          <Shortcut Command="View.SolutionExplorer" Scope="Global">Ctrl+W, Ctrl+S</Shortcut>
-          <Shortcut Command="View.PropertiesWindow" Scope="Global">Ctrl+W, P</Shortcut>
-          <Shortcut Command="View.PropertiesWindow" Scope="Global">Ctrl+W, Ctrl+P</Shortcut>
-          <Shortcut Command="View.ObjectBrowser" Scope="Global">Ctrl+W, J</Shortcut>
-          <Shortcut Command="View.ObjectBrowser" Scope="Global">Ctrl+W, Ctrl+J</Shortcut>
-          <Shortcut Command="View.Toolbox" Scope="Global">Ctrl+W, X</Shortcut>
-          <Shortcut Command="View.Toolbox" Scope="Global">Ctrl+W, Ctrl+X</Shortcut>
+          <!-- Tool Window Shortcuts -->
+          <!-- All changed from Ctrl+W to Ctrl+\ from base Visual C# 2005-->
+          <!--<Shortcut Command="View.ArchitectureExplorer" Scope="Global">Ctrl+\, N</Shortcut>    --><!-- No such thing. View.Notifications uses 'N' -->
+          <!--<Shortcut Command="View.ArchitectureExplorer" Scope="Global">Ctrl+\, Ctrl+N</Shortcut>    -->
+          <Shortcut Command="View.CallHierarchy" Scope="Global">Ctrl+\, K</Shortcut>    
+          <Shortcut Command="View.CallHierarchy" Scope="Global">Ctrl+\, Ctrl+K</Shortcut>
+          <Shortcut Command="View.TfsTeamExplorer" Scope="Global">Ctrl+\, M</Shortcut>    <!-- Fix add "tfs" to command name -->    <!-- Already in system -->
+          <Shortcut Command="View.TfsTeamExplorer" Scope="Global">Ctrl+\, Ctrl+M</Shortcut>    <!-- Fix add "tfs" to command name -->    <!-- Already in system -->
+          <!--<Shortcut Command="View.SolutionExplorer" Scope="Global">Ctrl+\, S</Shortcut>-->  <!-- Conflict with SQL Server Explorer -->
+          <!--<Shortcut Command="View.SolutionExplorer" Scope="Global">Ctrl+\, Ctrl+S</Shortcut>--><!-- Conflict with SQL Server Explorer -->
+          <Shortcut Command="View.PropertiesWindow" Scope="Global">Ctrl+\, P</Shortcut>
+          <Shortcut Command="View.PropertiesWindow" Scope="Global">Ctrl+\, Ctrl+P</Shortcut>
+          <Shortcut Command="View.ObjectBrowser" Scope="Global">Ctrl+\, J</Shortcut>
+          <Shortcut Command="View.ObjectBrowser" Scope="Global">Ctrl+\, Ctrl+J</Shortcut>
+          <!--<Shortcut Command="View.Toolbox" Scope="Global">Ctrl+\, X</Shortcut>    --><!-- Conflict with Cloud Explorer -->
+          <!--<Shortcut Command="View.Toolbox" Scope="Global">Ctrl+\, Ctrl+X</Shortcut>    --><!-- Conflict with Cloud Explorer -->
+          <Shortcut Command="View.ClassView" Scope="Global">Ctrl+\, C</Shortcut>
+          <Shortcut Command="View.ClassView" Scope="Global">Ctrl+\, Ctrl+C</Shortcut>
+          <Shortcut Command="View.ServerExplorer" Scope="Global">Ctrl+\, L</Shortcut>
+          <Shortcut Command="View.ServerExplorer" Scope="Global">Ctrl+\, Ctrl+L</Shortcut>
+          <Shortcut Command="View.ResourceView" Scope="Global">Ctrl+\, R</Shortcut>
+          <Shortcut Command="View.ResourceView" Scope="Global">Ctrl+\, Ctrl+R</Shortcut>
+          <Shortcut Command="View.DocumentOutline" Scope="Global">Ctrl+\, U</Shortcut>
+          <Shortcut Command="View.DocumentOutline" Scope="Global">Ctrl+\, Ctrl+U</Shortcut>
+          <Shortcut Command="View.TaskList" Scope="Global">Ctrl+\, T</Shortcut>    <!-- Already in system --> 
+          <Shortcut Command="View.TaskList" Scope="Global">Ctrl+\, Ctrl+T</Shortcut>    <!-- Already in system --> 
+          <Shortcut Command="View.ErrorList" Scope="Global">Ctrl+\, E</Shortcut>    <!-- Already in system --> 
+          <Shortcut Command="View.ErrorList" Scope="Global">Ctrl+\, Ctrl+E</Shortcut>    <!-- Already in system --> 
+          <Shortcut Command="View.CommandWindow" Scope="Global">Ctrl+\, A</Shortcut>
+          <Shortcut Command="View.CommandWindow" Scope="Global">Ctrl+\, Ctrl+A</Shortcut>
+          <Shortcut Command="View.Output" Scope="Global">Ctrl+\, O</Shortcut>
+          <Shortcut Command="View.Output" Scope="Global">Ctrl+\, Ctrl+O</Shortcut>
+          <Shortcut Command="View.CodeDefinitionWindow" Scope="Global">Ctrl+\, D</Shortcut>
+          <Shortcut Command="View.CodeDefinitionWindow" Scope="Global">Ctrl+\, Ctrl+D</Shortcut>
+          <Shortcut Command="View.FindSymbolResults" Scope="Global">Ctrl+\, Q</Shortcut>
+          <Shortcut Command="View.FindSymbolResults" Scope="Global">Ctrl+\, Ctrl+Q</Shortcut>
+          <Shortcut Command="View.BookmarkWindow" Scope="Global">Ctrl+\, B</Shortcut>
+          <Shortcut Command="View.BookmarkWindow" Scope="Global">Ctrl+\, Ctrl+B</Shortcut>
+          <Shortcut Command="View.WebBrowser" Scope="Global">Ctrl+\, W</Shortcut>    <!-- Reserve for Window Management menu on status bar (HotWindows) -->
+          <Shortcut Command="View.WebBrowser" Scope="Global">Ctrl+\, Ctrl+W</Shortcut>    <!-- Reserve for Window Management menu on status bar (HotWindows) -->
+          <Shortcut Command="View.PendingCheckins" Scope="Global">Ctrl+\, G</Shortcut>
+          <Shortcut Command="View.PendingCheckins" Scope="Global">Ctrl+\, Ctrl+G</Shortcut>
+
+          <!-- Refactoring -->
+          <!-- Additional bindings on top of existing Ctrl/Ctrl chords -->
           <Shortcut Command="Refactor.ExtractMethod" Scope="Global">Ctrl+R, M</Shortcut>
           <Shortcut Command="Refactor.EncapsulateField" Scope="Global">Ctrl+R, E</Shortcut>
           <Shortcut Command="Refactor.ExtractInterface" Scope="Global">Ctrl+R, I</Shortcut>
           <Shortcut Command="Refactor.ReorderParameters" Scope="Global">Ctrl+R, O</Shortcut>
           <Shortcut Command="Refactor.RemoveParameters" Scope="Global">Ctrl+R, V</Shortcut>
           <Shortcut Command="Refactor.Rename" Scope="Global">Ctrl+R, R</Shortcut>
+
+          <!-- Rename in different scopes (Default global F2 = View.EditLabel) -->
           <Shortcut Command="Refactor.Rename" Scope="Text Editor">F2</Shortcut>
+          <Shortcut Command="File.Rename" Scope="Solution Explorer">F2</Shortcut>   <!-- Introduced by JEC. Not in Visual C# 2005 -->
+
+          <!-- Do we want to use F6 for build (or for NextPane)? -->
+          <!--<Shortcut Command="Build.BuildSolution" Scope="Global">F6</Shortcut>-->
+          <!--<Shortcut Command="Build.BuildSelection" Scope="Global">Shift+F6</Shortcut>-->
+
+          <!-- Debug Window shortcuts. Most of these are currently using Ctrl+Alt+?? shortcuts -->
+          <Shortcut Command="Debug.Breakpoints" Scope="Global">Ctrl+Alt+D, B</Shortcut>
+          <Shortcut Command="Debug.Breakpoints" Scope="Global">Ctrl+Alt+D, Ctrl+B</Shortcut>
+          <Shortcut Command="Debug.Watch1" Scope="Global">Ctrl+Alt+D, W</Shortcut>
+          <Shortcut Command="Debug.Watch1" Scope="Global">Ctrl+Alt+D, Ctrl+W</Shortcut>
+          <Shortcut Command="Debug.Autos" Scope="Global">Ctrl+Alt+D, A</Shortcut>
+          <Shortcut Command="Debug.Autos" Scope="Global">Ctrl+Alt+D, Ctrl+A</Shortcut>
+          <Shortcut Command="Debug.Locals" Scope="Global">Ctrl+Alt+D, L</Shortcut>
+          <Shortcut Command="Debug.Locals" Scope="Global">Ctrl+Alt+D, Ctrl+L</Shortcut>
+          <Shortcut Command="Debug.Immediate" Scope="Global">Ctrl+Alt+D, I</Shortcut>
+          <Shortcut Command="Debug.Immediate" Scope="Global">Ctrl+Alt+D, Ctrl+I</Shortcut>
+          <Shortcut Command="Debug.CallStack" Scope="Global">Ctrl+Alt+D, C</Shortcut>
+          <Shortcut Command="Debug.CallStack" Scope="Global">Ctrl+Alt+D, Ctrl+C</Shortcut>
+          <Shortcut Command="Debug.Threads" Scope="Global">Ctrl+Alt+D, T</Shortcut>
+          <Shortcut Command="Debug.Threads" Scope="Global">Ctrl+Alt+D, Ctrl+T</Shortcut>
+          <Shortcut Command="Debug.Modules" Scope="Global">Ctrl+Alt+D, M</Shortcut>
+          <Shortcut Command="Debug.Modules" Scope="Global">Ctrl+Alt+D, Ctrl+M</Shortcut>
+          <Shortcut Command="Debug.Processes" Scope="Global">Ctrl+Alt+D, P</Shortcut>
+          <Shortcut Command="Debug.Processes" Scope="Global">Ctrl+Alt+D, Ctrl+P</Shortcut>
+          <Shortcut Command="Debug.ParallelStacks" Scope="Global">Ctrl+Alt+D, S</Shortcut>  <!-- Currently on Ctrl+Shift+D, D -->
+          <Shortcut Command="Debug.ParallelStacks" Scope="Global">Ctrl+Alt+D, Ctrl+S</Shortcut>
+          <Shortcut Command="Debug.ParallelWatch1" Scope="Global">Ctrl+Alt+D, 1</Shortcut>  <!-- Introduced by JEC -->
+          <Shortcut Command="Debug.ParallelWatch1" Scope="Global">Ctrl+Alt+D, Ctrl+1</Shortcut>  <!-- Introduced by JEC -->
+          <Shortcut Command="Debug.ParallelWatch2" Scope="Global">Ctrl+Alt+D, 2</Shortcut>  <!-- Introduced by JEC -->
+          <Shortcut Command="Debug.ParallelWatch2" Scope="Global">Ctrl+Alt+D, Ctrl+2</Shortcut>  <!-- Introduced by JEC -->
+          <Shortcut Command="Debug.ParallelWatch3" Scope="Global">Ctrl+Alt+D, 3</Shortcut>  <!-- Introduced by JEC -->
+          <Shortcut Command="Debug.ParallelWatch3" Scope="Global">Ctrl+Alt+D, Ctrl+3</Shortcut>  <!-- Introduced by JEC -->
+          <Shortcut Command="Debug.ParallelWatch4" Scope="Global">Ctrl+Alt+D, 4</Shortcut>  <!-- Introduced by JEC -->
+          <Shortcut Command="Debug.ParallelWatch4" Scope="Global">Ctrl+Alt+D, Ctrl+4</Shortcut>  <!-- Introduced by JEC -->
+          <Shortcut Command="Debug.ParallelTasks" Scope="Global">Ctrl+Alt+D, K</Shortcut> <!-- No longer exists -->
+          <Shortcut Command="Debug.ParallelTasks" Scope="Global">Ctrl+Alt+D, Ctrl+K</Shortcut>
+          <Shortcut Command="Debug.IntelliTraceCalls" Scope="Global">Ctrl+Alt+D, H</Shortcut>
+          <Shortcut Command="Debug.IntelliTraceCalls" Scope="Global">Ctrl+Alt+D, Ctrl+H</Shortcut>
+          <Shortcut Command="Debug.IntelliTraceEvents" Scope="Global">Ctrl+Alt+D, V</Shortcut>
+          <Shortcut Command="Debug.IntelliTraceEvents" Scope="Global">Ctrl+Alt+D, Ctrl+V</Shortcut>
+          <Shortcut Command="Debug.Memory1" Scope="Global">Ctrl+Alt+D, Y</Shortcut>
+          <Shortcut Command="Debug.Memory1" Scope="Global">Ctrl+Alt+D, Ctrl+Y</Shortcut>
+          <!--<Shortcut Command="Debug.Disassembly" Scope="Global">Ctrl+Alt+D, D</Shortcut>   --><!-- Default Ctrl+Alt+D is for Debug.Disassembly -->
+          <!--<Shortcut Command="Debug.Disassembly" Scope="Global">Ctrl+Alt+D, Ctrl+D</Shortcut>    --><!-- Default Ctrl+Alt+D is for Debug.Disassembly -->
+          <Shortcut Command="Debug.ToggleDisassembly" Scope="Global">Ctrl+Alt+D, D</Shortcut>  <!-- Maybe this is a good replacement for Debug.Disassembly -->
+          <Shortcut Command="Debug.ToggleDisassembly" Scope="Global">Ctrl+Alt+D, Ctrl+D</Shortcut>  <!-- Maybe this is a good replacement for Debug.Disassembly -->
+          <Shortcut Command="Debug.Registers" Scope="Global">Ctrl+Alt+D, R</Shortcut>
+          <Shortcut Command="Debug.Registers" Scope="Global">Ctrl+Alt+D, Ctrl+R</Shortcut>
+          <Shortcut Command="Debug.Exceptions" Scope="Global">Ctrl+Alt+D, E</Shortcut>
+          <Shortcut Command="Debug.Exceptions" Scope="Global">Ctrl+Alt+D, Ctrl+E</Shortcut>
+          <Shortcut Command="Debug.QuickWatch" Scope="Global">Ctrl+Alt+D, Q</Shortcut>
+          <Shortcut Command="Debug.QuickWatch" Scope="Global">Ctrl+Alt+D, Ctrl+Q</Shortcut>
+          <Shortcut Command="Debug.BreakAtFunction" Scope="Global">Ctrl+Alt+D, N</Shortcut>
+          <Shortcut Command="Debug.BreakAtFunction" Scope="Global">Ctrl+Alt+D, Ctrl+N</Shortcut>
+
+          <!-- Help -->
+          <!-- No need to define chords for help. Only Help.ViewHelp exists and can use default system shortcut Ctrl+F1 -->
+          <!--<Shortcut Command="Help.ManageHelpSettings" Scope="Global">Ctrl+F1, M</Shortcut>  --><!-- No such thing in VS2017 -->
+          <!--<Shortcut Command="Help.ManageHelpSettings" Scope="Global">Ctrl+F1, Ctrl+M</Shortcut>-->
+          <!--<Shortcut Command="Help.ViewHelp" Scope="Global">Ctrl+F1, V</Shortcut>-->
+          <!--<Shortcut Command="Help.ViewHelp" Scope="Global">Ctrl+F1, Ctrl+V</Shortcut>-->
+
+          <!-- Code/Design toggle -->
+          <!-- Do we really need these? They seem to be Default Shortcuts when exporting shortcuts in vssettings -->
+          <!--<Shortcut Command="View.ViewCode" Scope="Global">F7</Shortcut>-->
+          <!--<Shortcut Command="View.ViewDesigner" Scope="Global">Shift+F7</Shortcut>-->
+
+          <!-- Editor shortcuts -->
+          <!--<Shortcut Command="Edit.GenerateMethod" Scope="Global">Ctrl+K, M</Shortcut>  --><!-- no such thing -->
+          <!--<Shortcut Command="Edit.GenerateMethod" Scope="Global">Ctrl+K, Ctrl+M</Shortcut>-->
+          <!--<Shortcut Command="Edit.FindAllReferences" Scope="Global">Ctrl+K, R</Shortcut>  --><!-- Default uses Shift+F12 -->
+          <!--<Shortcut Command="Edit.FindAllReferences" Scope="Global">Ctrl+K, Ctrl+R</Shortcut>-->
+          <!--<Shortcut Command="Edit.FindAllReferences" Scope="Global">Shift+F12</Shortcut>  --><!-- Already in system -->
+          <!--<Shortcut Command="Edit.ParameterInfo" Scope="Text Editor">Ctrl+K, P</Shortcut>  --><!-- Default is Ctrl+Shift+Space. NextBookmark uses Ctrl+K, P  -->
+          <!--<Shortcut Command="Edit.ParameterInfo" Scope="Text Editor">Ctrl+K, Ctrl+P</Shortcut>-->
+          <!-- IntelliSense -->
+          <!--<Shortcut Command="Edit.ListMembers" Scope="Text Editor">Ctrl+K, L</Shortcut>   --><!-- Default is Ctrl+J. ClearBookmarks uses Ctrl+K, L -->
+          <!--<Shortcut Command="Edit.ListMembers" Scope="Text Editor">Ctrl+K, Ctrl+L</Shortcut>  --><!-- Default is Ctrl+J -->
+          <!--<Shortcut Command="Edit.CompleteWord" Scope="Text Editor">Ctrl+K, W</Shortcut>  --><!-- Default is Ctrl+Space (or Alt+RightArrow) -->
+          <!--<Shortcut Command="Edit.CompleteWord" Scope="Text Editor">Ctrl+K, Ctrl+W</Shortcut>  --><!-- Default is Ctrl+Space (or Alt+RightArrow) -->
+          <!-- Additional shortcuts to compliment the Ctrl+K, Ctrl+?? chords -->
           <Shortcut Command="Edit.SurroundWith" Scope="Global">Ctrl+K, S</Shortcut>
           <Shortcut Command="Edit.InsertSnippet" Scope="Global">Ctrl+K, X</Shortcut>
-          <Shortcut Command="Build.BuildSolution" Scope="Global">F6</Shortcut>
-          <Shortcut Command="Build.BuildSelection" Scope="Global">Shift+F6</Shortcut>
-          <Shortcut Command="Debug.Breakpoints" Scope="Global">Ctrl+D, B</Shortcut>
-          <Shortcut Command="Debug.Breakpoints" Scope="Global">Ctrl+D, Ctrl+B</Shortcut>
-          <Shortcut Command="Debug.Watch1" Scope="Global">Ctrl+D, W</Shortcut>
-          <Shortcut Command="Debug.Watch1" Scope="Global">Ctrl+D, Ctrl+W</Shortcut>
-          <Shortcut Command="Debug.Autos" Scope="Global">Ctrl+D, A</Shortcut>
-          <Shortcut Command="Debug.Autos" Scope="Global">Ctrl+D, Ctrl+A</Shortcut>
-          <Shortcut Command="Debug.Locals" Scope="Global">Ctrl+D, L</Shortcut>
-          <Shortcut Command="Debug.Locals" Scope="Global">Ctrl+D, Ctrl+L</Shortcut>
-          <Shortcut Command="Debug.Immediate" Scope="Global">Ctrl+D, I</Shortcut>
-          <Shortcut Command="Debug.Immediate" Scope="Global">Ctrl+D, Ctrl+I</Shortcut>
-          <Shortcut Command="Debug.CallStack" Scope="Global">Ctrl+D, C</Shortcut>
-          <Shortcut Command="Debug.CallStack" Scope="Global">Ctrl+D, Ctrl+C</Shortcut>
-          <Shortcut Command="Debug.Threads" Scope="Global">Ctrl+D, T</Shortcut>
-          <Shortcut Command="Debug.Threads" Scope="Global">Ctrl+D, Ctrl+T</Shortcut>
-          <Shortcut Command="Debug.Modules" Scope="Global">Ctrl+D, M</Shortcut>
-          <Shortcut Command="Debug.Modules" Scope="Global">Ctrl+D, Ctrl+M</Shortcut>
-          <Shortcut Command="Debug.Processes" Scope="Global">Ctrl+D, P</Shortcut>
-          <Shortcut Command="Debug.Processes" Scope="Global">Ctrl+D, Ctrl+P</Shortcut>
-          <Shortcut Command="Debug.ParallelStacks" Scope="Global">CTRL+D,S</Shortcut>
-          <Shortcut Command="Debug.ParallelStacks" Scope="Global">CTRL+D,CTRL+S</Shortcut>
-          <Shortcut Command="Debug.ParallelTasks" Scope="Global">CTRL+D,K</Shortcut>
-          <Shortcut Command="Debug.ParallelTasks" Scope="Global">CTRL+D,CTRL+K</Shortcut>
-          <Shortcut Command="Debug.IntelliTraceCalls" Scope="Global">Ctrl+D, H</Shortcut>
-          <Shortcut Command="Debug.IntelliTraceCalls" Scope="Global">Ctrl+D, Ctrl+H</Shortcut>
-          <Shortcut Command="Debug.IntelliTraceEvents" Scope="Global">Ctrl+D, V</Shortcut>
-          <Shortcut Command="Debug.IntelliTraceEvents" Scope="Global">Ctrl+D, Ctrl+V</Shortcut>
-          <Shortcut Command="Debug.Memory1" Scope="Global">Ctrl+D, Y</Shortcut>
-          <Shortcut Command="Debug.Memory1" Scope="Global">Ctrl+D, Ctrl+Y</Shortcut>
-          <Shortcut Command="Debug.ToggleDisassembly" Scope="Global">Ctrl+D, D</Shortcut>
-          <Shortcut Command="Debug.ToggleDisassembly" Scope="Global">Ctrl+D, Ctrl+D</Shortcut>
-          <Shortcut Command="Debug.Registers" Scope="Global">Ctrl+D, R</Shortcut>
-          <Shortcut Command="Debug.Registers" Scope="Global">Ctrl+D, Ctrl+R</Shortcut>
-          <Shortcut Command="Debug.Exceptions" Scope="Global">Ctrl+D, E</Shortcut>
-          <Shortcut Command="Debug.Exceptions" Scope="Global">Ctrl+D, Ctrl+E</Shortcut>
-          <Shortcut Command="Debug.QuickWatch" Scope="Global">Ctrl+D, Q</Shortcut>
-          <Shortcut Command="Debug.QuickWatch" Scope="Global">Ctrl+D, Ctrl+Q</Shortcut>
-          <Shortcut Command="Debug.BreakAtFunction" Scope="Global">Ctrl+D, N</Shortcut>
-          <Shortcut Command="Debug.BreakAtFunction" Scope="Global">Ctrl+D, Ctrl+N</Shortcut>
-          <Shortcut Command="Help.ViewHelp" Scope="Global">Ctrl+F1, V</Shortcut>
-          <Shortcut Command="Help.ViewHelp" Scope="Global">Ctrl+F1, Ctrl+V</Shortcut>
-          <Shortcut Command="View.ClassView" Scope="Global">Ctrl+W, C</Shortcut>
-          <Shortcut Command="View.ClassView" Scope="Global">Ctrl+W, Ctrl+C</Shortcut>
-          <Shortcut Command="View.ServerExplorer" Scope="Global">Ctrl+W, L</Shortcut>
-          <Shortcut Command="View.ServerExplorer" Scope="Global">Ctrl+W, Ctrl+L</Shortcut>
-          <Shortcut Command="View.ResourceView" Scope="Global">Ctrl+W, R</Shortcut>
-          <Shortcut Command="View.ResourceView" Scope="Global">Ctrl+W, Ctrl+R</Shortcut>
-          <Shortcut Command="View.DocumentOutline" Scope="Global">Ctrl+W, U</Shortcut>
-          <Shortcut Command="View.DocumentOutline" Scope="Global">Ctrl+W, Ctrl+U</Shortcut>
-          <Shortcut Command="View.TaskList" Scope="Global">Ctrl+W, T</Shortcut>
-          <Shortcut Command="View.TaskList" Scope="Global">Ctrl+W, Ctrl+T</Shortcut>
-          <Shortcut Command="View.ErrorList" Scope="Global">Ctrl+W, E</Shortcut>
-          <Shortcut Command="View.ErrorList" Scope="Global">Ctrl+W, Ctrl+E</Shortcut>
-          <Shortcut Command="View.CommandWindow" Scope="Global">Ctrl+W, A</Shortcut>
-          <Shortcut Command="View.CommandWindow" Scope="Global">Ctrl+W, Ctrl+A</Shortcut>
-          <Shortcut Command="View.ViewCode" Scope="Global">F7</Shortcut>
-          <Shortcut Command="View.ViewDesigner" Scope="Global">Shift+F7</Shortcut>
-          <Shortcut Command="View.Output" Scope="Global">Ctrl+W, O</Shortcut>
-          <Shortcut Command="View.Output" Scope="Global">Ctrl+W, Ctrl+O</Shortcut>
-          <Shortcut Command="View.CodeDefinitionWindow" Scope="Global">Ctrl+W, D</Shortcut>
-          <Shortcut Command="View.CodeDefinitionWindow" Scope="Global">Ctrl+W, Ctrl+D</Shortcut>
-          <Shortcut Command="View.FindSymbolResults" Scope="Global">Ctrl+W, Q</Shortcut>
-          <Shortcut Command="View.FindSymbolResults" Scope="Global">Ctrl+W, Ctrl+Q</Shortcut>
-          <Shortcut Command="Edit.EnableBookmark" Scope="Text Editor">Ctrl+B, E</Shortcut>
-          <Shortcut Command="Edit.EnableBookmark" Scope="Text Editor">Ctrl+B, Ctrl+E</Shortcut>
-          <Shortcut Command="View.BookmarkWindow" Scope="Global">Ctrl+W, B</Shortcut>
-          <Shortcut Command="View.BookmarkWindow" Scope="Global">Ctrl+W, Ctrl+B</Shortcut>
-          <Shortcut Command="View.WebBrowser" Scope="Global">Ctrl+W, W</Shortcut>
-          <Shortcut Command="View.WebBrowser" Scope="Global">Ctrl+W, Ctrl+W</Shortcut>
-          <Shortcut Command="Help.ManageHelpSettings" Scope="Global">Ctrl+F1, M</Shortcut>
-          <Shortcut Command="Help.ManageHelpSettings" Scope="Global">Ctrl+F1, Ctrl+M</Shortcut>
-          <Shortcut Command="Edit.GenerateMethod" Scope="Global">Ctrl+K, M</Shortcut>
-          <Shortcut Command="Edit.GenerateMethod" Scope="Global">Ctrl+K, Ctrl+M</Shortcut>
-          <Shortcut Command="Edit.FindAllReferences" Scope="Global">Ctrl+K, R</Shortcut>
-          <Shortcut Command="Edit.FindAllReferences" Scope="Global">Ctrl+K, Ctrl+R</Shortcut>
-          <Shortcut Command="Edit.FindAllReferences" Scope="Global">Shift+F12</Shortcut>
+          <Shortcut Command="Edit.QuickInfo" Scope="Text Editor">Ctrl+K, I</Shortcut>
+
           <Shortcut Command="Edit.SwapAnchor" Scope="Text Editor">Ctrl+E, A</Shortcut>
           <Shortcut Command="Edit.SwapAnchor" Scope="Text Editor">Ctrl+E, Ctrl+A</Shortcut>
           <Shortcut Command="Edit.DeleteHorizontalWhiteSpace" Scope="Text Editor">Ctrl+E, \</Shortcut>
           <Shortcut Command="Edit.DeleteHorizontalWhiteSpace" Scope="Text Editor">Ctrl+E, Ctrl+\</Shortcut>
-          <Shortcut Command="Edit.ClearBookmarks" Scope="Text Editor">Ctrl+B, C</Shortcut>
-          <Shortcut Command="Edit.ClearBookmarks" Scope="Text Editor">Ctrl+B, Ctrl+C</Shortcut>
-          <Shortcut Command="Edit.ToggleBookmark" Scope="Text Editor">Ctrl+B, T</Shortcut>
-          <Shortcut Command="Edit.ToggleBookmark" Scope="Text Editor">Ctrl+B, Ctrl+T</Shortcut>
-          <Shortcut Command="Edit.NextBookmark" Scope="Text Editor">Ctrl+B, N</Shortcut>
-          <Shortcut Command="Edit.NextBookmark" Scope="Text Editor">Ctrl+B, Ctrl+N</Shortcut>
-          <Shortcut Command="Edit.PreviousBookmark" Scope="Text Editor">Ctrl+B, P</Shortcut>
-          <Shortcut Command="Edit.PreviousBookmark" Scope="Text Editor">Ctrl+B, Ctrl+P</Shortcut>
-          <Shortcut Command="Edit.ParameterInfo" Scope="Text Editor">Ctrl+K, P</Shortcut>
-          <Shortcut Command="Edit.ParameterInfo" Scope="Text Editor">Ctrl+K, Ctrl+P</Shortcut>
-          <Shortcut Command="Edit.ViewWhiteSpace" Scope="Text Editor">Ctrl+E, S</Shortcut>
-          <Shortcut Command="Edit.ViewWhiteSpace" Scope="Text Editor">Ctrl+E, Ctrl+S</Shortcut>
-          <Shortcut Command="Edit.CompleteWord" Scope="Text Editor">Ctrl+K, W</Shortcut>
-          <Shortcut Command="Edit.CompleteWord" Scope="Text Editor">Ctrl+K, Ctrl+W</Shortcut>
-          <Shortcut Command="Edit.ListMembers" Scope="Text Editor">Ctrl+K, L</Shortcut>
-          <Shortcut Command="Edit.ListMembers" Scope="Text Editor">Ctrl+K, Ctrl+L</Shortcut>
-          <Shortcut Command="Edit.FormatSelection" Scope="Text Editor">Ctrl+E, F</Shortcut>
-          <Shortcut Command="Edit.FormatSelection" Scope="Text Editor">Ctrl+E, Ctrl+F</Shortcut>
-          <Shortcut Command="Edit.ToggleTaskListShortcut" Scope="Text Editor">Ctrl+E, T</Shortcut>
-          <Shortcut Command="Edit.ToggleTaskListShortcut" Scope="Text Editor">Ctrl+E, Ctrl+T</Shortcut>
-          <Shortcut Command="Edit.QuickInfo" Scope="Text Editor">Ctrl+K, I</Shortcut>
+          <Shortcut Command="Edit.ViewWhiteSpace" Scope="Text Editor">Ctrl+E, S</Shortcut>  <!-- Default is Ctrl+R, W. But this quite nice. :-) -->
+          <Shortcut Command="Edit.ViewWhiteSpace" Scope="Text Editor">Ctrl+E, Ctrl+S</Shortcut>  <!-- Default is Ctrl+R, W -->
+          <!--<Shortcut Command="Edit.ToggleTaskListShortcut" Scope="Text Editor">Ctrl+E, T</Shortcut>   --><!-- Default is Ctrl+K, Ctrl+H. Default Ctrl+E, T is ShowTestExplorer -->
+          <!--<Shortcut Command="Edit.ToggleTaskListShortcut" Scope="Text Editor">Ctrl+E, Ctrl+T</Shortcut>--><!-- Default is Ctrl+K, Ctrl+H. Default Ctrl+E, Ctrl+T is TaskStatusCenter -->
+          <!-- Additional shortcuts to compliment the Ctrl+E, Ctrl+?? chords -->
           <Shortcut Command="Edit.ToggleWordWrap" Scope="Text Editor">Ctrl+E, W</Shortcut>
+
+          <!-- Outlining -->
+          <!-- Additional shortcuts to compliment the Ctrl+M, Ctrl+?? Outlining chords -->
           <Shortcut Command="Edit.ToggleOutliningExpansion" Scope="Text Editor">Ctrl+M, M</Shortcut>
           <Shortcut Command="Edit.ToggleAllOutlining" Scope="Text Editor">Ctrl+M, L</Shortcut>
           <Shortcut Command="Edit.StopOutlining" Scope="Text Editor">Ctrl+M, P</Shortcut>
           <Shortcut Command="Edit.CollapsetoDefinitions" Scope="Text Editor">Ctrl+M, O</Shortcut>
-          <Shortcut Command="Edit.CommentSelection" Scope="Text Editor">Ctrl+E, C</Shortcut>
-          <Shortcut Command="Edit.CommentSelection" Scope="Text Editor">Ctrl+E, Ctrl+C</Shortcut>
-          <Shortcut Command="Edit.UncommentSelection" Scope="Text Editor">Ctrl+E, U</Shortcut>
-          <Shortcut Command="Edit.UncommentSelection" Scope="Text Editor">Ctrl+E, Ctrl+U</Shortcut>
-          <Shortcut Command="Edit.FormatDocument" Scope="Text Editor">Ctrl+E, D</Shortcut>
-          <Shortcut Command="Edit.FormatDocument" Scope="Text Editor">Ctrl+E, Ctrl+D</Shortcut>
-          <Shortcut Command="View.PendingCheckins" Scope="Global">Ctrl+W, G</Shortcut>
-          <Shortcut Command="View.PendingCheckins" Scope="Global">Ctrl+W, Ctrl+G</Shortcut>
 
-          <Shortcut Command="View.QuickActions" Scope="Text Editor">Alt+Enter</Shortcut>
+          <!-- Comment/Format-->
+          <!--<Shortcut Command="Edit.CommentSelection" Scope="Text Editor">Ctrl+E, C</Shortcut>  --><!-- Redundant -->
+          <!--<Shortcut Command="Edit.CommentSelection" Scope="Text Editor">Ctrl+E, Ctrl+C</Shortcut>  --><!-- Redundant -->
+          <!--<Shortcut Command="Edit.UncommentSelection" Scope="Text Editor">Ctrl+E, U</Shortcut>  --><!-- Redundant -->
+          <!--<Shortcut Command="Edit.UncommentSelection" Scope="Text Editor">Ctrl+E, Ctrl+U</Shortcut>  --><!-- Redundant -->
+          <!--<Shortcut Command="Edit.FormatDocument" Scope="Text Editor">Ctrl+E, D</Shortcut>  --><!-- Redundant -->
+          <!--<Shortcut Command="Edit.FormatDocument" Scope="Text Editor">Ctrl+E, Ctrl+D</Shortcut>  --><!-- Redundant -->
+          <!--<Shortcut Command="Edit.FormatSelection" Scope="Text Editor">Ctrl+E, F</Shortcut> --><!-- Redundant -->
+          <!--<Shortcut Command="Edit.FormatSelection" Scope="Text Editor">Ctrl+E, Ctrl+F</Shortcut> --><!-- Redundant -->
+
+          <!-- Bookmarks -->
+          <!-- These are already on the Ctrl+K chord in the default -->
+          <!--<Shortcut Command="Edit.EnableBookmark" Scope="Text Editor">Ctrl+B, E</Shortcut>-->
+          <!--<Shortcut Command="Edit.EnableBookmark" Scope="Text Editor">Ctrl+B, Ctrl+E</Shortcut>-->
+          <!--<Shortcut Command="Edit.ClearBookmarks" Scope="Text Editor">Ctrl+B, C</Shortcut>  --><!-- Ctrl+K, L -->
+          <!--<Shortcut Command="Edit.ClearBookmarks" Scope="Text Editor">Ctrl+B, Ctrl+C</Shortcut>-->
+          <!--<Shortcut Command="Edit.ToggleBookmark" Scope="Text Editor">Ctrl+B, T</Shortcut>  --><!-- Ctrl+K, K -->
+          <!--<Shortcut Command="Edit.ToggleBookmark" Scope="Text Editor">Ctrl+B, Ctrl+T</Shortcut>-->
+          <!--<Shortcut Command="Edit.NextBookmark" Scope="Text Editor">Ctrl+B, N</Shortcut> --><!-- Ctrl+K, N -->
+          <!--<Shortcut Command="Edit.NextBookmark" Scope="Text Editor">Ctrl+B, Ctrl+N</Shortcut>-->
+          <!--<Shortcut Command="Edit.PreviousBookmark" Scope="Text Editor">Ctrl+B, P</Shortcut> --><!-- Ctrl+K, P -->
+          <!--<Shortcut Command="Edit.PreviousBookmark" Scope="Text Editor">Ctrl+B, Ctrl+P</Shortcut>-->
+
+          <!-- Special -->
+          <Shortcut Command="View.QuickActions" Scope="Text Editor">Alt+Enter</Shortcut>  <!-- Already in system -->
+          <Shortcut Command="Project.AddClass" Scope="Global">Shift+Alt+C</Shortcut>
+          <!--<Shortcut Command="Edit.SelectCurrentWord" Scope="Global">Ctrl+Shift+W</Shortcut>  -->  <!-- Added because Ctrl+W will be used for Close Document -->  <!-- Removed because ExpandSelection can do current word and Ctrl+Shift+W does open web browser -->
+          <!--<Shortcut Command="Edit.GoToFindCombo" Scope="Global">Ctrl+/</Shortcut>-->  <!-- Deprecating this Should be reserved for Edit.ToggleLineComment -->
+
           <!-- TODO: Keep this up-to-date with the latest Visual C# 2005 scheme -->
 
           <!-- ======================== -->
           <!-- New Shortcuts for VS2015 -->
           <!-- ======================== -->
+
+          <!-- Special -->
+          <!--<Shortcut Command="File.Rename" Scope="Solution Explorer">F2</Shortcut>-->  <!-- Moved into section above (to keep near Rename shortcuts) -->
+          <Shortcut Command="Window.CloseDocumentWindow" Scope="Global">Ctrl+W</Shortcut>   <!-- This replaces many global -->
+          <!--<Shortcut Command="EditorContextMenus.CodeWindow.OrganizeUsings.RemoveAndSort" Scope="Text Editor">Ctrl+Alt+O</Shortcut>  --><!-- "OptimizeImports" -->
 
           <!-- Navigation -->
           <Shortcut Command="View.NavigateBackward" Scope="Global">Alt+Left Arrow</Shortcut>    <!-- Overrides Global View.Backward (Alt+Left Arrow) -->
@@ -239,18 +288,10 @@
           <Shortcut Command="Edit.ExpandAllOutlining" Scope="Text Editor">Ctrl+Shift+=</Shortcut>
           <Shortcut Command="Edit.CollapseAllOutlining" Scope="Text Editor">Ctrl+Shift+Num -</Shortcut>
           <Shortcut Command="Edit.CollapseAllOutlining" Scope="Text Editor">Ctrl+Shift+-</Shortcut>  <!-- Overrides View.NavigateForward -->
-          <!-- Old VS Outlining shortcuts (provide Ctrl+M,[char] shortcut chords to add to existing Ctrl+M,Ctrl+[char] chords -->
-          <Shortcut Command="Edit.CollapseCurrentRegion" Scope="Text Editor">Ctrl+M, S</Shortcut>  <!-- Adding this -->
-          <Shortcut Command="Edit.ExpandCurrentRegion" Scope="Text Editor">Ctrl+M, E</Shortcut>  <!-- Adding this -->
-          <Shortcut Command="Edit.CollapseAllOutlining" Scope="Text Editor">Ctrl+M, A</Shortcut>  <!-- Adding this -->
-          <Shortcut Command="Edit.ExpandAllOutlining" Scope="Text Editor">Ctrl+M, X</Shortcut>  <!-- Adding this -->
-          <Shortcut Command="Edit.CollapseTag" Scope="Text Editor">Ctrl+M, T</Shortcut>  <!-- Adding this -->
-          <Shortcut Command="Edit.HideSelection" Scope="Text Editor">Ctrl+M, H</Shortcut>  <!-- Adding this -->
-          <Shortcut Command="Edit.StopHidingCurrent" Scope="Text Editor">Ctrl+M, U</Shortcut>  <!-- Adding this -->
 
           <!-- GoTo Next Error / Previous Error -->  <!-- New shortcuts. (Borrowed from ReSharper for VS C# ) -->
-          <Shortcut Command="View.NextError" Scope="Global">Alt+PgDn</Shortcut>    <!-- NYI. Near-match. GoToNextHighlight -->
-          <Shortcut Command="View.PreviousError" Scope="Global">Alt+PgUp</Shortcut>   <!-- NYI. Near-match. GoToPreviousHighlight -->
+          <Shortcut Command="Edit.GoToNextIssueinFile" Scope="Global">Alt+PgDn</Shortcut>    <!-- NYI. Near-match. GoToNextHighlight -->
+          <Shortcut Command="Edit.GoToPreviousIssueinFile" Scope="Global">Alt+PgUp</Shortcut>   <!-- NYI. Near-match. GoToPreviousHighlight -->
           <Shortcut Command="View.NextError" Scope="Global">Shift+Alt+PgDn</Shortcut>
           <Shortcut Command="View.PreviousError" Scope="Global">Shift+Alt+PgUp</Shortcut>
 
@@ -260,17 +301,22 @@
           <Shortcut Command="Window.Dock" Scope="Global">Ctrl+Ins</Shortcut>
           <Shortcut Command="Window.DockasTabbedDocument" Scope="Global">Ctrl+Shift+Ins</Shortcut>
           <!-- Tool Window Shortcuts -->
-          <Shortcut Command="View.TfsTeamExplorer" Scope="Global">Ctrl+\, Ctrl+M</Shortcut>   <!-- Part of default mapping - included for consistency and future proof -->
-          <Shortcut Command="View.TfsTeamExplorer" Scope="Global">Ctrl+\, M</Shortcut>  <!-- East alternative chord -->
+          <!--<Shortcut Command="View.TfsTeamExplorer" Scope="Global">Ctrl+\, Ctrl+M</Shortcut>   --><!-- Added above. Part of default mapping - included for consistency and future proof -->
+          <!--<Shortcut Command="View.TfsTeamExplorer" Scope="Global">Ctrl+\, M</Shortcut>  --><!-- Added above -->
           <!-- Toggle Close Tool Windows -->
           <Shortcut Command="Window.CloseToolWindow" Scope="Solution Explorer">Ctrl+Alt+L</Shortcut>
           <Shortcut Command="Window.CloseToolWindow" Scope="Test Explorer">Ctrl+E, T</Shortcut>
           <Shortcut Command="Window.CloseToolWindow" Scope="Team Explorer">Ctrl+\, Ctrl+M</Shortcut>
           <Shortcut Command="Window.CloseToolWindow" Scope="Team Explorer">Ctrl+\, M</Shortcut>  <!-- Toogle alt-chord -->
 
-          <!-- Special -->
-          <Shortcut Command="File.Rename" Scope="Solution Explorer">F2</Shortcut>
-          <!--<Shortcut Command="EditorContextMenus.CodeWindow.OrganizeUsings.RemoveAndSort" Scope="Text Editor">Ctrl+Alt+O</Shortcut>  &lt;!&ndash; "OptimizeImports" &ndash;&gt;-->
+          <!-- Expand Selection shortcuts -->
+          <Shortcut Command="Edit.ExpandSelection" Scope="Text Editor">Ctrl+A</Shortcut>   <!-- Blocks existing global shortcut for Select All -->
+          <Shortcut Command="Edit.ContractseSelection" Scope="Text Editor">Ctrl+Shift+A</Shortcut>
+          <Shortcut Command="Edit.SelectAll" Scope="Text Editor">Ctrl+Alt+A</Shortcut> <!-- This is added because we removed the standard Ctrl+A shortcut for Select All -->
+
+          <!--  Ctrl+D shortcuts -->
+          <Shortcut Command="Edit.InsertNextMatchingCaret" Scope="Text Editor">Ctrl+Shift+D</Shortcut>
+          <Shortcut Command="Edit.Duplicate" Scope="Text Editor">Ctrl+D</Shortcut>  <!-- Already in system -->
 
         </UserShortcuts>
       </KeyboardShortcuts>
