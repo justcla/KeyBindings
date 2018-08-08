@@ -41,6 +41,9 @@
     <Content Include="Installer\HotKeysPreviewImage.png" />
     <Content Include="Installer\License.rtf" />
     <Content Include="Installer\ReleaseNotes.txt" />
+    <Content Include="VSKs\2015\IntelliJ-ImportLog.txt" />
+    <Content Include="VSKs\2015\ReSharperForIDEA-ImportLog.txt" />
+    <Content Include="VSKs\2015\ReSharperForVSC#-ImportLogs.txt" />
     <Content Include="VSSettings\Brief.vssettings" />
     <Content Include="VSSettings\Emacs.vssettings" />
     <Content Include="VSSettings\IntelliJ.vssettings">
@@ -59,6 +62,9 @@
     <Content Include="VSSettings\Visual C++ 2.vssettings" />
     <Content Include="VSSettings\Visual C++ 6.vssettings" />
     <Content Include="VSSettings\Visual CSharp 2005.vssettings" />
+    <Content Include="VSSettings\Visual CSharp 2017.vssettings">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="VSSettings\Visual CSharp 2015.vssettings">
       <SubType>Designer</SubType>
     </Content>
@@ -73,10 +79,19 @@
     <None Include="KeymapRefs\ReSharper_DefaultKeymap_VSscheme.pdf" />
     <None Include="KeymapRefs\VSCode-keyboard-shortcuts-linux.pdf" />
     <None Include="KeymapRefs\VSCode-keyboard-shortcuts-windows.pdf" />
+    <None Include="VSKs\2015\IntelliJ for C#.vsk" />
+    <None Include="VSKs\2015\ReSharper for IDEA.vsk" />
+    <None Include="VSKs\2015\ReSharper for VS C#.vsk" />
+    <None Include="VSKs\2015\Visual C# 2015.vsk" />
+    <None Include="VSKs\2017\IntelliJ for C#.vsk" />
+    <None Include="VSKs\2017\ReSharper for IDEA.vsk" />
+    <None Include="VSKs\2017\ReSharper for VS C#.vsk" />
+    <None Include="VSKs\2017\Sublime with C#.vsk" />
+    <None Include="VSKs\2017\Sublime with C++.vsk" />
+    <None Include="VSKs\2017\Visual C# 2015.vsk" />
+    <None Include="VSKs\2017\Visual C# 2017.vsk" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="VSKs\" />
-  </ItemGroup>
+  <ItemGroup />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
