@@ -55,7 +55,7 @@
     <Content Include="IntelliJ for CSharp.vsk">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <Content Include="Visual CSharp 2015.vssettings">
+    <Content Include="Visual CSharp 2017.vssettings">
       <SubType>Designer</SubType>
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>

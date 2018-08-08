@@ -99,12 +99,12 @@
           <Shortcut Command="View.CodeDefinitionWindow" Scope="Global">Ctrl+\, Ctrl+D</Shortcut>
           <Shortcut Command="View.FindSymbolResults" Scope="Global">Ctrl+\, Q</Shortcut>
           <Shortcut Command="View.FindSymbolResults" Scope="Global">Ctrl+\, Ctrl+Q</Shortcut>
-          <Shortcut Command="View.BookmarkWindow" Scope="Global">Ctrl+\, B</Shortcut>
-          <Shortcut Command="View.BookmarkWindow" Scope="Global">Ctrl+\, Ctrl+B</Shortcut>
-          <Shortcut Command="View.WebBrowser" Scope="Global">Ctrl+\, W</Shortcut>    <!-- Reserve for Window Management menu on status bar (HotWindows) -->
-          <Shortcut Command="View.WebBrowser" Scope="Global">Ctrl+\, Ctrl+W</Shortcut>    <!-- Reserve for Window Management menu on status bar (HotWindows) -->
-          <Shortcut Command="View.PendingCheckins" Scope="Global">Ctrl+\, G</Shortcut>
-          <Shortcut Command="View.PendingCheckins" Scope="Global">Ctrl+\, Ctrl+G</Shortcut>
+          <!--<Shortcut Command="View.BookmarkWindow" Scope="Global">Ctrl+\, B</Shortcut>-->  <!-- Already on Ctrl+Alt+K and Ctrl+K, W. Make room for Background Task Status Center status bar icon. -->
+          <!--<Shortcut Command="View.BookmarkWindow" Scope="Global">Ctrl+\, Ctrl+B</Shortcut>-->
+          <!--<Shortcut Command="View.WebBrowser" Scope="Global">Ctrl+\, W</Shortcut>    --><!-- Reserve for Window Management menu on status bar (HotWindows) Already on Ctrl+Alt+R -->
+          <!--<Shortcut Command="View.WebBrowser" Scope="Global">Ctrl+\, Ctrl+W</Shortcut>    --><!-- Reserve for Window Management menu on status bar (HotWindows) -->
+          <!--<Shortcut Command="View.PendingCheckins" Scope="Global">Ctrl+\, G</Shortcut>-->  <!-- Use this for GitHub instead -->
+          <!--<Shortcut Command="View.PendingCheckins" Scope="Global">Ctrl+\, Ctrl+G</Shortcut>-->
 
           <!-- Refactoring -->
           <!-- Additional bindings on top of existing Ctrl/Ctrl chords -->
@@ -152,8 +152,8 @@
           <Shortcut Command="Debug.ParallelWatch3" Scope="Global">Ctrl+Alt+D, Ctrl+3</Shortcut>  <!-- Introduced by JEC -->
           <Shortcut Command="Debug.ParallelWatch4" Scope="Global">Ctrl+Alt+D, 4</Shortcut>  <!-- Introduced by JEC -->
           <Shortcut Command="Debug.ParallelWatch4" Scope="Global">Ctrl+Alt+D, Ctrl+4</Shortcut>  <!-- Introduced by JEC -->
-          <Shortcut Command="Debug.ParallelTasks" Scope="Global">Ctrl+Alt+D, K</Shortcut> <!-- No longer exists -->
-          <Shortcut Command="Debug.ParallelTasks" Scope="Global">Ctrl+Alt+D, Ctrl+K</Shortcut>
+          <!--<Shortcut Command="Debug.ParallelTasks" Scope="Global">Ctrl+Alt+D, K</Shortcut> --><!-- No longer exists -->
+          <!--<Shortcut Command="Debug.ParallelTasks" Scope="Global">Ctrl+Alt+D, Ctrl+K</Shortcut>-->
           <Shortcut Command="Debug.IntelliTraceCalls" Scope="Global">Ctrl+Alt+D, H</Shortcut>
           <Shortcut Command="Debug.IntelliTraceCalls" Scope="Global">Ctrl+Alt+D, Ctrl+H</Shortcut>
           <Shortcut Command="Debug.IntelliTraceEvents" Scope="Global">Ctrl+Alt+D, V</Shortcut>
@@ -166,12 +166,14 @@
           <Shortcut Command="Debug.ToggleDisassembly" Scope="Global">Ctrl+Alt+D, Ctrl+D</Shortcut>  <!-- Maybe this is a good replacement for Debug.Disassembly -->
           <Shortcut Command="Debug.Registers" Scope="Global">Ctrl+Alt+D, R</Shortcut>
           <Shortcut Command="Debug.Registers" Scope="Global">Ctrl+Alt+D, Ctrl+R</Shortcut>
-          <Shortcut Command="Debug.Exceptions" Scope="Global">Ctrl+Alt+D, E</Shortcut>
-          <Shortcut Command="Debug.Exceptions" Scope="Global">Ctrl+Alt+D, Ctrl+E</Shortcut>
+          <!--<Shortcut Command="Debug.Exceptions" Scope="Global">Ctrl+Alt+D, E</Shortcut>  --><!-- No longer exists -->
+          <!--<Shortcut Command="Debug.Exceptions" Scope="Global">Ctrl+Alt+D, Ctrl+E</Shortcut>-->
           <Shortcut Command="Debug.QuickWatch" Scope="Global">Ctrl+Alt+D, Q</Shortcut>
           <Shortcut Command="Debug.QuickWatch" Scope="Global">Ctrl+Alt+D, Ctrl+Q</Shortcut>
-          <Shortcut Command="Debug.BreakAtFunction" Scope="Global">Ctrl+Alt+D, N</Shortcut>
-          <Shortcut Command="Debug.BreakAtFunction" Scope="Global">Ctrl+Alt+D, Ctrl+N</Shortcut>
+          <!--<Shortcut Command="Debug.BreakAtFunction" Scope="Global">Ctrl+Alt+D, N</Shortcut>  --><!-- Replaced by Debug.BreakAtFunction ? -->
+          <!--<Shortcut Command="Debug.BreakAtFunction" Scope="Global">Ctrl+Alt+D, Ctrl+N</Shortcut>-->
+          <Shortcut Command="Debug.FunctionBreakpoint" Scope="Global">Ctrl+Alt+D, N</Shortcut>
+          <Shortcut Command="Debug.FunctionBreakpoint" Scope="Global">Ctrl+Alt+D, Ctrl+N</Shortcut>
 
           <!-- Help -->
           <!-- No need to define chords for help. Only Help.ViewHelp exists and can use default system shortcut Ctrl+F1 -->
@@ -265,12 +267,12 @@
           <Shortcut Command="View.NavigateBackward" Scope="Global">Alt+Left Arrow</Shortcut>    <!-- Overrides Global View.Backward (Alt+Left Arrow) -->
           <Shortcut Command="View.NavigateForward" Scope="Global">Alt+Right Arrow</Shortcut>  <!-- Overrides Global View.NavigateForward -->
           <Shortcut Command="View.NavigateForward" Scope="Text Editor">Alt+Right Arrow</Shortcut>  <!-- Override TextEditor bindings (Edit.CompleteWord) -->
-          <Shortcut Command="View.NavigateForward" Scope="Workflow Designer">Alt+Right Arrow</Shortcut>  <!-- Override to remove existing shortcut (Edit.CompleteWord)-->
+          <!--<Shortcut Command="View.NavigateForward" Scope="Workflow Designer">Alt+Right Arrow</Shortcut>  --><!-- Override to remove existing shortcut (Edit.CompleteWord) VS2015 only -->
           <!-- Note: Alt+Left/Right conflicts with Global View.Forward/Backward (used by WebBrowser)-->
           <Shortcut Command="View.Backward" Scope="WebBrowser">Alt+Left Arrow</Shortcut>  <!-- Replace the shortcuts for the Web Browser scope -->
           <Shortcut Command="View.Forward" Scope="WebBrowser">Alt+Right Arrow</Shortcut>  <!-- Replace the shortcuts for the Web Browser scope -->
           <!-- Document Navigation -->
-          <!-- Alternative NextTab/PreviousTab mappings --> 
+          <!-- Alternative NextTab/PreviousTab mappings -->
           <RemoveShortcut Command="Edit.ViewTop" Scope="Text Editor">Ctrl+PgUp</RemoveShortcut>
           <RemoveShortcut Command="Edit.ViewBottom" Scope="Text Editor">Ctrl+PgDn</RemoveShortcut>
           <Shortcut Command="Edit.ViewTop" Scope="Text Editor">Alt+Home</Shortcut>   <!-- New! New shortcut (chosenby JustCla) for Edit.ViewTop. Makes up for removing Ctrl+PgUp -->
@@ -317,6 +319,36 @@
           <!--  Ctrl+D shortcuts -->
           <Shortcut Command="Edit.InsertNextMatchingCaret" Scope="Text Editor">Ctrl+Shift+D</Shortcut>
           <Shortcut Command="Edit.Duplicate" Scope="Text Editor">Ctrl+D</Shortcut>  <!-- Already in system -->
+          
+          <!-- Source control shortcuts -->
+          <!-- Fetch, Pull, Push -->
+          <Shortcut Command="Team.Git.Fetch" Scope="Global">Ctrl+Shift+K, F</Shortcut>
+          <Shortcut Command="Team.Git.Fetch" Scope="Global">Ctrl+Shift+K, Ctrl+Shift+F</Shortcut>
+          <Shortcut Command="Team.Git.Pull" Scope="Global">Ctrl+Shift+K, L</Shortcut>
+          <Shortcut Command="Team.Git.Pull" Scope="Global">Ctrl+Shift+K, Ctrl+Shift+L</Shortcut>
+          <Shortcut Command="Team.Git.Push" Scope="Global">Ctrl+Shift+K, P</Shortcut>
+          <Shortcut Command="Team.Git.Push" Scope="Global">Ctrl+Shift+K, Ctrl+Shift+P</Shortcut>
+          
+          <!-- New Status Bar button shortcuts -->
+          <RemoveShortcut Command="View.PendingChanges" Scope="Global">Ctrl+Alt+F7</RemoveShortcut>
+          <RemoveShortcut Command="View.UnpublishedCommits" Scope="Global">Ctrl+E, Ctrl+C</RemoveShortcut>
+          <RemoveShortcut Command="View.ShowTaskStatusCenter" Scope="Global">Ctrl+E, Ctrl+T</RemoveShortcut>
+          <Shortcut Command="View.UnpublishedCommits" Scope="Global">Ctrl+\, I</Shortcut>
+          <Shortcut Command="View.UnpublishedCommits" Scope="Global">Ctrl+\, Ctrl+I</Shortcut>
+          <Shortcut Command="View.PendingChanges" Scope="Global">Ctrl+\, Y</Shortcut>
+          <Shortcut Command="View.PendingChanges" Scope="Global">Ctrl+\, Ctrl+Y</Shortcut>
+          <Shortcut Command="View.ShowTaskStatusCenter" Scope="Global">Ctrl+\, B</Shortcut>
+          <Shortcut Command="View.ShowTaskStatusCenter" Scope="Global">Ctrl+\, Ctrl+B</Shortcut>
+
+          <!-- Reserving shortcuts for commands (when they become global) -->
+          <Shortcut Command="Team.Git.ViewHistory" Scope="Global">Ctrl+\, H</Shortcut>
+          <Shortcut Command="Team.Git.ViewHistory" Scope="Global">Ctrl+\, Ctrl+H</Shortcut>
+          <Shortcut Command="Team.Git.CreateBranch" Scope="Global">Ctrl+Shift+K, N</Shortcut>
+          <Shortcut Command="Team.Git.CreateBranch" Scope="Global">Ctrl+Shift+K, Ctrl+Shift+N</Shortcut>
+
+          <Shortcut Command="GitHub.ShowGitHubPane" Scope="Global">Ctrl+Alt+G</Shortcut>
+          <Shortcut Command="GitHub.ShowGitHubPane" Scope="Global">Ctrl+\, G</Shortcut>
+          <Shortcut Command="GitHub.ShowGitHubPane" Scope="Global">Ctrl+\, Ctrl+G</Shortcut>
 
         </UserShortcuts>
       </KeyboardShortcuts>
