@@ -260,6 +260,7 @@
 
           <!-- Special -->
           <!--<Shortcut Command="File.Rename" Scope="Solution Explorer">F2</Shortcut>-->  <!-- Moved into section above (to keep near Rename shortcuts) -->
+          <RemoveShortcut Command="Edit.SelectCurrentWord" Scope="Text Editor">Ctrl+W</RemoveShortcut>  <!-- remove this so that global commands will work on Ctrl+W -->
           <Shortcut Command="Window.CloseDocumentWindow" Scope="Global">Ctrl+W</Shortcut>   <!-- This replaces many global -->
           <!--<Shortcut Command="EditorContextMenus.CodeWindow.OrganizeUsings.RemoveAndSort" Scope="Text Editor">Ctrl+Alt+O</Shortcut>  --><!-- "OptimizeImports" -->
 
@@ -282,6 +283,8 @@
           <Shortcut Command="Edit.NextMethod" Scope="Text Editor">Ctrl+Alt+Down Arrow</Shortcut>     <!-- New! New keyboard binding (chosen by JustCla) Conflicts with HotCommands binding. -->
 
           <!-- Outlining shortcuts (Expand/Collapse sections of code) -->
+          <RemoveShortcut Command="View.NavigateBackward" Scope="Global">Ctrl+-</RemoveShortcut>       <!-- Remove this shortcut - needed for Outlining-->
+          <RemoveShortcut Command="View.NavigateForward" Scope="Global">Ctrl+Shift+-</RemoveShortcut>  <!-- Remove this shortcut - needed for Outlining-->
           <Shortcut Command="Edit.ExpandCurrentRegion" Scope="Text Editor">Ctrl+Num +</Shortcut>
           <Shortcut Command="Edit.ExpandCurrentRegion" Scope="Text Editor">Ctrl+=</Shortcut>
           <Shortcut Command="Edit.CollapseCurrentRegion" Scope="Text Editor">Ctrl+Num -</Shortcut>
