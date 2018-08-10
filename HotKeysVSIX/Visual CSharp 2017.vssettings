@@ -294,9 +294,9 @@
           <Shortcut Command="Edit.CollapseAllOutlining" Scope="Text Editor">Ctrl+Shift+Num -</Shortcut>
           <Shortcut Command="Edit.CollapseAllOutlining" Scope="Text Editor">Ctrl+Shift+-</Shortcut>  <!-- Overrides View.NavigateForward -->
 
-          <!-- GoTo Next Error / Previous Error -->  <!-- New shortcuts. (Borrowed from ReSharper for VS C# ) -->
-          <Shortcut Command="Edit.GoToNextIssueinFile" Scope="Global">Alt+PgDn</Shortcut>    <!-- NYI. Near-match. GoToNextHighlight -->
-          <Shortcut Command="Edit.GoToPreviousIssueinFile" Scope="Global">Alt+PgUp</Shortcut>   <!-- NYI. Near-match. GoToPreviousHighlight -->
+          <!-- GoTo Next Error / Previous Error -->
+          <Shortcut Command="Edit.GoToNextIssueinFile" Scope="Global">Alt+PgDn</Shortcut>
+          <Shortcut Command="Edit.GoToPreviousIssueinFile" Scope="Global">Alt+PgUp</Shortcut>
           <Shortcut Command="View.NextError" Scope="Global">Shift+Alt+PgDn</Shortcut>
           <Shortcut Command="View.PreviousError" Scope="Global">Shift+Alt+PgUp</Shortcut>
 
@@ -352,6 +352,36 @@
           <Shortcut Command="GitHub.ShowGitHubPane" Scope="Global">Ctrl+Alt+G</Shortcut>
           <Shortcut Command="GitHub.ShowGitHubPane" Scope="Global">Ctrl+\, G</Shortcut>
           <Shortcut Command="GitHub.ShowGitHubPane" Scope="Global">Ctrl+\, Ctrl+G</Shortcut>
+
+          <!-- Additional shortcuts -->
+          <Shortcut Command="Tools.Options" Scope="Global">Ctrl+Alt+S</Shortcut>
+
+          <Shortcut Command="Edit.Redo" Scope="Global">Ctrl+Shift+Z</Shortcut>
+          <Shortcut Command="Edit.LineDelete" Scope="Text Editor">Ctrl+Shift+Del</Shortcut>
+          <Shortcut Command="Edit.LineDelete" Scope="Text Editor">Ctrl+Y</Shortcut>
+
+          <Shortcut Command="Edit.FindAllReferences" Scope="Global">Ctrl+T</Shortcut>
+
+          <Shortcut Command="Edit.GoToDefinition" Scope="Global">Ctrl+B</Shortcut>
+          <Shortcut Command="Edit.GoToImplementation" Scope="Global">Ctrl+Alt+B</Shortcut>
+
+          <Shortcut Command="Edit.NavigateTo" Scope="Global">Ctrl+O</Shortcut>
+          <Shortcut Command="Edit.GoToFile" Scope="Global">Ctrl+Shift+O</Shortcut>
+          <Shortcut Command="Edit.GoToType" Scope="Global">Ctrl+Alt+O</Shortcut>
+          <Shortcut Command="Edit.GoToSymbol" Scope="Global">Ctrl+Shift+Alt+O</Shortcut>
+          <Shortcut Command="Edit.GoToMember" Scope="Global">Shift+Alt+O</Shortcut>
+
+          <Shortcut Command="Window.NextToolWindowNav" Scope="Global">Ctrl+`</Shortcut>
+          <Shortcut Command="Window.PreviousToolWindowNav" Scope="Global">Ctrl+Shift+`</Shortcut>
+
+          <!-- Provide replacements for shortcuts taken in GoToMethodAbove/Below -->
+          <RemoveShortcut Command="Window.PreviousTab" Scope="Global">Ctrl+Alt+PgUp</RemoveShortcut>
+          <Shortcut Command="EditorContextMenus.Navigate.GoToContainingBlock" Scope="Text Editor">Ctrl+Alt+PgUp</Shortcut>
+          <Shortcut Command="Window.ShowEzMDIFileList" Scope="Global">Ctrl+Alt+PgDn</Shortcut>
+          
+          <!-- Quick Launch -->
+          <Shortcut Command="Window.ActivateQuickLaunch" Scope="Global">Alt+Q</Shortcut>
+          <Shortcut Command="Window.ActivateQuickLaunchPreviousCategory" Scope="Global">Shift+Alt+Q</Shortcut>
 
         </UserShortcuts>
       </KeyboardShortcuts>

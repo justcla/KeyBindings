@@ -78,7 +78,9 @@
     <Content Include="Visual CSharp 2015.vsk">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <None Include="Visual CSharp 2017.vsk" />
+    <Content Include="Visual CSharp 2017.vsk">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Content Include="ReleaseNotes.txt">

@@ -1,4 +1,5 @@
 Hot Keys - Keyboard Shortcuts
+08-Aug-2018: v2.0.4 Added VS2017 Mapping scheme and user shortcuts
 16-Jan-2018: v2.0.2 Added shortcuts for new VS features: Duplicate Text and Expland Selection
 12-Jan-2018: v2.0.1 Embedded Keyboard Shortcuts Manager and supplied IntelliJ and R# VS and IDEA shortcut defs
 12-Aug-2017: v2.0.0 Moved to VSIX instead of MSI
