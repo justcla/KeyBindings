@@ -60,21 +60,15 @@
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
     <None Include="packages.config" />
-    <Content Include="ReSharper for IDEA.vsk">
+    <Content Include="ReSharper %28IDEA style%29.vsk">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <Content Include="ReSharper for VS CSharp.vsk">
+    <Content Include="ReSharper %28VS Style%29.vsk">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
     <None Include="source.extension.vsixmanifest">
       <SubType>Designer</SubType>
     </None>
-    <Content Include="Sublime with CSharp.vsk">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="Sublime with C++.vsk">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
     <Content Include="Visual CSharp 2015.vsk">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>

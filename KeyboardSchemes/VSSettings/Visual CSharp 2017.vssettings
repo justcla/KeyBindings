@@ -100,6 +100,7 @@
           <!--<Shortcut Command="View.WebBrowser" Scope="Global">Ctrl+\, Ctrl+W</Shortcut>    --><!-- Reserve for Window Management menu on status bar (HotWindows) -->
           <!--<Shortcut Command="View.PendingCheckins" Scope="Global">Ctrl+\, G</Shortcut>-->  <!-- Use this for GitHub instead -->
           <!--<Shortcut Command="View.PendingCheckins" Scope="Global">Ctrl+\, Ctrl+G</Shortcut>-->
+          <Shortcut Command="View.TaskRunnerExplorer" Scope="Global">Ctrl+\, Ctrl+Bkspce</Shortcut>
 
           <!-- Refactoring -->
           <!-- Additional bindings on top of existing Ctrl/Ctrl chords -->
@@ -120,55 +121,45 @@
 
           <!-- Debug Window shortcuts. Most of these are currently using Ctrl+Alt+?? shortcuts -->
           <Shortcut Command="Debug.Breakpoints" Scope="Global">Ctrl+Alt+D, B</Shortcut>
-          <Shortcut Command="Debug.Breakpoints" Scope="Global">Ctrl+Alt+D, Ctrl+B</Shortcut>
           <Shortcut Command="Debug.Watch1" Scope="Global">Ctrl+Alt+D, W</Shortcut>
-          <Shortcut Command="Debug.Watch1" Scope="Global">Ctrl+Alt+D, Ctrl+W</Shortcut>
           <Shortcut Command="Debug.Autos" Scope="Global">Ctrl+Alt+D, A</Shortcut>
-          <Shortcut Command="Debug.Autos" Scope="Global">Ctrl+Alt+D, Ctrl+A</Shortcut>
           <Shortcut Command="Debug.Locals" Scope="Global">Ctrl+Alt+D, L</Shortcut>
-          <Shortcut Command="Debug.Locals" Scope="Global">Ctrl+Alt+D, Ctrl+L</Shortcut>
           <Shortcut Command="Debug.Immediate" Scope="Global">Ctrl+Alt+D, I</Shortcut>
-          <Shortcut Command="Debug.Immediate" Scope="Global">Ctrl+Alt+D, Ctrl+I</Shortcut>
           <Shortcut Command="Debug.CallStack" Scope="Global">Ctrl+Alt+D, C</Shortcut>
-          <Shortcut Command="Debug.CallStack" Scope="Global">Ctrl+Alt+D, Ctrl+C</Shortcut>
           <Shortcut Command="Debug.Threads" Scope="Global">Ctrl+Alt+D, T</Shortcut>
-          <Shortcut Command="Debug.Threads" Scope="Global">Ctrl+Alt+D, Ctrl+T</Shortcut>
           <Shortcut Command="Debug.Modules" Scope="Global">Ctrl+Alt+D, M</Shortcut>
-          <Shortcut Command="Debug.Modules" Scope="Global">Ctrl+Alt+D, Ctrl+M</Shortcut>
           <Shortcut Command="Debug.Processes" Scope="Global">Ctrl+Alt+D, P</Shortcut>
-          <Shortcut Command="Debug.Processes" Scope="Global">Ctrl+Alt+D, Ctrl+P</Shortcut>
-          <Shortcut Command="Debug.ParallelStacks" Scope="Global">Ctrl+Alt+D, S</Shortcut>  <!-- Currently on Ctrl+Shift+D, D -->
-          <Shortcut Command="Debug.ParallelStacks" Scope="Global">Ctrl+Alt+D, Ctrl+S</Shortcut>
-          <Shortcut Command="Debug.ParallelWatch1" Scope="Global">Ctrl+Alt+D, 1</Shortcut>  <!-- Introduced by JEC -->
-          <Shortcut Command="Debug.ParallelWatch1" Scope="Global">Ctrl+Alt+D, Ctrl+1</Shortcut>  <!-- Introduced by JEC -->
-          <Shortcut Command="Debug.ParallelWatch2" Scope="Global">Ctrl+Alt+D, 2</Shortcut>  <!-- Introduced by JEC -->
-          <Shortcut Command="Debug.ParallelWatch2" Scope="Global">Ctrl+Alt+D, Ctrl+2</Shortcut>  <!-- Introduced by JEC -->
-          <Shortcut Command="Debug.ParallelWatch3" Scope="Global">Ctrl+Alt+D, 3</Shortcut>  <!-- Introduced by JEC -->
-          <Shortcut Command="Debug.ParallelWatch3" Scope="Global">Ctrl+Alt+D, Ctrl+3</Shortcut>  <!-- Introduced by JEC -->
-          <Shortcut Command="Debug.ParallelWatch4" Scope="Global">Ctrl+Alt+D, 4</Shortcut>  <!-- Introduced by JEC -->
-          <Shortcut Command="Debug.ParallelWatch4" Scope="Global">Ctrl+Alt+D, Ctrl+4</Shortcut>  <!-- Introduced by JEC -->
-          <!--<Shortcut Command="Debug.ParallelTasks" Scope="Global">Ctrl+Alt+D, K</Shortcut> --><!-- No longer exists -->
-          <!--<Shortcut Command="Debug.ParallelTasks" Scope="Global">Ctrl+Alt+D, Ctrl+K</Shortcut>-->
           <Shortcut Command="Debug.IntelliTraceCalls" Scope="Global">Ctrl+Alt+D, H</Shortcut>
-          <Shortcut Command="Debug.IntelliTraceCalls" Scope="Global">Ctrl+Alt+D, Ctrl+H</Shortcut>
           <Shortcut Command="Debug.IntelliTraceEvents" Scope="Global">Ctrl+Alt+D, V</Shortcut>
-          <Shortcut Command="Debug.IntelliTraceEvents" Scope="Global">Ctrl+Alt+D, Ctrl+V</Shortcut>
-          <Shortcut Command="Debug.Memory1" Scope="Global">Ctrl+Alt+D, Y</Shortcut>
-          <Shortcut Command="Debug.Memory1" Scope="Global">Ctrl+Alt+D, Ctrl+Y</Shortcut>
           <!--<Shortcut Command="Debug.Disassembly" Scope="Global">Ctrl+Alt+D, D</Shortcut>   --><!-- Default Ctrl+Alt+D is for Debug.Disassembly -->
-          <!--<Shortcut Command="Debug.Disassembly" Scope="Global">Ctrl+Alt+D, Ctrl+D</Shortcut>    --><!-- Default Ctrl+Alt+D is for Debug.Disassembly -->
           <Shortcut Command="Debug.ToggleDisassembly" Scope="Global">Ctrl+Alt+D, D</Shortcut>  <!-- Maybe this is a good replacement for Debug.Disassembly -->
-          <Shortcut Command="Debug.ToggleDisassembly" Scope="Global">Ctrl+Alt+D, Ctrl+D</Shortcut>  <!-- Maybe this is a good replacement for Debug.Disassembly -->
           <Shortcut Command="Debug.Registers" Scope="Global">Ctrl+Alt+D, R</Shortcut>
-          <Shortcut Command="Debug.Registers" Scope="Global">Ctrl+Alt+D, Ctrl+R</Shortcut>
           <!--<Shortcut Command="Debug.Exceptions" Scope="Global">Ctrl+Alt+D, E</Shortcut>  --><!-- No longer exists -->
-          <!--<Shortcut Command="Debug.Exceptions" Scope="Global">Ctrl+Alt+D, Ctrl+E</Shortcut>-->
           <Shortcut Command="Debug.QuickWatch" Scope="Global">Ctrl+Alt+D, Q</Shortcut>
-          <Shortcut Command="Debug.QuickWatch" Scope="Global">Ctrl+Alt+D, Ctrl+Q</Shortcut>
           <!--<Shortcut Command="Debug.BreakAtFunction" Scope="Global">Ctrl+Alt+D, N</Shortcut>  --><!-- Replaced by Debug.BreakAtFunction ? -->
-          <!--<Shortcut Command="Debug.BreakAtFunction" Scope="Global">Ctrl+Alt+D, Ctrl+N</Shortcut>-->
           <Shortcut Command="Debug.FunctionBreakpoint" Scope="Global">Ctrl+Alt+D, N</Shortcut>
-          <Shortcut Command="Debug.FunctionBreakpoint" Scope="Global">Ctrl+Alt+D, Ctrl+N</Shortcut>
+          <!--Parallel windows shortcuts (using Ctrl+Shift+D by default and Ctrl+D in Visual C# 2005 scheme) -->
+          <Shortcut Command="Debug.ParallelStacks" Scope="Global">Ctrl+Alt+D, S</Shortcut>  <!-- Default is Ctrl+Shift+D, D -->
+          <Shortcut Command="Debug.ParallelWatch1" Scope="Global">Ctrl+Alt+D, 1</Shortcut>  <!-- Introduced by JEC -->
+          <Shortcut Command="Debug.ParallelWatch2" Scope="Global">Ctrl+Alt+D, 2</Shortcut>  <!-- Introduced by JEC -->
+          <Shortcut Command="Debug.ParallelWatch3" Scope="Global">Ctrl+Alt+D, 3</Shortcut>  <!-- Introduced by JEC -->
+          <Shortcut Command="Debug.ParallelWatch4" Scope="Global">Ctrl+Alt+D, 4</Shortcut>  <!-- Introduced by JEC -->
+          <Shortcut Command="Debug.Tasks" Scope="Global">Ctrl+Alt+D, K</Shortcut>  <!-- Debug.ParallelTasks no longer exists. Badly mapped in VS C# 2005 scheme -->
+          <!--Debug Memory shortcuts (1-4 are on Ctrl+Alt+M chord by default)-->
+          <!--<Shortcut Command="Debug.Memory1" Scope="Global">Ctrl+Alt+D, Y</Shortcut>-->
+          <!--Create new shortcuts for Debug.Memory and free up the Ctrl+Alt+M shortcut-->
+          <RemoveShortcut Command="Debug.Memory1" Scope="Global">Ctrl+Alt+M, 1</RemoveShortcut>
+          <RemoveShortcut Command="Debug.Memory2" Scope="Global">Ctrl+Alt+M, 2</RemoveShortcut>
+          <RemoveShortcut Command="Debug.Memory3" Scope="Global">Ctrl+Alt+M, 3</RemoveShortcut>
+          <RemoveShortcut Command="Debug.Memory4" Scope="Global">Ctrl+Alt+M, 4</RemoveShortcut>
+          <Shortcut Command="Debug.Memory1" Scope="Global">Ctrl+Shift+M, 1</Shortcut>
+          <Shortcut Command="Debug.Memory1" Scope="Global">Ctrl+Shift+M, Ctrl+Shift+1</Shortcut>
+          <Shortcut Command="Debug.Memory2" Scope="Global">Ctrl+Shift+M, 2</Shortcut>
+          <Shortcut Command="Debug.Memory2" Scope="Global">Ctrl+Shift+M, Ctrl+Shift+2</Shortcut>
+          <Shortcut Command="Debug.Memory3" Scope="Global">Ctrl+Shift+M, 3</Shortcut>
+          <Shortcut Command="Debug.Memory3" Scope="Global">Ctrl+Shift+M, Ctrl+Shift+3</Shortcut>
+          <Shortcut Command="Debug.Memory4" Scope="Global">Ctrl+Shift+M, 4</Shortcut>
+          <Shortcut Command="Debug.Memory4" Scope="Global">Ctrl+Shift+M, Ctrl+Shift+4</Shortcut>
 
           <!-- Help -->
           <!-- No need to define chords for help. Only Help.ViewHelp exists and can use default system shortcut Ctrl+F1 -->
@@ -227,6 +218,10 @@
           <!--<Shortcut Command="Edit.FormatDocument" Scope="Text Editor">Ctrl+E, Ctrl+D</Shortcut>  --><!-- Redundant -->
           <!--<Shortcut Command="Edit.FormatSelection" Scope="Text Editor">Ctrl+E, F</Shortcut> --><!-- Redundant -->
           <!--<Shortcut Command="Edit.FormatSelection" Scope="Text Editor">Ctrl+E, Ctrl+F</Shortcut> --><!-- Redundant -->
+          <!--Toggle Comment -->
+          <!-- Unable to assign Toggle Line comment or Toggle Block comment -->
+          <Shortcut Command="Edit.CommentSelection" Scope="Text Editor">Ctrl+/</Shortcut>
+          <Shortcut Command="Edit.UncommentSelection" Scope="Text Editor">Ctrl+Shift+/</Shortcut>
 
           <!-- Bookmarks -->
           <!-- These are already on the Ctrl+K chord in the default -->
@@ -258,6 +253,8 @@
           <RemoveShortcut Command="Edit.SelectCurrentWord" Scope="Text Editor">Ctrl+W</RemoveShortcut>  <!-- remove this so that global commands will work on Ctrl+W -->
           <Shortcut Command="Window.CloseDocumentWindow" Scope="Global">Ctrl+W</Shortcut>   <!-- This replaces many global -->
           <!--<Shortcut Command="EditorContextMenus.CodeWindow.OrganizeUsings.RemoveAndSort" Scope="Text Editor">Ctrl+Alt+O</Shortcut>  --><!-- "OptimizeImports" -->
+          <Shortcut Command="File.CloseSolution" Scope="Global">Ctrl+F4</Shortcut>
+          <Shortcut Command="File.Exit" Scope="Global">Alt+F4</Shortcut>
 
           <!-- Navigation -->
           <Shortcut Command="View.NavigateBackward" Scope="Global">Alt+Left Arrow</Shortcut>    <!-- Overrides Global View.Backward (Alt+Left Arrow) -->
@@ -300,11 +297,51 @@
           <Shortcut Command="View.NextView" Scope="HTML Editor Design View">Ctrl+Alt+PgDn</Shortcut>
           <Shortcut Command="View.NextView" Scope="HTML Editor Source View">Ctrl+Alt+PgDn</Shortcut>
 
+          <!--Split Window shortcuts (from Sublime)-->
+          <!--Create New Tab Group-->
+          <Shortcut Command="Window.NewVerticalTabGroup" Scope="Global">Ctrl+\, Ctrl+Right Arrow</Shortcut>
+          <Shortcut Command="Window.NewHorizontalTabGroup" Scope="Global">Ctrl+\, Ctrl+Down Arrow</Shortcut>
+          <!--Move document to other tab group-->
+          <Shortcut Command="Window.MovetoNextTabGroup" Scope="Global">Ctrl+\, Ctrl+PgDn</Shortcut>
+          <Shortcut Command="Window.MovetoPreviousTabGroup" Scope="Global">Ctrl+\, Ctrl+PgUp</Shortcut>
+          <!--Close tab group-->
+          <Shortcut Command="OtherContextMenus.EasyMDIToolWindow.MoveAlltoPreviousTabGroup" Scope="Global">Ctrl+\, Ctrl+Home</Shortcut>
+          <Shortcut Command="OtherContextMenus.EasyMDIToolWindow.MoveAlltoNextTabGroup" Scope="Global">Ctrl+\, Ctrl+End</Shortcut>
+          <!--VS seems to be missing commands for Navigating to next/previous tab group -->
+
           <!-- In-Editor navigation -->
           <Shortcut Command="Edit.PreviousMethod" Scope="Text Editor">Ctrl+Alt+Up Arrow</Shortcut>     <!-- New! New keyboard binding (chosen by JustCla) Conflicts with HotCommands binding. -->
           <Shortcut Command="Edit.NextMethod" Scope="Text Editor">Ctrl+Alt+Down Arrow</Shortcut>     <!-- New! New keyboard binding (chosen by JustCla) Conflicts with HotCommands binding. -->
 
+          <!--CamelHump navigation and selection with Ctrl key-->
+          <!--Need VSTricks for CamelCase navigation, selection and deletion. Plus Duplicate line or selection -->
+          <Shortcut Command="Edit.SubWordNext" Scope="Text Editor">Ctrl+Right Arrow</Shortcut>
+          <Shortcut Command="Edit.SubWordPrevious" Scope="Text Editor">Ctrl+Left Arrow</Shortcut>
+          <Shortcut Command="Edit.SubWordNextExtend" Scope="Text Editor">Ctrl+Shift+Right Arrow</Shortcut>
+          <Shortcut Command="Edit.SubWordPreviousExtend" Scope="Text Editor">Ctrl+Shift+Left Arrow</Shortcut>
+          <!--<Shortcut Command="Edit.SubWordNextExtendColumn" Scope="Text Editor">Ctrl+Shift+Right Arrow</Shortcut>  --><!-- Not required. User can release Alt key for part word navigation during box selection mode -->
+          <!--<Shortcut Command="Edit.SubWordPreviousExtendColumn" Scope="Text Editor">Ctrl+Shift+Left Arrow</Shortcut>  --><!-- Not required. User can release Alt key for part word navigation during box selection mode -->
+          <Shortcut Command="Edit.SubWordDeletetoEnd" Scope="Text Editor">Ctrl+Del</Shortcut>
+          <Shortcut Command="Edit.SubWordDeletetoStart" Scope="Text Editor">Ctrl+Bkspce</Shortcut>
+          <!--Create shortcuts for the Full-Word navigation and selection-->
+          <Shortcut Command="Edit.WordNext" Scope="Text Editor">Ctrl+Alt+Right Arrow</Shortcut>  <!--Invented by JEC-->
+          <Shortcut Command="Edit.WordPrevious" Scope="Text Editor">Ctrl+Alt+Left Arrow</Shortcut>  <!--Invented by JEC-->
+          <Shortcut Command="Edit.WordNextExtend" Scope="Text Editor">Ctrl+Alt+Shift+Right Arrow</Shortcut>  <!--Invented by JEC-->
+          <Shortcut Command="Edit.WordPreviousExtend" Scope="Text Editor">Ctrl+Alt+Shift+Left Arrow</Shortcut>  <!--Invented by JEC-->
+          <!--Create shortcuts for the Full-Word backspace and delete -->
+          <RemoveShortcut Command="View.TaskRunnerExplorer" Scope="Global">Ctrl+Alt+Bkspce</RemoveShortcut>
+          <Shortcut Command="Edit.WordDeleteToStart" Scope="Text Editor">Ctrl+Alt+Bkspce</Shortcut>
+          <Shortcut Command="Edit.WordDeleteToEnd" Scope="Text Editor">Alt+Del</Shortcut>  <!-- Would otherwise use Ctrl+Alt+Del for consistency, but ... well... you konw. ;-) Alt+Del will have to do. -->
+
+          <!--Already in the system, but want to ensure they are part of this scheme-->
+          <Shortcut Command="Edit.NextHighlightedReference" Scope="Text Editor">Ctrl+Shift+Down Arrow</Shortcut>
+          <Shortcut Command="Edit.PreviousHighlightedReference" Scope="Text Editor">Ctrl+Shift+Up Arrow</Shortcut>
+          <Shortcut Command="Edit.LineOpenAbove" Scope="Text Editor">Ctrl+Enter</Shortcut>
+          <Shortcut Command="Edit.LineOpenBelow" Scope="Text Editor">Ctrl+Shift+Enter</Shortcut>
+
           <!-- Provide replacements for shortcuts taken in GoToMethodAbove/Below (Ctrl+Alt+Up/Down) -->
+          <RemoveShortcut Command="Edit.ExpandSelectiontoContainingBlock" Scope="Text Editor">Ctrl+Shift+Alt+=</RemoveShortcut>
+          <Shortcut Command="Edit.ExpandSelectiontoContainingBlock" Scope="Text Editor">Ctrl+Shift+Alt+PgUp</Shortcut>
           <Shortcut Command="EditorContextMenus.Navigate.GoToContainingBlock" Scope="Text Editor">Ctrl+Alt+PgUp</Shortcut>
           <Shortcut Command="Window.ShowEzMDIFileList" Scope="Global">Ctrl+Alt+End</Shortcut>
 
@@ -346,9 +383,10 @@
           <Shortcut Command="Edit.SelectAll" Scope="Text Editor">Ctrl+Alt+A</Shortcut> <!-- This is added because we removed the standard Ctrl+A shortcut for Select All -->
 
           <!--  Ctrl+D shortcuts -->
-          <Shortcut Command="Edit.InsertNextMatchingCaret" Scope="Text Editor">Ctrl+Shift+D</Shortcut>
           <Shortcut Command="Edit.Duplicate" Scope="Text Editor">Ctrl+D</Shortcut>  <!-- Already in system -->
-          
+          <Shortcut Command="Edit.InsertNextMatchingCaret" Scope="Text Editor">Ctrl+Shift+D</Shortcut>
+          <Shortcut Command="Edit.InsertCaretsatAllMatching" Scope="Text Editor">Ctrl+Shift+Alt+D</Shortcut>
+
           <!-- Source control shortcuts -->
           <!-- Fetch, Pull, Push -->
           <Shortcut Command="Team.Git.Fetch" Scope="Global">Ctrl+Shift+K, F</Shortcut>
@@ -362,10 +400,10 @@
           <RemoveShortcut Command="View.PendingChanges" Scope="Global">Ctrl+Alt+F7</RemoveShortcut>
           <RemoveShortcut Command="View.UnpublishedCommits" Scope="Global">Ctrl+E, Ctrl+C</RemoveShortcut>
           <RemoveShortcut Command="View.ShowTaskStatusCenter" Scope="Global">Ctrl+E, Ctrl+T</RemoveShortcut>
-          <Shortcut Command="View.UnpublishedCommits" Scope="Global">Ctrl+\, I</Shortcut>
-          <Shortcut Command="View.UnpublishedCommits" Scope="Global">Ctrl+\, Ctrl+I</Shortcut>
-          <Shortcut Command="View.PendingChanges" Scope="Global">Ctrl+\, Y</Shortcut>
-          <Shortcut Command="View.PendingChanges" Scope="Global">Ctrl+\, Ctrl+Y</Shortcut>
+          <Shortcut Command="View.UnpublishedCommits" Scope="Global">Ctrl+\, Y</Shortcut>
+          <Shortcut Command="View.UnpublishedCommits" Scope="Global">Ctrl+\, Ctrl+Y</Shortcut>
+          <Shortcut Command="View.PendingChanges" Scope="Global">Ctrl+\, I</Shortcut>
+          <Shortcut Command="View.PendingChanges" Scope="Global">Ctrl+\, Ctrl+I</Shortcut>
           <Shortcut Command="View.ShowTaskStatusCenter" Scope="Global">Ctrl+\, B</Shortcut>
           <Shortcut Command="View.ShowTaskStatusCenter" Scope="Global">Ctrl+\, Ctrl+B</Shortcut>
 
@@ -401,9 +439,21 @@
           <Shortcut Command="Window.PreviousToolWindowNav" Scope="Global">Ctrl+Shift+`</Shortcut>
 
           <!-- Quick Launch -->
+          <RemoveShortcut Command="Window.ActivateQuickLaunch" Scope="Global">Ctrl+Q</RemoveShortcut>
+          <RemoveShortcut Command="Window.ActivateQuickLaunchPreviousCategory" Scope="Global">Ctrl+Shift+Q</RemoveShortcut>
           <Shortcut Command="Window.ActivateQuickLaunch" Scope="Global">Alt+Q</Shortcut>
           <Shortcut Command="Window.ActivateQuickLaunchPreviousCategory" Scope="Global">Shift+Alt+Q</Shortcut>
 
+          <!--Shortcuts for Method and Parameter info-->
+          <Shortcut Command="Edit.QuickInfo" Scope="Text Editor">Ctrl+Q</Shortcut>
+          <Shortcut Command="Edit.QuickInfo" Scope="Find All References Tool Window">Ctrl+Q</Shortcut>
+          <Shortcut Command="Edit.ParameterInfo" Scope="Text Editor">Ctrl+P</Shortcut>
+
+          <!--Refactoring-->
+          <Shortcut Command="Refactor.ExtractMethod" Scope="Text Editor">Ctrl+Alt+M</Shortcut>
+          <!--<Shortcut Command="Refactor.ExtractLocalVariable" Scope="Text Editor">Ctrl+Alt+V</Shortcut>-->
+          <!--<Shortcut Command="Refactor.Inline" Scope="Text Editor">Ctrl+Alt+I</Shortcut>-->
+          <!--<Shortcut Command="Refactor.ExtractParameter" Scope="Text Editor">Ctrl+Alt+P</Shortcut>-->
         </ShortcutsSchemeDef>
       </KeyboardShortcuts>
     </Category>
