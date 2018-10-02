@@ -45,6 +45,9 @@
     <Content Include="VSKs\2015\ReSharperForIDEA-ImportLog.txt" />
     <Content Include="VSKs\2015\ReSharperForVSC#-ImportLogs.txt" />
     <Content Include="VSSettings\Brief.vssettings" />
+    <Content Include="VSSettings\CamelHump Nav with VSTricks.vssettings">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="VSSettings\Emacs.vssettings" />
     <Content Include="VSSettings\IntelliJ.vssettings">
       <SubType>Designer</SubType>

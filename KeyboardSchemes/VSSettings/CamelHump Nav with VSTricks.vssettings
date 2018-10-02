@@ -1,0 +1,41 @@
+﻿<UserSettings>
+  <ApplicationIdentity version="8.0.40218.0" name="Microsoft Development Environment" />
+  <Category name="Environment_Group" RegisteredName="Environment_Group">
+    <Category name="Environment_KeyBindings" Category="{F09035F1-80D2-4312-8EC4-4D354A4BCB4C}" Package="{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}" RegisteredName="Environment_KeyBindings">
+      <KeyboardShortcuts Version="8.0">
+        <ScopeDefinitions>
+          <Scope Name="Global" ID="{5EFC7975-14BC-11CF-9B2B-00AA00573819}"/>
+          <Scope Name="Text Editor" ID="{8B382828-6202-11D1-8870-0000F87579D2}"/>
+        </ScopeDefinitions>
+        <!--<ShortcutsSchemeDef Name="CamelHump Navigation">-->
+        <!--</ShortcutsSchemeDef>-->
+        <UserShortcuts>
+
+          <!--Need VSTricks for CamelCase navigation, selection and deletion.-->
+
+          <!--CamelHump navigation and selection (Ctrl key shortcuts)-->
+          <Shortcut Command="Edit.SubWordNext" Scope="Text Editor">Ctrl+Right Arrow</Shortcut>
+          <Shortcut Command="Edit.SubWordPrevious" Scope="Text Editor">Ctrl+Left Arrow</Shortcut>
+          <Shortcut Command="Edit.SubWordNextExtend" Scope="Text Editor">Ctrl+Shift+Right Arrow</Shortcut>
+          <Shortcut Command="Edit.SubWordPreviousExtend" Scope="Text Editor">Ctrl+Shift+Left Arrow</Shortcut>
+          <!--<Shortcut Command="Edit.SubWordNextExtendColumn" Scope="Text Editor">Ctrl+Shift+Right Arrow</Shortcut>  --><!-- Not required. User can release Alt key for part word navigation during box selection mode -->
+          <!--<Shortcut Command="Edit.SubWordPreviousExtendColumn" Scope="Text Editor">Ctrl+Shift+Left Arrow</Shortcut>  --><!-- Not required. User can release Alt key for part word navigation during box selection mode -->
+          <!--Backspace and Delete-->
+          <Shortcut Command="Edit.SubWordDeletetoEnd" Scope="Text Editor">Ctrl+Del</Shortcut>
+          <Shortcut Command="Edit.SubWordDeletetoStart" Scope="Text Editor">Ctrl+Bkspce</Shortcut>
+
+          <!--Create shortcuts for the Full-Word navigation and selection (Ctrl+Alt shortcuts)-->
+          <Shortcut Command="Edit.WordNext" Scope="Text Editor">Ctrl+Alt+Right Arrow</Shortcut>  <!--Invented by JEC-->
+          <Shortcut Command="Edit.WordPrevious" Scope="Text Editor">Ctrl+Alt+Left Arrow</Shortcut>  <!--Invented by JEC-->
+          <Shortcut Command="Edit.WordNextExtend" Scope="Text Editor">Ctrl+Alt+Shift+Right Arrow</Shortcut>  <!--Invented by JEC-->
+          <Shortcut Command="Edit.WordPreviousExtend" Scope="Text Editor">Ctrl+Alt+Shift+Left Arrow</Shortcut>  <!--Invented by JEC-->
+          <!--Create shortcuts for the Full-Word backspace and delete -->
+          <RemoveShortcut Command="View.TaskRunnerExplorer" Scope="Global">Ctrl+Alt+Bkspce</RemoveShortcut>
+          <Shortcut Command="Edit.WordDeleteToStart" Scope="Text Editor">Ctrl+Alt+Bkspce</Shortcut>
+          <Shortcut Command="Edit.WordDeleteToEnd" Scope="Text Editor">Alt+Del</Shortcut>  <!-- Would otherwise use Ctrl+Alt+Del for consistency, but ... well... you konw. ;-) Alt+Del will have to do. -->
+
+        </UserShortcuts>
+      </KeyboardShortcuts>
+    </Category>
+  </Category>
+</UserSettings>
