@@ -214,6 +214,7 @@
           <!--<Shortcut Command="Edit.ListMembers" Scope="Text Editor">Ctrl+K, Ctrl+L</Shortcut>  --><!-- Default is Ctrl+J -->
           <!--<Shortcut Command="Edit.CompleteWord" Scope="Text Editor">Ctrl+K, W</Shortcut>  --><!-- Default is Ctrl+Space (or Alt+RightArrow) -->
           <!--<Shortcut Command="Edit.CompleteWord" Scope="Text Editor">Ctrl+K, Ctrl+W</Shortcut>  --><!-- Default is Ctrl+Space (or Alt+RightArrow) -->
+
           <!-- Additional shortcuts to compliment the Ctrl+K, Ctrl+?? chords -->
           <Shortcut Command="Edit.SurroundWith" Scope="Global">Ctrl+K, S</Shortcut>
           <Shortcut Command="Edit.InsertSnippet" Scope="Global">Ctrl+K, X</Shortcut>
@@ -507,10 +508,8 @@
           <!--<Shortcut Command="Window.ActivateQuickLaunchPreviousCategory" Scope="Global">Shift+Alt+Q</Shortcut>-->
 
           <!--Shortcuts for Method and Parameter info-->
-          <RemoveShortcut Command="Edit.QuickInfo" Scope="Text Editor">Ctrl+K, I</RemoveShortcut>
-          <RemoveShortcut Command="Edit.QuickInfo" Scope="Text Editor">Ctrl+K, Ctrl+I</RemoveShortcut>
-          <RemoveShortcut Command="Edit.QuickInfo" Scope="Find All References Tool Window">Ctrl+K, I</RemoveShortcut>
-          <RemoveShortcut Command="Edit.QuickInfo" Scope="Find All References Tool Window">Ctrl+K, Ctrl+I</RemoveShortcut>
+          <!--<RemoveShortcut Command="Edit.QuickInfo" Scope="Text Editor">Ctrl+K, Ctrl+I</RemoveShortcut>-->
+          <!--<RemoveShortcut Command="Edit.QuickInfo" Scope="Find All References Tool Window">Ctrl+K, Ctrl+I</RemoveShortcut>-->
           <Shortcut Command="Edit.QuickInfo" Scope="Text Editor">Ctrl+I</Shortcut>
           <Shortcut Command="Edit.QuickInfo" Scope="Find All References Tool Window">Ctrl+I</Shortcut>
           <Shortcut Command="Edit.ParameterInfo" Scope="Text Editor">Ctrl+Shift+I</Shortcut>
