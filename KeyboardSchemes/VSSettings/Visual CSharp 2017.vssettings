@@ -217,7 +217,7 @@
           <!-- Additional shortcuts to compliment the Ctrl+K, Ctrl+?? chords -->
           <Shortcut Command="Edit.SurroundWith" Scope="Global">Ctrl+K, S</Shortcut>
           <Shortcut Command="Edit.InsertSnippet" Scope="Global">Ctrl+K, X</Shortcut>
-          <Shortcut Command="Edit.QuickInfo" Scope="Text Editor">Ctrl+K, I</Shortcut>
+          <!--<Shortcut Command="Edit.QuickInfo" Scope="Text Editor">Ctrl+K, I</Shortcut>-->
 
           <!--<Shortcut Command="Edit.SwapAnchor" Scope="Text Editor">Ctrl+E, A</Shortcut>-->  <!-- Default is Ctrl+K, Ctrl+A -->
           <!--<Shortcut Command="Edit.SwapAnchor" Scope="Text Editor">Ctrl+E, Ctrl+A</Shortcut>-->
