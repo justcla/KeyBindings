@@ -57,7 +57,7 @@
           <Scope Name="Test Explorer" ID="{E1B7D1F8-9B3C-49B1-8F4F-BFC63A88835D}"/>
           <Scope Name="XML Schema Designer" ID="{DEE6CEF9-3BCA-449A-82A6-FC757D6956FB}"/>
         </ScopeDefinitions>
-        <ShortcutsSchemeDef Name="Visual C# 2017">
+        <ShortcutsSchemeDef Name="VS Universal">
         <!--<UserShortcuts>-->
           <!-- Tool Window Shortcuts -->
           <!-- All changed from Ctrl+W to Ctrl+\ from base Visual C# 2005-->

@@ -65,13 +65,13 @@
     <Content Include="VSSettings\Visual C++ 2.vssettings" />
     <Content Include="VSSettings\Visual C++ 6.vssettings" />
     <Content Include="VSSettings\Visual CSharp 2005.vssettings" />
-    <Content Include="VSSettings\Visual CSharp 2017.vssettings">
-      <SubType>Designer</SubType>
-    </Content>
     <Content Include="VSSettings\Visual CSharp 2015.vssettings">
       <SubType>Designer</SubType>
     </Content>
     <Content Include="VSSettings\Visual Studio 6.vssettings" />
+    <Content Include="VSSettings\VS Universal.vssettings">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <None Include="Installer\Build2015MSI.bat" />
@@ -93,6 +93,7 @@
     <None Include="VSKs\2017\Sublime with C++.vsk" />
     <None Include="VSKs\2017\Visual C# 2015.vsk" />
     <None Include="VSKs\2017\Visual C# 2017.vsk" />
+    <None Include="VSKs\2017\VS Universal.vsk" />
   </ItemGroup>
   <ItemGroup />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
