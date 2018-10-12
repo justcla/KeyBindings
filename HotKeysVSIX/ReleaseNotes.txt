@@ -1,4 +1,5 @@
 Hot Keys - Keyboard Shortcuts
+12-Oct-2018: v2.1.0 Added VS Universal mapping scheme. Also added CamelHump Nav with VSTricks.
 26-Aug-2018: v2.0.7 Added VS2017 Mapping scheme and user shortcuts
 16-Jan-2018: v2.0.2 Added shortcuts for new VS features: Duplicate Text and Expland Selection
 12-Jan-2018: v2.0.1 Embedded Keyboard Shortcuts Manager and supplied IntelliJ and R# VS and IDEA shortcut defs

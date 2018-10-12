@@ -48,6 +48,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CamelHump Nav with VSTricks.vssettings">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="EmbeddedVSIX\KeyboardShortcutsManager.vsix">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>
@@ -55,9 +58,8 @@
     <Content Include="IntelliJ for CSharp.vsk">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <Content Include="Visual CSharp 2017.vssettings">
+    <Content Include="VS Universal.vssettings">
       <SubType>Designer</SubType>
-      <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
     <None Include="packages.config" />
     <Content Include="ReSharper %28IDEA style%29.vsk">
@@ -72,9 +74,7 @@
     <Content Include="Visual CSharp 2015.vsk">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <Content Include="Visual CSharp 2017.vsk">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
+    <None Include="VS Universal.vsk" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="ReleaseNotes.txt">
