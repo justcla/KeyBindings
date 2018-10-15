@@ -80,6 +80,7 @@
     <None Include="KeymapRefs\ReSharperCppDefaultKeymap_VSscheme.pdf" />
     <None Include="KeymapRefs\ReSharper_DefaultKeymap_IDEAscheme.pdf" />
     <None Include="KeymapRefs\ReSharper_DefaultKeymap_VSscheme.pdf" />
+    <None Include="KeymapRefs\VS Universal Mapping Scheme.pdf" />
     <None Include="KeymapRefs\VSCode-keyboard-shortcuts-linux.pdf" />
     <None Include="KeymapRefs\VSCode-keyboard-shortcuts-windows.pdf" />
     <None Include="VSKs\2015\IntelliJ for C#.vsk" />

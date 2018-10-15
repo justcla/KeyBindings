@@ -7,12 +7,10 @@
           <Scope Name="Global" ID="{5EFC7975-14BC-11CF-9B2B-00AA00573819}"/>
           <Scope Name="Text Editor" ID="{8B382828-6202-11D1-8870-0000F87579D2}"/>
         </ScopeDefinitions>
+        <ShortcutsScheme>VS Universal</ShortcutsScheme>
         <!--<ShortcutsSchemeDef Name="CamelHump Navigation">-->
-        <!--</ShortcutsSchemeDef>-->
         <UserShortcuts>
-
           <!--Need VSTricks for CamelCase navigation, selection and deletion.-->
-
           <!--CamelHump navigation and selection (Ctrl key shortcuts)-->
           <Shortcut Command="Edit.SubWordNext" Scope="Text Editor">Ctrl+Right Arrow</Shortcut>
           <Shortcut Command="Edit.SubWordPrevious" Scope="Text Editor">Ctrl+Left Arrow</Shortcut>
@@ -23,7 +21,6 @@
           <!--Backspace and Delete-->
           <Shortcut Command="Edit.SubWordDeletetoEnd" Scope="Text Editor">Ctrl+Del</Shortcut>
           <Shortcut Command="Edit.SubWordDeletetoStart" Scope="Text Editor">Ctrl+Bkspce</Shortcut>
-
           <!--Create shortcuts for the Full-Word navigation and selection (Ctrl+Alt shortcuts)-->
           <Shortcut Command="Edit.WordNext" Scope="Text Editor">Ctrl+Alt+Right Arrow</Shortcut>  <!--Invented by JEC-->
           <Shortcut Command="Edit.WordPrevious" Scope="Text Editor">Ctrl+Alt+Left Arrow</Shortcut>  <!--Invented by JEC-->
@@ -33,7 +30,6 @@
           <RemoveShortcut Command="View.TaskRunnerExplorer" Scope="Global">Ctrl+Alt+Bkspce</RemoveShortcut>
           <Shortcut Command="Edit.WordDeleteToStart" Scope="Text Editor">Ctrl+Alt+Bkspce</Shortcut>
           <Shortcut Command="Edit.WordDeleteToEnd" Scope="Text Editor">Alt+Del</Shortcut>  <!-- Would otherwise use Ctrl+Alt+Del for consistency, but ... well... you konw. ;-) Alt+Del will have to do. -->
-
         </UserShortcuts>
       </KeyboardShortcuts>
     </Category>

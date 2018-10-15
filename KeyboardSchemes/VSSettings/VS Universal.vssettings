@@ -353,12 +353,24 @@
           <!-- In-Editor navigation -->
           <Shortcut Command="Edit.PreviousMethod" Scope="Text Editor">Ctrl+Alt+Up Arrow</Shortcut>     <!-- New! New keyboard binding (chosen by JustCla) Conflicts with HotCommands binding. -->
           <Shortcut Command="Edit.NextMethod" Scope="Text Editor">Ctrl+Alt+Down Arrow</Shortcut>     <!-- New! New keyboard binding (chosen by JustCla) Conflicts with HotCommands binding. -->
-
           <!-- Provide replacements for shortcuts taken in GoToMethodAbove/Below (Ctrl+Alt+Up/Down) -->
-          <RemoveShortcut Command="Edit.ExpandSelectiontoContainingBlock" Scope="Text Editor">Ctrl+Shift+Alt+=</RemoveShortcut>
-          <Shortcut Command="EditorContextMenus.Navigate.GoToContainingBlock" Scope="Text Editor">Ctrl+Alt+PgUp</Shortcut>
-          <Shortcut Command="Edit.ExpandSelectiontoContainingBlock" Scope="Text Editor">Ctrl+Shift+Alt+PgUp</Shortcut>
           <Shortcut Command="Window.ShowEzMDIFileList" Scope="Global">Ctrl+Alt+End</Shortcut>
+
+          <!--Containing Block-->
+          <RemoveShortcut Command="Edit.ExpandSelectiontoContainingBlock" Scope="Text Editor">Ctrl+Shift+Alt+=</RemoveShortcut>  <!-- Take away the default shortcut. Might be more useful for something else. -->
+          <!--<Shortcut Command="EditorContextMenus.Navigate.GoToContainingBlock" Scope="Text Editor">Ctrl+Alt+PgUp</Shortcut>-->
+          <!--<Shortcut Command="Edit.ExpandSelectiontoContainingBlock" Scope="Text Editor">Ctrl+Shift+Alt+PgUp</Shortcut>-->
+          <Shortcut Command="EditorContextMenus.Navigate.GoToContainingBlock" Scope="Text Editor">Ctrl+[</Shortcut>
+          <Shortcut Command="Edit.ExpandSelectiontoContainingBlock" Scope="Text Editor">Ctrl+Shift+[</Shortcut>
+          <!-- Go To Brace ie. { } -->
+          <Shortcut Command="Edit.GotoBrace" Scope="Text Editor">Ctrl+]</Shortcut>    <!-- Default -->
+          <Shortcut Command="Edit.GotoBraceExtend" Scope="Text Editor">Ctrl+Shift+]</Shortcut>    <!-- Default -->
+          <!--Find new global shortcuts for keys blocked by ContainingBlock shortcuts (Ctrl+[)-->
+          <Shortcut Command="SolutionExplorer.SyncWithActiveDocument" Scope="Global">Shift+Alt+L</Shortcut>
+          <!--TODO: Consider these Solution Explorer shortcuts, which are Global by default. Move to SolnExpl scope for now.-->
+          <Shortcut Command="SolutionExplorer.PendingChangesFilter" Scope="Solution Explorer">Ctrl+[, Ctrl+P</Shortcut>
+          <Shortcut Command="SolutionExplorer.OpenFilesFilter" Scope="Solution Explorer">Ctrl+[, Ctrl+O</Shortcut>
+          <Shortcut Command="SolutionExplorer.ErrorsFilter" Scope="Solution Explorer">Ctrl+[, Ctrl+E</Shortcut>
 
           <!--Already in the system, but want to ensure they are part of this scheme-->
           <Shortcut Command="Edit.NextHighlightedReference" Scope="Text Editor">Ctrl+Shift+Down Arrow</Shortcut>
@@ -531,18 +543,6 @@
           <Shortcut Command="Edit.ParameterInfo" Scope="Text Editor">Ctrl+Shift+I</Shortcut>
           <!--Can free up Ctrl+Shift+Space - maybe reserve for Smart Type Completion when it's delivered. Hold off for now -->
           <!--<RemoveShortcut Command="Edit.ParameterInfo" Scope="Text Editor">Ctrl+Shift+Space</RemoveShortcut>-->
-
-          <!--Containing Block-->
-          <Shortcut Command="EditorContextMenus.Navigate.GoToContainingBlock" Scope="Text Editor">Ctrl+[</Shortcut>
-          <Shortcut Command="Edit.ExpandSelectiontoContainingBlock" Scope="Text Editor">Ctrl+Shift+[</Shortcut>
-          <Shortcut Command="Edit.GotoBrace" Scope="Text Editor">Ctrl+]</Shortcut>    <!-- Default -->
-          <Shortcut Command="Edit.GotoBraceExtend" Scope="Text Editor">Ctrl+Shift+]</Shortcut>    <!-- Default -->
-          <!--Find new global shortcuts for keys blocked by ContainingBlock shortcuts (Ctrl+[)-->
-          <Shortcut Command="SolutionExplorer.SyncWithActiveDocument" Scope="Global">Shift+Alt+L</Shortcut>
-          <!--TODO: Consider these Solution Explorer shortcuts, which are Global by default. Move to SolnExpl scope for now.-->
-          <Shortcut Command="SolutionExplorer.PendingChangesFilter" Scope="Solution Explorer">Ctrl+[, Ctrl+P</Shortcut>
-          <Shortcut Command="SolutionExplorer.OpenFilesFilter" Scope="Solution Explorer">Ctrl+[, Ctrl+O</Shortcut>
-          <Shortcut Command="SolutionExplorer.ErrorsFilter" Scope="Solution Explorer">Ctrl+[, Ctrl+E</Shortcut>
 
         </ShortcutsSchemeDef>
         <!--</UserShortcuts>-->
