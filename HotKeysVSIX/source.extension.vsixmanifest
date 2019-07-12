@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="HotKeys.e18a1a2b-78e5-4f4c-aade-448d36fd6016" Version="2.0.2" Language="en-US" Publisher="Justin Clareburt" />
+        <Identity Id="HotKeys.e18a1a2b-78e5-4f4c-aade-448d36fd6016" Version="3.0.0" Language="en-US" Publisher="Justin Clareburt" />
         <DisplayName>Hot Keys - Keyboard Shortcuts</DisplayName>
         <Description xml:space="preserve">Installs alternative keyboard mapping schemes to work with Visual Studio.</Description>
         <MoreInfo>https://aka.ms/hotkeys2017</MoreInfo>
@@ -10,14 +10,14 @@
         <PreviewImage>Resources\HotKeysPreviewImage.png</PreviewImage>
     </Metadata>
     <Installation>
-        <InstallationTarget Id="Microsoft.VisualStudio.IntegratedShell" Version="[15.0,16.0)" />
+        <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[15.0,)" />
     </Installation>
     <Dependencies>
         <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
         <Dependency Id="Microsoft.VisualStudio.MPF.15.0" DisplayName="Visual Studio MPF 15.0" d:Source="Installed" Version="[15.0]" />
-        <Dependency d:Source="File" Version="[1.0.6,)" d:InstallSource="Embed" DisplayName="Keyboard Shortcuts Manager" Id="VSShortcutsManager.d8578b8b-cb70-49ee-b009-9e659c413f4b" Location="EmbeddedVSIX\KeyboardShortcutsManager.vsix" />
+        <Dependency d:Source="File" Version="[1.0.6,)" d:InstallSource="Embed" Location="EmbeddedVSIX\KeyboardShortcutsManager-v2.1.0.vsix" DisplayName="Keyboard Shortcuts Manager" Id="VSShortcutsManager.d8578b8b-cb70-49ee-b009-9e659c413f4b" />
     </Dependencies>
     <Prerequisites>
-        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.0,16.0)" DisplayName="Visual Studio core editor" />
+        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.0,)" DisplayName="Visual Studio core editor" />
     </Prerequisites>
 </PackageManifest>
