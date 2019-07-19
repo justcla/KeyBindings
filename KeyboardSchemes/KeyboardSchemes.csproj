@@ -41,7 +41,13 @@
     <Content Include="Installer\HotKeysPreviewImage.png" />
     <Content Include="Installer\License.rtf" />
     <Content Include="Installer\ReleaseNotes.txt" />
+    <Content Include="VSKs\2015\IntelliJ-ImportLog.txt" />
+    <Content Include="VSKs\2015\ReSharperForIDEA-ImportLog.txt" />
+    <Content Include="VSKs\2015\ReSharperForVSC#-ImportLogs.txt" />
     <Content Include="VSSettings\Brief.vssettings" />
+    <Content Include="VSSettings\CamelHump Nav with VSTricks.vssettings">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="VSSettings\Emacs.vssettings" />
     <Content Include="VSSettings\IntelliJ.vssettings">
       <SubType>Designer</SubType>
@@ -63,6 +69,9 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="VSSettings\Visual Studio 6.vssettings" />
+    <Content Include="VSSettings\VS Universal.vssettings">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <None Include="Installer\Build2015MSI.bat" />
@@ -71,12 +80,23 @@
     <None Include="KeymapRefs\ReSharperCppDefaultKeymap_VSscheme.pdf" />
     <None Include="KeymapRefs\ReSharper_DefaultKeymap_IDEAscheme.pdf" />
     <None Include="KeymapRefs\ReSharper_DefaultKeymap_VSscheme.pdf" />
+    <None Include="KeymapRefs\VS Universal Mapping Scheme.pdf" />
     <None Include="KeymapRefs\VSCode-keyboard-shortcuts-linux.pdf" />
     <None Include="KeymapRefs\VSCode-keyboard-shortcuts-windows.pdf" />
+    <None Include="VSKs\2015\IntelliJ for C#.vsk" />
+    <None Include="VSKs\2015\ReSharper for IDEA.vsk" />
+    <None Include="VSKs\2015\ReSharper for VS C#.vsk" />
+    <None Include="VSKs\2015\Visual C# 2015.vsk" />
+    <None Include="VSKs\2017\IntelliJ for C#.vsk" />
+    <None Include="VSKs\2017\ReSharper for IDEA.vsk" />
+    <None Include="VSKs\2017\ReSharper for VS C#.vsk" />
+    <None Include="VSKs\2017\Sublime with C#.vsk" />
+    <None Include="VSKs\2017\Sublime with C++.vsk" />
+    <None Include="VSKs\2017\Visual C# 2015.vsk" />
+    <None Include="VSKs\2017\Visual C# 2017.vsk" />
+    <None Include="VSKs\2017\VS Universal.vsk" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="VSKs\" />
-  </ItemGroup>
+  <ItemGroup />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

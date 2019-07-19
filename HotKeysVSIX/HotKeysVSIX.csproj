@@ -48,13 +48,33 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CamelHump Nav with VSTricks.vssettings">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="EmbeddedVSIX\KeyboardShortcutsManager-v2.1.0.vsix">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="IntelliJ for CSharp.vsk">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="VS Universal.vssettings">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="packages.config" />
+    <Content Include="ReSharper %28IDEA style%29.vsk">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="ReSharper %28VS Style%29.vsk">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
     <None Include="source.extension.vsixmanifest">
       <SubType>Designer</SubType>
     </None>
+    <Content Include="Visual CSharp 2015.vsk">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <None Include="VS Universal.vsk" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="ReleaseNotes.txt">
@@ -78,6 +98,9 @@
       <IncludeInVSIX>true</IncludeInVSIX>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\packages\Microsoft.VisualStudio.SDK.Analyzers.15.8.9-beta\analyzers\cs\Microsoft.VisualStudio.SDK.Analyzers.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\VSSDK\Microsoft.VsSDK.targets" Condition="'$(VSToolsPath)' != ''" />
