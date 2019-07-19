@@ -1,4 +1,6 @@
 Hot Keys - Keyboard Shortcuts
+by Justin Clareburt
+12-Jul-2019: v3.0.0 Basic upgrade for VS2019 compatibility. Included VSShortcutManager-v2.1.0
 12-Oct-2018: v2.1.0 Added VS Universal mapping scheme. Also added CamelHump Nav with VSTricks.
 26-Aug-2018: v2.0.7 Added VS2017 Mapping scheme and user shortcuts
 16-Jan-2018: v2.0.2 Added shortcuts for new VS features: Duplicate Text and Expland Selection

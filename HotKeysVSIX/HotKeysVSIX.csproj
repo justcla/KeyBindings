@@ -51,7 +51,7 @@
     <Content Include="CamelHump Nav with VSTricks.vssettings">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="EmbeddedVSIX\KeyboardShortcutsManager.vsix">
+    <Content Include="EmbeddedVSIX\KeyboardShortcutsManager-v2.1.0.vsix">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
