@@ -67,6 +67,12 @@
         </DefaultShortcuts>
         <ShortcutsScheme/>
         <UserShortcuts>
+          <!-- Remove bindings that interfere at a lower scope -->
+          <RemoveShortcut Command="Edit.NextSubword" Scope="Text Editor">Ctrl+Alt+Right Arrow</RemoveShortcut>
+          <RemoveShortcut Command="Edit.NextSubwordExtend" Scope="Text Editor">Ctrl+Shift+Alt+Right Arrow</RemoveShortcut>
+          <RemoveShortcut Command="Edit.PreviousSubword" Scope="Text Editor">Ctrl+Alt+Left Arrow</RemoveShortcut>
+          <RemoveShortcut Command="Edit.PreviousSubwordExtend" Scope="Text Editor">Ctrl+Shift+Alt+Left Arrow</RemoveShortcut>
+          <RemoveShortcut Command="Edit.SelectCurrentWord" Scope="Text Editor">Ctrl+W</RemoveShortcut>
           <!-- Editing Key bindings -->
           <Shortcut Command="Edit.CompleteWord" Scope="Text Editor">Ctrl+Space</Shortcut>
           <Shortcut Command="Edit.SmartCompleteWord" Scope="Text Editor">Ctrl+Shift+Space</Shortcut>  <!-- NYI -->
