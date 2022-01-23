@@ -1,6 +1,7 @@
 Hot Keys - Keyboard Shortcuts
 by Justin Clareburt
 19-Jan-2022: v4.0.0 Upgraded for VS2022+. Included KeyboardShortcutsManager-v3.0.0
+23-Jan-2022: v3.1.0 New version created for VS2017-VS2019 legacy maintenance.
 12-Jul-2019: v3.0.0 Basic upgrade for VS2019 compatibility. Included KeyboardShortcutsManager-v2.1.0
 16-Jan-2018: v2.0.2 Added shortcuts for new VS features: Duplicate Text and Expland Selection
 12-Jan-2018: v2.0.1 Embedded Keyboard Shortcuts Manager and supplied IntelliJ and R# VS and IDEA shortcut defs
