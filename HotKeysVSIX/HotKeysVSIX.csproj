@@ -48,7 +48,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="EmbeddedVSIX\KeyboardShortcutsManager-v3.0.0.vsix">
+    <Content Include="EmbeddedVSIX\KeyboardShortcutsManager-v3.1.0.vsix">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>

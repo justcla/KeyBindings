@@ -85,8 +85,14 @@
           <Shortcut Command="Edit.OverrideMethods" Scope="Text Editor">Ctrl+O</Shortcut>  <!-- NYI -->
           <Shortcut Command="Edit.ImplementMethods" Scope="Text Editor">Ctrl+I</Shortcut>  <!-- NYI -->
           <Shortcut Command="Edit.SurroundWith" Scope="Text Editor">Ctrl+Alt+T</Shortcut>
-          <Shortcut Command="Edit.ToggleComment" Scope="Text Editor">Ctrl+/</Shortcut>  <!-- NYI HotCommands.ToggleLineComment. Near-match. Should be ToggleLineComment -->
-          <Shortcut Command="Edit.ToggleBlockComment" Scope="Text Editor">Ctrl+Shift+/</Shortcut>  <!-- NYI -->
+          <!-- Comment/Uncomment -->
+          <Shortcut Command="Edit.ToggleLineComment" Scope="CSharp Editor">Ctrl+/</Shortcut>   <!-- Only implemented in C#. -->
+          <Shortcut Command="Edit.ToggleBlockComment" Scope="CSharp Editor">Ctrl+Shift+/</Shortcut>   <!-- Only implemented in C#. -->
+          <RemoveShortcut Command="Edit.ToggleBlockComment" Scope="Text Editor">Ctrl+Shift+/</RemoveShortcut>  <!-- ToggleBlockComment is no good outside C# scope. Don't let it block global commands on Ctrl+Shift+/ -->
+          <Shortcut Command="Edit.ToggleComment" Scope="Text Editor">Ctrl+/</Shortcut>  <!-- Use HotCommands.ToggleComment for all other Text Editor shortcuts - if it's enabled -->
+          <Shortcut Command="Edit.CommentSelection" Scope="Global">Ctrl+/</Shortcut>  <!-- Fallback: Use Ctrl+/ for comment when ToggleLineComment not available -->
+          <Shortcut Command="Edit.UncommentSelection" Scope="Global">Ctrl+Shift+/</Shortcut>  <!-- Fallback: Use Ctrl+Shift+/ for uncomment when ToggleBlockCommennt not available -->
+          <!-- More editing shortcuts -->
           <Shortcut Command="Edit.ExpandSelection" Scope="Text Editor">Ctrl+W</Shortcut>  <!-- Available VS2017 v15.5 -->
           <Shortcut Command="Edit.ContractSelection" Scope="Text Editor">Ctrl+Shift+W</Shortcut>  <!-- Available VS2017 v15.5 -->
           <Shortcut Command="Edit.IncreaseSelection" Scope="Text Editor">Ctrl+W</Shortcut>  <!-- Fallback to HotCommands.IncreaseSelection-->
@@ -110,6 +116,8 @@
           <Shortcut Command="Edit.CycleClipboardRing" Scope="Text Editor">Ctrl+Shift+V</Shortcut>
           <Shortcut Command="Edit.Duplicate" Scope="Text Editor">Ctrl+D</Shortcut>  <!-- Implemented in VS2017 v15.6 -->
           <Shortcut Command="Edit.DuplicateSelection" Scope="Text Editor">Ctrl+D</Shortcut>  <!-- Fallback to HotCommands for older versions of VS. -->
+          <Shortcut Command="Edit.Undo" Scope="Global">Ctrl+Z</Shortcut>
+          <Shortcut Command="Edit.Redo" Scope="Global">Ctrl+Shift+Z</Shortcut>
           <RemoveShortcut Command="Edit.Redo" Scope="Global">Ctrl+Y</RemoveShortcut>
           <Shortcut Command="Edit.LineDelete" Scope="Text Editor">Ctrl+Y</Shortcut>
           <Shortcut Command="Edit.JoinLines" Scope="Text Editor">Ctrl+Shift+J</Shortcut>  <!-- NYI Near match for Smart Join lines - Hot Commands Join Line -->
