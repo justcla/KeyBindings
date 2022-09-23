@@ -103,7 +103,8 @@
           <!--Shortcut Command="Edit.FormatCode" Scope="Text Editor">Ctrl+Alt+L</Shortcut-->  <!-- HotCommands.FormatCode  IntelliJ: Reformat Code. Offers choice of selection/document where appropriate. -->
           <Shortcut Command="Edit.FormatDocument" Scope="Text Editor">Ctrl+Alt+L</Shortcut>  <!-- Near-match -->
           <Shortcut Command="Edit.FormatSelection" Scope="Text Editor">Ctrl+Shift+Alt+L</Shortcut>  <!-- Introduced shortcut! for Near-match -->
-          <Shortcut Command="EditorContextMenus.CodeWindow.OrganizeUsings.RemoveAndSort" Scope="Text Editor">Ctrl+Alt+O</Shortcut>  <!-- "OptimizeImports" -->
+          <Shortcut Command="Edit.RemoveAndSort" Scope="Text Editor">Ctrl+Alt+O</Shortcut>  <!-- "OptimizeImports" -->
+          <Shortcut Command="EditorContextMenus.CodeWindow.OrganizeUsings.RemoveAndSort" Scope="Text Editor">Ctrl+Alt+O</Shortcut>  <!-- Pre VS2022 -->
           <Shortcut Command="Edit.FormatIndents" Scope="Text Editor">Ctrl+Alt+I</Shortcut>  <!-- NYI [Auto-indent line(s)]-->
           <!--<Shortcut Command="Edit.IncreaseLineIndent" Scope="Text Editor">Tab</Shortcut>-->  <!-- Near-match. Not near enough to replace existing key behaviour -->
           <!--<Shortcut Command="Edit.DecreaseLineIndent" Scope="Text Editor">Shift+Tab</Shortcut>-->  <!-- Near-match. Not near enough to replace existing key behaviour -->

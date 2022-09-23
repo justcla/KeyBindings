@@ -1,5 +1,6 @@
 Hot Keys - Keyboard Shortcuts
 by Justin Clareburt
+23-Sep-2022: v4.2.1 Updated shortcuts for OptimiseImports and FormatDocument.
 05-Mar-2022: v4.2.0 Added new settings files for Camel-Hump navigation.
 05-Mar-2022: v4.1.0 Added shortcuts for new VS commands - ToggleLineComment and ToggleBlockComment. Uses Keyboard Manager 3.1.0
 19-Jan-2022: v4.0.0 Upgraded for VS2022+. Included KeyboardShortcutsManager-v3.0.0
