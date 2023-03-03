@@ -52,7 +52,7 @@
       <SubType>Designer</SubType>
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <Content Include="EmbeddedVSIX\KeyboardShortcutsManager-v3.1.0.vsix">
+    <Content Include="EmbeddedVSIX\KeyboardShortcutsManager-v3.1.2.vsix">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
