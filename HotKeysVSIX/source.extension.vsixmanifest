@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="HotKeys.e18a1a2b-78e5-4f4c-aade-448d36fd6016" Version="4.2.2" Language="en-US" Publisher="Justin Clareburt" />
+        <Identity Id="HotKeys.e18a1a2b-78e5-4f4c-aade-448d36fd6016" Version="4.2.3" Language="en-US" Publisher="Justin Clareburt" />
         <DisplayName>Hot Keys - Keyboard Shortcuts</DisplayName>
         <Description xml:space="preserve">Installs alternative keyboard mapping schemes to work with Visual Studio.</Description>
         <MoreInfo>https://aka.ms/hotkeys2017</MoreInfo>
@@ -18,7 +18,7 @@
     <Dependencies>
         <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
         <Dependency Id="Microsoft.VisualStudio.MPF.15.0" DisplayName="Visual Studio MPF 15.0" d:Source="Installed" Version="[15.0]" />
-        <Dependency d:Source="File" Version="[3.1.2,4.0.0.0)" d:InstallSource="Embed" Location="EmbeddedVSIX\KeyboardShortcutsManager-v3.1.2.vsix" DisplayName="Keyboard Shortcuts Manager" Id="VSShortcutsManager.d8578b8b-cb70-49ee-b009-9e659c413f4b" />
+        <Dependency d:Source="File" Version="[3.1.3,4.0.0.0)" d:InstallSource="Embed" Location="EmbeddedVSIX\KeyboardShortcutsManager-v3.1.3.vsix" DisplayName="Keyboard Shortcuts Manager" Id="VSShortcutsManager.d8578b8b-cb70-49ee-b009-9e659c413f4b" />
     </Dependencies>
     <Prerequisites>
         <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.0,)" DisplayName="Visual Studio core editor" />
